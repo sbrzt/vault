@@ -1,0 +1,112 @@
+[
+  {
+    "label": "CiTO",
+    "uri": "http://purl.org/spar/cito/",
+    "prefix": "cito",
+    "lov": {
+      "found": false,
+      "inlinks": 0,
+      "importing_vocabs": [],
+      "url": null,
+      "tags": [],
+      "versions": []
+    },
+    "swh": {
+      "origins_count": 0,
+      "origins": []
+    },
+    "openalex": {
+      "total_works": 50055,
+      "by_year": {
+        "2015": 3,
+        "2018": 2,
+        "2016": 4,
+        "2019": 4,
+        "2011": 1,
+        "2012": 2,
+        "2003": 1,
+        "2014": 3,
+        "1999": 1,
+        "2017": 3,
+        "2005": 3,
+        "2001": 1,
+        "2009": 2,
+        "2013": 2,
+        "2007": 1,
+        "2023": 2,
+        "2008": 4,
+        "2010": 2,
+        "2020": 2,
+        "2021": 1,
+        "2004": 2,
+        "2022": 2,
+        "2000": 1,
+        "2006": 1
+      },
+      "top_works": [
+        {
+          "title": "limma powers differential expression analyses for RNA-sequencing and microarray studies",
+          "year": 2015,
+          "cited_by_count": 41610,
+          "doi": "https://doi.org/10.1093/nar/gkv007",
+          "source_name": "Nucleic Acids Research"
+        },
+        {
+          "title": "STRING v11: protein\u2013protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets",
+          "year": 2018,
+          "cited_by_count": 18785,
+          "doi": "https://doi.org/10.1093/nar/gky1131",
+          "source_name": "Nucleic Acids Research"
+        },
+        {
+          "title": "The FAIR Guiding Principles for scientific data management and stewardship",
+          "year": 2016,
+          "cited_by_count": 16858,
+          "doi": "https://doi.org/10.1038/sdata.2016.18",
+          "source_name": "Scientific Data"
+        },
+        {
+          "title": "Metascape provides a biologist-oriented resource for the analysis of systems-level datasets",
+          "year": 2019,
+          "cited_by_count": 15165,
+          "doi": "https://doi.org/10.1038/s41467-019-09234-6",
+          "source_name": "Nature Communications"
+        },
+        {
+          "title": "Open Babel: An open chemical toolbox",
+          "year": 2011,
+          "cited_by_count": 10602,
+          "doi": "https://doi.org/10.1186/1758-2946-3-33",
+          "source_name": "Journal of Cheminformatics"
+        }
+      ],
+      "sources": {
+        "Nucleic Acids Research": 22,
+        "Scientific Data": 2,
+        "Nature Communications": 1,
+        "Journal of Cheminformatics": 1,
+        "Genome biology": 1,
+        "BMC Bioinformatics": 4,
+        "Radboud Repository (Radboud University)": 1,
+        "Implementation Science": 1,
+        "Nature Genetics": 1,
+        "International Journal of Information Management": 1,
+        "Communications of the ACM": 1,
+        "BMC Medical Research Methodology": 1,
+        "Environmental Innovation and Societal Transitions": 1,
+        "Healthcare": 1,
+        "International Journal of Plant Genomics": 1,
+        "Bioinformatics": 1,
+        "Database": 1,
+        "Journal of Management Studies": 1,
+        "Protein Science": 1,
+        "Genome Research": 1,
+        "Trials": 1,
+        "Proceedings of the AAAI Conference on Artificial Intelligence": 1,
+        "Unknown": 1,
+        "BMC Genomics": 1,
+        "BMC Neuroscience": 1
+      }
+    }
+  }
+]

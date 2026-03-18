@@ -1,0 +1,10 @@
+# config.yaml
+
+output_dir: docs
+ontologies:
+ 
+  - label: "CiTO"
+    uri: "http://purl.org/spar/cito/"
+    prefix: "cito"
+    openalex_keywords:
+      - "Citation Typing Ontology"
