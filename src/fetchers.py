@@ -15,7 +15,13 @@ def http_get(url: str, headers: dict | None = None, retries: int = 3, delay: flo
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
-                return json.loads(resp.read().decode("utf-8"))
+                raw = resp.read().decode("utf-8")
+                try:
+                    return json.loads(raw)
+                except json.JSONDecodeError:
+                    print(f"  [HTTP] Non-JSON response from {url}:")
+                    print(f"  {raw[:300]}")
+                    return None
         except urllib.error.HTTPError as e:
             if e.code == 429:
                 wait = delay * (2 ** attempt)
@@ -41,16 +47,15 @@ def fetch_lov(ontology: dict) -> dict:
         "versions": [],
     }
  
-    encoded_uri = urllib.parse.quote(ontology["uri"], safe="")
     info_url = (
         f"https://lov.linkeddata.es/dataset/lov/api/v2/vocabulary/info"
-        f"?vocab_uri={encoded_uri}"
+        f"?vocab={ontology['prefix']}"
     )
     data = http_get(info_url)
     if data:
         result["found"] = True
         result["url"] = (
-            f"https://lov.linkeddata.es/dataset/lov/vocabulary/{ontology['prefix']}"
+            data.get("uri", "")
         )
         result["tags"] = data.get("tags", [])
         result["versions"] = [
@@ -62,18 +67,27 @@ def fetch_lov(ontology: dict) -> dict:
             for v in data.get("versions", [])
         ]
     sparql_query = f"""
-        PREFIX voaf: <http://purl.org/vocommons/voaf#>
+        PREFIX voaf:<http://purl.org/vocommons/voaf#>
+        PREFIX dcat:<http://www.w3.org/ns/dcat#>
+        PREFIX owl:<http://www.w3.org/2002/07/owl#>
         SELECT ?vocab WHERE {{
-            {{ ?vocab voaf:imports <{ontology['uri']}> . }}
+             GRAPH <https://lov.linkeddata.es/dataset/lov> {{
+            {{ ?vocab voaf:metadataVoc <{ontology['uri']}> . }}
             UNION
-            {{ ?vocab voaf:extends <{ontology['uri']}> . }}
-        }} LIMIT 50
+            {{ ?vocab voaf:hasEquivalencesWith <{ontology['uri']}> . }}
+            UNION
+            {{ ?vocab owl:imports <{ontology['uri']}> . }}
+            UNION
+            {{ ?vocab voaf:specializes <{ontology['uri']}> . }}
+        }}
+        }}
     """
     sparql_url = (
-        "https://lov.linkeddata.es/dataset/lov/sparql"
-        f"?query={urllib.parse.quote(sparql_query)}&format=json"
+        "https://lov.linkeddata.es/dataset/lov/sparql?"
+        + urllib.parse.urlencode({"query": sparql_query, "format": "json"}, quote_via=urllib.parse.quote)
     )
-    sparql_data = http_get(sparql_url)
+    sparql_data = http_get(sparql_url, headers={"Accept": "application/sparql-results+json"})
+    print(sparql_data)
     if sparql_data:
         bindings = sparql_data.get("results", {}).get("bindings", [])
         result["importing_vocabs"] = [

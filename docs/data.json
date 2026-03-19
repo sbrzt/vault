@@ -1,22 +1,98 @@
 [
   {
     "label": "CiTO",
-    "uri": "http://purl.org/spar/cito/",
+    "uri": "http://purl.org/spar/cito",
     "prefix": "cito",
     "lov": {
-      "found": false,
-      "inlinks": 0,
-      "importing_vocabs": [],
-      "url": null,
-      "tags": [],
-      "versions": []
+      "found": true,
+      "inlinks": 2,
+      "importing_vocabs": [
+        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2016-09-27.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2015-04-21.n3"
+      ],
+      "url": "http://purl.org/spar/cito",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v2.63",
+          "issued": "2014-05-21T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2014-05-22.n3"
+        },
+        {
+          "name": "v2.6.2",
+          "issued": "2013-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-07-03.n3"
+        },
+        {
+          "name": "v2.6.1",
+          "issued": "2013-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-06-27.n3"
+        },
+        {
+          "name": "v2.5.1",
+          "issued": "2013-05-06T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-07.n3"
+        },
+        {
+          "name": "v2.5",
+          "issued": "2013-04-30T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-01.n3"
+        },
+        {
+          "name": "v2.4.1",
+          "issued": "2012-09-27T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-09-28.n3"
+        },
+        {
+          "name": "v2.4",
+          "issued": "2012-08-28T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-08-29.n3"
+        },
+        {
+          "name": "v2.3",
+          "issued": "2012-07-12T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-13.n3"
+        },
+        {
+          "name": "v2.2",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2011-12-09T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-12-09.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2011-05-04T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-05-05.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2010-03-26T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2010-03-26.n3"
+        },
+        {
+          "name": "v2.6.4",
+          "issued": "2015-07-03T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2015-07-03.n3"
+        },
+        {
+          "name": "v2.8.1",
+          "issued": "2018-02-16T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2018-02-16.n3"
+        }
+      ]
     },
     "swh": {
       "origins_count": 0,
       "origins": []
     },
     "openalex": {
-      "total_works": 50055,
+      "total_works": 50287,
       "by_year": {
         "2015": 3,
         "2018": 2,
@@ -47,21 +123,21 @@
         {
           "title": "limma powers differential expression analyses for RNA-sequencing and microarray studies",
           "year": 2015,
-          "cited_by_count": 41610,
+          "cited_by_count": 41632,
           "doi": "https://doi.org/10.1093/nar/gkv007",
           "source_name": "Nucleic Acids Research"
         },
         {
           "title": "STRING v11: protein\u2013protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets",
           "year": 2018,
-          "cited_by_count": 18785,
+          "cited_by_count": 18794,
           "doi": "https://doi.org/10.1093/nar/gky1131",
           "source_name": "Nucleic Acids Research"
         },
         {
           "title": "The FAIR Guiding Principles for scientific data management and stewardship",
           "year": 2016,
-          "cited_by_count": 16858,
+          "cited_by_count": 16873,
           "doi": "https://doi.org/10.1038/sdata.2016.18",
           "source_name": "Scientific Data"
         },
@@ -75,7 +151,7 @@
         {
           "title": "Open Babel: An open chemical toolbox",
           "year": 2011,
-          "cited_by_count": 10602,
+          "cited_by_count": 10610,
           "doi": "https://doi.org/10.1186/1758-2946-3-33",
           "source_name": "Journal of Cheminformatics"
         }
@@ -106,6 +182,233 @@
         "Unknown": 1,
         "BMC Genomics": 1,
         "BMC Neuroscience": 1
+      }
+    }
+  },
+  {
+    "label": "FaBiO",
+    "uri": "http://purl.org/spar/fabio",
+    "prefix": "fabio",
+    "lov": {
+      "found": true,
+      "inlinks": 7,
+      "importing_vocabs": [
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2016-01-21.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2021-09-24.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2022-09-15.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2018-01-20.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/npg/versions/2015-04-30.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2023-09-28.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2025-05-08.n3"
+      ],
+      "url": "http://purl.org/spar/fabio",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v1.85",
+          "issued": "2014-03-25T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2014-03-25.n3"
+        },
+        {
+          "name": "v1.75",
+          "issued": "2013-06-23T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-06-24.n3"
+        },
+        {
+          "name": "v1.73",
+          "issued": "2013-03-15T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-03-15.n3"
+        },
+        {
+          "name": "v1.72",
+          "issued": "2012-12-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-12-20.n3"
+        },
+        {
+          "name": "v1.71",
+          "issued": "2012-09-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-09-27.n3"
+        },
+        {
+          "name": "v1.7",
+          "issued": "2012-08-19T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-08-20.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2012-07-24T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-25.n3"
+        },
+        {
+          "name": "v1.5",
+          "issued": "2012-07-22T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-23.n3"
+        },
+        {
+          "name": "v1.4",
+          "issued": "2012-07-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-14.n3"
+        },
+        {
+          "name": "v1.32",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v1.31",
+          "issued": "2012-06-07T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-06-08.n3"
+        },
+        {
+          "name": "v1.3",
+          "issued": "2012-05-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-05-14.n3"
+        },
+        {
+          "name": "v1.2",
+          "issued": "2012-02-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-02-20.n3"
+        },
+        {
+          "name": "v1.1",
+          "issued": "2011-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2011-06-27.n3"
+        },
+        {
+          "name": "v1.0",
+          "issued": "2010-09-14T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2010-09-15.n3"
+        },
+        {
+          "name": "v1.86",
+          "issued": "2015-01-22T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2015-01-22.n3"
+        },
+        {
+          "name": "v1.9.2",
+          "issued": "2016-04-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2016-04-19.n3"
+        },
+        {
+          "name": "v1.9.4",
+          "issued": "2017-05-29T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2017-05-29.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2018-05-02T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2018-05-02.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2019-02-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2019-02-19.n3"
+        }
+      ]
+    },
+    "swh": {
+      "origins_count": 0,
+      "origins": []
+    },
+    "openalex": {
+      "total_works": 307,
+      "by_year": {
+        "2019": 6,
+        "2009": 3,
+        "2012": 2,
+        "2017": 2,
+        "2006": 1,
+        "2010": 1,
+        "2016": 4,
+        "2013": 4,
+        "2018": 9,
+        "2011": 2,
+        "2021": 4,
+        "2022": 1,
+        "2024": 1,
+        "2015": 3,
+        "2020": 1,
+        "2004": 1,
+        "2014": 2,
+        "2023": 3
+      },
+      "top_works": [
+        {
+          "title": "Research on Humanities and Social Sciences",
+          "year": 2019,
+          "cited_by_count": 670,
+          "doi": "https://doi.org/10.7176/rhss",
+          "source_name": ""
+        },
+        {
+          "title": "Adventures in Semantic Publishing: Exemplar Semantic Enhancements of a Research Article",
+          "year": 2009,
+          "cited_by_count": 212,
+          "doi": "https://doi.org/10.1371/journal.pcbi.1000361",
+          "source_name": "PLoS Computational Biology"
+        },
+        {
+          "title": "FaBiO and CiTO: Ontologies for describing bibliographic resources and citations",
+          "year": 2012,
+          "cited_by_count": 198,
+          "doi": "https://doi.org/10.1016/j.websem.2012.08.001",
+          "source_name": "Journal of Web Semantics"
+        },
+        {
+          "title": "On the concept of relevance in legal information retrieval",
+          "year": 2017,
+          "cited_by_count": 129,
+          "doi": "https://doi.org/10.1007/s10506-017-9195-8",
+          "source_name": "Artificial Intelligence and Law"
+        },
+        {
+          "title": "The Changing Nature of the Catalog and its Integration with Other Discovery Tools: Draft 2B",
+          "year": 2006,
+          "cited_by_count": 104,
+          "doi": null,
+          "source_name": "eCommons (Cornell University)"
+        }
+      ],
+      "sources": {
+        "Unknown": 3,
+        "PLoS Computational Biology": 1,
+        "Journal of Web Semantics": 1,
+        "Artificial Intelligence and Law": 2,
+        "eCommons (Cornell University)": 1,
+        "SSRN Electronic Journal": 2,
+        "Semantic Web": 2,
+        "Journal of Biomedical Semantics": 3,
+        "El Profesional de la Informacion": 1,
+        "Learning Health Systems": 1,
+        "Frontiers in artificial intelligence and applications": 1,
+        "Heritage": 1,
+        "Lecture notes in computer science": 5,
+        "Library and Information Science Research E-Journal": 1,
+        "Journal of the Text Encoding Initiative": 1,
+        "Journal of Cheminformatics": 1,
+        "IEEE Access": 2,
+        "Journal of the Association for Information Science and Technology": 1,
+        "University of North Texas Digital Library (University of North Texas)": 1,
+        "International Journal on Digital Libraries": 1,
+        "Applied Ontology": 1,
+        "Journal of Documentation": 1,
+        "Cornerstone (Minnesota State University, Mankato)": 1,
+        "D-Lib Magazine": 1,
+        "Information Technology and Libraries": 1,
+        "Multimedia Systems": 1,
+        "Cataloging & Classification Quarterly": 1,
+        "Entertainment Computing": 1,
+        "Universit\u00e0 di Firenze - Italian Journal of Library and Information Science": 1,
+        "Online Publication Service of W\u00fcrzburg University (W\u00fcrzburg University)": 1,
+        "Frontiers in Earth Science": 1,
+        "Information": 2,
+        "Proceedings of the American Society for Information Science and Technology": 1,
+        "IFLA Journal": 1,
+        "Lirias (KU Leuven)": 1,
+        "Amsterdam University Press eBooks": 1,
+        "Internet Archaeology": 1
       }
     }
   }

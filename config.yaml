@@ -1,10 +1,17 @@
 # config.yaml
 
 output_dir: docs
+
 ontologies:
- 
+
   - label: "CiTO"
-    uri: "http://purl.org/spar/cito/"
+    uri: "http://purl.org/spar/cito"
     prefix: "cito"
     openalex_keywords:
       - "Citation Typing Ontology"
+
+  - label: "FaBiO"
+    uri: "http://purl.org/spar/fabio"
+    prefix: "fabio"
+    openalex_keywords:
+      - "FRBR-aligned Bibliographic Ontology"
