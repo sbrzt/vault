@@ -2,6 +2,11 @@
 
 A GitHub Actions-powered tool that runs monthly, fetches usage data for one or more ontologies across three sources, and generates a self-contained HTML report — no backend required.
 
+## To-Do
+
+- [] `fetch_lov`: add another heuristic based on the use of `rdfs:isDefinedBy` **within** the single ontology
+
+
 ## Data Sources
 
 | Source | What it measures |

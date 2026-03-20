@@ -85,9 +85,9 @@ class TestFetchSoftwareHeritage(unittest.TestCase):
             {"url": "https://github.com/org/repo2"},
             {"url": ""},
         ]
-        result = src.fetchers.fetch_software_heritage(ONTO)
-        self.assertEqual(result["origins_count"], 2)
-        self.assertIn("https://github.com/org/repo1", result["origins"])
+        result = src.fetchers.fetch_github(ONTO)
+        self.assertEqual(result["repos_count"], 2)
+        self.assertIn("https://github.com/org/repo1", result["repos"])
  
     @patch("src.fetchers.http_get")
     def test_dict_response_with_results_key(self, mock_get):
@@ -96,21 +96,21 @@ class TestFetchSoftwareHeritage(unittest.TestCase):
                 {"url": "https://gitlab.com/org/proj"},
             ]
         }
-        result = src.fetchers.fetch_software_heritage(ONTO)
-        self.assertEqual(result["origins_count"], 1)
-        self.assertEqual(result["origins"][0], "https://gitlab.com/org/proj")
+        result = src.fetchers.fetch_github(ONTO)
+        self.assertEqual(result["repos_count"], 1)
+        self.assertEqual(result["repos"][0], "https://gitlab.com/org/proj")
  
     @patch("src.fetchers.http_get")
     def test_api_failure_returns_empty(self, mock_get):
         mock_get.return_value = None
-        result = src.fetchers.fetch_software_heritage(ONTO)
-        self.assertEqual(result["origins_count"], 0)
-        self.assertEqual(result["origins"], [])
+        result = src.fetchers.fetch_github(ONTO)
+        self.assertEqual(result["repos_count"], 0)
+        self.assertEqual(result["repos"], [])
  
     @patch("src.fetchers.http_get")
     def test_token_injected_into_header(self, mock_get):
         mock_get.return_value = []
-        src.fetchers.fetch_software_heritage(ONTO, swh_token="mytoken")
+        src.fetchers.fetch_github(ONTO, github_token="mytoken")
         _, kwargs = mock_get.call_args
         headers = mock_get.call_args[0][1] if len(mock_get.call_args[0]) > 1 else mock_get.call_args[1].get("headers", {})
         self.assertEqual(headers.get("Authorization"), "Bearer mytoken")
@@ -118,7 +118,7 @@ class TestFetchSoftwareHeritage(unittest.TestCase):
     @patch("src.fetchers.http_get")
     def test_no_token_sends_no_auth_header(self, mock_get):
         mock_get.return_value = []
-        src.fetchers.fetch_software_heritage(ONTO, swh_token="")
+        src.fetchers.fetch_github(ONTO, github_token="")
         headers = mock_get.call_args[0][1] if len(mock_get.call_args[0]) > 1 else mock_get.call_args[1].get("headers", {})
         self.assertNotIn("Authorization", headers)
 

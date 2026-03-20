@@ -17,9 +17,9 @@ def _sample_result(prefix="test", label="Test Onto", uri="https://example.org/te
             "tags": ["sensor"],
             "versions": [],
         },
-        "swh": {
-            "origins_count": 3,
-            "origins": ["https://github.com/org/repo1", "https://github.com/org/repo2"],
+        "github": {
+            "repos_count": 3,
+            "repos": ["https://github.com/org/repo1", "https://github.com/org/repo2"],
         },
         "openalex": {
             "total_works": 42,
@@ -59,7 +59,7 @@ class TestRenderHtml(unittest.TestCase):
     def test_contains_lov_inlinks(self):
         self.assertIn("5", self.html)
  
-    def test_contains_swh_count(self):
+    def test_contains_github_count(self):
         self.assertIn("3", self.html)
  
     def test_contains_openalex_total(self):

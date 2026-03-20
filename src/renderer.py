@@ -10,13 +10,13 @@ def render_html(data: list[dict], generated_at: str) -> str:
         label = onto["label"]
         uri = onto["uri"]
         lov = onto["lov"]
-        swh = onto["swh"]
+        github = onto["github"]
         oax = onto["openalex"]
         years = sorted(oax["by_year"].keys())
         year_counts = [oax["by_year"][y] for y in years]
         top_works_rows = _render_top_works(oax["top_works"])
         importing_list = _render_link_list(lov.get("importing_vocabs", []), limit=10)
-        origins_list = _render_link_list(swh.get("origins", []), limit=8)
+        repos_list = _render_link_list(github.get("repos", []), domain="https://github.com/", limit=8)
         lov_status = "✓ Listed" if lov["found"] else "✗ Not listed"
         lov_class = "status-ok" if lov["found"] else "status-missing"
         summary_cards += f"""
@@ -33,8 +33,8 @@ def render_html(data: list[dict], generated_at: str) -> str:
                     <span class="metric-label">Imports (LOV)</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-value">{swh['origins_count']}</span>
-                    <span class="metric-label">Repos (SWH)</span>
+                    <span class="metric-value">{github['repos_count']}</span>
+                    <span class="metric-label">Repos (github)</span>
                 </div>
             </div>
         </div>"""
@@ -66,16 +66,16 @@ def render_html(data: list[dict], generated_at: str) -> str:
  
                 <div class="card">
                     <div class="card-header">
-                        <span class="source-tag swh-tag">SWH</span>
+                        <span class="source-tag github-tag">github</span>
                         <h3>Code Usage</h3>
                     </div>
                     <div class="card-stat">
-                        <span class="big-num">{swh['origins_count']}</span>
+                        <span class="big-num">{github['repos_count']}</span>
                         <span class="stat-label">archived repos reference this namespace</span>
                     </div>
                     <div class="card-detail">
                         <p class="sub">Repositories:</p>
-                        <ul class="compact-list">{origins_list}</ul>
+                        <ul class="compact-list">{repos_list}</ul>
                     </div>
                 </div>
  
@@ -162,13 +162,13 @@ def _render_top_works(works: list[dict]) -> str:
     return rows
  
  
-def _render_link_list(items: list[str], limit: int = 10) -> str:
+def _render_link_list(items: list[str], domain: str = "", limit: int = 10) -> str:
     if not items:
         return "<li><em>None found</em></li>"
     html = ""
     for item in items[:limit]:
         name = item.rstrip("/").split("/")[-1].split("#")[-1] or item
-        html += f'<li><a href="{item}" target="_blank">{name}</a></li>'
+        html += f'<li><a href="{domain}{item}" target="_blank">{name}</a></li>'
     return html
  
  
@@ -185,7 +185,7 @@ def _html_shell(summary_cards: str, onto_sections: str, nav_links: str, generate
   :root {{
     --bg:#0d1117;--bg2:#161b22;--bg3:#1c2330;--border:#30363d;
     --text:#e6edf3;--muted:#7d8590;
-    --accent-lov:#58a6ff;--accent-swh:#3fb950;--accent-oax:#d2a8ff;--accent-warn:#f78166;
+    --accent-lov:#58a6ff;--accent-github:#3fb950;--accent-oax:#d2a8ff;--accent-warn:#f78166;
     --font-mono:'IBM Plex Mono',monospace;--font-sans:'IBM Plex Sans',sans-serif;
   }}
   *{{box-sizing:border-box;margin:0;padding:0}}
@@ -218,13 +218,13 @@ def _html_shell(summary_cards: str, onto_sections: str, nav_links: str, generate
   .card-header h3{{font-size:.9rem;font-weight:600}}
   .source-tag{{font-family:var(--font-mono);font-size:.65rem;font-weight:600;padding:2px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em}}
   .lov-tag{{background:rgba(88,166,255,.15);color:var(--accent-lov)}}
-  .swh-tag{{background:rgba(63,185,80,.15);color:var(--accent-swh)}}
+  .github-tag{{background:rgba(63,185,80,.15);color:var(--accent-github)}}
   .oax-tag{{background:rgba(210,168,255,.15);color:var(--accent-oax)}}
   .card-stat{{margin-bottom:16px}}
   .big-num{{display:block;font-family:var(--font-mono);font-size:2.4rem;font-weight:600;line-height:1.1}}
   .stat-label{{font-size:.78rem;color:var(--muted)}}
   .status-line{{font-size:.8rem;margin-bottom:12px;padding:4px 8px;border-radius:4px;display:inline-block}}
-  .status-ok{{background:rgba(63,185,80,.1);color:var(--accent-swh)}}
+  .status-ok{{background:rgba(63,185,80,.1);color:var(--accent-github)}}
   .status-missing{{background:rgba(247,129,102,.1);color:var(--accent-warn)}}
   .sub{{font-size:.78rem;color:var(--muted);margin-bottom:6px}}
   .compact-list{{list-style:none;padding:0}}
@@ -247,7 +247,7 @@ def _html_shell(summary_cards: str, onto_sections: str, nav_links: str, generate
 </head>
 <body>
 <header>
-  <div class="logo">⬡ Ontology Monitor</div>
+  <div class="logo">VAULT</div>
   <nav>{nav_links}</nav>
   <div class="header-meta">Generated: {generated_at}</div>
 </header>
@@ -256,7 +256,7 @@ def _html_shell(summary_cards: str, onto_sections: str, nav_links: str, generate
   {onto_sections}
 </main>
 <footer>
-  <span>Sources: LOV · Software Heritage · OpenAlex</span>
+  <span>Sources: LOV · GitHub · OpenAlex</span>
   <span>Generated automatically via GitHub Actions · {generated_at}</span>
 </footer>
 </body>

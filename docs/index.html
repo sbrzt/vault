@@ -10,7 +10,7 @@
   :root {
     --bg:#0d1117;--bg2:#161b22;--bg3:#1c2330;--border:#30363d;
     --text:#e6edf3;--muted:#7d8590;
-    --accent-lov:#58a6ff;--accent-swh:#3fb950;--accent-oax:#d2a8ff;--accent-warn:#f78166;
+    --accent-lov:#58a6ff;--accent-github:#3fb950;--accent-oax:#d2a8ff;--accent-warn:#f78166;
     --font-mono:'IBM Plex Mono',monospace;--font-sans:'IBM Plex Sans',sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -43,13 +43,13 @@
   .card-header h3{font-size:.9rem;font-weight:600}
   .source-tag{font-family:var(--font-mono);font-size:.65rem;font-weight:600;padding:2px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:.05em}
   .lov-tag{background:rgba(88,166,255,.15);color:var(--accent-lov)}
-  .swh-tag{background:rgba(63,185,80,.15);color:var(--accent-swh)}
+  .github-tag{background:rgba(63,185,80,.15);color:var(--accent-github)}
   .oax-tag{background:rgba(210,168,255,.15);color:var(--accent-oax)}
   .card-stat{margin-bottom:16px}
   .big-num{display:block;font-family:var(--font-mono);font-size:2.4rem;font-weight:600;line-height:1.1}
   .stat-label{font-size:.78rem;color:var(--muted)}
   .status-line{font-size:.8rem;margin-bottom:12px;padding:4px 8px;border-radius:4px;display:inline-block}
-  .status-ok{background:rgba(63,185,80,.1);color:var(--accent-swh)}
+  .status-ok{background:rgba(63,185,80,.1);color:var(--accent-github)}
   .status-missing{background:rgba(247,129,102,.1);color:var(--accent-warn)}
   .sub{font-size:.78rem;color:var(--muted);margin-bottom:6px}
   .compact-list{list-style:none;padding:0}
@@ -72,9 +72,9 @@
 </head>
 <body>
 <header>
-  <div class="logo">⬡ Ontology Monitor</div>
+  <div class="logo">VAULT</div>
   <nav><a href="#onto-cito">CiTO</a><a href="#onto-fabio">FaBiO</a></nav>
-  <div class="header-meta">Generated: 2026-03-20 00:15 UTC</div>
+  <div class="header-meta">Generated: 2026-03-20 15:05 UTC</div>
 </header>
 <main>
   <div class="summary-strip">
@@ -91,8 +91,8 @@
                     <span class="metric-label">Imports (LOV)</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-value">0</span>
-                    <span class="metric-label">Repos (SWH)</span>
+                    <span class="metric-value">90</span>
+                    <span class="metric-label">Repos (github)</span>
                 </div>
             </div>
         </div>
@@ -109,8 +109,8 @@
                     <span class="metric-label">Imports (LOV)</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-value">0</span>
-                    <span class="metric-label">Repos (SWH)</span>
+                    <span class="metric-value">78</span>
+                    <span class="metric-label">Repos (github)</span>
                 </div>
             </div>
         </div></div>
@@ -141,16 +141,16 @@
  
                 <div class="card">
                     <div class="card-header">
-                        <span class="source-tag swh-tag">SWH</span>
+                        <span class="source-tag github-tag">github</span>
                         <h3>Code Usage</h3>
                     </div>
                     <div class="card-stat">
-                        <span class="big-num">0</span>
+                        <span class="big-num">90</span>
                         <span class="stat-label">archived repos reference this namespace</span>
                     </div>
                     <div class="card-detail">
                         <p class="sub">Repositories:</p>
-                        <ul class="compact-list"><li><em>None found</em></li></ul>
+                        <ul class="compact-list"><li><a href="https://github.com/pandoc/lua-filters" target="_blank">lua-filters</a></li><li><a href="https://github.com/DerwenAI/pytextrank" target="_blank">pytextrank</a></li><li><a href="https://github.com/essepuntato/opencitations" target="_blank">opencitations</a></li><li><a href="https://github.com/opencitations/coci" target="_blank">coci</a></li><li><a href="https://github.com/NCEAS/metacatui" target="_blank">metacatui</a></li><li><a href="https://github.com/DataONEorg/d1_python" target="_blank">d1_python</a></li><li><a href="https://github.com/jcheminform/jcheminform-author-guidelines" target="_blank">jcheminform-author-guidelines</a></li><li><a href="https://github.com/hydroshare/hydroshare" target="_blank">hydroshare</a></li></ul>
                     </div>
                 </div>
  
@@ -268,16 +268,16 @@
  
                 <div class="card">
                     <div class="card-header">
-                        <span class="source-tag swh-tag">SWH</span>
+                        <span class="source-tag github-tag">github</span>
                         <h3>Code Usage</h3>
                     </div>
                     <div class="card-stat">
-                        <span class="big-num">0</span>
+                        <span class="big-num">78</span>
                         <span class="stat-label">archived repos reference this namespace</span>
                     </div>
                     <div class="card-detail">
                         <p class="sub">Repositories:</p>
-                        <ul class="compact-list"><li><em>None found</em></li></ul>
+                        <ul class="compact-list"><li><a href="https://github.com/SPAROntologies/fabio" target="_blank">fabio</a></li><li><a href="https://github.com/essepuntato/opencitations" target="_blank">opencitations</a></li><li><a href="https://github.com/Wimmics/CovidOnTheWeb" target="_blank">CovidOnTheWeb</a></li><li><a href="https://github.com/alexdma/gutenberg-ld" target="_blank">gutenberg-ld</a></li><li><a href="https://github.com/opencitations/OpenCitationsCorpus" target="_blank">OpenCitationsCorpus</a></li><li><a href="https://github.com/genenetwork/genenetwork3" target="_blank">genenetwork3</a></li><li><a href="https://github.com/gbv/jskos-tools" target="_blank">jskos-tools</a></li><li><a href="https://github.com/eMetaboHUB/Forum-DiseasesChem" target="_blank">Forum-DiseasesChem</a></li></ul>
                     </div>
                 </div>
  
@@ -371,8 +371,8 @@
         
 </main>
 <footer>
-  <span>Sources: LOV · Software Heritage · OpenAlex</span>
-  <span>Generated automatically via GitHub Actions · 2026-03-20 00:15 UTC</span>
+  <span>Sources: LOV · GitHub · OpenAlex</span>
+  <span>Generated automatically via GitHub Actions · 2026-03-20 15:05 UTC</span>
 </footer>
 </body>
 </html>

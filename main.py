@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 import datetime
 from src.renderer import render_html
-from src.fetchers import fetch_lov, fetch_software_heritage, fetch_openalex
+from src.fetchers import fetch_lov, fetch_github, fetch_openalex
 import json
 
 
@@ -21,7 +21,7 @@ def main() -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
  
     openalex_key = os.environ.get("OPENALEX_API_KEY", "")
-    swh_token = os.environ.get("SWH_TOKEN", "")
+    github_token = os.environ.get("GITHUB_TOKEN", "")
     generated_at = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC")
     results = []
  
@@ -29,8 +29,8 @@ def main() -> None:
         print(f"\n── {ontology['label']} ──")
         print("  Fetching LOV...")
         lov_data = fetch_lov(ontology)
-        print("  Fetching Software Heritage...")
-        swh_data = fetch_software_heritage(ontology, swh_token=swh_token)
+        print("  Fetching GitHub Code...")
+        github_data = fetch_github(ontology, github_token=github_token)
         print("  Fetching OpenAlex...")
         oax_data = fetch_openalex(ontology, api_key=openalex_key)
  
@@ -39,7 +39,7 @@ def main() -> None:
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
             "lov": lov_data,
-            "swh": swh_data,
+            "github": github_data,
             "openalex": oax_data,
         })
 
