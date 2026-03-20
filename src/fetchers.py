@@ -53,9 +53,10 @@ def fetch_lov(ontology: dict) -> dict:
     )
     data = http_get(info_url)
     if data:
+        print(data["uri"])
         result["found"] = True
         result["url"] = (
-            data.get("uri", "")
+            f"https://lov.linkeddata.es/dataset/lov/vocabs/{ontology['prefix']}"
         )
         result["tags"] = data.get("tags", [])
         result["versions"] = [
@@ -72,13 +73,14 @@ def fetch_lov(ontology: dict) -> dict:
         PREFIX owl:<http://www.w3.org/2002/07/owl#>
         SELECT ?vocab WHERE {{
              GRAPH <https://lov.linkeddata.es/dataset/lov> {{
-            {{ ?vocab voaf:metadataVoc <{ontology['uri']}> . }}
+                ?vocab dcat:distribution ?distr .
+            {{ ?distr voaf:metadataVoc <{ontology['uri']}> . }}
             UNION
-            {{ ?vocab voaf:hasEquivalencesWith <{ontology['uri']}> . }}
+            {{ ?distr voaf:hasEquivalencesWith <{ontology['uri']}> . }}
             UNION
-            {{ ?vocab owl:imports <{ontology['uri']}> . }}
+            {{ ?distr owl:imports <{ontology['uri']}> . }}
             UNION
-            {{ ?vocab voaf:specializes <{ontology['uri']}> . }}
+            {{ ?distr voaf:specializes <{ontology['uri']}> . }}
         }}
         }}
     """
@@ -87,12 +89,12 @@ def fetch_lov(ontology: dict) -> dict:
         + urllib.parse.urlencode({"query": sparql_query, "format": "json"}, quote_via=urllib.parse.quote)
     )
     sparql_data = http_get(sparql_url, headers={"Accept": "application/sparql-results+json"})
-    print(sparql_data)
     if sparql_data:
         bindings = sparql_data.get("results", {}).get("bindings", [])
-        result["importing_vocabs"] = [
+        importing_vocabs = [
             b.get("vocab", {}).get("value", "") for b in bindings
         ]
+        result["importing_vocabs"] = list(set(importing_vocabs))
         result["inlinks"] = len(result["importing_vocabs"])
     return result
 

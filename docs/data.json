@@ -5,12 +5,11 @@
     "prefix": "cito",
     "lov": {
       "found": true,
-      "inlinks": 2,
+      "inlinks": 1,
       "importing_vocabs": [
-        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2016-09-27.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2015-04-21.n3"
+        "http://semanticscience.org/ontology/sio.owl"
       ],
-      "url": "http://purl.org/spar/cito",
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
       "tags": [
         "SPAR"
       ],
@@ -191,17 +190,13 @@
     "prefix": "fabio",
     "lov": {
       "found": true,
-      "inlinks": 7,
+      "inlinks": 3,
       "importing_vocabs": [
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2016-01-21.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2021-09-24.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2022-09-15.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2018-01-20.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/npg/versions/2015-04-30.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2023-09-28.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2025-05-08.n3"
+        "http://ns.nature.com/terms/",
+        "http://purl.org/spar/datacite",
+        "http://data.europa.eu/s66#"
       ],
-      "url": "http://purl.org/spar/fabio",
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
       "tags": [
         "SPAR"
       ],
