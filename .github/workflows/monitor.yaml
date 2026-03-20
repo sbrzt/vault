@@ -22,7 +22,7 @@ jobs:
       - name: Run VAULT
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
-          SWH_TOKEN: ${{ secrets.SWH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: uv run main.py --config ontologies.yaml
 
       - name: Commit and push report

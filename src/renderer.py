@@ -97,11 +97,11 @@ def render_html(data: list[dict], generated_at: str) -> str:
             <div class="card full-width">
                 <div class="card-header">
                     <span class="source-tag oax-tag">OpenAlex</span>
-                    <h3>Most Cited Papers</h3>
+                    <h3>Most Recent Papers</h3>
                 </div>
                 <table class="papers-table">
                     <thead><tr>
-                        <th>Title</th><th>Year</th><th>Citations</th><th>Venue</th>
+                        <th>Title</th><th>Year</th><th>Venue</th>
                     </tr></thead>
                     <tbody>{top_works_rows if top_works_rows else '<tr><td colspan="4">No papers found</td></tr>'}</tbody>
                 </table>
@@ -156,7 +156,6 @@ def _render_top_works(works: list[dict]) -> str:
             <tr>
                 <td class="title-cell">{w['title']}{doi_link}</td>
                 <td class="center">{w['year'] or '—'}</td>
-                <td class="center">{w['cited_by_count']}</td>
                 <td>{w['source_name']}</td>
             </tr>"""
     return rows

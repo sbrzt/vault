@@ -137,15 +137,15 @@ def fetch_openalex(ontology: dict, api_key: str = "") -> dict:
     }
     base_params: dict = {
         "per_page": "50",
-        "select": "id,title,publication_year,cited_by_count,primary_location,doi",
-        "sort": "cited_by_count:desc",
+        "select": "id,title,publication_year,primary_location,doi",
+        "sort": "publication_year:desc",
     }
     if api_key:
         base_params["api_key"] = api_key
     all_works: list[dict] = []
     seen_ids: set[str] = set()
     for keyword in ontology.get("openalex_keywords", []):
-        params = {**base_params, "search": keyword}
+        params = {**base_params, "search.exact": keyword}
         url = f"https://api.openalex.org/works?{urllib.parse.urlencode(params)}"
         data = http_get(url)
         if data and "results" in data:
@@ -154,22 +154,19 @@ def fetch_openalex(ontology: dict, api_key: str = "") -> dict:
                 if wid and wid not in seen_ids:
                     seen_ids.add(wid)
                     all_works.append(work)
-            if not result["total_works"]:
-                result["total_works"] = data.get("meta", {}).get("count", 0)
         time.sleep(0.5)
-    result["total_works"] = max(result["total_works"], len(all_works))
+    result["total_works"] = len(all_works)
     for work in all_works:
         year = str(work.get("publication_year", "")) if work.get("publication_year") else None
         if year:
             result["by_year"][year] = result["by_year"].get(year, 0) + 1
-    all_works.sort(key=lambda w: w.get("cited_by_count", 0), reverse=True)
+    all_works.sort(key=lambda w: w.get("publication_year", 0), reverse=True)
     for work in all_works[:5]:
         loc = work.get("primary_location") or {}
         source = loc.get("source") or {}
         result["top_works"].append({
             "title": work.get("title", "Untitled"),
             "year": work.get("publication_year"),
-            "cited_by_count": work.get("cited_by_count", 0),
             "doi": work.get("doi", ""),
             "source_name": source.get("display_name", ""),
         })
