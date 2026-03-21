@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #fff;
+  --bg2: #fdfdfd;
+  --bg3: #e9ecef;
+  --border: #30363d;
+  --text: #000000;
+  --muted: #252b33;
+  --accent-lov: #1674df;
+  --accent-github: #08b41f;
+  --accent-oax: #8425e9;
+  --accent-warn: #f78166;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'IBM Plex Sans', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+
+header {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--accent-lov);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.header-meta {
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  color: var(--muted);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .82rem;
+  margin-left: 20px;
+  transition: color .15s;
+}
+
+nav a:hover { color: var(--text); }
+
+/* ── Layout ── */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+/* ── Summary strip ── */
+
+.summary-strip {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.summary-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.summary-card .uri {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  word-break: break-all;
+}
+
+.metrics { display: flex; gap: 16px; }
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.metric-value {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.metric-label {
+  font-size: .68rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ── Ontology section ── */
+
+.onto-section {
+  margin-bottom: 64px;
+  scroll-margin-top: 80px;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-header h2 { font-size: 1.4rem; font-weight: 600; }
+
+.uri-badge {
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: var(--muted);
+  background: var(--bg3);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+/* ── Grid ── */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+
+@media (max-width: 600px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  main { padding: 24px 16px; }
+  header { flex-direction: column; gap: 12px; padding: 16px; }
+}
+
+/* ── Cards ── */
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: border-color .15s;
+}
+
+.card:hover { border-color: #444c56; }
+
+.full-width { grid-column: 1 / -1; }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.card-header h3 { font-size: .9rem; font-weight: 600; }
+
+/* ── Source tags ── */
+
+.source-tag {
+  font-family: var(--font-mono);
+  font-size: .65rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.lov-tag    { background: rgba(88,  166, 255, .15); color: var(--accent-lov);    }
+.github-tag { background: rgba(63,  185,  80, .15); color: var(--accent-github); }
+.oax-tag    { background: rgba(210, 168, 255, .15); color: var(--accent-oax);    }
+
+/* ── Stats ── */
+
+.card-stat { margin-bottom: 16px; }
+
+.big-num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.stat-label { font-size: .78rem; color: var(--muted); }
+
+/* ── Status badges ── */
+
+.status-line {
+  font-size: .8rem;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.status-ok      { background: rgba(63,  185, 80,  .1); color: var(--accent-github); }
+.status-missing { background: rgba(247, 129, 102, .1); color: var(--accent-warn);   }
+
+/* ── Lists ── */
+
+.sub { font-size: .78rem; color: var(--muted); margin-bottom: 6px; }
+
+.compact-list { list-style: none; padding: 0; }
+
+.compact-list li {
+  font-size: .78rem;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.compact-list li:last-child { border-bottom: none; }
+
+.compact-list a { color: var(--accent-lov); text-decoration: none; }
+.compact-list a:hover { text-decoration: underline; }
+
+.lov-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: .78rem;
+  color: var(--accent-lov);
+  text-decoration: none;
+}
+
+.lov-link:hover { text-decoration: underline; }
+
+/* ── Papers table ── */
+
+.papers-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+
+.papers-table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: .75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-bottom: 1px solid var(--border);
+}
+
+.papers-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--bg3);
+  vertical-align: top;
+}
+
+.papers-table tr:last-child td { border-bottom: none; }
+.papers-table tr:hover td { background: var(--bg3); }
+
+.title-cell { max-width: 400px; }
+
+.title-cell a {
+  color: var(--accent-oax);
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.center { text-align: center; }
+
+/* ── Footer ── */
+
+footer {
+  margin-top: 80px;
+  padding: 24px 32px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}

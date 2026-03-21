@@ -1,3 +1,5 @@
+# main.py
+
 from src.loader import load_config
 import argparse
 from pathlib import Path
@@ -43,11 +45,9 @@ def main() -> None:
             "openalex": oax_data,
         })
 
-    html_file = output_dir / "index.html"
     json_file = output_dir / "data.json"
- 
-    print(f"\n── Generating report -> {html_file} ──")
-    html_file.write_text(render_html(results, generated_at), encoding="utf-8")
+    print(f"\n── Generating report -> {output_dir} ──")
+    render_html(results, generated_at, output_dir)
     json_file.write_text(json.dumps(results, indent=2, default=str), encoding="utf-8")
     print("Done.")
 

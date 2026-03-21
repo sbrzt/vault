@@ -1,19 +1,21 @@
-# Vocabulary and Artifact Usage Locator and Tracker (VAULT)
+# Vocabulary and Artifact Uptake Locator and Tracker (VAULT)
 
-A GitHub Actions-powered tool that runs monthly, fetches usage data for one or more ontologies across three sources, and generates a self-contained HTML report — no backend required.
+A tool that fetches usage data for ontologies across diverse sources, and generates a self-contained HTML report.
 
 ## To-Do
 
 - [] `fetch_lov`: add another heuristic based on the use of `rdfs:isDefinedBy` **within** the single ontology
+- [] `fetch_openalex`: the intuition is correct (fulltext search is a strong signal), but it needs more work on how it deals with keywords
+- [] `report.html.j2` and `style.css`: add better UX and information visualization
 
 
 ## Data Sources
 
 | Source | What it measures |
 |---|---|
-| **[LOV](https://lov.linkeddata.es)** | Vocabularies that import or extend your ontology |
-| **[Software Heritage](https://archive.softwareheritage.org)** | Archived repos whose metadata references your namespace |
-| **[OpenAlex](https://openalex.org)** | Academic papers that cite or discuss your ontology |
+| **[LOV](https://lov.linkeddata.es)** | Vocabularies that import or extend the ontologies |
+| **[GitHub](https://github.com)** | Repos whose metadata references the ontologies' namespaces |
+| **[OpenAlex](https://openalex.org)** | Academic papers that cite or discuss the ontologies |
 
 ## Project structure
 
@@ -21,14 +23,14 @@ A GitHub Actions-powered tool that runs monthly, fetches usage data for one or m
 .
 ├── config.yaml          ← edit this to configure your ontologies
 ├── main.py               ← orchestrator (reads config, calls fetchers, writes output)
-├── fetchers.py              ← all API logic (LOV, SWH, OpenAlex)
+├── fetchers.py              ← all API logic (LOV, GitHub, OpenAlex)
 ├── renderer.py              ← pure HTML generation (no I/O)
 ├── tests/
 │   ├── test_config.py       ← config loading and validation
-│   ├── test_fetchers.py     ← fetcher logic (all mocked, no real API calls)
+│   ├── test_fetchers.py     ← mocked fetcher logic
 │   └── test_renderer.py     ← HTML output correctness
 ├── docs/
-│   ├── index.html           ← generated report (served via GitHub Pages)
+│   ├── index.html           ← generated report
 │   └── data.json            ← raw JSON snapshot for auditing
 └── .github/workflows/
     └── monitor.yml          ← monthly GitHub Actions schedule
@@ -59,29 +61,35 @@ Go to **Settings → Secrets and variables → Actions**:
 | Secret | Notes |
 |---|---|
 | `OPENALEX_API_KEY` | **Required.** Free at [openalex.org](https://openalex.org) after signup |
-| `SWH_TOKEN` | *Optional.* Lifts SWH rate limits |
+| `GITHUB_TOKEN` | **Required.** Free at [github.com](https://github.com) after signup |
 
 ### 3. Enable GitHub Pages
 
 **Settings → Pages** → source: `docs/` folder on `main`.
-Report will be live at `https://<you>.github.io/<repo>/`.
+Report will be live at `https://<you>.github.io/vault/`.
 
 ## Running locally
+
+Create a `.env` file at the root of the project:
+
+```
+GITHUB_TOKEN="<YOUR_GITHUB_TOKEN>"
+OPENALEX_API_KEY="<YOUR_OPENALEX_API_KEY>"
+```
+
+Then run `main.py` in the terminal:
 
 ```bash
 # Install dependencies and sync the virtualenv
 uv sync
 
-# Run with API keys
-OPENALEX_API_KEY=your_key uv run main.py
-
-# Custom config file
-uv run main.py --config config.yaml
+# Run with .env loaded
+uv run --env-file .env main.py
 ```
 
 ## Running tests
 
-No API keys or network access needed — all external calls are mocked.
+ All external calls are mocked, so no API keys or network access is needed.
 
 ```bash
 uv run python -m unittest discover -s tests -v

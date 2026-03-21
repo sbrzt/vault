@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VAULT</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="logo">VAULT</div>
+  <nav>
+    {% for onto in data %}
+      <a href="#onto-{{ onto.prefix }}">{{ onto.label }}</a>
+    {% endfor %}
+  </nav>
+  <div class="header-meta">Generated: {{ generated_at }}</div>
+</header>
+<main>
+
+  {# ── Summary strip ── #}
+  <div class="summary-strip">
+    {% for onto in data %}
+    <div class="summary-card">
+      <h3>{{ onto.label }}</h3>
+      <div class="uri">{{ onto.uri }}</div>
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-value">{{ onto.openalex.total_works }}</span>
+          <span class="metric-label">Papers (OpenAlex)</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">{{ onto.lov.inlinks }}</span>
+          <span class="metric-label">Imports (LOV)</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">{{ onto.github.repos_count }}</span>
+          <span class="metric-label">Repos (GitHub)</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {# ── Per-ontology sections ── #}
+  {% for onto in data %}
+  <section class="onto-section" id="onto-{{ onto.prefix }}">
+
+    <div class="section-header">
+      <h2>{{ onto.label }}</h2>
+      <span class="uri-badge">{{ onto.uri }}</span>
+    </div>
+
+    <div class="grid-3">
+
+      {# LOV card #}
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Ontology Imports</h3>
+        </div>
+        <div class="card-stat">
+          <span class="big-num">{{ onto.lov.inlinks }}</span>
+          <span class="stat-label">vocabularies import this ontology</span>
+        </div>
+        <div class="card-detail">
+          <div class="status-line {{ 'status-ok' if onto.lov.found else 'status-missing' }}">
+            {{ '✓ Listed' if onto.lov.found else '✗ Not listed' }} in LOV catalogue
+          </div>
+          <p class="sub">Vocabularies importing or extending <strong>{{ onto.label }}</strong>:</p>
+          <ul class="compact-list">
+            {% for vocab in onto.lov.importing_vocabs[:10] %}
+              {% set name = vocab.rstrip('/').split('/')[-1].split('#')[-1] or vocab %}
+              <li><a href="{{ vocab }}" target="_blank">{{ name }}</a></li>
+            {% else %}
+              <li><em>None found</em></li>
+            {% endfor %}
+          </ul>
+          {% if onto.lov.url %}
+            <a class="lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
+          {% endif %}
+        </div>
+      </div>
+
+      {# GitHub card #}
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag github-tag">GitHub</span>
+          <h3>Code Usage</h3>
+        </div>
+        <div class="card-stat">
+          <span class="big-num">{{ onto.github.repos_count }}</span>
+          <span class="stat-label">public repos reference this namespace</span>
+        </div>
+        <div class="card-detail">
+          <p class="sub">Repositories:</p>
+          <ul class="compact-list">
+            {% for repo in onto.github.repos[:8] %}
+              <li><a href="https://github.com/{{ repo }}" target="_blank">{{ repo }}</a></li>
+            {% else %}
+              <li><em>None found</em></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      {# OpenAlex card #}
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag oax-tag">OpenAlex</span>
+          <h3>Academic Papers</h3>
+        </div>
+        <div class="card-stat">
+          <span class="big-num">{{ onto.openalex.total_works }}</span>
+          <span class="stat-label">papers mentioning this ontology</span>
+        </div>
+        <div class="card-detail">
+          <canvas id="chart-{{ onto.prefix }}" height="120"></canvas>
+        </div>
+      </div>
+
+    </div>{# end grid-3 #}
+
+    {# Papers table #}
+    <div class="card full-width">
+      <div class="card-header">
+        <span class="source-tag oax-tag">OpenAlex</span>
+        <h3>Most Recent Papers</h3>
+      </div>
+      <table class="papers-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for w in onto.openalex.top_works %}
+          <tr>
+            <td class="title-cell">
+              {{ w.title }}
+              {% if w.doi %}
+                {% set clean_doi = w.doi.replace('https://doi.org/', '') %}
+                <a href="https://doi.org/{{ clean_doi }}" target="_blank">↗</a>
+              {% endif %}
+            </td>
+            <td class="center">{{ w.year or '—' }}</td>
+            <td>{{ w.source_name }}</td>
+          </tr>
+          {% else %}
+          <tr><td colspan="3">No papers found</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {# Chart script #}
+    <script>
+    (function() {
+      var ctx = document.getElementById('chart-{{ onto.prefix }}');
+      if (!ctx) return;
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: {{ onto.openalex.by_year.keys() | list | sort | tojson }},
+          datasets: [{
+            label: 'Papers per year',
+            data: {{ onto.openalex.by_year | dictsort | map(attribute=1) | list | tojson }},
+            backgroundColor: 'rgba(99,179,237,0.7)',
+            borderColor: 'rgba(99,179,237,1)',
+            borderWidth: 1,
+            borderRadius: 3,
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+    })();
+    </script>
+
+  </section>
+  {% endfor %}
+
+</main>
+
+<footer>
+  <span>Sources: LOV · GitHub · OpenAlex</span>
+  <span>Generated automatically via GitHub Actions · {{ generated_at }}</span>
+</footer>
+
+</body>
+</html>
