@@ -70,7 +70,7 @@
           </div>
           <p class="sub">Vocabularies importing or extending <strong>{{ onto.label }}</strong>:</p>
           <ul class="compact-list">
-            {% for vocab in onto.lov.importing_vocabs[:10] %}
+            {% for vocab in onto.lov.using_vocabs[:10] %}
               {% set name = vocab.rstrip('/').split('/')[-1].split('#')[-1] or vocab %}
               <li><a href="{{ vocab }}" target="_blank">{{ name }}</a></li>
             {% else %}
@@ -132,8 +132,10 @@
         <thead>
           <tr>
             <th>Title</th>
+            <th>Authors</th>
             <th>Year</th>
             <th>Venue</th>
+            <th>DOI</th>
           </tr>
         </thead>
         <tbody>
@@ -141,13 +143,11 @@
           <tr>
             <td class="title-cell">
               {{ w.title }}
-              {% if w.doi %}
-                {% set clean_doi = w.doi.replace('https://doi.org/', '') %}
-                <a href="https://doi.org/{{ clean_doi }}" target="_blank">↗</a>
-              {% endif %}
             </td>
+            <td>{{ w.authors }}</td>
             <td class="center">{{ w.year or '—' }}</td>
             <td>{{ w.source_name }}</td>
+            <td><a href="{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
           </tr>
           {% else %}
           <tr><td colspan="3">No papers found</td></tr>
