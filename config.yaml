@@ -9,15 +9,18 @@ ontologies:
     prefix: "cito"
     openalex_keywords:
       - "http://purl.org/spar/cito/"
+      - "CiTO"
 
   - label: "FaBiO"
     uri: "http://purl.org/spar/fabio"
     prefix: "fabio"
     openalex_keywords:
       - "http://purl.org/spar/fabio/"
+      - "FaBiO"
 
   - label: "PRO"
     uri: "http://purl.org/spar/pro"
     prefix: "pro"
     openalex_keywords:
       - "http://purl.org/spar/pro/"
+      - "PRO"

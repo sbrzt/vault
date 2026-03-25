@@ -279,7 +279,7 @@ def fetch_openalex(
     seen_ids: set[str] = set()
     for keyword in ontology.get("openalex_keywords", []):
         params = {**base_params, "search.exact": keyword}
-        url = f"https://api.openalex.org/works?{urllib.parse.urlencode(params)}"
+        url = f'https://api.openalex.org/works?search.exact="{keyword}"'
         data = http_get(url)
         if data and "results" in data:
             for work in data["results"]:
