@@ -11,10 +11,6 @@ from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDFS, OWL
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
- 
-USER_AGENT = "VAULT/1.0 (https://github.com/sbrzt/vault)"
-CACHE_DIR = Path("cache")
-MAX_WORKERS = 20
 
 
 def http_get(
@@ -76,14 +72,6 @@ def http_get_raw(
                 time.sleep(delay)
     return None
 
-
-_RDF_FORMATS = [
-    ("text/turtle",                "turtle"),
-    ("application/rdf+xml",        "xml"),
-    ("application/ld+json",        "json-ld"),
-    ("text/n3",                    "n3"),
-    ("application/n-triples",      "nt"),
-]
 
 def _lov_info(ontology: dict) -> dict:
     result: dict = {
@@ -157,11 +145,11 @@ def _parse_graph(
     url: str
     ) -> Graph | None:
     g = Graph()
-    for _, fmt in _RDF_FORMATS:
+    for f in FORMATS:
         try:
             g.parse(
                 data=raw.decode("utf-8", errors="replace"), 
-                format=fmt,
+                format=f["format"],
                 publicID=url
                 )
             return g

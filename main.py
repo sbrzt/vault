@@ -6,7 +6,7 @@ from pathlib import Path
 import os
 import datetime
 from src.renderer import render_html
-from src.fetchers import fetch_lov_all, fetch_github, fetch_openalex
+import src.fetchers
 import json
 
 
@@ -17,7 +17,13 @@ def main() -> None:
         help="Path to the YAML config file (default: config.yaml)",
     )
     args = parser.parse_args()
+
     config = load_config(args.config)
+    src.fetchers.USER_AGENT = config["user_agent"]
+    src.fetchers.CACHE_DIR = Path(config["cache_dir"])
+    src.fetchers.MAX_WORKERS = config["max_workers"]
+    src.fetchers.FORMATS = config["formats"]
+
     output_dir = Path(config.get("output_dir", "docs"))
     output_dir.mkdir(parents=True, exist_ok=True)
     openalex_key = os.environ.get("OPENALEX_API_KEY", "")
@@ -26,14 +32,14 @@ def main() -> None:
     results = []
 
     print("\n── Fetching LOV (scanning all vocabularies) ──")
-    lov_results = fetch_lov_all(config["ontologies"])
+    lov_results = src.fetchers.fetch_lov_all(config["ontologies"])
  
     for ontology in config["ontologies"]:
         print(f"\n── {ontology['label']} ──")
         print("  Fetching GitHub Code...")
-        github_data = fetch_github(ontology, github_token=github_token)
+        github_data = src.fetchers.fetch_github(ontology, github_token=github_token)
         print("  Fetching OpenAlex...")
-        oax_data = fetch_openalex(ontology, api_key=openalex_key)
+        oax_data = src.fetchers.fetch_openalex(ontology, api_key=openalex_key)
  
         results.append({
             "label": ontology["label"],

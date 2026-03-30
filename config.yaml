@@ -1,6 +1,20 @@
 # config.yaml
 
 output_dir: docs
+user_agent: "VAULT/1.0 (https://github.com/sbrzt/vault)"
+cache_dir: "cache"
+max_workers: 20
+formats:
+  - mime_type: "text/turtle"
+    format: "turtle"
+  - mime_type: "application/rdf+xml"
+    format: "xml"
+  - mime_type: "application/ld+json"
+    format: "json-ld"
+  - mime_type: "text/n3"
+    format: "n3"
+  - mime_type: "application/n-triples"
+    format: "nt"
 
 ontologies:
 

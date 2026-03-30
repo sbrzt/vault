@@ -10,7 +10,7 @@ A tool that fetches usage data for ontologies across diverse sources, and genera
 - [] add uptake statistics at general level (including all ontologies taken into consideration)
 - [] add pdf export
 - [] `report.html.j2` and `style.css`: add better UX and information visualization
-- [] add license
+- [x] add license
 - [] add citation file
 - [] add PDF download
 
