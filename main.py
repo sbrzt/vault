@@ -6,8 +6,11 @@ from pathlib import Path
 import os
 import datetime
 from src.renderer import render_html
-import src.fetchers
 import json
+import src.github
+import src.http
+import src.lov
+import src.openalex
 
 
 def main() -> None:
@@ -19,10 +22,11 @@ def main() -> None:
     args = parser.parse_args()
 
     config = load_config(args.config)
-    src.fetchers.USER_AGENT = config["user_agent"]
-    src.fetchers.CACHE_DIR = Path(config["cache_dir"])
-    src.fetchers.MAX_WORKERS = config["max_workers"]
-    src.fetchers.FORMATS = config["formats"]
+    src.http.USER_AGENT = config["user_agent"]
+    src.lov.USER_AGENT = config["user_agent"]
+    src.lov.CACHE_DIR = Path(config["cache_dir"])
+    src.lov.MAX_WORKERS = config["max_workers"]
+    src.lov.FORMATS = config["formats"]
 
     output_dir = Path(config.get("output_dir", "docs"))
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -32,14 +36,14 @@ def main() -> None:
     results = []
 
     print("\n── Fetching LOV (scanning all vocabularies) ──")
-    lov_results = src.fetchers.fetch_lov_all(config["ontologies"])
+    lov_results = src.lov.fetch_lov_all(config["ontologies"])
  
     for ontology in config["ontologies"]:
         print(f"\n── {ontology['label']} ──")
         print("  Fetching GitHub Code...")
-        github_data = src.fetchers.fetch_github(ontology, github_token=github_token)
+        github_data = src.github.fetch_github(ontology, github_token=github_token)
         print("  Fetching OpenAlex...")
-        oax_data = src.fetchers.fetch_openalex(ontology, api_key=openalex_key)
+        oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_key)
  
         results.append({
             "label": ontology["label"],
