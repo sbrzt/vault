@@ -33,8 +33,9 @@ def fetch_openalex(
         base_params["api_key"] = api_key
     all_works: list[dict] = []
     seen_ids: set[str] = set()
-    for keyword in ontology.get("openalex_keywords", []):
-        params = {**base_params, "search.exact": keyword}
+    for keyword in ontology.get("keywords", []):
+        search_term = f'"{keyword}"' if " " in keyword else keyword
+        params = {**base_params, "search.exact": search_term}
         url = f"https://api.openalex.org/works?{urllib.parse.urlencode(params)}"
         data = http_get(url)
         if data and "results" in data:
