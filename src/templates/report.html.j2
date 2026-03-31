@@ -38,6 +38,10 @@
           <span class="metric-value">{{ onto.github.repos_count }}</span>
           <span class="metric-label">Repos (GitHub)</span>
         </div>
+        <div class="metric">
+          <span class="metric-value">{{ onto.opencitations.total_citations }}</span>
+          <span class="metric-label">Citations (OpenCitations)</span>
+        </div>
       </div>
     </div>
     {% endfor %}
@@ -52,7 +56,7 @@
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
 
-    <div class="grid-3">
+    <div class="grid-2">
 
       {# LOV card #}
       <div class="card">
@@ -104,6 +108,10 @@
           </ul>
         </div>
       </div>
+    
+    </div>
+
+    <div class="grid-2">
 
       {# OpenAlex card #}
       <div class="card">
@@ -120,7 +128,22 @@
         </div>
       </div>
 
-    </div>{# end grid-3 #}
+      {# OpenCitations card #}
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag oc-tag">OpenCitations</span>
+          <h3>Citations to main papers</h3>
+        </div>
+        <div class="card-stat">
+          <span class="big-num">{{ onto.opencitations.total_citations }}</span>
+          <span class="stat-label">papers cite the founding paper(s)</span>
+        </div>
+        <div class="card-detail">
+          <canvas id="chart-oc-{{ onto.prefix }}" height="120"></canvas>
+        </div>
+      </div>
+
+    </div>{# end grid-2 #}
 
     {# Papers table #}
     <div class="card full-width">
@@ -170,6 +193,33 @@
             data: {{ onto.openalex.by_year | dictsort | map(attribute=1) | list | tojson }},
             backgroundColor: 'rgba(99,179,237,0.7)',
             borderColor: 'rgba(99,179,237,1)',
+            borderWidth: 1,
+            borderRadius: 3,
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+    })();
+
+    (function() {
+      var ctx = document.getElementById('chart-oc-{{ onto.prefix }}');
+      if (!ctx) return;
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: {{ onto.opencitations.by_year.keys() | list | sort | tojson }},
+          datasets: [{
+            label: 'Citations per year',
+            data: {{ onto.opencitations.by_year | dictsort | map(attribute=1) | list | tojson }},
+            backgroundColor: 'rgba(154,117,234,0.7)',
+            borderColor: 'rgba(154,117,234,1)',
             borderWidth: 1,
             borderRadius: 3,
           }]

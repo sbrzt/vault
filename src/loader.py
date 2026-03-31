@@ -15,6 +15,6 @@ def _validate_config(config: dict) -> None:
     if "ontologies" not in config or not config["ontologies"]:
         raise ValueError("Config must include at least one entry under 'ontologies'.")
     for i, onto in enumerate(config["ontologies"]):
-        for field in ("label", "uri", "prefix", "openalex_keywords"):
+        for field in ("label", "uri", "prefix", "keywords", "papers"):
             if field not in onto:
                 raise ValueError(f"Ontology #{i} is missing required field '{field}'.")

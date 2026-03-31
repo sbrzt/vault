@@ -25,7 +25,7 @@ ontologies:
       - "http://purl.org/spar/cito/"
       - "Citation Typing Ontology"
     papers:
-      - "https://doi.org/10.1016/j.websem.2012.08.001"
+      - "10.1016/j.websem.2012.08.001"
 
   - label: "FaBiO"
     uri: "http://purl.org/spar/fabio"
@@ -34,7 +34,7 @@ ontologies:
       - "http://purl.org/spar/fabio/"
       - "FRBR-aligned Bibliographic Ontology"
     papers:
-      - "https://doi.org/10.1016/j.websem.2012.08.001"
+      - "10.1016/j.websem.2012.08.001"
 
   - label: "PRO"
     uri: "http://purl.org/spar/pro"
@@ -43,6 +43,6 @@ ontologies:
       - "http://purl.org/spar/pro/"
       - "Publishing Roles Ontology"
     papers:
-      - "https://doi.org/10.1145/2362499.2362502"
+      - "10.1145/2362499.2362502"
 
 

@@ -10,6 +10,7 @@
   --accent-lov: #1674df;
   --accent-github: #08b41f;
   --accent-oax: #8425e9;
+  --accent-oc: #9a75ea;
   --accent-warn: #f78166;
   --font-mono: 'IBM Plex Mono', monospace;
   --font-sans: 'IBM Plex Sans', sans-serif;
@@ -157,12 +158,27 @@ main {
 
 /* ── Grid ── */
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
+
+.grid-4 { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+  margin-bottom: 1rem;
+}
+
 
 @media (max-width: 900px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
 
@@ -210,6 +226,7 @@ main {
 .lov-tag    { background: rgba(88,  166, 255, .15); color: var(--accent-lov);    }
 .github-tag { background: rgba(63,  185,  80, .15); color: var(--accent-github); }
 .oax-tag    { background: rgba(210, 168, 255, .15); color: var(--accent-oax);    }
+.oc-tag     { background: rgba(154, 117, 234, .15); color: var(--accent-oc);     }
 
 /* ── Stats ── */
 

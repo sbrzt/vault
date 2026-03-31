@@ -11,6 +11,7 @@ import src.github
 import src.http
 import src.lov
 import src.openalex
+import src.opencitations
 
 
 def main() -> None:
@@ -36,7 +37,7 @@ def main() -> None:
     results = []
 
     print("\n── Fetching LOV (scanning all vocabularies) ──")
-    lov_results = src.lov.fetch_lov_all(config["ontologies"])
+    lov_data = src.lov.fetch_lov_all(config["ontologies"])
  
     for ontology in config["ontologies"]:
         print(f"\n── {ontology['label']} ──")
@@ -44,14 +45,17 @@ def main() -> None:
         github_data = src.github.fetch_github(ontology, github_token=github_token)
         print("  Fetching OpenAlex...")
         oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_key)
- 
+        print("  Fetching OpenCitations...")
+        oc_data = src.opencitations.fetch_opencitations(ontology)
+    
         results.append({
             "label": ontology["label"],
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
-            "lov": lov_results[ontology["prefix"]],
+            "lov": lov_data[ontology["prefix"]],
             "github": github_data,
             "openalex": oax_data,
+            "opencitations": oc_data,
         })
 
     json_file = output_dir / "data.json"
