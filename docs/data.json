@@ -4,12 +4,93 @@
     "uri": "http://purl.org/spar/cito",
     "prefix": "cito",
     "lov": {
-      "found": false,
-      "inlinks": 0,
-      "using_vocabs": [],
-      "url": null,
-      "tags": [],
-      "versions": []
+      "found": true,
+      "inlinks": 7,
+      "using_vocabs": [
+        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2016-09-27.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2015-04-21.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/icon/versions/2025-09-11.n3",
+        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+        "http://semanticscience.org/ontology/sio.owl",
+        "http://vivoweb.org/ontology/core",
+        "http://www.essepuntato.it/2013/03/cito-functions"
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v2.63",
+          "issued": "2014-05-21T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2014-05-22.n3"
+        },
+        {
+          "name": "v2.6.2",
+          "issued": "2013-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-07-03.n3"
+        },
+        {
+          "name": "v2.6.1",
+          "issued": "2013-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-06-27.n3"
+        },
+        {
+          "name": "v2.5.1",
+          "issued": "2013-05-06T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-07.n3"
+        },
+        {
+          "name": "v2.5",
+          "issued": "2013-04-30T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-01.n3"
+        },
+        {
+          "name": "v2.4.1",
+          "issued": "2012-09-27T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-09-28.n3"
+        },
+        {
+          "name": "v2.4",
+          "issued": "2012-08-28T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-08-29.n3"
+        },
+        {
+          "name": "v2.3",
+          "issued": "2012-07-12T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-13.n3"
+        },
+        {
+          "name": "v2.2",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2011-12-09T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-12-09.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2011-05-04T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-05-05.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2010-03-26T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2010-03-26.n3"
+        },
+        {
+          "name": "v2.6.4",
+          "issued": "2015-07-03T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2015-07-03.n3"
+        },
+        {
+          "name": "v2.8.1",
+          "issued": "2018-02-16T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2018-02-16.n3"
+        }
+      ]
     },
     "github": {
       "repos_count": 88,
@@ -125,35 +206,35 @@
           "title": "ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage",
           "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi",
           "year": 2026,
-          "doi": "https://doi.org/10.60923/issn.2532-8816/21765",
+          "doi": "10.60923/issn.2532-8816/21765",
           "source_name": "Umanistica Digitale"
         },
         {
           "title": "OntoTrack: a linked open data based solution to track mutual citation networks in research publications",
           "authors": "Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
           "year": 2026,
-          "doi": "https://doi.org/10.3389/fcomp.2026.1636097",
+          "doi": "10.3389/fcomp.2026.1636097",
           "source_name": "Frontiers in Computer Science"
         },
         {
           "title": "Collaborative Authoring, Peer Review and Publication of Data-rich Documents with the new ARPHA Writing Tool 2.0",
           "authors": "Lyubomir Penev; Teodor Georgiev; Teodor Metodiev; Nikolay Mehandzhiyski; Iva Boyadzhieva",
           "year": 2026,
-          "doi": "https://doi.org/10.3897/biss.10.183630",
+          "doi": "10.3897/biss.10.183630",
           "source_name": "Biodiversity Information Science and Standards"
         },
         {
           "title": "CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses",
           "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
           "year": 2025,
-          "doi": "https://doi.org/10.1007/s11192-025-05418-8",
+          "doi": "10.1007/s11192-025-05418-8",
           "source_name": "Scientometrics"
         },
         {
           "title": "CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses",
           "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
           "year": 2025,
-          "doi": "https://doi.org/10.5281/zenodo.11841798",
+          "doi": "10.5281/zenodo.11841798",
           "source_name": "arXiv (Cornell University)"
         }
       ],
@@ -921,12 +1002,128 @@
     "uri": "http://purl.org/spar/fabio",
     "prefix": "fabio",
     "lov": {
-      "found": false,
-      "inlinks": 0,
-      "using_vocabs": [],
-      "url": null,
-      "tags": [],
-      "versions": []
+      "found": true,
+      "inlinks": 12,
+      "using_vocabs": [
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2016-01-21.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2021-09-24.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2022-09-15.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2018-01-20.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2023-09-28.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2025-05-08.n3",
+        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+        "http://ns.nature.com/terms/",
+        "http://purl.org/cerif/frapo/",
+        "http://vivoweb.org/ontology/core",
+        "http://w3id.org/roh",
+        "https://w3id.org/seo"
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v1.85",
+          "issued": "2014-03-25T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2014-03-25.n3"
+        },
+        {
+          "name": "v1.75",
+          "issued": "2013-06-23T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-06-24.n3"
+        },
+        {
+          "name": "v1.73",
+          "issued": "2013-03-15T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-03-15.n3"
+        },
+        {
+          "name": "v1.72",
+          "issued": "2012-12-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-12-20.n3"
+        },
+        {
+          "name": "v1.71",
+          "issued": "2012-09-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-09-27.n3"
+        },
+        {
+          "name": "v1.7",
+          "issued": "2012-08-19T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-08-20.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2012-07-24T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-25.n3"
+        },
+        {
+          "name": "v1.5",
+          "issued": "2012-07-22T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-23.n3"
+        },
+        {
+          "name": "v1.4",
+          "issued": "2012-07-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-14.n3"
+        },
+        {
+          "name": "v1.32",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v1.31",
+          "issued": "2012-06-07T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-06-08.n3"
+        },
+        {
+          "name": "v1.3",
+          "issued": "2012-05-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-05-14.n3"
+        },
+        {
+          "name": "v1.2",
+          "issued": "2012-02-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-02-20.n3"
+        },
+        {
+          "name": "v1.1",
+          "issued": "2011-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2011-06-27.n3"
+        },
+        {
+          "name": "v1.0",
+          "issued": "2010-09-14T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2010-09-15.n3"
+        },
+        {
+          "name": "v1.86",
+          "issued": "2015-01-22T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2015-01-22.n3"
+        },
+        {
+          "name": "v1.9.2",
+          "issued": "2016-04-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2016-04-19.n3"
+        },
+        {
+          "name": "v1.9.4",
+          "issued": "2017-05-29T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2017-05-29.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2018-05-02T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2018-05-02.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2019-02-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2019-02-19.n3"
+        }
+      ]
     },
     "github": {
       "repos_count": 80,
@@ -1033,35 +1230,35 @@
           "title": "ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage",
           "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi",
           "year": 2026,
-          "doi": "https://doi.org/10.60923/issn.2532-8816/21765",
+          "doi": "10.60923/issn.2532-8816/21765",
           "source_name": "Umanistica Digitale"
         },
         {
           "title": "OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information",
           "authors": "OpenCitations; Arcangelo Massari; Silvio Peroni",
           "year": 2026,
-          "doi": "https://doi.org/10.5281/zenodo.18352502",
+          "doi": "10.5281/zenodo.18352502",
           "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
         },
         {
           "title": "OntoTrack: a linked open data based solution to track mutual citation networks in research publications",
           "authors": "Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
           "year": 2026,
-          "doi": "https://doi.org/10.3389/fcomp.2026.1636097",
+          "doi": "10.3389/fcomp.2026.1636097",
           "source_name": "Frontiers in Computer Science"
         },
         {
           "title": "CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses",
           "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
           "year": 2025,
-          "doi": "https://doi.org/10.1007/s11192-025-05418-8",
+          "doi": "10.1007/s11192-025-05418-8",
           "source_name": "Scientometrics"
         },
         {
           "title": "CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses",
           "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
           "year": 2025,
-          "doi": "https://doi.org/10.5281/zenodo.11841798",
+          "doi": "10.5281/zenodo.11841798",
           "source_name": "arXiv (Cornell University)"
         }
       ],
@@ -1830,12 +2027,78 @@
     "uri": "http://purl.org/spar/pro",
     "prefix": "pro",
     "lov": {
-      "found": false,
-      "inlinks": 0,
-      "using_vocabs": [],
-      "url": null,
-      "tags": [],
-      "versions": []
+      "found": true,
+      "inlinks": 7,
+      "using_vocabs": [
+        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2013-05-11.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2014-05-21.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2017-09-04.n3",
+        "https://lov.linkeddata.es/dataset/lov/vocabs/dba/versions/2022-01-05.n3",
+        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+        "http://purl.org/cerif/frapo/",
+        "http://purl.org/spar/scoro/"
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/pro",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v1.5.3",
+          "issued": "2013-12-18T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2013-12-18.n3"
+        },
+        {
+          "name": "v1.5.1",
+          "issued": "2013-05-14T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2013-05-15.n3"
+        },
+        {
+          "name": "v1.5",
+          "issued": "2012-07-12T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-13.n3"
+        },
+        {
+          "name": "v1.42",
+          "issued": "2012-07-03T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-04.n3"
+        },
+        {
+          "name": "v1.41",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v1.4",
+          "issued": "2012-06-07T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-06-08.n3"
+        },
+        {
+          "name": "v1.3",
+          "issued": "2012-05-09T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-05-10.n3"
+        },
+        {
+          "name": "v1.21",
+          "issued": "2012-04-29T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-04-30.n3"
+        },
+        {
+          "name": "v1.2",
+          "issued": "2011-11-22T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2011-11-22.n3"
+        },
+        {
+          "name": "v1.1",
+          "issued": "2011-05-04T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2011-05-05.n3"
+        },
+        {
+          "name": "v1.0",
+          "issued": "2010-11-17T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2010-11-17.n3"
+        }
+      ]
     },
     "github": {
       "repos_count": 65,
@@ -1933,35 +2196,35 @@
           "title": "OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information",
           "authors": "OpenCitations; Arcangelo Massari; Silvio Peroni",
           "year": 2026,
-          "doi": "https://doi.org/10.5281/zenodo.18352502",
+          "doi": "10.5281/zenodo.18352502",
           "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
         },
         {
           "title": "CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses",
           "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
           "year": 2025,
-          "doi": "https://doi.org/10.1007/s11192-025-05418-8",
+          "doi": "10.1007/s11192-025-05418-8",
           "source_name": "Scientometrics"
         },
         {
           "title": "OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information",
           "authors": "\u200b OpenCitations",
           "year": 2025,
-          "doi": "https://doi.org/10.6084/m9.figshare.21747536",
+          "doi": "10.6084/m9.figshare.21747536",
           "source_name": "Figshare"
         },
         {
           "title": "OnNER: An Ontology for Semantic Representation of Named Entities in Scholarly Publications",
           "authors": "Umayer Reza; Xuelian Zhang; Torsten Hahmann",
           "year": 2024,
-          "doi": "https://doi.org/10.3233/faia241291",
+          "doi": "10.3233/faia241291",
           "source_name": "Frontiers in artificial intelligence and applications"
         },
         {
           "title": "Human Evaluation of\u00a0Procedural Knowledge Graph Extraction from\u00a0Text with\u00a0Large Language Models",
           "authors": "Valentina Anita Carriero; Antonia Azzini; Ilaria Baroni; Mario Scrocca; Irene Celino",
           "year": 2024,
-          "doi": "https://doi.org/10.1007/978-3-031-77792-9_26",
+          "doi": "10.1007/978-3-031-77792-9_26",
           "source_name": "Lecture notes in computer science"
         }
       ],

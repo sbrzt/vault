@@ -19,7 +19,7 @@
       <a href="#onto-pro">PRO</a>
     
   </nav>
-  <div class="header-meta">Generated: 2026-03-31 16:37 UTC</div>
+  <div class="header-meta">Generated: 2026-04-01 10:32 UTC</div>
 </header>
 <main>
 
@@ -35,8 +35,8 @@
           <span class="metric-label">Papers (OpenAlex)</span>
         </div>
         <div class="metric">
-          <span class="metric-value">0</span>
-          <span class="metric-label">Imports (LOV)</span>
+          <span class="metric-value">7</span>
+          <span class="metric-label">Vocabularies (LOV)</span>
         </div>
         <div class="metric">
           <span class="metric-value">88</span>
@@ -58,8 +58,8 @@
           <span class="metric-label">Papers (OpenAlex)</span>
         </div>
         <div class="metric">
-          <span class="metric-value">0</span>
-          <span class="metric-label">Imports (LOV)</span>
+          <span class="metric-value">12</span>
+          <span class="metric-label">Vocabularies (LOV)</span>
         </div>
         <div class="metric">
           <span class="metric-value">80</span>
@@ -81,8 +81,8 @@
           <span class="metric-label">Papers (OpenAlex)</span>
         </div>
         <div class="metric">
-          <span class="metric-value">0</span>
-          <span class="metric-label">Imports (LOV)</span>
+          <span class="metric-value">7</span>
+          <span class="metric-label">Vocabularies (LOV)</span>
         </div>
         <div class="metric">
           <span class="metric-value">65</span>
@@ -112,22 +112,39 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Ontology Imports</h3>
+          <h3>Vocabulary reuse</h3>
         </div>
         <div class="card-stat">
-          <span class="big-num">0</span>
-          <span class="stat-label">vocabularies import this ontology</span>
+          <span class="big-num">7</span>
+          <span class="stat-label">vocabularies import, expand or specialize CiTO</span>
         </div>
         <div class="card-detail">
-          <div class="status-line status-missing">
-            ✗ Not listed in LOV catalogue
-          </div>
-          <p class="sub">Vocabularies importing or extending <strong>CiTO</strong>:</p>
           <ul class="compact-list">
             
-              <li><em>None found</em></li>
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2016-09-27.n3" target="_blank">2016-09-27.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2015-04-21.n3" target="_blank">2015-04-21.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/icon/versions/2025-09-11.n3" target="_blank">2025-09-11.n3</a></li>
+            
+              
+              <li><a href="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl" target="_blank">cultural-ON.owl</a></li>
+            
+              
+              <li><a href="http://semanticscience.org/ontology/sio.owl" target="_blank">sio.owl</a></li>
+            
+              
+              <li><a href="http://vivoweb.org/ontology/core" target="_blank">core</a></li>
+            
+              
+              <li><a href="http://www.essepuntato.it/2013/03/cito-functions" target="_blank">cito-functions</a></li>
             
           </ul>
+          
+            <a class="styled-link lov-link" href="https://lov.linkeddata.es/dataset/lov/vocabs/cito" target="_blank">View in LOV →</a>
           
         </div>
       </div>
@@ -136,14 +153,13 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag github-tag">GitHub</span>
-          <h3>Code Usage</h3>
+          <h3>Code usage</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">88</span>
-          <span class="stat-label">public repos reference this namespace</span>
+          <span class="stat-label">public repositories reference CiTO namespace</span>
         </div>
         <div class="card-detail">
-          <p class="sub">Repositories:</p>
           <ul class="compact-list">
             
               <li><a href="https://github.com/pandoc/lua-filters" target="_blank">pandoc/lua-filters</a></li>
@@ -174,11 +190,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oax-tag">OpenAlex</span>
-          <h3>Academic Papers</h3>
+          <h3>Mentions in academic papers</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">90</span>
-          <span class="stat-label">papers mentioning this ontology</span>
+          <span class="stat-label">papers mention CiTO in titles, abstracts and/or texts</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-cito" height="120"></canvas>
@@ -189,11 +205,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oc-tag">OpenCitations</span>
-          <h3>Citations to main papers</h3>
+          <h3>Citations to main publications</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">137</span>
-          <span class="stat-label">papers cite the founding paper(s)</span>
+          <span class="stat-label">papers cite CiTO main publication(s)</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-oc-cito" height="120"></canvas>
@@ -203,10 +219,10 @@
     </div>
 
     
-    <div class="card full-width">
+    <div class="card card-table full-width">
       <div class="card-header">
         <span class="source-tag oax-tag">OpenAlex</span>
-        <h3>Most Recent Papers</h3>
+        <h3>Papers mentioning CiTO in title, abstract and/or text</h3>
       </div>
       <table class="papers-table">
         <thead>
@@ -221,53 +237,111 @@
         <tbody>
           
           <tr>
-            <td class="title-cell">
-              ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage
-            </td>
+            <td>ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage</td>
             <td>Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Umanistica Digitale</td>
-            <td><a href="https://doi.org/10.60923/issn.2532-8816/21765" target="_blank">https://doi.org/10.60923/issn.2532-8816/21765</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.60923/issn.2532-8816/21765" target="_blank">10.60923/issn.2532-8816/21765</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              OntoTrack: a linked open data based solution to track mutual citation networks in research publications
-            </td>
+            <td>OntoTrack: a linked open data based solution to track mutual citation networks in research publications</td>
             <td>Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Frontiers in Computer Science</td>
-            <td><a href="https://doi.org/10.3389/fcomp.2026.1636097" target="_blank">https://doi.org/10.3389/fcomp.2026.1636097</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.3389/fcomp.2026.1636097" target="_blank">10.3389/fcomp.2026.1636097</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              Collaborative Authoring, Peer Review and Publication of Data-rich Documents with the new ARPHA Writing Tool 2.0
-            </td>
+            <td>Collaborative Authoring, Peer Review and Publication of Data-rich Documents with the new ARPHA Writing Tool 2.0</td>
             <td>Lyubomir Penev; Teodor Georgiev; Teodor Metodiev; Nikolay Mehandzhiyski; Iva Boyadzhieva</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Biodiversity Information Science and Standards</td>
-            <td><a href="https://doi.org/10.3897/biss.10.183630" target="_blank">https://doi.org/10.3897/biss.10.183630</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.3897/biss.10.183630" target="_blank">10.3897/biss.10.183630</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses
-            </td>
+            <td>CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses</td>
             <td>Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>Scientometrics</td>
-            <td><a href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">https://doi.org/10.1007/s11192-025-05418-8</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">10.1007/s11192-025-05418-8</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses
-            </td>
+            <td>CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses</td>
             <td>Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>arXiv (Cornell University)</td>
-            <td><a href="https://doi.org/10.5281/zenodo.11841798" target="_blank">https://doi.org/10.5281/zenodo.11841798</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.5281/zenodo.11841798" target="_blank">10.5281/zenodo.11841798</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="card card-table full-width">
+      <div class="card-header">
+        <span class="source-tag oc-tag">OpenCitations</span>
+        <h3>Papers citing the main publications about CiTO</h3>
+      </div>
+      <table class="papers-table">
+        <thead>
+          <tr>
+            <th>DOI</th>
+            <th>Year</th>
+            <th>Timespan</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1002/leap.1610" target="_blank">10.1002/leap.1610</a></td>
+            <td>2024</y }}</ttd>
+            <td>P11Y5M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/978-3-031-19433-7_38" target="_blank">10.1007/978-3-031-19433-7_38</a></td>
+            <td>2022</y }}</ttd>
+            <td>P9Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1016/j.daach.2025.e00409" target="_blank">10.1016/j.daach.2025.e00409</a></td>
+            <td>2025</y }}</ttd>
+            <td>P12Y6M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1109/inciscos.2017.17" target="_blank">10.1109/inciscos.2017.17</a></td>
+            <td>2017</y }}</ttd>
+            <td>P4Y11M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1080/00140139.2024.2396527" target="_blank">10.1080/00140139.2024.2396527</a></td>
+            <td>2024</y }}</ttd>
+            <td>P11Y9M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/s00799-025-00421-z" target="_blank">10.1007/s00799-025-00421-z</a></td>
+            <td>2025</y }}</ttd>
+            <td>P12Y6M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.2478/cait-2024-0042" target="_blank">10.2478/cait-2024-0042</a></td>
+            <td>2024</y }}</ttd>
+            <td>P12Y0M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.3233/sw-222859" target="_blank">10.3233/sw-222859</a></td>
+            <td>2022</y }}</ttd>
+            <td>P9Y6M</td>
           </tr>
           
         </tbody>
@@ -286,8 +360,8 @@
           datasets: [{
             label: 'Papers per year',
             data: [2, 7, 2, 3, 4, 6, 13, 9, 19, 13, 9, 3],
-            backgroundColor: 'rgba(99,179,237,0.7)',
-            borderColor: 'rgba(99,179,237,1)',
+            backgroundColor: '#b4b4b4',
+            borderColor: '#858585',
             borderWidth: 1,
             borderRadius: 3,
           }]
@@ -346,22 +420,48 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Ontology Imports</h3>
+          <h3>Vocabulary reuse</h3>
         </div>
         <div class="card-stat">
-          <span class="big-num">0</span>
-          <span class="stat-label">vocabularies import this ontology</span>
+          <span class="big-num">12</span>
+          <span class="stat-label">vocabularies import, expand or specialize FaBiO</span>
         </div>
         <div class="card-detail">
-          <div class="status-line status-missing">
-            ✗ Not listed in LOV catalogue
-          </div>
-          <p class="sub">Vocabularies importing or extending <strong>FaBiO</strong>:</p>
           <ul class="compact-list">
             
-              <li><em>None found</em></li>
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2016-01-21.n3" target="_blank">2016-01-21.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2021-09-24.n3" target="_blank">2021-09-24.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2022-09-15.n3" target="_blank">2022-09-15.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2018-01-20.n3" target="_blank">2018-01-20.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2023-09-28.n3" target="_blank">2023-09-28.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2025-05-08.n3" target="_blank">2025-05-08.n3</a></li>
+            
+              
+              <li><a href="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl" target="_blank">cultural-ON.owl</a></li>
+            
+              
+              <li><a href="http://ns.nature.com/terms/" target="_blank">terms</a></li>
+            
+              
+              <li><a href="http://purl.org/cerif/frapo/" target="_blank">frapo</a></li>
+            
+              
+              <li><a href="http://vivoweb.org/ontology/core" target="_blank">core</a></li>
             
           </ul>
+          
+            <a class="styled-link lov-link" href="https://lov.linkeddata.es/dataset/lov/vocabs/fabio" target="_blank">View in LOV →</a>
           
         </div>
       </div>
@@ -370,14 +470,13 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag github-tag">GitHub</span>
-          <h3>Code Usage</h3>
+          <h3>Code usage</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">80</span>
-          <span class="stat-label">public repos reference this namespace</span>
+          <span class="stat-label">public repositories reference FaBiO namespace</span>
         </div>
         <div class="card-detail">
-          <p class="sub">Repositories:</p>
           <ul class="compact-list">
             
               <li><a href="https://github.com/SPAROntologies/fabio" target="_blank">SPAROntologies/fabio</a></li>
@@ -408,11 +507,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oax-tag">OpenAlex</span>
-          <h3>Academic Papers</h3>
+          <h3>Mentions in academic papers</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">87</span>
-          <span class="stat-label">papers mentioning this ontology</span>
+          <span class="stat-label">papers mention FaBiO in titles, abstracts and/or texts</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-fabio" height="120"></canvas>
@@ -423,11 +522,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oc-tag">OpenCitations</span>
-          <h3>Citations to main papers</h3>
+          <h3>Citations to main publications</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">137</span>
-          <span class="stat-label">papers cite the founding paper(s)</span>
+          <span class="stat-label">papers cite FaBiO main publication(s)</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-oc-fabio" height="120"></canvas>
@@ -437,10 +536,10 @@
     </div>
 
     
-    <div class="card full-width">
+    <div class="card card-table full-width">
       <div class="card-header">
         <span class="source-tag oax-tag">OpenAlex</span>
-        <h3>Most Recent Papers</h3>
+        <h3>Papers mentioning FaBiO in title, abstract and/or text</h3>
       </div>
       <table class="papers-table">
         <thead>
@@ -455,53 +554,111 @@
         <tbody>
           
           <tr>
-            <td class="title-cell">
-              ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage
-            </td>
+            <td>ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage</td>
             <td>Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Umanistica Digitale</td>
-            <td><a href="https://doi.org/10.60923/issn.2532-8816/21765" target="_blank">https://doi.org/10.60923/issn.2532-8816/21765</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.60923/issn.2532-8816/21765" target="_blank">10.60923/issn.2532-8816/21765</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information
-            </td>
+            <td>OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information</td>
             <td>OpenCitations; Arcangelo Massari; Silvio Peroni</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Zenodo (CERN European Organization for Nuclear Research)</td>
-            <td><a href="https://doi.org/10.5281/zenodo.18352502" target="_blank">https://doi.org/10.5281/zenodo.18352502</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.5281/zenodo.18352502" target="_blank">10.5281/zenodo.18352502</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              OntoTrack: a linked open data based solution to track mutual citation networks in research publications
-            </td>
+            <td>OntoTrack: a linked open data based solution to track mutual citation networks in research publications</td>
             <td>Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Frontiers in Computer Science</td>
-            <td><a href="https://doi.org/10.3389/fcomp.2026.1636097" target="_blank">https://doi.org/10.3389/fcomp.2026.1636097</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.3389/fcomp.2026.1636097" target="_blank">10.3389/fcomp.2026.1636097</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses
-            </td>
+            <td>CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses</td>
             <td>Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>Scientometrics</td>
-            <td><a href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">https://doi.org/10.1007/s11192-025-05418-8</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">10.1007/s11192-025-05418-8</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses
-            </td>
+            <td>CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses</td>
             <td>Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>arXiv (Cornell University)</td>
-            <td><a href="https://doi.org/10.5281/zenodo.11841798" target="_blank">https://doi.org/10.5281/zenodo.11841798</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.5281/zenodo.11841798" target="_blank">10.5281/zenodo.11841798</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="card card-table full-width">
+      <div class="card-header">
+        <span class="source-tag oc-tag">OpenCitations</span>
+        <h3>Papers citing the main publications about FaBiO</h3>
+      </div>
+      <table class="papers-table">
+        <thead>
+          <tr>
+            <th>DOI</th>
+            <th>Year</th>
+            <th>Timespan</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1002/leap.1610" target="_blank">10.1002/leap.1610</a></td>
+            <td>2024</y }}</ttd>
+            <td>P11Y5M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/978-3-031-19433-7_38" target="_blank">10.1007/978-3-031-19433-7_38</a></td>
+            <td>2022</y }}</ttd>
+            <td>P9Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1016/j.daach.2025.e00409" target="_blank">10.1016/j.daach.2025.e00409</a></td>
+            <td>2025</y }}</ttd>
+            <td>P12Y6M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1109/inciscos.2017.17" target="_blank">10.1109/inciscos.2017.17</a></td>
+            <td>2017</y }}</ttd>
+            <td>P4Y11M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1080/00140139.2024.2396527" target="_blank">10.1080/00140139.2024.2396527</a></td>
+            <td>2024</y }}</ttd>
+            <td>P11Y9M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/s00799-025-00421-z" target="_blank">10.1007/s00799-025-00421-z</a></td>
+            <td>2025</y }}</ttd>
+            <td>P12Y6M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.2478/cait-2024-0042" target="_blank">10.2478/cait-2024-0042</a></td>
+            <td>2024</y }}</ttd>
+            <td>P12Y0M</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.3233/sw-222859" target="_blank">10.3233/sw-222859</a></td>
+            <td>2022</y }}</ttd>
+            <td>P9Y6M</td>
           </tr>
           
         </tbody>
@@ -520,8 +677,8 @@
           datasets: [{
             label: 'Papers per year',
             data: [3, 8, 4, 10, 8, 14, 12, 14, 6, 5, 3],
-            backgroundColor: 'rgba(99,179,237,0.7)',
-            borderColor: 'rgba(99,179,237,1)',
+            backgroundColor: '#b4b4b4',
+            borderColor: '#858585',
             borderWidth: 1,
             borderRadius: 3,
           }]
@@ -580,22 +737,39 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Ontology Imports</h3>
+          <h3>Vocabulary reuse</h3>
         </div>
         <div class="card-stat">
-          <span class="big-num">0</span>
-          <span class="stat-label">vocabularies import this ontology</span>
+          <span class="big-num">7</span>
+          <span class="stat-label">vocabularies import, expand or specialize PRO</span>
         </div>
         <div class="card-detail">
-          <div class="status-line status-missing">
-            ✗ Not listed in LOV catalogue
-          </div>
-          <p class="sub">Vocabularies importing or extending <strong>PRO</strong>:</p>
           <ul class="compact-list">
             
-              <li><em>None found</em></li>
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2013-05-11.n3" target="_blank">2013-05-11.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2014-05-21.n3" target="_blank">2014-05-21.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2017-09-04.n3" target="_blank">2017-09-04.n3</a></li>
+            
+              
+              <li><a href="https://lov.linkeddata.es/dataset/lov/vocabs/dba/versions/2022-01-05.n3" target="_blank">2022-01-05.n3</a></li>
+            
+              
+              <li><a href="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl" target="_blank">cultural-ON.owl</a></li>
+            
+              
+              <li><a href="http://purl.org/cerif/frapo/" target="_blank">frapo</a></li>
+            
+              
+              <li><a href="http://purl.org/spar/scoro/" target="_blank">scoro</a></li>
             
           </ul>
+          
+            <a class="styled-link lov-link" href="https://lov.linkeddata.es/dataset/lov/vocabs/pro" target="_blank">View in LOV →</a>
           
         </div>
       </div>
@@ -604,14 +778,13 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag github-tag">GitHub</span>
-          <h3>Code Usage</h3>
+          <h3>Code usage</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">65</span>
-          <span class="stat-label">public repos reference this namespace</span>
+          <span class="stat-label">public repositories reference PRO namespace</span>
         </div>
         <div class="card-detail">
-          <p class="sub">Repositories:</p>
           <ul class="compact-list">
             
               <li><a href="https://github.com/opencitations/oc_meta" target="_blank">opencitations/oc_meta</a></li>
@@ -642,11 +815,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oax-tag">OpenAlex</span>
-          <h3>Academic Papers</h3>
+          <h3>Mentions in academic papers</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">58</span>
-          <span class="stat-label">papers mentioning this ontology</span>
+          <span class="stat-label">papers mention PRO in titles, abstracts and/or texts</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-pro" height="120"></canvas>
@@ -657,11 +830,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oc-tag">OpenCitations</span>
-          <h3>Citations to main papers</h3>
+          <h3>Citations to main publications</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">28</span>
-          <span class="stat-label">papers cite the founding paper(s)</span>
+          <span class="stat-label">papers cite PRO main publication(s)</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-oc-pro" height="120"></canvas>
@@ -671,10 +844,10 @@
     </div>
 
     
-    <div class="card full-width">
+    <div class="card card-table full-width">
       <div class="card-header">
         <span class="source-tag oax-tag">OpenAlex</span>
-        <h3>Most Recent Papers</h3>
+        <h3>Papers mentioning PRO in title, abstract and/or text</h3>
       </div>
       <table class="papers-table">
         <thead>
@@ -689,53 +862,111 @@
         <tbody>
           
           <tr>
-            <td class="title-cell">
-              OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information
-            </td>
+            <td>OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information</td>
             <td>OpenCitations; Arcangelo Massari; Silvio Peroni</td>
-            <td class="center">2026</td>
+            <td>2026</td>
             <td>Zenodo (CERN European Organization for Nuclear Research)</td>
-            <td><a href="https://doi.org/10.5281/zenodo.18352502" target="_blank">https://doi.org/10.5281/zenodo.18352502</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.5281/zenodo.18352502" target="_blank">10.5281/zenodo.18352502</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses
-            </td>
+            <td>CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses</td>
             <td>Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>Scientometrics</td>
-            <td><a href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">https://doi.org/10.1007/s11192-025-05418-8</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.1007/s11192-025-05418-8" target="_blank">10.1007/s11192-025-05418-8</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information
-            </td>
+            <td>OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information</td>
             <td>​ OpenCitations</td>
-            <td class="center">2025</td>
+            <td>2025</td>
             <td>Figshare</td>
-            <td><a href="https://doi.org/10.6084/m9.figshare.21747536" target="_blank">https://doi.org/10.6084/m9.figshare.21747536</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.6084/m9.figshare.21747536" target="_blank">10.6084/m9.figshare.21747536</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              OnNER: An Ontology for Semantic Representation of Named Entities in Scholarly Publications
-            </td>
+            <td>OnNER: An Ontology for Semantic Representation of Named Entities in Scholarly Publications</td>
             <td>Umayer Reza; Xuelian Zhang; Torsten Hahmann</td>
-            <td class="center">2024</td>
+            <td>2024</td>
             <td>Frontiers in artificial intelligence and applications</td>
-            <td><a href="https://doi.org/10.3233/faia241291" target="_blank">https://doi.org/10.3233/faia241291</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.3233/faia241291" target="_blank">10.3233/faia241291</a></td>
           </tr>
           
           <tr>
-            <td class="title-cell">
-              Human Evaluation of Procedural Knowledge Graph Extraction from Text with Large Language Models
-            </td>
+            <td>Human Evaluation of Procedural Knowledge Graph Extraction from Text with Large Language Models</td>
             <td>Valentina Anita Carriero; Antonia Azzini; Ilaria Baroni; Mario Scrocca; Irene Celino</td>
-            <td class="center">2024</td>
+            <td>2024</td>
             <td>Lecture notes in computer science</td>
-            <td><a href="https://doi.org/10.1007/978-3-031-77792-9_26" target="_blank">https://doi.org/10.1007/978-3-031-77792-9_26</a></td>
+            <td><a class="styled-link" href="https://doi.org/10.1007/978-3-031-77792-9_26" target="_blank">10.1007/978-3-031-77792-9_26</a></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="card card-table full-width">
+      <div class="card-header">
+        <span class="source-tag oc-tag">OpenCitations</span>
+        <h3>Papers citing the main publications about PRO</h3>
+      </div>
+      <table class="papers-table">
+        <thead>
+          <tr>
+            <th>DOI</th>
+            <th>Year</th>
+            <th>Timespan</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.3390/heritage2020078" target="_blank">10.3390/heritage2020078</a></td>
+            <td>2019</y }}</ttd>
+            <td>P7Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1145/3460210.3493561" target="_blank">10.1145/3460210.3493561</a></td>
+            <td>2021</y }}</ttd>
+            <td>P9Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.3233/sw-160230" target="_blank">10.3233/sw-160230</a></td>
+            <td>2017</y }}</ttd>
+            <td>P5Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1145/2740908.2742019" target="_blank">10.1145/2740908.2742019</a></td>
+            <td>2015</y }}</ttd>
+            <td>P3Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/978-3-319-58694-6_14" target="_blank">10.1007/978-3-319-58694-6_14</a></td>
+            <td>2017</y }}</ttd>
+            <td>P5Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.3233/ds-170010" target="_blank">10.3233/ds-170010</a></td>
+            <td>2017</y }}</ttd>
+            <td>P5Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1007/978-3-319-46565-4_22" target="_blank">10.1007/978-3-319-46565-4_22</a></td>
+            <td>2016</y }}</ttd>
+            <td>P4Y</td>
+          </tr>
+          
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/10.1093/database/baz067 10.13140/rg.2.2.21245.61924/1" target="_blank">10.1093/database/baz067 10.13140/rg.2.2.21245.61924/1</a></td>
+            <td>2019</y }}</ttd>
+            <td>P7Y</td>
           </tr>
           
         </tbody>
@@ -754,8 +985,8 @@
           datasets: [{
             label: 'Papers per year',
             data: [1, 2, 2, 3, 3, 3, 4, 5, 3, 11, 3, 3, 5, 5, 2, 2, 1],
-            backgroundColor: 'rgba(99,179,237,0.7)',
-            borderColor: 'rgba(99,179,237,1)',
+            backgroundColor: '#b4b4b4',
+            borderColor: '#858585',
             borderWidth: 1,
             borderRadius: 3,
           }]
@@ -806,7 +1037,7 @@
 
 <footer>
   <span>Sources: LOV · GitHub · OpenAlex</span>
-  <span>Generated automatically via GitHub Actions · 2026-03-31 16:37 UTC</span>
+  <span>Generated automatically via GitHub Actions · 2026-04-01 10:32 UTC</span>
 </footer>
 
 </body>

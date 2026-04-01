@@ -64,7 +64,7 @@ def fetch_openalex(
             "title": work.get("title", "Untitled"),
             "authors": auths_str,
             "year": work.get("publication_year"),
-            "doi": work.get("doi", ""),
+            "doi": work.get("doi", "").replace("https://doi.org/", ""),
             "source_name": source.get("display_name", ""),
         })
     for work in all_works:

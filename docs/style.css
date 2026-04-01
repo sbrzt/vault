@@ -7,11 +7,12 @@
   --border: #30363d;
   --text: #000000;
   --muted: #252b33;
-  --accent-lov: #1674df;
-  --accent-github: #08b41f;
-  --accent-oax: #8425e9;
-  --accent-oc: #9a75ea;
+  --accent-lov: #e99103;
+  --accent-github: #f1f1f1;
+  --accent-oax: #686868;
+  --accent-oc: #8c56ff;
   --accent-warn: #f78166;
+  --accent-link: #0076e4;
   --font-mono: 'IBM Plex Mono', monospace;
   --font-sans: 'IBM Plex Sans', sans-serif;
 }
@@ -44,7 +45,7 @@ header {
   font-family: var(--font-mono);
   font-size: .85rem;
   font-weight: 600;
-  color: var(--accent-lov);
+  color: var(--text);
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -198,6 +199,10 @@ main {
   transition: border-color .15s;
 }
 
+.card-table {
+  margin-bottom: 1rem;
+}
+
 .card:hover { border-color: #444c56; }
 
 .full-width { grid-column: 1 / -1; }
@@ -211,6 +216,15 @@ main {
 
 .card-header h3 { font-size: .9rem; font-weight: 600; }
 
+.styled-link { 
+  color: var(--accent-link); 
+  text-decoration: none; 
+}
+
+.styled-link a:hover { 
+  text-decoration: underline; 
+}
+
 /* ── Source tags ── */
 
 .source-tag {
@@ -223,9 +237,9 @@ main {
   letter-spacing: .05em;
 }
 
-.lov-tag    { background: rgba(88,  166, 255, .15); color: var(--accent-lov);    }
-.github-tag { background: rgba(63,  185,  80, .15); color: var(--accent-github); }
-.oax-tag    { background: rgba(210, 168, 255, .15); color: var(--accent-oax);    }
+.lov-tag    { background: rgba(255, 197, 88, 0.15); color: var(--accent-lov);    }
+.github-tag { background: rgba(0, 0, 0, 0.5); color: var(--accent-github); }
+.oax-tag    { background: rgba(168, 168, 168, 0.15); color: var(--accent-oax);    }
 .oc-tag     { background: rgba(154, 117, 234, .15); color: var(--accent-oc);     }
 
 /* ── Stats ── */
@@ -269,18 +283,14 @@ main {
 
 .compact-list li:last-child { border-bottom: none; }
 
-.compact-list a { color: var(--accent-lov); text-decoration: none; }
+.compact-list a { color: var(--accent-link); text-decoration: none; }
 .compact-list a:hover { text-decoration: underline; }
 
 .lov-link {
   display: inline-block;
   margin-top: 12px;
   font-size: .78rem;
-  color: var(--accent-lov);
-  text-decoration: none;
 }
-
-.lov-link:hover { text-decoration: underline; }
 
 /* ── Papers table ── */
 

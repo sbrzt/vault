@@ -5,15 +5,16 @@ A tool that fetches usage data for ontologies across diverse sources, and genera
 ## To-Do
 
 - [x] `fetch_lov`: add another heuristic based on the use of `rdfs:isDefinedBy` **within** the single ontology
-- [] `fetch_lov`: refine heuristics and eventually integrate additional resources
+- [ ] `fetch_lov`: refine heuristics and eventually integrate additional resources
 - [x] `fetch_openalex`: the intuition is correct (fulltext search is a strong signal), but it needs more work on how it deals with keywords
-- [] `fetch_openalex`: add `papers` in configuration parameters
-- [] add uptake statistics at general level (including all ontologies taken into consideration)
-- [] add pdf export
-- [] `report.html.j2` and `style.css`: add better UX and information visualization
+- [x] `fetch_opencitations`: add `papers` in configuration parameters
+- [ ] `fetch_opencitations`: add more meaningful paper metadata
+- [ ] add uptake statistics at general level (including all ontologies taken into consideration)
+- [ ] `report.html.j2` and `style.css`: add better UX and information visualization
 - [x] add license
-- [] add citation file
-- [] add PDF download
+- [ ] add citation file
+- [ ] add PDF download
+- [ ] add proper configuration for sources that can be used in the report
 
 
 ## Data Sources

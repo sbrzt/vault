@@ -32,7 +32,7 @@
         </div>
         <div class="metric">
           <span class="metric-value">{{ onto.lov.inlinks }}</span>
-          <span class="metric-label">Imports (LOV)</span>
+          <span class="metric-label">Vocabularies (LOV)</span>
         </div>
         <div class="metric">
           <span class="metric-value">{{ onto.github.repos_count }}</span>
@@ -62,17 +62,13 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Ontology Imports</h3>
+          <h3>Vocabulary reuse</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.lov.inlinks }}</span>
-          <span class="stat-label">vocabularies import this ontology</span>
+          <span class="stat-label">vocabularies import, expand or specialize {{ onto.label }}</span>
         </div>
         <div class="card-detail">
-          <div class="status-line {{ 'status-ok' if onto.lov.found else 'status-missing' }}">
-            {{ '✓ Listed' if onto.lov.found else '✗ Not listed' }} in LOV catalogue
-          </div>
-          <p class="sub">Vocabularies importing or extending <strong>{{ onto.label }}</strong>:</p>
           <ul class="compact-list">
             {% for vocab in onto.lov.using_vocabs[:10] %}
               {% set name = vocab.rstrip('/').split('/')[-1].split('#')[-1] or vocab %}
@@ -82,7 +78,7 @@
             {% endfor %}
           </ul>
           {% if onto.lov.url %}
-            <a class="lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
+            <a class="styled-link lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
           {% endif %}
         </div>
       </div>
@@ -91,14 +87,13 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag github-tag">GitHub</span>
-          <h3>Code Usage</h3>
+          <h3>Code usage</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.github.repos_count }}</span>
-          <span class="stat-label">public repos reference this namespace</span>
+          <span class="stat-label">public repositories reference {{ onto.label }} namespace</span>
         </div>
         <div class="card-detail">
-          <p class="sub">Repositories:</p>
           <ul class="compact-list">
             {% for repo in onto.github.repos[:8] %}
               <li><a href="https://github.com/{{ repo }}" target="_blank">{{ repo }}</a></li>
@@ -117,11 +112,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oax-tag">OpenAlex</span>
-          <h3>Academic Papers</h3>
+          <h3>Mentions in academic papers</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.openalex.total_works }}</span>
-          <span class="stat-label">papers mentioning this ontology</span>
+          <span class="stat-label">papers mention {{ onto.label }} in titles, abstracts and/or texts</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-{{ onto.prefix }}" height="120"></canvas>
@@ -132,11 +127,11 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag oc-tag">OpenCitations</span>
-          <h3>Citations to main papers</h3>
+          <h3>Citations to main publications</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.opencitations.total_citations }}</span>
-          <span class="stat-label">papers cite the founding paper(s)</span>
+          <span class="stat-label">papers cite {{onto.label}} main publication(s)</span>
         </div>
         <div class="card-detail">
           <canvas id="chart-oc-{{ onto.prefix }}" height="120"></canvas>
@@ -145,11 +140,11 @@
 
     </div>{# end grid-2 #}
 
-    {# Papers table #}
-    <div class="card full-width">
+    {# OpenAlex table #}
+    <div class="card card-table full-width">
       <div class="card-header">
         <span class="source-tag oax-tag">OpenAlex</span>
-        <h3>Most Recent Papers</h3>
+        <h3>Papers mentioning {{ onto.label }} in title, abstract and/or text</h3>
       </div>
       <table class="papers-table">
         <thead>
@@ -164,13 +159,39 @@
         <tbody>
           {% for w in onto.openalex.top_works %}
           <tr>
-            <td class="title-cell">
-              {{ w.title }}
-            </td>
+            <td>{{ w.title }}</td>
             <td>{{ w.authors }}</td>
-            <td class="center">{{ w.year or '—' }}</td>
+            <td>{{ w.year or '—' }}</td>
             <td>{{ w.source_name }}</td>
-            <td><a href="{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
+            <td><a class="styled-link" href="https://doi.org/{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
+          </tr>
+          {% else %}
+          <tr><td colspan="3">No papers found</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {# OpenCitations table #}
+    <div class="card card-table full-width">
+      <div class="card-header">
+        <span class="source-tag oc-tag">OpenCitations</span>
+        <h3>Papers citing the main publications about {{ onto.label }}</h3>
+      </div>
+      <table class="papers-table">
+        <thead>
+          <tr>
+            <th>DOI</th>
+            <th>Year</th>
+            <th>Timespan</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for w in onto.opencitations.citing_works[:8] %}
+          <tr>
+            <td><a class="styled-link" href="https://doi.org/{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
+            <td>{{ w.year }}</y }}</ttd>
+            <td>{{ w.timespan }}</td>
           </tr>
           {% else %}
           <tr><td colspan="3">No papers found</td></tr>
@@ -191,8 +212,8 @@
           datasets: [{
             label: 'Papers per year',
             data: {{ onto.openalex.by_year | dictsort | map(attribute=1) | list | tojson }},
-            backgroundColor: 'rgba(99,179,237,0.7)',
-            borderColor: 'rgba(99,179,237,1)',
+            backgroundColor: '#b4b4b4',
+            borderColor: '#858585',
             borderWidth: 1,
             borderRadius: 3,
           }]
