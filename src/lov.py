@@ -129,6 +129,14 @@ def _check_graph(
         uri_ref = URIRef(uri)
         if (None, RDFS.isDefinedBy, uri_ref) in g or (None, OWL.imports, uri_ref) in g:
             matched.add(uri)
+    for s, p, o in g:
+        for uri in monitored_uris:
+            if uri in matched:
+                continue
+            if (str(s).startswith(uri)
+                or str(p).startswith(uri)
+                or (isinstance(o, URIRef) and str(o).startswith(uri))):
+                matched.add(uri)
     return matched
 
 
@@ -193,6 +201,13 @@ def _process_vocab(
     g = _parse_graph(raw, download_url)
     if g is None:
         return namespace_uri, vocab_uri, title, []
+    
+    if "icon" in download_url.lower():
+        declared = {str(ns).rstrip("/#") for _, ns in g.namespaces()}
+        print(f"  [LOV] DEBUG icon declared namespaces: {declared}")
+        for uri in monitored_uris:
+            print(f"  [LOV] DEBUG icon checking uri={uri} stripped={uri.rstrip('/#')} in_declared={uri.rstrip('/#') in declared}")
+
     matched = list(_check_graph(g, monitored_uris))
     _save_cache(download_url, last_modified or "", matched)
     return namespace_uri, vocab_uri, title, matched
@@ -244,7 +259,7 @@ def _lov_sparql_inlinks(
         target_uri = binding.get("target", {}).get("value", "")
         prefix = uri_to_prefix.get(target_uri)
         if prefix and vocab_uri and not any(
-            v["uri"] == vocab_uri for v in results[prefix]["using_vocabs"]
+            v["vocab_uri"] == vocab_uri for v in results[prefix]["using_vocabs"]
             ):
             results[prefix]["using_vocabs"].append({
                 "uri": namespace_uri, 
