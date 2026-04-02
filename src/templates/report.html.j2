@@ -71,8 +71,7 @@
         <div class="card-detail">
           <ul class="compact-list">
             {% for vocab in onto.lov.using_vocabs[:10] %}
-              {% set name = vocab.rstrip('/').split('/')[-1].split('#')[-1] or vocab %}
-              <li><a href="{{ vocab }}" target="_blank">{{ name }}</a></li>
+              <li><a href="{{ vocab.uri }}" target="_blank">{{ vocab.title or vocab.uri }}</a></li>
             {% else %}
               <li><em>None found</em></li>
             {% endfor %}

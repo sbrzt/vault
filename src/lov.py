@@ -47,12 +47,17 @@ def _lov_info(ontology: dict) -> dict:
 
 def _lov_all_download_urls() -> list[dict]:
     sparql_query = """
-        PREFIX dcat:<http://www.w3.org/ns/dcat#>
-        PREFIX dcterms:<http://purl.org/dc/terms/>
-        SELECT ?vocab ?distribution WHERE {
+        PREFIX dcat: <http://www.w3.org/ns/dcat#>
+        PREFIX dcterms: <http://purl.org/dc/terms/>
+        PREFIX voaf: <http://purl.org/vocommons/voaf#>
+        PREFIX vann: <http://purl.org/vocab/vann/>
+        SELECT ?vocab ?title ?distribution ?namespaceUri WHERE {
             GRAPH <https://lov.linkeddata.es/dataset/lov> {
-                ?vocab dcat:distribution ?distribution .
+                ?vocab a voaf:Vocabulary ;
+                    dcterms:title ?title ;
+                    dcat:distribution ?distribution .
                 ?distribution dcterms:issued ?issued .
+                OPTIONAL { ?vocab vann:preferredNamespaceUri ?namespaceUri . }
             }
         }
         ORDER BY ?vocab DESC(?issued)
@@ -71,13 +76,21 @@ def _lov_all_download_urls() -> list[dict]:
     seen_vocabs: set[str] = set()
     for binding in data.get("results", {}).get("bindings", []):
         vocab = binding.get("vocab", {}).get("value", "")
+        title = binding.get("title", {}).get("value", "")
         download_url = binding.get("distribution", {}).get("value", "")
-        if vocab and download_url and vocab not in seen_vocabs and download_url.startswith("http"):
-            seen_vocabs.add(vocab)
+        namespace_uri = binding.get("namespaceuri", {}).get("value", "") or vocab
+        if (namespace_uri
+                and title
+                and download_url 
+                and namespace_uri not in seen_vocabs
+                and download_url.startswith("http")):
+            seen_vocabs.add(namespace_uri)
             results.append(
                 {
                     "vocab": vocab, 
-                    "download_url": download_url
+                    "title": title,
+                    "download_url": download_url,
+                    "namespace_uri": namespace_uri,
                 }
             )
     return results
@@ -165,33 +178,42 @@ def _get_last_modified(url: str) -> str | None:
 def _process_vocab(
     vocab: dict, 
     monitored_uris: list[str]
-    ) -> tuple[str, list[str]]:
+    ) -> tuple[str, str, str, list[str]]:
     vocab_uri = vocab["vocab"]
+    namespace_uri = vocab["namespace_uri"]
+    title = vocab["title"]
     download_url = vocab["download_url"]
     last_modified = _get_last_modified(download_url)
     cached = _load_cache(download_url)
     if cached and last_modified and cached.get("last_modified") == last_modified:
-        return vocab_uri, cached["matched"]
+        return namespace_uri, vocab_uri, title, cached["matched"]
     raw = http_get_raw(download_url)
     if raw is None:
-        return vocab_uri, []
+        return namespace_uri, vocab_uri, title, []
     g = _parse_graph(raw, download_url)
     if g is None:
-        return vocab_uri, []
+        return namespace_uri, vocab_uri, title, []
     matched = list(_check_graph(g, monitored_uris))
     _save_cache(download_url, last_modified or "", matched)
-    return vocab_uri, matched
+    return namespace_uri, vocab_uri, title, matched
 
 
-def _lov_sparql_inlinks(ontologies: list[dict], results: dict[str, dict]):
+def _lov_sparql_inlinks(
+    ontologies: list[dict], 
+    results: dict[str, dict]
+    ) -> None:
     uri_to_prefix = {onto["uri"]: onto["prefix"] for onto in ontologies}
     values = " ".join(f"<{onto['uri']}>" for onto in ontologies)
     sparql_query = f"""
         PREFIX voaf:<http://purl.org/vocommons/voaf#>
         PREFIX owl:<http://www.w3.org/2002/07/owl#>
-        SELECT ?vocab ?target WHERE {{
+        PREFIX dcterms:<http://purl.org/dc/terms/>
+        PREFIX vann:<http://purl.org/vocab/vann/>
+        SELECT ?vocab ?title ?namespaceUri ?target WHERE {{
             GRAPH <https://lov.linkeddata.es/dataset/lov> {{
                 VALUES ?target {{ {values} }}
+                ?vocab dcterms:title ?title ;
+                    vann:preferredNamespaceUri ?namespaceUri .
                 {{ ?vocab voaf:metadataVoc ?target . }}
                 UNION
                 {{ ?vocab voaf:specializes ?target . }}
@@ -217,14 +239,24 @@ def _lov_sparql_inlinks(ontologies: list[dict], results: dict[str, dict]):
         return
     for binding in data.get("results", {}).get("bindings", []):
         vocab_uri = binding.get("vocab", {}).get("value", "")
+        title = binding.get("title", {}).get("value", "")
+        namespace_uri = binding.get("namespaceUri", {}).get("value", "")
         target_uri = binding.get("target", {}).get("value", "")
         prefix = uri_to_prefix.get(target_uri)
-        if prefix and vocab_uri and vocab_uri not in results[prefix]["using_vocabs"]:
-            results[prefix]["using_vocabs"].append(vocab_uri)
+        if prefix and vocab_uri and not any(
+            v["uri"] == vocab_uri for v in results[prefix]["using_vocabs"]
+            ):
+            results[prefix]["using_vocabs"].append({
+                "uri": namespace_uri, 
+                "vocab_uri": vocab_uri,
+                "title": title,
+            })
             results[prefix]["inlinks"] += 1
 
 
-def fetch_lov_all(ontologies: list[dict]) -> dict[str, dict]:
+def fetch_lov_all(
+    ontologies: list[dict]
+    ) -> dict[str, dict]:
     results: dict[str, dict] = {}
     for onto in ontologies:
         print(f"  [LOV] Fetching info for {onto['prefix']}…")
@@ -250,11 +282,17 @@ def fetch_lov_all(ontologies: list[dict]) -> dict[str, dict]:
             completed += 1
             print(f"  [LOV] Scanned {completed}/{total}", end="\r")
             try:
-                vocab_uri, matched_uris = future.result()
+                namespace_uri, vocab_uri, title, matched_uris = future.result()
                 for uri in matched_uris:
                     prefix = uri_to_prefix.get(uri)
-                    if prefix and vocab_uri not in results[prefix]["using_vocabs"]:
-                        results[prefix]["using_vocabs"].append(vocab_uri)
+                    if prefix and not any(
+                        v["uri"] == namespace_uri for v in results[prefix]["using_vocabs"]
+                        ):
+                        results[prefix]["using_vocabs"].append({
+                            "uri": namespace_uri, 
+                            "vocab_uri": vocab_uri,
+                            "title": title,
+                        })
                         results[prefix]["inlinks"] += 1
             except Exception as e:
                 vocab = futures[future]

@@ -5,15 +5,28 @@
     "prefix": "cito",
     "lov": {
       "found": true,
-      "inlinks": 7,
+      "inlinks": 4,
       "using_vocabs": [
-        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2016-09-27.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/sio/versions/2015-04-21.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/icon/versions/2025-09-11.n3",
-        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-        "http://semanticscience.org/ontology/sio.owl",
-        "http://vivoweb.org/ontology/core",
-        "http://www.essepuntato.it/2013/03/cito-functions"
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+        },
+        {
+          "uri": "http://semanticscience.org/ontology/sio.owl",
+          "vocab_uri": "http://semanticscience.org/ontology/sio.owl",
+          "title": "Semanticscience Integrated Ontology"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology"
+        },
+        {
+          "uri": "http://www.essepuntato.it/2013/03/cito-functions",
+          "vocab_uri": "http://www.essepuntato.it/2013/03/cito-functions",
+          "title": "Functions of Citations"
+        }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
       "tags": [
@@ -195,11 +208,11 @@
         "2022": 9,
         "2021": 13,
         "2020": 6,
-        "2019": 4,
+        "2019": 5,
         "2018": 3,
         "2017": 2,
         "2016": 7,
-        "2015": 2
+        "2015": 1
       },
       "top_works": [
         {
@@ -266,7 +279,7 @@
         "Zenodo (CERN European Organization for Nuclear Research)": 8,
         "Journal on Computing and Cultural Heritage": 1,
         "Data Science Journal": 1,
-        "Journal of Cheminformatics": 4,
+        "Journal of Cheminformatics": 3,
         "International Journal of Metadata Semantics and Ontologies": 1,
         "iSys - Brazilian Journal of Information Systems": 1,
         "Proceedings of the Association for Information Science and Technology": 1,
@@ -280,6 +293,7 @@
         "Carolina Digital Repository (University of North Carolina at Chapel Hill)": 1,
         "Duo Research Archive (University of Oslo)": 1,
         "Data Science": 1,
+        "Institutional Repositories DataBase (IRDB)": 1,
         "IEEE Access": 1,
         "Institutional Repository of Leibniz Universit\u00e4t Hannover (Leibniz Universit\u00e4t Hannover)": 2,
         "ePrints Soton (University of Southampton)": 1,
@@ -1003,20 +1017,38 @@
     "prefix": "fabio",
     "lov": {
       "found": true,
-      "inlinks": 12,
+      "inlinks": 6,
       "using_vocabs": [
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2016-01-21.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2021-09-24.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2022-09-15.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dcite/versions/2018-01-20.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2023-09-28.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/eurio/versions/2025-05-08.n3",
-        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-        "http://ns.nature.com/terms/",
-        "http://purl.org/cerif/frapo/",
-        "http://vivoweb.org/ontology/core",
-        "http://w3id.org/roh",
-        "https://w3id.org/seo"
+        {
+          "uri": "http://ns.nature.com/terms/",
+          "vocab_uri": "http://ns.nature.com/terms/",
+          "title": "Nature.com Core Ontology"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology"
+        },
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology"
+        },
+        {
+          "uri": "http://w3id.org/roh",
+          "vocab_uri": "http://w3id.org/roh",
+          "title": "The ASIO ontology"
+        },
+        {
+          "uri": "https://w3id.org/seo",
+          "vocab_uri": "https://w3id.org/seo",
+          "title": "The Scientific Events Ontology"
+        }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
       "tags": [
@@ -2028,15 +2060,23 @@
     "prefix": "pro",
     "lov": {
       "found": true,
-      "inlinks": 7,
+      "inlinks": 3,
       "using_vocabs": [
-        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2013-05-11.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2014-05-21.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/scoro/versions/2017-09-04.n3",
-        "https://lov.linkeddata.es/dataset/lov/vocabs/dba/versions/2022-01-05.n3",
-        "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-        "http://purl.org/cerif/frapo/",
-        "http://purl.org/spar/scoro/"
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology"
+        },
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+        },
+        {
+          "uri": "http://purl.org/spar/scoro/",
+          "vocab_uri": "http://purl.org/spar/scoro/",
+          "title": "Scholarly Contributions and Roles Ontology"
+        }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/pro",
       "tags": [
