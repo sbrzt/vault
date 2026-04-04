@@ -11,7 +11,7 @@ def fetch_opencitations(
     result: dict = {
         "total_citations": 0,
         "by_year": {},
-        "citing_works": []
+        "citing_works": [],
     }
     headers = {}
     if api_key:
@@ -31,16 +31,24 @@ def fetch_opencitations(
         time.sleep(0.5)
     result["total_citations"] = len(all_citations)
     for citation in all_citations:
+        citing_doi = citation.get("citing", "").split()[0]
         creation = citation.get("creation", "")
         year = creation[:4] if creation else None
         if year and year.isdigit():
             result["by_year"][year] = result["by_year"].get(year, 0) + 1
-    result["citing_works"] = [
-        {
-            "doi": citation.get("citing", ""),
-            "year": citation.get("creation", "")[:4] if citation.get("creation") else None,
-            "timespan": citation.get("timespan", ""),
-        }
-        for citation in all_citations
-    ]
+        meta = _fetch_opencitations_metadata(citing_doi, headers)
+        result["citing_works"].append({
+            "doi": citing_doi,
+            "year": year,
+            "title": meta.get("title", ""),
+        })
+        time.sleep(0.3)
     return result
+
+
+def _fetch_opencitations_metadata(doi: str, headers: dict) -> dict:
+    url = f"https://api.opencitations.net/meta/v1/metadata/doi:{doi}"
+    data = http_get(url, headers=headers)
+    if not data or not isinstance(data, list) or len(data) == 0:
+        return {}
+    return data[0]

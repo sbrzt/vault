@@ -219,14 +219,13 @@
         "2025": 9,
         "2024": 13,
         "2023": 19,
-        "2022": 9,
+        "2022": 10,
         "2021": 13,
-        "2020": 6,
+        "2020": 7,
         "2019": 5,
         "2018": 3,
         "2017": 2,
-        "2016": 7,
-        "2015": 1
+        "2016": 6
       },
       "top_works": [
         {
@@ -272,7 +271,7 @@
         "Scientometrics": 5,
         "arXiv (Cornell University)": 5,
         "ORBi UMONS": 1,
-        "Lecture notes in computer science": 3,
+        "Lecture notes in computer science": 4,
         "Humanities": 1,
         "Journal of the Association for Information Science and Technology": 1,
         "DROPS (Schloss Dagstuhl \u2013 Leibniz Center for Informatics)": 2,
@@ -285,7 +284,7 @@
         "Cybernetics and Information Technologies": 1,
         "Front Matter": 4,
         "SPIRE - Sciences Po Institutional REpository": 2,
-        "Unknown": 9,
+        "Unknown": 8,
         "Future Internet": 1,
         "Preprints.org": 1,
         "Bilgi D\u00fcnyas\u0131": 1,
@@ -294,7 +293,7 @@
         "Journal on Computing and Cultural Heritage": 1,
         "Data Science Journal": 1,
         "Journal of Cheminformatics": 3,
-        "International Journal of Metadata Semantics and Ontologies": 1,
+        "International Journal of Metadata Semantics and Ontologies": 2,
         "iSys - Brazilian Journal of Information Systems": 1,
         "Proceedings of the Association for Information Science and Technology": 1,
         "The VLDB Journal": 1,
@@ -314,8 +313,7 @@
         "Frontiers in Earth Science": 1,
         "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica": 1,
         "Research Ideas and Outcomes": 1,
-        "RUA, Repositorio Institucional de la Universidad de Alicante (Universidad de Alicante)": 1,
-        "GoeScholar  The Publication Server of the Georg-August-Universit\u00e4t G\u00f6ttingen (Georg-August-Universit\u00e4t G\u00f6ttingen)": 1
+        "RUA, Repositorio Institucional de la Universidad de Alicante (Universidad de Alicante)": 1
       }
     },
     "opencitations": {
@@ -340,687 +338,687 @@
         {
           "doi": "10.1002/leap.1610",
           "year": "2024",
-          "timespan": "P11Y5M"
+          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books"
         },
         {
           "doi": "10.1007/978-3-031-19433-7_38",
           "year": "2022",
-          "timespan": "P9Y"
+          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive"
         },
         {
           "doi": "10.1016/j.daach.2025.e00409",
           "year": "2025",
-          "timespan": "P12Y6M"
+          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction"
         },
         {
           "doi": "10.1109/inciscos.2017.17",
           "year": "2017",
-          "timespan": "P4Y11M"
+          "title": "Methodological Guidelines For Publishing Library Data As Linked Data"
         },
         {
           "doi": "10.1080/00140139.2024.2396527",
           "year": "2024",
-          "timespan": "P11Y9M"
+          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI"
         },
         {
           "doi": "10.1007/s00799-025-00421-z",
           "year": "2025",
-          "timespan": "P12Y6M"
+          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music"
         },
         {
           "doi": "10.2478/cait-2024-0042",
           "year": "2024",
-          "timespan": "P12Y0M"
+          "title": "An Interface For Linking Ancient Languages"
         },
         {
           "doi": "10.3233/sw-222859",
           "year": "2022",
-          "timespan": "P9Y6M"
+          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data"
         },
         {
           "doi": "10.35366/119447",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura"
         },
         {
           "doi": "10.1007/978-3-319-25007-6_24",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks"
         },
         {
           "doi": "10.1007/978-3-642-41242-4_30",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Identifying Functions Of Citations With CiTalO"
         },
         {
           "doi": "10.1007/978-3-030-61244-3_10",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation"
         },
         {
           "doi": "10.1145/2517978.2517983",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio"
         },
         {
           "doi": "10.1162/qss_a_00222",
           "year": "2022",
-          "timespan": "P9Y"
+          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities"
         },
         {
           "doi": "10.1007/978-3-030-59194-6_37",
           "year": "2020",
-          "timespan": "P7Y10M"
+          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies"
         },
         {
           "doi": "10.1145/2660517.2660537",
           "year": "2014",
-          "timespan": "P1Y9M"
+          "title": "Expanded Citations And Projections Of Concepts"
         },
         {
           "doi": "10.1145/2637748.2638444",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "On Expanded Citations"
         },
         {
           "doi": "10.1186/s13326-017-0174-5",
           "year": "2018",
-          "timespan": "P5Y1M"
+          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System"
         },
         {
           "doi": "10.21203/rs.3.rs-4104397/v1",
           "year": "2024",
-          "timespan": "P11Y3M"
+          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis"
         },
         {
           "doi": "10.1007/978-3-030-45439-5_15",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation"
         },
         {
           "doi": "10.1016/j.procs.2018.09.015",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings"
         },
         {
           "doi": "10.4000/jtei.1480",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Formal Ontologies, Linked Data, And TEI Semantics"
         },
         {
           "doi": "10.1108/lht-01-2016-0003",
           "year": "2016",
-          "timespan": "P3Y6M"
+          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository"
         },
         {
           "doi": "10.1016/j.atech.2024.100484",
           "year": "2024",
-          "timespan": "P11Y8M"
+          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs"
         },
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "timespan": "P9Y0M"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
         },
         {
           "doi": "10.4018/978-1-5225-2255-3.ch439",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works"
         },
         {
-          "doi": "10.1007/s00799-020-00288-2 10.5445/ir/1000123311",
+          "doi": "10.1007/s00799-020-00288-2",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Citation Recommendation: Approaches And Datasets"
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "timespan": "P4Y4M"
+          "title": "The Publishing Workflow Ontology (PWO)"
         },
         {
           "doi": "10.1007/978-3-030-91669-5_24",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Federating Scholarly Infrastructures With GraphQL"
         },
         {
           "doi": "10.1007/978-3-319-49004-5_30",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "TechMiner: Extracting Technologies From Academic Publications"
         },
         {
           "doi": "10.1109/educon.2018.8363427",
           "year": "2018",
-          "timespan": "P5Y4M"
+          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources"
         },
         {
           "doi": "10.1016/j.jmb.2022.167514",
           "year": "2022",
-          "timespan": "P9Y6M"
+          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data"
         },
         {
           "doi": "10.1145/2970044.2970049",
           "year": "2016",
-          "timespan": "P3Y8M"
+          "title": "In Collaboration With In Concert"
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "timespan": "P5Y0M"
+          "title": "Genuine Semantic Publishing"
         },
         {
           "doi": "10.1007/s11192-021-04226-0",
           "year": "2022",
-          "timespan": "P9Y1M"
+          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition"
         },
         {
           "doi": "10.1145/3383583.3398520",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-319-46547-0_16",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Conference Linked Data: The ScholarlyData Project"
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
         },
         {
           "doi": "10.1007/978-3-031-40286-9_29",
           "year": "2023",
-          "timespan": "P10Y"
+          "title": "Modeling Chinese Ancient Book Catalog"
         },
         {
           "doi": "10.1007/978-3-030-36599-8_26",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "A Semantic Representation Of The Citation Structure"
         },
         {
           "doi": "10.1186/s13321-021-00515-1",
           "year": "2021",
-          "timespan": "P8Y5M"
+          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets"
         },
         {
           "doi": "10.1007/978-3-319-25518-7_12",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data"
         },
         {
           "doi": "10.1002/asi.23721",
           "year": "2016",
-          "timespan": "P3Y8M"
+          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures"
         },
         {
           "doi": "10.1002/eqe.4231",
           "year": "2024",
-          "timespan": "P11Y9M"
+          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering"
         },
         {
           "doi": "10.1101/2021.02.12.430944",
           "year": "2021",
-          "timespan": "P8Y2M"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "timespan": "P3Y2M"
+          "title": "The Document Components Ontology (DoCO)"
         },
         {
           "doi": "10.1007/978-3-030-01379-0_4",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Extending ScholarlyData With Research Impact Indicators"
         },
         {
           "doi": "10.1007/s11192-016-2134-8",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams"
         },
         {
           "doi": "10.1109/icsc64641.2025.00021",
           "year": "2025",
-          "timespan": "P12Y2M"
+          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry"
         },
         {
           "doi": "10.1109/percomw.2016.7457108",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform"
         },
         {
           "doi": "10.1093/bioinformatics/btab627",
           "year": "2021",
-          "timespan": "P8Y9M"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
         },
         {
           "doi": "10.1007/978-3-031-43849-3_11",
           "year": "2023",
-          "timespan": "P10Y"
+          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries"
         },
         {
           "doi": "10.1007/978-3-030-21348-0_7",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration"
         },
         {
           "doi": "10.1002/asi.24982",
           "year": "2025",
-          "timespan": "P12Y1M"
+          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations"
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "MACJa: Metadata And Citations Jailbreaker"
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "timespan": "P4Y10M"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
         },
         {
           "doi": "10.1108/lht-06-2015-0063",
           "year": "2015",
-          "timespan": "P2Y11M"
+          "title": "Recommending Research Articles Using Citation Data"
         },
         {
           "doi": "10.1093/llc/fqy002",
           "year": "2018",
-          "timespan": "P5Y2M"
+          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study"
         },
         {
           "doi": "10.3390/knowledge4010001",
           "year": "2024",
-          "timespan": "P11Y1M"
+          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture"
         },
         {
           "doi": "10.1007/s11192-018-2961-x",
           "year": "2018",
-          "timespan": "P5Y11M"
+          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content"
         },
         {
           "doi": "10.1109/wits.2019.8723850",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "Ontologies For The Classification Of Cultural Heritage Data"
         },
         {
           "doi": "10.1007/978-3-319-47602-5_18",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Semantic Web Conference Ontology - A Refactoring Solution"
         },
         {
           "doi": "10.1093/llc/fqac095",
           "year": "2023",
-          "timespan": "P10Y1M"
+          "title": "Building Linked Lexicography Applications With LexO-server"
         },
         {
           "doi": "10.1186/s13321-023-00684-1",
           "year": "2023",
-          "timespan": "P10Y2M"
+          "title": "A Look Back At A Pilot Of The Citation Typing Ontology"
         },
         {
           "doi": "10.4242/balisagevol8.huitfeldt01",
           "year": null,
-          "timespan": ""
+          "title": "Documents As Timed Abstract Objects"
         },
         {
           "doi": "10.1093/llc/fqv044",
           "year": "2015",
-          "timespan": "P2Y10M"
+          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge"
         },
         {
           "doi": "10.1038/502295a",
           "year": "2013",
-          "timespan": "P0Y10M"
+          "title": "Publishing: Open Citations"
         },
         {
           "doi": "10.3233/ao-210246",
           "year": "2021",
-          "timespan": "P8Y4M"
+          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges"
         },
         {
           "doi": "10.5334/dsj-2016-006",
           "year": "2016",
-          "timespan": "P3Y4M"
+          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?"
         },
         {
           "doi": "10.1109/wisa.2016.41",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information"
         },
         {
           "doi": "10.1002/pra2.984",
           "year": "2023",
-          "timespan": "P10Y10M"
+          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries"
         },
         {
           "doi": "10.1007/s11192-021-04097-5",
           "year": "2021",
-          "timespan": "P8Y8M"
+          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case"
         },
         {
           "doi": "10.1109/wisa.2016.42",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information"
         },
         {
           "doi": "10.1002/pra2.754",
           "year": "2022",
-          "timespan": "P9Y10M"
+          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments"
         },
         {
           "doi": "10.35366/119446",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda"
         },
         {
           "doi": "10.1109/jcdl.2017.7991585",
           "year": "2017",
-          "timespan": "P4Y6M"
+          "title": "Towards Publishing Secure Capsule-Based Analysis"
         },
         {
           "doi": "10.1108/el-03-2019-0081",
           "year": "2019",
-          "timespan": "P7Y0M"
+          "title": "Application Of Semantic Technologies In Bibliographic Databases"
         },
         {
           "doi": "10.3233/sw-210426",
           "year": "2022",
-          "timespan": "P9Y2M"
+          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD"
         },
         {
           "doi": "10.1007/s11192-021-03955-6",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "An NLP-based Citation Reason Analysis Using CCRO"
         },
         {
           "doi": "10.1007/s11192-024-05082-4",
           "year": "2024",
-          "timespan": "P11Y7M"
+          "title": "Linguistic Perspectives In Deciphering Citation Function Classification"
         },
         {
           "doi": "10.1007/s11192-019-03217-6",
           "year": "2019",
-          "timespan": "P6Y9M"
+          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations"
         },
         {
           "doi": "10.1007/978-3-031-60635-9_11",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning"
         },
         {
           "doi": "10.1007/978-3-642-41242-4_6",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework"
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
         },
         {
           "doi": "10.1007/s00799-016-0169-3",
           "year": "2016",
-          "timespan": "P3Y5M"
+          "title": "Scholarly Ontology: Modelling Scholarly Practices"
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.1007/978-3-031-78952-6_25",
           "year": "2025",
-          "timespan": "P12Y"
+          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-030-01379-0_11",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Investigating Facets To Characterise Citations For Scholars"
         },
         {
           "doi": "10.1007/978-3-319-07443-6_39",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues"
         },
         {
           "doi": "10.3989/arbor.2021.799007",
           "year": "2021",
-          "timespan": "P8Y4M"
+          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica"
         },
         {
           "doi": "10.1101/2021.03.15.435418",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
         },
         {
           "doi": "10.3233/sw-160222",
           "year": "2016",
-          "timespan": "P3Y11M"
+          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns"
         },
         {
-          "doi": "10.1007/s00799-021-00306-x 10.34657/6831",
+          "doi": "10.1007/s00799-021-00306-x",
           "year": "2021",
-          "timespan": "P8Y7M"
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies"
         },
         {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
-          "timespan": "P10Y3M"
+          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References"
         },
         {
           "doi": "10.1145/3318396.3318422",
           "year": "2019",
-          "timespan": "P6Y3M"
+          "title": "Extension Of The BiDO Ontology To Represent Scientific Production"
         },
         {
           "doi": "10.1007/978-3-319-04777-5_5",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "The Semantic Publishing And Referencing Ontologies"
         },
         {
           "doi": "10.1007/s10796-016-9637-y",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery"
         },
         {
           "doi": "10.1108/jchmsd-06-2021-0110",
           "year": "2022",
-          "timespan": "P9Y2M"
+          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications"
         },
         {
           "doi": "10.1145/2910896.2910903",
           "year": "2016",
-          "timespan": "P3Y6M"
+          "title": "Enhancing Scholarly Use Of Digital Libraries"
         },
         {
           "doi": "10.4018/978-1-5225-7659-4.ch030",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works"
         },
         {
           "doi": "10.1080/19386389.2016.1216969",
           "year": "2016",
-          "timespan": "P3Y4M"
+          "title": "Activity Analysis, Semantics And Metadata Building"
         },
         {
           "doi": "10.1016/j.knosys.2019.01.009",
           "year": "2019",
-          "timespan": "P6Y6M"
+          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature"
         },
         {
           "doi": "10.1145/3057148.3057149",
           "year": "2017",
-          "timespan": "P4Y"
+          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection"
         },
         {
           "doi": "10.1186/s13321-020-00448-1",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics"
         },
         {
           "doi": "10.1145/3487553.3524624",
           "year": "2022",
-          "timespan": "P9Y4M"
+          "title": "Towards Building Live Open Scientific Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-319-03524-6_29",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Semantic Annotation Of Scholarly Documents And Citations"
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "timespan": "P2Y3M"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
         },
         {
           "doi": "10.1002/asi.23179",
           "year": "2014",
-          "timespan": "P1Y5M"
+          "title": "Measuring Academic Influence: Not All Citations Are Equal"
         },
         {
           "doi": "10.3233/ds-170012",
           "year": "2017",
-          "timespan": "P5Y0M"
+          "title": "Automating Semantic Publishing"
         },
         {
           "doi": "10.1145/2361354.2361396",
           "year": "2012",
-          "timespan": "P0Y"
+          "title": "Faceted Documents"
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "timespan": "P12Y3M"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
         },
         {
           "doi": "10.1007/978-3-030-77385-4_27",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Structured Semantic Modeling Of Scientific Citation Intents"
         },
         {
           "doi": "10.1108/el-09-2012-0121",
           "year": "2014",
-          "timespan": "P1Y11M"
+          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy"
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "timespan": ""
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.3233/sw-150198",
           "year": "2016",
-          "timespan": "P4Y0M"
+          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study"
         },
         {
           "doi": "10.1109/tlt.2021.3118902",
           "year": "2021",
-          "timespan": "P8Y10M"
+          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization"
         },
         {
           "doi": "10.1088/1742-6596/1015/3/032096",
           "year": "2018",
-          "timespan": "P5Y5M"
+          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia"
         },
         {
           "doi": "10.1016/j.jnca.2019.01.029",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications"
         },
         {
           "doi": "10.1109/access.2024.3396871",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD"
         },
         {
           "doi": "10.1371/journal.pone.0270872",
           "year": "2022",
-          "timespan": "P9Y7M"
+          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles"
         },
         {
           "doi": "10.1145/3366030.3366110",
           "year": "2019",
-          "timespan": "P7Y0M"
+          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)"
         },
         {
           "doi": "10.1007/978-3-319-53637-8_1",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Introduction"
         },
         {
           "doi": "10.1007/978-3-030-54956-5_1",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Requirements Analysis For An Open Research Knowledge Graph"
         },
         {
           "doi": "10.3389/fdigh.2016.00003",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts"
         },
         {
           "doi": "10.3233/sw-180332",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud"
         },
         {
-          "doi": "10.1007/s11192-020-03758-1 10.15488/12704 10.18154/rwth-2020-11467 10.34657/9153",
+          "doi": "10.1007/s11192-020-03758-1",
           "year": "2020",
-          "timespan": "P7Y11M"
+          "title": "A Comprehensive Quality Assessment Framework For Scientific Events"
         },
         {
           "doi": "10.3989/redc.2016.3.1299",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas"
         },
         {
           "doi": "10.1007/s11192-020-03536-z",
           "year": "2020",
-          "timespan": "P7Y6M"
+          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review"
         },
         {
           "doi": "10.1145/2740908.2742842",
           "year": "2015",
-          "timespan": "P2Y5M"
+          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data"
         },
         {
           "doi": "10.1145/3342197.3344527",
           "year": "2019",
-          "timespan": "P6Y9M"
+          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems"
         },
         {
           "doi": "10.1109/access.2019.2903450",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "CCRO: Citation\u2019s Context & Reasons Ontology"
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "timespan": "P1Y9M"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
         },
         {
           "doi": "10.1162/qss_a_00146",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
         },
         {
           "doi": "10.1007/978-3-319-41938-1_5",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal"
         },
         {
           "doi": "10.1145/3412841.3442057",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "ArDO"
         }
       ]
     }
@@ -1049,14 +1047,14 @@
           "title": "Nature.com Core Ontology"
         },
         {
-          "uri": "http://purl.org/cerif/frapo/",
-          "vocab_uri": "http://purl.org/cerif/frapo/",
-          "title": "Funding, Research Administration and Projects Ontology"
-        },
-        {
           "uri": "http://purl.org/SemSur/",
           "vocab_uri": "http://purl.org/SemSur/",
           "title": "The Semantic Survey Ontology (semsur)"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -1187,7 +1185,7 @@
       ]
     },
     "github": {
-      "repos_count": 79,
+      "repos_count": 78,
       "repos": [
         "SPAROntologies/fabio",
         "essepuntato/opencitations",
@@ -1229,26 +1227,27 @@
         "gooofy/zamia-ai",
         "coar-repositories/coar-vocabularies-website",
         "SemanticSoftwareLab/TextMining-SemPub2016",
-        "418imateapot/new-raschietto",
+        "tetherless-world/twweb",
         "HerculesCRUE/ROH",
         "OriginTrail/desci-knowledge-mining",
         "FAIR2Adapt/cca-crate-profile",
         "con/citations-collector",
         "nipdep/idea-graph",
         "davidlamprecht/semopenalex-semanticweb",
+        "cfoster/xmllondon-rdf",
         "pentandra/lifepreserver",
         "OriginTrail/desci-drag",
         "mconlon17/vivo-org-chart",
         "lelax/new_Design_Data",
         "opencitations/oc_meta",
         "opencitations/bcite",
+        "LA3D/rlm",
         "CRISalid-esr/svp-harvester",
         "fair-workflows/FAIR-WFcollection",
         "laurauntner/wikidata-to-cidoc-crm",
-        "tetherless-world/twweb",
         "ualbertalib/metadata",
-        "calipho-sib/cellosaurus-api",
         "TheBrane/sodi-data-acquisition",
+        "opencitations/wcw",
         "Apress/mastering-structured-data-on-semantic-web",
         "amcgail/gpt-assistants",
         "datalogism/SciLEx",
@@ -1260,30 +1259,28 @@
         "loopingdoge/wowtaria",
         "metaphacts/semopenalex",
         "HendrikBorgelt/Kat_Tagung_Metadata_extraction",
-        "arcangelo7/arcangelo7.github.io",
+        "umd-lib/plastron",
         "skg-if/data-model",
         "opencitations/api",
-        "prei007/litnet",
+        "know-org-project/Nana-and-Jojo-s-Bizzare-LODventure",
         "the-elephant-man/project",
-        "opencitations/oc_api",
-        "sciety/api-prototype",
-        "opencitations/heritrace"
+        "Wimmics/voidmatic"
       ]
     },
     "openalex": {
-      "total_works": 87,
+      "total_works": 88,
       "by_year": {
         "2026": 3,
         "2025": 5,
         "2024": 6,
         "2023": 14,
         "2022": 12,
-        "2021": 14,
-        "2020": 8,
-        "2019": 10,
+        "2021": 15,
+        "2020": 10,
+        "2019": 9,
         "2018": 4,
         "2017": 8,
-        "2016": 3
+        "2016": 2
       },
       "top_works": [
         {
@@ -1337,9 +1334,9 @@
         "Cybernetics and Information Technologies": 1,
         "Biblioteche & bibliotecari/Biblioteche & bibliotecari / Libraries & librarians": 1,
         "Preprints.org": 2,
-        "Lecture notes in computer science": 4,
+        "Lecture notes in computer science": 5,
         "Studies on the semantic web": 1,
-        "SPIRE - Sciences Po Institutional REpository": 4,
+        "SPIRE - Sciences Po Institutional REpository": 5,
         "Unknown": 7,
         "Journal of the Text Encoding Initiative": 1,
         "Scientific Data": 1,
@@ -1349,7 +1346,7 @@
         "bonndoc (University of Bonn)": 1,
         "Journal of Cheminformatics": 1,
         "Semantic Web": 2,
-        "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)": 3,
+        "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)": 2,
         "University of Regensburg Publication Server (University of Regensburg)": 1,
         "TIB Repositorium": 1,
         "Qucosa (Saxon State and University Library Dresden)": 1,
@@ -1397,687 +1394,687 @@
         {
           "doi": "10.1002/leap.1610",
           "year": "2024",
-          "timespan": "P11Y5M"
+          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books"
         },
         {
           "doi": "10.1007/978-3-031-19433-7_38",
           "year": "2022",
-          "timespan": "P9Y"
+          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive"
         },
         {
           "doi": "10.1016/j.daach.2025.e00409",
           "year": "2025",
-          "timespan": "P12Y6M"
+          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction"
         },
         {
           "doi": "10.1109/inciscos.2017.17",
           "year": "2017",
-          "timespan": "P4Y11M"
+          "title": "Methodological Guidelines For Publishing Library Data As Linked Data"
         },
         {
           "doi": "10.1080/00140139.2024.2396527",
           "year": "2024",
-          "timespan": "P11Y9M"
+          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI"
         },
         {
           "doi": "10.1007/s00799-025-00421-z",
           "year": "2025",
-          "timespan": "P12Y6M"
+          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music"
         },
         {
           "doi": "10.2478/cait-2024-0042",
           "year": "2024",
-          "timespan": "P12Y0M"
+          "title": "An Interface For Linking Ancient Languages"
         },
         {
           "doi": "10.3233/sw-222859",
           "year": "2022",
-          "timespan": "P9Y6M"
+          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data"
         },
         {
           "doi": "10.35366/119447",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura"
         },
         {
           "doi": "10.1007/978-3-319-25007-6_24",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks"
         },
         {
           "doi": "10.1007/978-3-642-41242-4_30",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Identifying Functions Of Citations With CiTalO"
         },
         {
           "doi": "10.1007/978-3-030-61244-3_10",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation"
         },
         {
           "doi": "10.1145/2517978.2517983",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio"
         },
         {
           "doi": "10.1162/qss_a_00222",
           "year": "2022",
-          "timespan": "P9Y"
+          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities"
         },
         {
           "doi": "10.1007/978-3-030-59194-6_37",
           "year": "2020",
-          "timespan": "P7Y10M"
+          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies"
         },
         {
           "doi": "10.1145/2660517.2660537",
           "year": "2014",
-          "timespan": "P1Y9M"
+          "title": "Expanded Citations And Projections Of Concepts"
         },
         {
           "doi": "10.1145/2637748.2638444",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "On Expanded Citations"
         },
         {
           "doi": "10.1186/s13326-017-0174-5",
           "year": "2018",
-          "timespan": "P5Y1M"
+          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System"
         },
         {
           "doi": "10.21203/rs.3.rs-4104397/v1",
           "year": "2024",
-          "timespan": "P11Y3M"
+          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis"
         },
         {
           "doi": "10.1007/978-3-030-45439-5_15",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation"
         },
         {
           "doi": "10.1016/j.procs.2018.09.015",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings"
         },
         {
           "doi": "10.4000/jtei.1480",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Formal Ontologies, Linked Data, And TEI Semantics"
         },
         {
           "doi": "10.1108/lht-01-2016-0003",
           "year": "2016",
-          "timespan": "P3Y6M"
+          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository"
         },
         {
           "doi": "10.1016/j.atech.2024.100484",
           "year": "2024",
-          "timespan": "P11Y8M"
+          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs"
         },
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "timespan": "P9Y0M"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
         },
         {
           "doi": "10.4018/978-1-5225-2255-3.ch439",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works"
         },
         {
-          "doi": "10.1007/s00799-020-00288-2 10.5445/ir/1000123311",
+          "doi": "10.1007/s00799-020-00288-2",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Citation Recommendation: Approaches And Datasets"
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "timespan": "P4Y4M"
+          "title": "The Publishing Workflow Ontology (PWO)"
         },
         {
           "doi": "10.1007/978-3-030-91669-5_24",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Federating Scholarly Infrastructures With GraphQL"
         },
         {
           "doi": "10.1007/978-3-319-49004-5_30",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "TechMiner: Extracting Technologies From Academic Publications"
         },
         {
           "doi": "10.1109/educon.2018.8363427",
           "year": "2018",
-          "timespan": "P5Y4M"
+          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources"
         },
         {
           "doi": "10.1016/j.jmb.2022.167514",
           "year": "2022",
-          "timespan": "P9Y6M"
+          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data"
         },
         {
           "doi": "10.1145/2970044.2970049",
           "year": "2016",
-          "timespan": "P3Y8M"
+          "title": "In Collaboration With In Concert"
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "timespan": "P5Y0M"
+          "title": "Genuine Semantic Publishing"
         },
         {
           "doi": "10.1007/s11192-021-04226-0",
           "year": "2022",
-          "timespan": "P9Y1M"
+          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition"
         },
         {
           "doi": "10.1145/3383583.3398520",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-319-46547-0_16",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Conference Linked Data: The ScholarlyData Project"
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
         },
         {
           "doi": "10.1007/978-3-031-40286-9_29",
           "year": "2023",
-          "timespan": "P10Y"
+          "title": "Modeling Chinese Ancient Book Catalog"
         },
         {
           "doi": "10.1007/978-3-030-36599-8_26",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "A Semantic Representation Of The Citation Structure"
         },
         {
           "doi": "10.1186/s13321-021-00515-1",
           "year": "2021",
-          "timespan": "P8Y5M"
+          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets"
         },
         {
           "doi": "10.1007/978-3-319-25518-7_12",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data"
         },
         {
           "doi": "10.1002/asi.23721",
           "year": "2016",
-          "timespan": "P3Y8M"
+          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures"
         },
         {
           "doi": "10.1002/eqe.4231",
           "year": "2024",
-          "timespan": "P11Y9M"
+          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering"
         },
         {
           "doi": "10.1101/2021.02.12.430944",
           "year": "2021",
-          "timespan": "P8Y2M"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "timespan": "P3Y2M"
+          "title": "The Document Components Ontology (DoCO)"
         },
         {
           "doi": "10.1007/978-3-030-01379-0_4",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Extending ScholarlyData With Research Impact Indicators"
         },
         {
           "doi": "10.1007/s11192-016-2134-8",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams"
         },
         {
           "doi": "10.1109/icsc64641.2025.00021",
           "year": "2025",
-          "timespan": "P12Y2M"
+          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry"
         },
         {
           "doi": "10.1109/percomw.2016.7457108",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform"
         },
         {
           "doi": "10.1093/bioinformatics/btab627",
           "year": "2021",
-          "timespan": "P8Y9M"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
         },
         {
           "doi": "10.1007/978-3-031-43849-3_11",
           "year": "2023",
-          "timespan": "P10Y"
+          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries"
         },
         {
           "doi": "10.1007/978-3-030-21348-0_7",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration"
         },
         {
           "doi": "10.1002/asi.24982",
           "year": "2025",
-          "timespan": "P12Y1M"
+          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations"
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "timespan": "P2Y"
+          "title": "MACJa: Metadata And Citations Jailbreaker"
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "timespan": "P4Y10M"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
         },
         {
           "doi": "10.1108/lht-06-2015-0063",
           "year": "2015",
-          "timespan": "P2Y11M"
+          "title": "Recommending Research Articles Using Citation Data"
         },
         {
           "doi": "10.1093/llc/fqy002",
           "year": "2018",
-          "timespan": "P5Y2M"
+          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study"
         },
         {
           "doi": "10.3390/knowledge4010001",
           "year": "2024",
-          "timespan": "P11Y1M"
+          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture"
         },
         {
           "doi": "10.1007/s11192-018-2961-x",
           "year": "2018",
-          "timespan": "P5Y11M"
+          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content"
         },
         {
           "doi": "10.1109/wits.2019.8723850",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "Ontologies For The Classification Of Cultural Heritage Data"
         },
         {
           "doi": "10.1007/978-3-319-47602-5_18",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Semantic Web Conference Ontology - A Refactoring Solution"
         },
         {
           "doi": "10.1093/llc/fqac095",
           "year": "2023",
-          "timespan": "P10Y1M"
+          "title": "Building Linked Lexicography Applications With LexO-server"
         },
         {
           "doi": "10.1186/s13321-023-00684-1",
           "year": "2023",
-          "timespan": "P10Y2M"
+          "title": "A Look Back At A Pilot Of The Citation Typing Ontology"
         },
         {
           "doi": "10.4242/balisagevol8.huitfeldt01",
           "year": null,
-          "timespan": ""
+          "title": "Documents As Timed Abstract Objects"
         },
         {
           "doi": "10.1093/llc/fqv044",
           "year": "2015",
-          "timespan": "P2Y10M"
+          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge"
         },
         {
           "doi": "10.1038/502295a",
           "year": "2013",
-          "timespan": "P0Y10M"
+          "title": "Publishing: Open Citations"
         },
         {
           "doi": "10.3233/ao-210246",
           "year": "2021",
-          "timespan": "P8Y4M"
+          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges"
         },
         {
           "doi": "10.5334/dsj-2016-006",
           "year": "2016",
-          "timespan": "P3Y4M"
+          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?"
         },
         {
           "doi": "10.1109/wisa.2016.41",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information"
         },
         {
           "doi": "10.1002/pra2.984",
           "year": "2023",
-          "timespan": "P10Y10M"
+          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries"
         },
         {
           "doi": "10.1007/s11192-021-04097-5",
           "year": "2021",
-          "timespan": "P8Y8M"
+          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case"
         },
         {
           "doi": "10.1109/wisa.2016.42",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information"
         },
         {
           "doi": "10.1002/pra2.754",
           "year": "2022",
-          "timespan": "P9Y10M"
+          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments"
         },
         {
           "doi": "10.35366/119446",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda"
         },
         {
           "doi": "10.1109/jcdl.2017.7991585",
           "year": "2017",
-          "timespan": "P4Y6M"
+          "title": "Towards Publishing Secure Capsule-Based Analysis"
         },
         {
           "doi": "10.1108/el-03-2019-0081",
           "year": "2019",
-          "timespan": "P7Y0M"
+          "title": "Application Of Semantic Technologies In Bibliographic Databases"
         },
         {
           "doi": "10.3233/sw-210426",
           "year": "2022",
-          "timespan": "P9Y2M"
+          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD"
         },
         {
           "doi": "10.1007/s11192-021-03955-6",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "An NLP-based Citation Reason Analysis Using CCRO"
         },
         {
           "doi": "10.1007/s11192-024-05082-4",
           "year": "2024",
-          "timespan": "P11Y7M"
+          "title": "Linguistic Perspectives In Deciphering Citation Function Classification"
         },
         {
           "doi": "10.1007/s11192-019-03217-6",
           "year": "2019",
-          "timespan": "P6Y9M"
+          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations"
         },
         {
           "doi": "10.1007/978-3-031-60635-9_11",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning"
         },
         {
           "doi": "10.1007/978-3-642-41242-4_6",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework"
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
         },
         {
           "doi": "10.1007/s00799-016-0169-3",
           "year": "2016",
-          "timespan": "P3Y5M"
+          "title": "Scholarly Ontology: Modelling Scholarly Practices"
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.1007/978-3-031-78952-6_25",
           "year": "2025",
-          "timespan": "P12Y"
+          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-030-01379-0_11",
           "year": "2018",
-          "timespan": "P5Y"
+          "title": "Investigating Facets To Characterise Citations For Scholars"
         },
         {
           "doi": "10.1007/978-3-319-07443-6_39",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues"
         },
         {
           "doi": "10.3989/arbor.2021.799007",
           "year": "2021",
-          "timespan": "P8Y4M"
+          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica"
         },
         {
           "doi": "10.1101/2021.03.15.435418",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
         },
         {
           "doi": "10.3233/sw-160222",
           "year": "2016",
-          "timespan": "P3Y11M"
+          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns"
         },
         {
-          "doi": "10.1007/s00799-021-00306-x 10.34657/6831",
+          "doi": "10.1007/s00799-021-00306-x",
           "year": "2021",
-          "timespan": "P8Y7M"
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies"
         },
         {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
-          "timespan": "P10Y3M"
+          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References"
         },
         {
           "doi": "10.1145/3318396.3318422",
           "year": "2019",
-          "timespan": "P6Y3M"
+          "title": "Extension Of The BiDO Ontology To Represent Scientific Production"
         },
         {
           "doi": "10.1007/978-3-319-04777-5_5",
           "year": "2014",
-          "timespan": "P1Y"
+          "title": "The Semantic Publishing And Referencing Ontologies"
         },
         {
           "doi": "10.1007/s10796-016-9637-y",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery"
         },
         {
           "doi": "10.1108/jchmsd-06-2021-0110",
           "year": "2022",
-          "timespan": "P9Y2M"
+          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications"
         },
         {
           "doi": "10.1145/2910896.2910903",
           "year": "2016",
-          "timespan": "P3Y6M"
+          "title": "Enhancing Scholarly Use Of Digital Libraries"
         },
         {
           "doi": "10.4018/978-1-5225-7659-4.ch030",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works"
         },
         {
           "doi": "10.1080/19386389.2016.1216969",
           "year": "2016",
-          "timespan": "P3Y4M"
+          "title": "Activity Analysis, Semantics And Metadata Building"
         },
         {
           "doi": "10.1016/j.knosys.2019.01.009",
           "year": "2019",
-          "timespan": "P6Y6M"
+          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature"
         },
         {
           "doi": "10.1145/3057148.3057149",
           "year": "2017",
-          "timespan": "P4Y"
+          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection"
         },
         {
           "doi": "10.1186/s13321-020-00448-1",
           "year": "2020",
-          "timespan": "P7Y8M"
+          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics"
         },
         {
           "doi": "10.1145/3487553.3524624",
           "year": "2022",
-          "timespan": "P9Y4M"
+          "title": "Towards Building Live Open Scientific Knowledge Graphs"
         },
         {
           "doi": "10.1007/978-3-319-03524-6_29",
           "year": "2013",
-          "timespan": "P0Y"
+          "title": "Semantic Annotation Of Scholarly Documents And Citations"
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "timespan": "P2Y3M"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
         },
         {
           "doi": "10.1002/asi.23179",
           "year": "2014",
-          "timespan": "P1Y5M"
+          "title": "Measuring Academic Influence: Not All Citations Are Equal"
         },
         {
           "doi": "10.3233/ds-170012",
           "year": "2017",
-          "timespan": "P5Y0M"
+          "title": "Automating Semantic Publishing"
         },
         {
           "doi": "10.1145/2361354.2361396",
           "year": "2012",
-          "timespan": "P0Y"
+          "title": "Faceted Documents"
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "timespan": "P12Y3M"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
         },
         {
           "doi": "10.1007/978-3-030-77385-4_27",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Structured Semantic Modeling Of Scientific Citation Intents"
         },
         {
           "doi": "10.1108/el-09-2012-0121",
           "year": "2014",
-          "timespan": "P1Y11M"
+          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy"
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "timespan": ""
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.3233/sw-150198",
           "year": "2016",
-          "timespan": "P4Y0M"
+          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study"
         },
         {
           "doi": "10.1109/tlt.2021.3118902",
           "year": "2021",
-          "timespan": "P8Y10M"
+          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization"
         },
         {
           "doi": "10.1088/1742-6596/1015/3/032096",
           "year": "2018",
-          "timespan": "P5Y5M"
+          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia"
         },
         {
           "doi": "10.1016/j.jnca.2019.01.029",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications"
         },
         {
           "doi": "10.1109/access.2024.3396871",
           "year": "2024",
-          "timespan": "P11Y"
+          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD"
         },
         {
           "doi": "10.1371/journal.pone.0270872",
           "year": "2022",
-          "timespan": "P9Y7M"
+          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles"
         },
         {
           "doi": "10.1145/3366030.3366110",
           "year": "2019",
-          "timespan": "P7Y0M"
+          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)"
         },
         {
           "doi": "10.1007/978-3-319-53637-8_1",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Introduction"
         },
         {
           "doi": "10.1007/978-3-030-54956-5_1",
           "year": "2020",
-          "timespan": "P7Y"
+          "title": "Requirements Analysis For An Open Research Knowledge Graph"
         },
         {
           "doi": "10.3389/fdigh.2016.00003",
           "year": "2016",
-          "timespan": "P3Y3M"
+          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts"
         },
         {
           "doi": "10.3233/sw-180332",
           "year": "2019",
-          "timespan": "P6Y4M"
+          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud"
         },
         {
-          "doi": "10.1007/s11192-020-03758-1 10.15488/12704 10.18154/rwth-2020-11467 10.34657/9153",
+          "doi": "10.1007/s11192-020-03758-1",
           "year": "2020",
-          "timespan": "P7Y11M"
+          "title": "A Comprehensive Quality Assessment Framework For Scientific Events"
         },
         {
           "doi": "10.3989/redc.2016.3.1299",
           "year": "2016",
-          "timespan": "P3Y9M"
+          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas"
         },
         {
           "doi": "10.1007/s11192-020-03536-z",
           "year": "2020",
-          "timespan": "P7Y6M"
+          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review"
         },
         {
           "doi": "10.1145/2740908.2742842",
           "year": "2015",
-          "timespan": "P2Y5M"
+          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data"
         },
         {
           "doi": "10.1145/3342197.3344527",
           "year": "2019",
-          "timespan": "P6Y9M"
+          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems"
         },
         {
           "doi": "10.1109/access.2019.2903450",
           "year": "2019",
-          "timespan": "P6Y"
+          "title": "CCRO: Citation\u2019s Context & Reasons Ontology"
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "timespan": "P1Y9M"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
         },
         {
           "doi": "10.1162/qss_a_00146",
           "year": "2021",
-          "timespan": "P8Y"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
         },
         {
           "doi": "10.1007/978-3-319-41938-1_5",
           "year": "2016",
-          "timespan": "P3Y"
+          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal"
         },
         {
           "doi": "10.1145/3412841.3442057",
           "year": "2021",
-          "timespan": "P8Y3M"
+          "title": "ArDO"
         }
       ]
     }
@@ -2179,7 +2176,7 @@
       ]
     },
     "github": {
-      "repos_count": 64,
+      "repos_count": 67,
       "repos": [
         "opencitations/oc_meta",
         "essepuntato/opencitations",
@@ -2192,70 +2189,73 @@
         "opencitations/oscar",
         "pensoft/OpenBiodiv",
         "Docmaps-Project/docmaps",
+        "OriginTrail/desci-knowledge-mining",
         "oeg-upm/AstreaRun",
         "italia/dati-semantic-assets",
         "feup-infolab/ontologies-database",
-        "OriginTrail/desci-drag",
-        "Artemis-IA/scichat-semantic-platform",
         "nvbach91/iga-hybrid",
         "opencitations/OpenCitationsCorpus",
         "arcangelo7/arcangelo7.github.io",
         "stlab-istc-cnr/conceptual-components",
         "CarlaMenegat/VarelaDigital",
+        "NERC-CEH/digital-objects-ontology",
         "antarctica/nerc-arctic-office-projects-api",
+        "phuse-org/css-linkathon",
         "LinDA-tools/transformation",
+        "biopragmatics/bioregistry",
         "dharc-org/vespasiano-da-bisticci-letters-de",
-        "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
         "fgiovannetti/lift",
-        "LinkingDataIO/RO2SHARE",
         "skg-if/data-model",
         "SDM-TIB/ckanext-kgcreation",
         "ben-norton/GeoKOS",
         "GillesVandewiele/COVID-KG",
-        "NERC-CEH/digital-objects-ontology",
         "KGerring/wiki",
         "skg-if/ext-ra-skg",
-        "ChiaraParravicini/tirocinio_OC",
-        "CWTSLeiden/Journal-Observatory-backend",
         "opencitations/metadata",
         "SDM-TIB/LDM_Docker",
-        "odoma-ch/ssh-citation-index",
-        "ISA-tools/nmrml2isa-galaxy",
         "lodum/SPEX",
+        "CWTSLeiden/Journal-Observatory-backend",
+        "ISA-tools/nmrml2isa-galaxy",
         "skg-if/ext-srv",
         "API4KBs/kmdp-models",
         "essepuntato/fentry",
-        "judaicalink/judaicalink-generators",
+        "SPAROntologies/sparontologies.github.io",
         "data-science-hub/data",
-        "ISA-tools/mzml2isa-qt",
+        "judaicalink/judaicalink-generators",
         "laurentfintoni/dharc-skosmos",
         "Klortho/eutils-org",
-        "biblhertz/referency",
+        "ISA-tools/mzml2isa-qt",
+        "rohub/skg",
         "essepuntato/undo",
         "anuzzolese/cLODg2",
         "SPAROntologies/frapo",
+        "biblhertz/referency",
         "SPAROntologies/scoro",
-        "AnLiGentile/cLODg",
+        "opencitations/oc_ocdm",
         "skg-if/shacl-extractor",
         "epireve/hdm",
-        "opencitations/script",
+        "LinkingDataIO/RO2SHARE",
         "hsaggion/drinventor",
         "easchultes/FAIR-Molecules",
-        "Wimmics/IndeGx",
-        "nvbach91/iga-knerd",
         "opencitations/heritrace",
-        "issa-project/issa-pipeline"
+        "Wimmics/IndeGx",
+        "opencitations/script",
+        "nvbach91/iga-knerd",
+        "issa-project/issa-pipeline",
+        "sciety/api-prototype",
+        "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
+        "odoma-ch/ssh-citation-index"
       ]
     },
     "openalex": {
-      "total_works": 58,
+      "total_works": 60,
       "by_year": {
         "2026": 1,
         "2025": 2,
         "2024": 2,
         "2023": 5,
-        "2022": 5,
-        "2021": 3,
+        "2022": 6,
+        "2021": 4,
         "2020": 3,
         "2019": 11,
         "2018": 3,
@@ -2314,6 +2314,7 @@
         "The Review of Socionetwork Strategies": 1,
         "Acadlore Transactions on AI and Machine Learning": 1,
         "GigaScience": 1,
+        "SPIRE - Sciences Po Institutional REpository": 2,
         "bonndoc (University of Bonn)": 1,
         "Journal of Cheminformatics": 1,
         "Unknown": 7,
@@ -2360,142 +2361,142 @@
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "timespan": "P7Y"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "timespan": "P9Y"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "timespan": "P5Y"
+          "title": "The Publishing Workflow Ontology (PWO)"
         },
         {
           "doi": "10.1145/2740908.2742019",
           "year": "2015",
-          "timespan": "P3Y"
+          "title": "Using Linked Data Traversal To Label Academic Communities"
         },
         {
           "doi": "10.1007/978-3-319-58694-6_14",
           "year": "2017",
-          "timespan": "P5Y"
+          "title": "An Ontological Perspective On Thematic Roles"
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "timespan": "P5Y"
+          "title": "Genuine Semantic Publishing"
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "timespan": "P4Y"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
         },
         {
-          "doi": "10.1093/database/baz067 10.13140/rg.2.2.21245.61924/1",
+          "doi": "10.1093/database/baz067",
           "year": "2019",
-          "timespan": "P7Y"
+          "title": "SOCCOMAS: A FAIR Web Content Management System That Uses Knowledge Graphs And That Is Based On Semantic Programming"
         },
         {
           "doi": "10.4000/jtei.1365",
           "year": "2014",
-          "timespan": "P2Y"
+          "title": "TEI, Ontologies, Linked Open Data: Geolat And Beyond"
         },
         {
           "doi": "10.1016/j.procs.2014.10.012",
           "year": "2014",
-          "timespan": "P2Y"
+          "title": "Political Roles Ontology (PRoles): Enhancing Archival Authority Records Through Semantic Web Technologies"
         },
         {
           "doi": "10.2139/ssrn.3198992",
           "year": "2012",
-          "timespan": "P0Y"
+          "title": "FaBIO And CiTO: Ontologies For Describing Bibliographic Resources And Citations"
         },
         {
           "doi": "10.1016/j.websem.2012.08.001",
           "year": "2012",
-          "timespan": "P0Y"
+          "title": "FaBiO And CiTO: Ontologies For Describing Bibliographic Resources And Citations"
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "timespan": "P4Y"
+          "title": "The Document Components Ontology (DoCO)"
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "timespan": "P2Y"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "timespan": "P3Y"
+          "title": "MACJa: Metadata And Citations Jailbreaker"
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "timespan": "P5Y"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
         },
         {
           "doi": "10.1080/10572317.2017.1353374",
           "year": "2017",
-          "timespan": "P5Y"
+          "title": "Towards A Semantic Documentation Of Heritage Objects Through Visual And Iconographical Representations"
         },
         {
           "doi": "10.1007/978-3-031-72437-4_10",
           "year": "2024",
-          "timespan": "P12Y"
+          "title": "Improving Retrieval And Expression Of Iconographical And Iconological Semantic Statements: An Extension Of The ICON Ontology"
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "timespan": "P8Y"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
         },
         {
           "doi": "10.1145/2802612.2802633",
           "year": "2015",
-          "timespan": "P3Y"
+          "title": "Ontological Approaches To Information Description And Extraction In The Cultural Heritage Domain"
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "timespan": "P1Y"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.1162/qss_a_00292",
           "year": "2024",
-          "timespan": "P12Y"
+          "title": "OpenCitations Meta"
         },
         {
           "doi": "10.1109/icwr65219.2025.11006231",
           "year": "2025",
-          "timespan": "P13Y"
+          "title": "Advancing Cardiovascular Research: A Tailored Knowledge Graph Schema For Scholarly Data"
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "timespan": "P3Y"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
         },
         {
           "doi": "10.1007/978-3-319-04777-5_2",
           "year": "2014",
-          "timespan": "P2Y"
+          "title": "The Digital Publishing Revolution"
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "timespan": "P13Y"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "timespan": ""
+          "title": "Tools For The Automatic Generation Of Ontology Documentation"
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "timespan": "P2Y"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
         }
       ]
     }

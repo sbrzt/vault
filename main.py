@@ -33,6 +33,7 @@ def main() -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     openalex_key = os.environ.get("OPENALEX_API_KEY", "")
     github_token = os.environ.get("GITHUB_TOKEN", "")
+    opencitations_token = os.environ.get("OPENCITATIONS_TOKEN", "")
     generated_at = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC")
     results = []
 
@@ -46,7 +47,7 @@ def main() -> None:
         print("  Fetching OpenAlex...")
         oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_key)
         print("  Fetching OpenCitations...")
-        oc_data = src.opencitations.fetch_opencitations(ontology)
+        oc_data = src.opencitations.fetch_opencitations(ontology, api_key=opencitations_token)
     
         results.append({
             "label": ontology["label"],
