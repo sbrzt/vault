@@ -218,14 +218,14 @@
         "2026": 3,
         "2025": 9,
         "2024": 13,
-        "2023": 19,
-        "2022": 10,
+        "2023": 20,
+        "2022": 9,
         "2021": 13,
         "2020": 7,
         "2019": 5,
         "2018": 3,
-        "2017": 2,
-        "2016": 6
+        "2017": 3,
+        "2016": 5
       },
       "top_works": [
         {
@@ -284,16 +284,18 @@
         "Cybernetics and Information Technologies": 1,
         "Front Matter": 4,
         "SPIRE - Sciences Po Institutional REpository": 2,
-        "Unknown": 8,
+        "Unknown": 7,
         "Future Internet": 1,
+        "Vjesnik bibliotekara Hrvatske": 1,
         "Preprints.org": 1,
         "Bilgi D\u00fcnyas\u0131": 1,
         "Eos": 1,
-        "Zenodo (CERN European Organization for Nuclear Research)": 8,
+        "Duo Research Archive (University of Oslo)": 2,
         "Journal on Computing and Cultural Heritage": 1,
         "Data Science Journal": 1,
+        "Zenodo (CERN European Organization for Nuclear Research)": 7,
         "Journal of Cheminformatics": 3,
-        "International Journal of Metadata Semantics and Ontologies": 2,
+        "International Journal of Metadata Semantics and Ontologies": 1,
         "iSys - Brazilian Journal of Information Systems": 1,
         "Proceedings of the Association for Information Science and Technology": 1,
         "The VLDB Journal": 1,
@@ -304,12 +306,12 @@
         "AoIR Selected Papers of Internet Research": 1,
         "Commonplace": 1,
         "Carolina Digital Repository (University of North Carolina at Chapel Hill)": 1,
-        "Duo Research Archive (University of Oslo)": 1,
         "Data Science": 1,
         "Institutional Repositories DataBase (IRDB)": 1,
         "IEEE Access": 1,
         "Institutional Repository of Leibniz Universit\u00e4t Hannover (Leibniz Universit\u00e4t Hannover)": 2,
         "ePrints Soton (University of Southampton)": 1,
+        "theses.fr (ABES)": 1,
         "Frontiers in Earth Science": 1,
         "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica": 1,
         "Research Ideas and Outcomes": 1,
@@ -338,687 +340,961 @@
         {
           "doi": "10.1002/leap.1610",
           "year": "2024",
-          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books"
+          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books",
+          "authors": "Calleja Iba\u00f1ez, Pablo; Gim\u00e9nez-Toledo, Elea",
+          "venue": "Learned Publishing "
         },
         {
           "doi": "10.1007/978-3-031-19433-7_38",
           "year": "2022",
-          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive"
+          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive",
+          "authors": "Toulet, Anne; Michel, Franck; Bobasheva, Anna; Menin, Aline; Dupr\u00e9, S\u00e9bastien; Deboin, Marie-Claude; Winckler, Marco; Tchechmedjiev, Andon",
+          "venue": "The Semantic Web \u2013 ISWC 2022 "
         },
         {
           "doi": "10.1016/j.daach.2025.e00409",
           "year": "2025",
-          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction"
+          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction",
+          "authors": "Veggi, Manuele; Cerato, Ivana",
+          "venue": "Digital Applications In Archaeology And Cultural Heritage "
         },
         {
           "doi": "10.1109/inciscos.2017.17",
           "year": "2017",
-          "title": "Methodological Guidelines For Publishing Library Data As Linked Data"
+          "title": "Methodological Guidelines For Publishing Library Data As Linked Data",
+          "authors": "Hidalgo-Delgado, Yusniel; Estrada-Nelson, Reina; Xu, Bin; Villazon-Terrazas, Boris; Leiva-Mederos, Amed; Tello, Andr\u00e9s",
+          "venue": "2017 International Conference On Information Systems And Computer Science (INCISCOS) "
         },
         {
           "doi": "10.1080/00140139.2024.2396527",
           "year": "2024",
-          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI"
+          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI",
+          "authors": "Ward, Marie; Geary, Una; Brennan, Rob; Vining, Rebecca; McKenna, Lucy; O\u2019Connell, Brian; Bergin, Colm; Byrne, Declan; Creagh, Donncha; Fogarty, Mary; Healy, Una; McDonald, Grainne; Ebiele, Malick; Crane, Martin; Pham, Minh-Khoi; Bendechache, Malika; Bezbradica, Marija; Liang, Junli; Doyle, Brian; Guilfoyle, John; Shuhaiber, Arwa; McDonald, Nick",
+          "venue": "Ergonomics "
         },
         {
           "doi": "10.1007/s00799-025-00421-z",
           "year": "2025",
-          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music"
+          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music",
+          "authors": "Sanfilippo, Emilio; Freedman, Richard; Mosca, Alessandro",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.2478/cait-2024-0042",
           "year": "2024",
-          "title": "An Interface For Linking Ancient Languages"
+          "title": "An Interface For Linking Ancient Languages",
+          "authors": "Mallia, Michele; Bandini, Michela; Quochi, Valeria",
+          "venue": "Cybernetics And Information Technologies "
         },
         {
           "doi": "10.3233/sw-222859",
           "year": "2022",
-          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data"
+          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data",
+          "authors": "Khan, Anas Fahad; Chiarcos, Christian; Declerck, Thierry; Gifu, Daniela; Garc\u00eda, Elena Gonz\u00e1lez-Blanco; Gracia, Jorge; Ionov, Maxim; Labropoulou, Penny; Mambrini, Francesco; McCrae, John P.; Pag\u00e9-Perron, \u00c9milie; Passarotti, Marco; Mu\u00f1oz, Salvador Ros; Truic\u0103, Ciprian-Octavian",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.35366/119447",
           "year": "2024",
-          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura"
+          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura",
+          "authors": "Flores-Valadez, Mario Arturo; Mich\u00e1n-Aguirre, Layla; Mu\u00f1oz-Velasco, Israel; Romero-P\u00e9rez, Minerva",
+          "venue": "NCT Neumolog\u00eda Y Cirug\u00eda De T\u00f3rax "
         },
         {
           "doi": "10.1007/978-3-319-25007-6_24",
           "year": "2015",
-          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks"
+          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks",
+          "authors": "Osborne, Francesco; Motta, Enrico",
+          "venue": "The Semantic Web - ISWC 2015 "
         },
         {
           "doi": "10.1007/978-3-642-41242-4_30",
           "year": "2013",
-          "title": "Identifying Functions Of Citations With CiTalO"
+          "title": "Identifying Functions Of Citations With CiTalO",
+          "authors": "Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio",
+          "venue": "Advanced Information Systems Engineering "
         },
         {
           "doi": "10.1007/978-3-030-61244-3_10",
           "year": "2020",
-          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation"
+          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation",
+          "authors": "Giosa, Davide; Di Caro, Luigi",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1145/2517978.2517983",
           "year": "2013",
-          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio"
+          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio",
+          "authors": "Bartalesi, Valentina; Locuratolo, Elvira; Versienti, Loredana; Meghini, Carlo",
+          "venue": "Proceedings Of The 1St International Workshop On Collaborative Annotations In Shared Environment Metadata, Vocabularies And Techniques In The Digital Humanities - DH-CASE '13 "
         },
         {
           "doi": "10.1162/qss_a_00222",
           "year": "2022",
-          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities"
+          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Quantitative Science Studies "
         },
         {
           "doi": "10.1007/978-3-030-59194-6_37",
           "year": "2020",
-          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies"
+          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies",
+          "authors": "Santamaria, Teresa; Tapia-Leon, Mariela; Chicaiza, Janneth",
+          "venue": "Systems And Information Sciences "
         },
         {
           "doi": "10.1145/2660517.2660537",
           "year": "2014",
-          "title": "Expanded Citations And Projections Of Concepts"
+          "title": "Expanded Citations And Projections Of Concepts",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Proceedings Of The 10Th International Conference On Semantic Systems "
         },
         {
           "doi": "10.1145/2637748.2638444",
           "year": "2014",
-          "title": "On Expanded Citations"
+          "title": "On Expanded Citations",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Proceedings Of The 14Th International Conference On Knowledge Technologies And Data-driven Business - i-KNOW '14 "
         },
         {
           "doi": "10.1186/s13326-017-0174-5",
           "year": "2018",
-          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System"
+          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System",
+          "authors": "Senderov, Viktor; Simov, Kiril; Franz, Nico; Stoev, Pavel; Catapano, Terry; Agosti, Donat; Sautter, Guido; Morris, Robert A.; Penev, Lyubomir",
+          "venue": "Journal Of Biomedical Semantics "
         },
         {
           "doi": "10.21203/rs.3.rs-4104397/v1",
           "year": "2024",
-          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis"
+          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis",
+          "authors": "Sagoe, Dominic; Cruyff, Maarten; Chegeni, Razieh; Veltmaat, Annalena; Kiss, Anna; So\u00f3s, S\u00e1ndor; De Hon, Olivier; Heijden, Peter Van Der; Petr\u00f3czi, Andrea",
+          "venue": ""
         },
         {
           "doi": "10.1007/978-3-030-45439-5_15",
           "year": "2020",
-          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation"
+          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation",
+          "authors": "Saier, Tarek; F\u00e4rber, Michael",
+          "venue": "Advances In Information Retrieval "
         },
         {
           "doi": "10.1016/j.procs.2018.09.015",
           "year": "2018",
-          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings"
+          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings",
+          "authors": "Fathalla, Said; Vahdati, Sahar; Auer, S\u00f6ren; Lange, Christoph",
+          "venue": "Procedia Computer Science "
         },
         {
           "doi": "10.4000/jtei.1480",
           "year": "2016",
-          "title": "Formal Ontologies, Linked Data, And TEI Semantics"
+          "title": "Formal Ontologies, Linked Data, And TEI Semantics",
+          "authors": "Ciotti, Fabio; Tomasi, Francesca",
+          "venue": "Journal Of The Text Encoding Initiative "
         },
         {
           "doi": "10.1108/lht-01-2016-0003",
           "year": "2016",
-          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository"
+          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository",
+          "authors": "Hatop, G\u00f6tz",
+          "venue": "Library Hi Tech "
         },
         {
           "doi": "10.1016/j.atech.2024.100484",
           "year": "2024",
-          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs"
+          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs",
+          "authors": "Yacoubi Ayadi, Nadia; Bernard, Stephan; Bossy, Robert; Courtin, Marine; Happi Happi, Bill Gates; Larmande, Pierre; Michel, Franck; N\u00e9dellec, Claire; Roussey, Catherine; Faron, Catherine",
+          "venue": "Smart Agricultural Technology "
         },
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations",
+          "authors": "Carboni, Nicola; Luca,",
+          "venue": "Heritage "
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics",
+          "authors": "Bucur, Cristina-Iulia; Kuhn, Tobias; Ceolin, Davide; Van Ossenbruggen, Jacco",
+          "venue": "Proceedings Of The 11Th On Knowledge Capture Conference "
         },
         {
           "doi": "10.4018/978-1-5225-2255-3.ch439",
           "year": "2018",
-          "title": "Knowledge Acquisition On Dante Alighieri's Works"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works",
+          "authors": "Locuratolo, Elvira Immacolata; Lenzi, Valentina Bartalesi",
+          "venue": "Encyclopedia Of Information Science And Technology, Fourth Edition "
         },
         {
           "doi": "10.1007/s00799-020-00288-2",
           "year": "2020",
-          "title": "Citation Recommendation: Approaches And Datasets"
+          "title": "Citation Recommendation: Approaches And Datasets",
+          "authors": "F\u00e4rber, Michael; Jatowt, Adam",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "title": "The Publishing Workflow Ontology (PWO)"
+          "title": "The Publishing Workflow Ontology (PWO)",
+          "authors": "Gangemi, Aldo; Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/978-3-030-91669-5_24",
           "year": "2021",
-          "title": "Federating Scholarly Infrastructures With GraphQL"
+          "title": "Federating Scholarly Infrastructures With GraphQL",
+          "authors": "Haris, Muhammad; Farfar, Kheir Eddine; Stocker, Markus; Auer, Soren",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-319-49004-5_30",
           "year": "2016",
-          "title": "TechMiner: Extracting Technologies From Academic Publications"
+          "title": "TechMiner: Extracting Technologies From Academic Publications",
+          "authors": "Osborne, Francesco; De Ribaupierre, H\u00e9l\u00e8ne; Motta, Enrico",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1109/educon.2018.8363427",
           "year": "2018",
-          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources"
+          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources",
+          "authors": "Vallejo-Figueroa, Santa; Rodriguez-Artacho, Miguel; Castro-Gil, Manuel; Cristobal, Elio San",
+          "venue": "2018 IEEE Global Engineering Education Conference (EDUCON) "
         },
         {
           "doi": "10.1016/j.jmb.2022.167514",
           "year": "2022",
-          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data"
+          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data",
+          "authors": "Kim, Sunghwan; Cheng, Tiejun; He, Siqian; Thiessen, Paul A.; Li, Qingliang; Gindulyte, Asta; Bolton, Evan E.",
+          "venue": "Journal Of Molecular Biology "
         },
         {
           "doi": "10.1145/2970044.2970049",
           "year": "2016",
-          "title": "In Collaboration With In Concert"
+          "title": "In Collaboration With In Concert",
+          "authors": "Nurmikko-Fuller, Terhi; Dix, Alan; M. Weigl, David; Page, Kevin R.",
+          "venue": "Proceedings Of The 3Rd International Workshop On Digital Libraries For Musicology "
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "title": "Genuine Semantic Publishing"
+          "title": "Genuine Semantic Publishing",
+          "authors": "Kuhn, Tobias; Dumontier, Michel",
+          "venue": "Data Science "
         },
         {
           "doi": "10.1007/s11192-021-04226-0",
           "year": "2022",
-          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition"
+          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition",
+          "authors": "Bordignon, Frederique",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1145/3383583.3398520",
           "year": "2020",
-          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs"
+          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs",
+          "authors": "Oelen, Allard; Jaradeh, Mohamad Yaser; Stocker, Markus; Auer, S\u00f6ren",
+          "venue": "Proceedings Of The ACM/IEEE Joint Conference On Digital Libraries In 2020 "
         },
         {
           "doi": "10.1007/978-3-319-46547-0_16",
           "year": "2016",
-          "title": "Conference Linked Data: The ScholarlyData Project"
+          "title": "Conference Linked Data: The ScholarlyData Project",
+          "authors": "Nuzzolese, Andrea Giovanni; Gentile, Anna Lisa; Presutti, Valentina; Gangemi, Aldo",
+          "venue": "The Semantic Web \u2013 ISWC 2016 "
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Challenges "
         },
         {
           "doi": "10.1007/978-3-031-40286-9_29",
           "year": "2023",
-          "title": "Modeling Chinese Ancient Book Catalog"
+          "title": "Modeling Chinese Ancient Book Catalog",
+          "authors": "Wang, Jun; Wang, Linxu; Wei, Tong",
+          "venue": "Knowledge Science, Engineering And Management "
         },
         {
           "doi": "10.1007/978-3-030-36599-8_26",
           "year": "2019",
-          "title": "A Semantic Representation Of The Citation Structure"
+          "title": "A Semantic Representation Of The Citation Structure",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Metadata And Semantic Research "
         },
         {
           "doi": "10.1186/s13321-021-00515-1",
           "year": "2021",
-          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets"
+          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets",
+          "authors": "Galgonek, Jakub; Vondr\u00e1\u0161ek, Ji\u0159\u00ed",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.1007/978-3-319-25518-7_12",
           "year": "2015",
-          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data"
+          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data",
+          "authors": "Kolchin, Maxim; Cherny, Eugene; Kozlov, Fedor; Shipilo, Alexander; Kovriguina, Liubov",
+          "venue": "Semantic Web Evaluation Challenges "
         },
         {
           "doi": "10.1002/asi.23721",
           "year": "2016",
-          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures"
+          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures",
+          "authors": "Mayernik, Matthew S.; Hart, David L; Maull, Keith E.; Weber, Nicholas M.",
+          "venue": "IUBMB Life "
         },
         {
           "doi": "10.1002/eqe.4231",
           "year": "2024",
-          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering"
+          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering",
+          "authors": "Shahnazaryan, Davit; Pinho, Rui; Crowley, Helen; O'Reilly, Gerard J.",
+          "venue": "History And Theory "
         },
         {
           "doi": "10.1101/2021.02.12.430944",
           "year": "2021",
-          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases",
+          "authors": "Delmas, Maxime; Filangi, Olivier; Paulhe, Nils; Vinson, F.; Duperier, C.; Garrier, W.; Saunier, P.-E.; Pitarch, Y.; Jourdan, Fabien; Giacomoni, Franck; Frainay, Cl\u00e9ment",
+          "venue": ""
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "title": "The Document Components Ontology (DoCO)"
+          "title": "The Document Components Ontology (DoCO)",
+          "authors": "Constantin, Alexandru; Peroni, Silvio; Pettifer, Steve; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/978-3-030-01379-0_4",
           "year": "2018",
-          "title": "Extending ScholarlyData With Research Impact Indicators"
+          "title": "Extending ScholarlyData With Research Impact Indicators",
+          "authors": "Nuzzolese, Andrea Giovanni; Presutti, Valentina; Gangemi, Aldo; Ciancarini, Paolo",
+          "venue": "Semantics, Analytics, Visualization "
         },
         {
           "doi": "10.1007/s11192-016-2134-8",
           "year": "2016",
-          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams"
+          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams",
+          "authors": "Bertin, Marc; Atanassova, Iana; Sugimoto, Cassidy; Lariviere, Vincent",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/icsc64641.2025.00021",
           "year": "2025",
-          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry"
+          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry",
+          "authors": "Lu, Brian; Pham, Dennis; Chang, Ti-Chiun; Lovette, Michael; Bui, Terri; Ma, Stephen",
+          "venue": "2025 19Th International Conference On Semantic Computing (ICSC) "
         },
         {
           "doi": "10.1109/percomw.2016.7457108",
           "year": "2016",
-          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform"
+          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform",
+          "authors": "Jagadeesan, Yogesh; Hu, Peizhao; Rivero, Carlos R.",
+          "venue": "2016 IEEE International Conference On Pervasive Computing And Communication Workshops (PerCom Workshops) "
         },
         {
           "doi": "10.1093/bioinformatics/btab627",
           "year": "2021",
-          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases",
+          "authors": "Delmas, Maxime; Filangi, Olivier; Paulhe, Nils; Vinson, Florence; Duperier, Christophe; Garrier, William; Saunier, Paul-Emeric; Pitarch, Yoann; Jourdan, Fabien; Giacomoni, Franck; Frainay, Cl\u00e9ment",
+          "venue": "Bioinformatics "
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles",
+          "authors": "Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio; Zingoni, Jacopo",
+          "venue": "Communications In Computer And Information Science "
         },
         {
           "doi": "10.1007/978-3-031-43849-3_11",
           "year": "2023",
-          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries"
+          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries",
+          "authors": "Balke, Wolf-Tilo; Usman, Muhammad",
+          "venue": "Linking Theory And Practice Of Digital Libraries "
         },
         {
           "doi": "10.1007/978-3-030-21348-0_7",
           "year": "2019",
-          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration"
+          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration",
+          "authors": "Ferrod, Roger; Schifanella, Claudio; Di Caro, Luigi; Cataldi, Mario",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1002/asi.24982",
           "year": "2025",
-          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations"
+          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations",
+          "authors": "Ta\u015fk\u0131n, Zehra",
+          "venue": "Journal Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "title": "MACJa: Metadata And Citations Jailbreaker"
+          "title": "MACJa: Metadata And Citations Jailbreaker",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Evaluation Challenges "
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain",
+          "authors": "Daquino, Marilena; Mambelli, Francesca; Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.1108/lht-06-2015-0063",
           "year": "2015",
-          "title": "Recommending Research Articles Using Citation Data"
+          "title": "Recommending Research Articles Using Citation Data",
+          "authors": "Vellino, Andre",
+          "venue": "Library Hi Tech "
         },
         {
           "doi": "10.1093/llc/fqy002",
           "year": "2018",
-          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study"
+          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo; Metilli, Daniele; Tavoni, Mirko; Andriani, Paola",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.3390/knowledge4010001",
           "year": "2024",
-          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture"
+          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture",
+          "authors": "D\u2019Souza, Jennifer",
+          "venue": "Knowledge "
         },
         {
           "doi": "10.1007/s11192-018-2961-x",
           "year": "2018",
-          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content"
+          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content",
+          "authors": "Qayyum, Faiza; Afzal, Muhammad",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/wits.2019.8723850",
           "year": "2019",
-          "title": "Ontologies For The Classification Of Cultural Heritage Data"
+          "title": "Ontologies For The Classification Of Cultural Heritage Data",
+          "authors": "Nafis, Fouad; Yahyaouy, Ali; Aghoutane, Badraddine",
+          "venue": "2019 International Conference On Wireless Technologies, Embedded And Intelligent Systems (WITS) "
         },
         {
           "doi": "10.1007/978-3-319-47602-5_18",
           "year": "2016",
-          "title": "Semantic Web Conference Ontology - A Refactoring Solution"
+          "title": "Semantic Web Conference Ontology - A Refactoring Solution",
+          "authors": "Nuzzolese, Andrea Giovanni; Gentile, Anna Lisa; Presutti, Valentina; Gangemi, Aldo",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1093/llc/fqac095",
           "year": "2023",
-          "title": "Building Linked Lexicography Applications With LexO-server"
+          "title": "Building Linked Lexicography Applications With LexO-server",
+          "authors": "Bellandi, Andrea",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.1186/s13321-023-00684-1",
           "year": "2023",
-          "title": "A Look Back At A Pilot Of The Citation Typing Ontology"
+          "title": "A Look Back At A Pilot Of The Citation Typing Ontology",
+          "authors": "Guha, Rajarshi; Jeliazkova, Nina; Martinez-Mayorga, Karina; Zdrazil, Barbara",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.4242/balisagevol8.huitfeldt01",
           "year": null,
-          "title": "Documents As Timed Abstract Objects"
+          "title": "Documents As Timed Abstract Objects",
+          "authors": "Huitfeldt, Claus; Vitali, Fabio; Peroni, Silvio",
+          "venue": "Balisage Series On Markup Technologies "
         },
         {
           "doi": "10.1093/llc/fqv044",
           "year": "2015",
-          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge"
+          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo; Andriani, Paola; Tavoni, Mirko",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.1038/502295a",
           "year": "2013",
-          "title": "Publishing: Open Citations"
+          "title": "Publishing: Open Citations",
+          "authors": "Shotton, D M",
+          "venue": "Nature "
         },
         {
           "doi": "10.3233/ao-210246",
           "year": "2021",
-          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges"
+          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges",
+          "authors": "Sanfilippo, Emilio M.",
+          "venue": "Applied Ontology "
         },
         {
           "doi": "10.5334/dsj-2016-006",
           "year": "2016",
-          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?"
+          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?",
+          "authors": "",
+          "venue": "Data Science Journal "
         },
         {
           "doi": "10.1109/wisa.2016.41",
           "year": "2016",
-          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information"
+          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information",
+          "authors": "Xia, Xiutao; Xu, Zhuoming; Liu, Zhaoheng",
+          "venue": "2016 13Th Web Information Systems And Applications Conference (WISA) "
         },
         {
           "doi": "10.1002/pra2.984",
           "year": "2023",
-          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries"
+          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries",
+          "authors": "Weng, Mengjuan; Hou, Xilong; Lei, Jueying; Wang, Xiaoguang",
+          "venue": "Proceedings Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.1007/s11192-021-04097-5",
           "year": "2021",
-          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case"
+          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/wisa.2016.42",
           "year": "2016",
-          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information"
+          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information",
+          "authors": "Liu, Zhaoheng; Xu, Zhuoming; Xia, Xiutao",
+          "venue": "2016 13Th Web Information Systems And Applications Conference (WISA) "
         },
         {
           "doi": "10.1002/pra2.754",
           "year": "2022",
-          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments"
+          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments",
+          "authors": "Striewski, S\u00f6ren; Zagovora, Olga; Peters, Isabella",
+          "venue": "Proceedings Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.35366/119446",
           "year": "2024",
-          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda"
+          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda",
+          "authors": "Flores-Valadez, Mario Arturo; Mich\u00e1n-Aguirre, Layla; Mu\u00f1oz-Velasco, Israel; Romero-P\u00e9rez, Minerva",
+          "venue": "NCT Neumolog\u00eda Y Cirug\u00eda De T\u00f3rax "
         },
         {
           "doi": "10.1109/jcdl.2017.7991585",
           "year": "2017",
-          "title": "Towards Publishing Secure Capsule-Based Analysis"
+          "title": "Towards Publishing Secure Capsule-Based Analysis",
+          "authors": "Murdock, Jaimie; Jett, Jacob; Cole, Timothy; Ma, Yu; Downie, J. Stephen; Plale, Beth",
+          "venue": "2017 ACM/IEEE Joint Conference On Digital Libraries (JCDL) "
         },
         {
           "doi": "10.1108/el-03-2019-0081",
           "year": "2019",
-          "title": "Application Of Semantic Technologies In Bibliographic Databases"
+          "title": "Application Of Semantic Technologies In Bibliographic Databases",
+          "authors": "Georgieva-Trifonova, Tsvetanka; Zdravkov, Kaloyan; Valcheva, Donika",
+          "venue": "The Electronic Library "
         },
         {
           "doi": "10.3233/sw-210426",
           "year": "2022",
-          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD"
+          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD",
+          "authors": "Z\u00e1rate, Marcos; Braun, Germ\u00e1n; Lewis, Mirtha; Fillottrani, Pablo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s11192-021-03955-6",
           "year": "2021",
-          "title": "An NLP-based Citation Reason Analysis Using CCRO"
+          "title": "An NLP-based Citation Reason Analysis Using CCRO",
+          "authors": "Ihsan, Imran; Qadir, M. Abdul",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/s11192-024-05082-4",
           "year": "2024",
-          "title": "Linguistic Perspectives In Deciphering Citation Function Classification"
+          "title": "Linguistic Perspectives In Deciphering Citation Function Classification",
+          "authors": "Bertin, Marc; Atanassova, Iana",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/s11192-019-03217-6",
           "year": "2019",
-          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations"
+          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations",
+          "authors": "Heibi, Ivan; Peroni, Silvio; Shotton, D M",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/978-3-031-60635-9_11",
           "year": "2024",
-          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning"
+          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning",
+          "authors": "Dasoulas, Ioannis; Yang, Duo; Dimou, Anastasia",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-642-41242-4_6",
           "year": "2013",
-          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework"
+          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework",
+          "authors": "Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio",
+          "venue": "Advanced Information Systems Engineering "
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping",
+          "authors": "Nguyen, Viet Bach; Sv\u00e1tek, Vojt\u011bch; Rabby, Gollam; Corcho, Oscar",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/s00799-016-0169-3",
           "year": "2016",
-          "title": "Scholarly Ontology: Modelling Scholarly Practices"
+          "title": "Scholarly Ontology: Modelling Scholarly Practices",
+          "authors": "Pertsas, Vayianos; Constantopoulos, Panos",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "International Journal On Semantic Web And Information Systems "
         },
         {
           "doi": "10.1007/978-3-031-78952-6_25",
           "year": "2025",
-          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs"
+          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs",
+          "authors": "Dasoulas, Ioannis; Yang, Duo; Dimou, Anastasia",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-030-01379-0_11",
           "year": "2018",
-          "title": "Investigating Facets To Characterise Citations For Scholars"
+          "title": "Investigating Facets To Characterise Citations For Scholars",
+          "authors": "Di Iorio, Angelo; Limpens, Freddy; Peroni, Silvio; Rotondi, Agata; Tsatsaronis, Georgios; Achtsivassilis, Jorgos",
+          "venue": "Semantics, Analytics, Visualization "
         },
         {
           "doi": "10.1007/978-3-319-07443-6_39",
           "year": "2014",
-          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues"
+          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues",
+          "authors": "Ciancarini, Paolo; Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio; Vitali, Fabio",
+          "venue": "The Semantic Web: Trends And Challenges "
         },
         {
           "doi": "10.3989/arbor.2021.799007",
           "year": "2021",
-          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica"
+          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica",
+          "authors": "Luis Ortega, Jos\u00e9",
+          "venue": "Arbor "
         },
         {
           "doi": "10.1101/2021.03.15.435418",
           "year": "2021",
-          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning",
+          "authors": "Nicholson, Josh; Mordaunt, M.; Lopez, P.; Uppala, Ashish; Rosati, D.; Rodrigues, N.P.; Grabitz, Peter; Rife, Sean",
+          "venue": ""
         },
         {
           "doi": "10.3233/sw-160222",
           "year": "2016",
-          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns"
+          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns",
+          "authors": "Nuzzolese, Andrea Giovanni; Presutti, Valentina; Gangemi, Aldo; Peroni, Silvio; Ciancarini, Paolo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s00799-021-00306-x",
           "year": "2021",
-          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies"
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
-          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References"
+          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References",
+          "authors": "Mucheroni, Marcos Luiz; Peroni, Silvio; Dos Santos, Erika Alves",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.1145/3318396.3318422",
           "year": "2019",
-          "title": "Extension Of The BiDO Ontology To Represent Scientific Production"
+          "title": "Extension Of The BiDO Ontology To Represent Scientific Production",
+          "authors": "Tapia-Leon, Mariela; Santana-Perez, Idafen; Poveda-Villal\u00f3n, Mar\u00eda; Espinoza-Arias, Paola; Chicaiza, Janneth; Corcho, Oscar",
+          "venue": "Proceedings Of The 2019 8Th International Conference On Educational And Information Technology "
         },
         {
           "doi": "10.1007/978-3-319-04777-5_5",
           "year": "2014",
-          "title": "The Semantic Publishing And Referencing Ontologies"
+          "title": "The Semantic Publishing And Referencing Ontologies",
+          "authors": "Peroni, Silvio",
+          "venue": "Law, Governance And Technology Series "
         },
         {
           "doi": "10.1007/s10796-016-9637-y",
           "year": "2016",
-          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery"
+          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery",
+          "authors": "Li, Yan; Thomas, Manoj; Osei-Bryson, Kweku-Muata",
+          "venue": "Information Systems Frontiers "
         },
         {
           "doi": "10.1108/jchmsd-06-2021-0110",
           "year": "2022",
-          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications"
+          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications",
+          "authors": "Vlachos, Apostolos; Perifanou, Maria; Economides, Anastasios A.",
+          "venue": "Journal Of Cultural Heritage Management And Sustainable Development "
         },
         {
           "doi": "10.1145/2910896.2910903",
           "year": "2016",
-          "title": "Enhancing Scholarly Use Of Digital Libraries"
+          "title": "Enhancing Scholarly Use Of Digital Libraries",
+          "authors": "Jett, Jacob; Nurmikko-Fuller, Terhi; Cole, Timothy; Page, Kevin R.; Downie, J. Stephen",
+          "venue": "Proceedings Of The 16Th ACM/IEEE-CS On Joint Conference On Digital Libraries "
         },
         {
           "doi": "10.4018/978-1-5225-7659-4.ch030",
           "year": "2019",
-          "title": "Knowledge Acquisition On Dante Alighieri's Works"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works",
+          "authors": "Locuratolo, Elvira Immacolata; Lenzi, Valentina Bartalesi",
+          "venue": "Advances In Library And Information Science "
         },
         {
           "doi": "10.1080/19386389.2016.1216969",
           "year": "2016",
-          "title": "Activity Analysis, Semantics And Metadata Building"
+          "title": "Activity Analysis, Semantics And Metadata Building",
+          "authors": "Cote, Christian",
+          "venue": "Asian Politics & Policy "
         },
         {
           "doi": "10.1016/j.knosys.2019.01.009",
           "year": "2019",
-          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature"
+          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature",
+          "authors": "Goldenberg, Meir",
+          "venue": "Knowledge-Based Systems "
         },
         {
           "doi": "10.1145/3057148.3057149",
           "year": "2017",
-          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection"
+          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection",
+          "authors": "Mesbah, Sepideh; Bozzon, Alessandro; Lofi, Christoph; Houben, Geert-Jan",
+          "venue": "Proceedings Of The 1St Workshop On Scholarly Web Mining - SWM '17 "
         },
         {
           "doi": "10.1186/s13321-020-00448-1",
           "year": "2020",
-          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics"
+          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics",
+          "authors": "Willighagen, Egon",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.1145/3487553.3524624",
           "year": "2022",
-          "title": "Towards Building Live Open Scientific Knowledge Graphs"
+          "title": "Towards Building Live Open Scientific Knowledge Graphs",
+          "authors": "Le-Tuan, Anh; Franzreb, Carlos; Le Phuoc, Danh; Schimmler, Sonja; Hauswirth, Manfred",
+          "venue": "Companion Proceedings Of The Web Conference 2022 "
         },
         {
           "doi": "10.1007/978-3-319-03524-6_29",
           "year": "2013",
-          "title": "Semantic Annotation Of Scholarly Documents And Citations"
+          "title": "Semantic Annotation Of Scholarly Documents And Citations",
+          "authors": "Ciancarini, Paolo; Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio; Vitali, Fabio",
+          "venue": "AI*IA 2013: Advances In Artificial Intelligence "
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data",
+          "authors": "Peroni, Silvio; Dutton, Alexander; Gray, Tanya; Shotton, David",
+          "venue": "Journal Of Documentation "
         },
         {
           "doi": "10.1002/asi.23179",
           "year": "2014",
-          "title": "Measuring Academic Influence: Not All Citations Are Equal"
+          "title": "Measuring Academic Influence: Not All Citations Are Equal",
+          "authors": "Zhu, Xiaodan; Turney, Peter; Lemire, Daniel; Vellino, Andre",
+          "venue": "Journal Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.3233/ds-170012",
           "year": "2017",
-          "title": "Automating Semantic Publishing"
+          "title": "Automating Semantic Publishing",
+          "authors": "Peroni, Silvio",
+          "venue": "Data Science "
         },
         {
           "doi": "10.1145/2361354.2361396",
           "year": "2012",
-          "title": "Faceted Documents"
+          "title": "Faceted Documents",
+          "authors": "Peroni, Silvio; Shotton, D M; Vitali, Fabio",
+          "venue": "Proceedings Of The 2012 ACM Symposium On Document Engineering - DocEng '12 "
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability",
+          "authors": "Barzaghi, Sebastian; Palmero Aprosio, Alessio; Paolucci, Francesco; Tomasi, Francesca; Tonelli, Sara; Vignocchi, Marialaura; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.1007/978-3-030-77385-4_27",
           "year": "2021",
-          "title": "Structured Semantic Modeling Of Scientific Citation Intents"
+          "title": "Structured Semantic Modeling Of Scientific Citation Intents",
+          "authors": "Ferrod, Roger; Di Caro, Luigi; Schifanella, Claudio",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1108/el-09-2012-0121",
           "year": "2014",
-          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy"
+          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy",
+          "authors": "Ma, Kun; Yang, Bo",
+          "venue": "The Electronic Library "
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Computational Linguistics "
         },
         {
           "doi": "10.3233/sw-150198",
           "year": "2016",
-          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study"
+          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1109/tlt.2021.3118902",
           "year": "2021",
-          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization"
+          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization",
+          "authors": "Zablith, Fouad; Azad, Bijan",
+          "venue": "IEEE Transactions On Learning Technologies "
         },
         {
           "doi": "10.1088/1742-6596/1015/3/032096",
           "year": "2018",
-          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia"
+          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia",
+          "authors": "Murtazina, Marina; Avdeenko, \u0422. V.",
+          "venue": "Journal Of Physics: Conference Series "
         },
         {
           "doi": "10.1016/j.jnca.2019.01.029",
           "year": "2019",
-          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications"
+          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications",
+          "authors": "Kong, Xiangjie; Shi, Yajie; Yu, Shuo; Liu, Jiaying; Xia, Feng",
+          "venue": "Journal Of Network And Computer Applications "
         },
         {
           "doi": "10.1109/access.2024.3396871",
           "year": "2024",
-          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD"
+          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD",
+          "authors": "Panayiotou, Christiana",
+          "venue": "IEEE Access "
         },
         {
           "doi": "10.1371/journal.pone.0270872",
           "year": "2022",
-          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles"
+          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Plos One "
         },
         {
           "doi": "10.1145/3366030.3366110",
           "year": "2019",
-          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)"
+          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)",
+          "authors": "Saad, Farag; Hackl-Sommer, Rene",
+          "venue": "Proceedings Of The 21St International Conference On Information Integration And Web-based Applications & Services "
         },
         {
           "doi": "10.1007/978-3-319-53637-8_1",
           "year": "2016",
-          "title": "Introduction"
+          "title": "Introduction",
+          "authors": "Gonz\u00e1lez-Beltr\u00e1n, Alejandra; Osborne, Francesco; Peroni, Silvio",
+          "venue": "Semantics, Analytics, Visualization. Enhancing Scholarly Data "
         },
         {
           "doi": "10.1007/978-3-030-54956-5_1",
           "year": "2020",
-          "title": "Requirements Analysis For An Open Research Knowledge Graph"
+          "title": "Requirements Analysis For An Open Research Knowledge Graph",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
+          "venue": "Digital Libraries For Open Knowledge "
         },
         {
           "doi": "10.3389/fdigh.2016.00003",
           "year": "2016",
-          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts"
+          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts",
+          "authors": "Zhitomirsky-Geffet, Maayan; Prebor, Gila",
+          "venue": "Frontiers In Digital Humanities "
         },
         {
           "doi": "10.3233/sw-180332",
           "year": "2019",
-          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud"
+          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud",
+          "authors": "Dogmus, Zeynep; Erdem, Esra; Patoglu, Volkan",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s11192-020-03758-1",
           "year": "2020",
-          "title": "A Comprehensive Quality Assessment Framework For Scientific Events"
+          "title": "A Comprehensive Quality Assessment Framework For Scientific Events",
+          "authors": "Vahdati, Sahar; Fathalla, Said; Lange, Christoph; Behrend, Andreas; Say, Aysegul; Say, Zeynep; Auer, S\u00f6ren",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.3989/redc.2016.3.1299",
           "year": "2016",
-          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas"
+          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas",
+          "authors": "Hidalgo-Delgado, Yusniel; Senso, Jos\u00e9 A.; Leiva-Mederos, Amed; H\u00edpola, Pedro",
+          "venue": "Aids "
         },
         {
           "doi": "10.1007/s11192-020-03536-z",
           "year": "2020",
-          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review"
+          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review",
+          "authors": "Bordignon, Frederique",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1145/2740908.2742842",
           "year": "2015",
-          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data"
+          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data",
+          "authors": "Recupero, Diego Reforgiato; Nuzzolese, Andrea Giovanni; Consoli, Sergio; Presutti, Valentina; Mongiov\u00ec, Misael; Peroni, Silvio",
+          "venue": "Proceedings Of The 24Th International Conference On World Wide Web "
         },
         {
           "doi": "10.1145/3342197.3344527",
           "year": "2019",
-          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems"
+          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems",
+          "authors": "Lamm, Lukas; Wolff, Christian",
+          "venue": "Proceedings Of The 11Th International Conference On Automotive User Interfaces And Interactive Vehicular Applications "
         },
         {
           "doi": "10.1109/access.2019.2903450",
           "year": "2019",
-          "title": "CCRO: Citation\u2019s Context & Reasons Ontology"
+          "title": "CCRO: Citation\u2019s Context & Reasons Ontology",
+          "authors": "Ihsan, Imran; Qadir, Muhammad Abdul",
+          "venue": "E\u011fitim Ve Yeni Yakla\u015f\u0131mlar Dergisi "
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model",
+          "authors": "Gonano, Ciro Mattia; Tomasi, Francesca; Mambelli, Francesca; Vitali, Fabio; Peroni, Silvio",
+          "venue": "IEEE/ACM Joint Conference On Digital Libraries "
         },
         {
           "doi": "10.1162/qss_a_00146",
           "year": "2021",
-          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning",
+          "authors": "Nicholson, Josh; Mordaunt, Milo; Lopez, Patrice; Uppala, Ashish; Rosati, D.; Rodrigues, Neves P.; Grabitz, Peter; Rife, Sean",
+          "venue": "Quantitative Science Studies "
         },
         {
           "doi": "10.1007/978-3-319-41938-1_5",
           "year": "2016",
-          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal"
+          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal",
+          "authors": "Ciotti, Fabio; Daquino, Marilena; Tomasi, Francesca",
+          "venue": "Communications In Computer And Information Science "
         },
         {
           "doi": "10.1145/3412841.3442057",
           "year": "2021",
-          "title": "ArDO"
+          "title": "ArDO",
+          "authors": "Vsesviatska, Oleksandra; Tietz, Tabea; Hoppe, Fabian; Sprau, Mirjam; Meyer, Nils; Dess\u00ec, Danilo; Sack, Harald",
+          "venue": "Proceedings Of The 36Th Annual ACM Symposium On Applied Computing "
         }
       ]
     }
@@ -1273,14 +1549,13 @@
         "2026": 3,
         "2025": 5,
         "2024": 6,
-        "2023": 14,
+        "2023": 15,
         "2022": 12,
         "2021": 15,
         "2020": 10,
         "2019": 9,
-        "2018": 4,
-        "2017": 8,
-        "2016": 2
+        "2018": 5,
+        "2017": 8
       },
       "top_works": [
         {
@@ -1325,7 +1600,7 @@
         "Frontiers in Computer Science": 1,
         "Scientometrics": 5,
         "arXiv (Cornell University)": 4,
-        "ArXiv.org": 1,
+        "Lirias (KU Leuven)": 1,
         "Figshare": 5,
         "Revue Ouverte d Intelligence Artificielle": 1,
         "Smart Agricultural Technology": 1,
@@ -1333,6 +1608,7 @@
         "Quantitative Science Studies": 3,
         "Cybernetics and Information Technologies": 1,
         "Biblioteche & bibliotecari/Biblioteche & bibliotecari / Libraries & librarians": 1,
+        "Vjesnik bibliotekara Hrvatske": 1,
         "Preprints.org": 2,
         "Lecture notes in computer science": 5,
         "Studies on the semantic web": 1,
@@ -1345,7 +1621,7 @@
         "The VLDB Journal": 1,
         "bonndoc (University of Bonn)": 1,
         "Journal of Cheminformatics": 1,
-        "Semantic Web": 2,
+        "Semantic Web": 1,
         "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)": 2,
         "University of Regensburg Publication Server (University of Regensburg)": 1,
         "TIB Repositorium": 1,
@@ -1354,22 +1630,22 @@
         "Duo Research Archive (University of Oslo)": 1,
         "Data Science": 1,
         "Reposit\u00f3riUM (Universidade do Minho)": 1,
-        "SERVAL (Universit\u00e9 de Lausanne)": 1,
         "Zagadnienia Informacji Naukowej - Studia Informacyjne": 1,
         "International Journal of Digital Humanities": 1,
         "Heritage": 1,
         "Journal of Computer Science and Technology": 1,
+        "SERVAL (Universit\u00e9 de Lausanne)": 1,
         "Information": 1,
         "Learning Health Systems": 1,
         "Journal of Biomedical Semantics": 1,
+        "Ergon Verlag eBooks": 1,
         "XIX ENCONTRO NACIONAL DE PESQUISA EM CI\u00caNCIA DA INFORMA\u00c7\u00c3O (XIX ENANCIB); XIX ENCONTRO NACIONAL DE PESQUISA EM CI\u00caNCIA DA INFORMA\u00c7\u00c3O (XIX ENANCIB)": 1,
         "Infoscience (Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne)": 1,
         "Library Resources and Technical Services": 1,
         "Journal of Data Mining & Digital Humanities": 1,
         "Frontiers in Earth Science": 1,
         "Ty\u00f6v\u00e4entutkimus Vuosikirja": 1,
-        "PeerJ Computer Science": 1,
-        "Research Portal (King's College London)": 1
+        "PeerJ Computer Science": 1
       }
     },
     "opencitations": {
@@ -1394,687 +1670,961 @@
         {
           "doi": "10.1002/leap.1610",
           "year": "2024",
-          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books"
+          "title": "Exploring Named\u2010Entity Recognition Techniques For Academic Books",
+          "authors": "Calleja Iba\u00f1ez, Pablo; Gim\u00e9nez-Toledo, Elea",
+          "venue": "Learned Publishing "
         },
         {
           "doi": "10.1007/978-3-031-19433-7_38",
           "year": "2022",
-          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive"
+          "title": "ISSA: Generic Pipeline, Knowledge Model And Visualization Tools To Help Scientists Search And Make Sense Of A Scientific Archive",
+          "authors": "Toulet, Anne; Michel, Franck; Bobasheva, Anna; Menin, Aline; Dupr\u00e9, S\u00e9bastien; Deboin, Marie-Claude; Winckler, Marco; Tchechmedjiev, Andon",
+          "venue": "The Semantic Web \u2013 ISWC 2022 "
         },
         {
           "doi": "10.1016/j.daach.2025.e00409",
           "year": "2025",
-          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction"
+          "title": "The Brancacci Chapel From The Quattrocento To The Semantic Web: An Ontology-Assisted Case Study Of Cultural Data Management And Site Reconstruction",
+          "authors": "Veggi, Manuele; Cerato, Ivana",
+          "venue": "Digital Applications In Archaeology And Cultural Heritage "
         },
         {
           "doi": "10.1109/inciscos.2017.17",
           "year": "2017",
-          "title": "Methodological Guidelines For Publishing Library Data As Linked Data"
+          "title": "Methodological Guidelines For Publishing Library Data As Linked Data",
+          "authors": "Hidalgo-Delgado, Yusniel; Estrada-Nelson, Reina; Xu, Bin; Villazon-Terrazas, Boris; Leiva-Mederos, Amed; Tello, Andr\u00e9s",
+          "venue": "2017 International Conference On Information Systems And Computer Science (INCISCOS) "
         },
         {
           "doi": "10.1080/00140139.2024.2396527",
           "year": "2024",
-          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI"
+          "title": "A Systems Approach To Managing The Risk Of Healthcare Acquired Infection In An Acute Hospital Setting Supported By Human Factors Ergonomics, Data Science, Data Governance And AI",
+          "authors": "Ward, Marie; Geary, Una; Brennan, Rob; Vining, Rebecca; McKenna, Lucy; O\u2019Connell, Brian; Bergin, Colm; Byrne, Declan; Creagh, Donncha; Fogarty, Mary; Healy, Una; McDonald, Grainne; Ebiele, Malick; Crane, Martin; Pham, Minh-Khoi; Bendechache, Malika; Bezbradica, Marija; Liang, Junli; Doyle, Brian; Guilfoyle, John; Shuhaiber, Arwa; McDonald, Nick",
+          "venue": "Ergonomics "
         },
         {
           "doi": "10.1007/s00799-025-00421-z",
           "year": "2025",
-          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music"
+          "title": "Ontological Modeling Of Music And Musicological Claims. A Case Study In Early Music",
+          "authors": "Sanfilippo, Emilio; Freedman, Richard; Mosca, Alessandro",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.2478/cait-2024-0042",
           "year": "2024",
-          "title": "An Interface For Linking Ancient Languages"
+          "title": "An Interface For Linking Ancient Languages",
+          "authors": "Mallia, Michele; Bandini, Michela; Quochi, Valeria",
+          "venue": "Cybernetics And Information Technologies "
         },
         {
           "doi": "10.3233/sw-222859",
           "year": "2022",
-          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data"
+          "title": "When Linguistics Meets Web Technologies. Recent Advances In Modelling Linguistic Linked Data",
+          "authors": "Khan, Anas Fahad; Chiarcos, Christian; Declerck, Thierry; Gifu, Daniela; Garc\u00eda, Elena Gonz\u00e1lez-Blanco; Gracia, Jorge; Ionov, Maxim; Labropoulou, Penny; Mambrini, Francesco; McCrae, John P.; Pag\u00e9-Perron, \u00c9milie; Passarotti, Marco; Mu\u00f1oz, Salvador Ros; Truic\u0103, Ciprian-Octavian",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.35366/119447",
           "year": "2024",
-          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura"
+          "title": "Empiema Secundario A Embolismo S\u00e9ptico En Un Paciente Con Trombosis Del Seno Cavernoso: Reporte De Un Caso Y Revisi\u00f3n De La Literatura",
+          "authors": "Flores-Valadez, Mario Arturo; Mich\u00e1n-Aguirre, Layla; Mu\u00f1oz-Velasco, Israel; Romero-P\u00e9rez, Minerva",
+          "venue": "NCT Neumolog\u00eda Y Cirug\u00eda De T\u00f3rax "
         },
         {
           "doi": "10.1007/978-3-319-25007-6_24",
           "year": "2015",
-          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks"
+          "title": "Klink-2: Integrating Multiple Web Sources To Generate Semantic Topic Networks",
+          "authors": "Osborne, Francesco; Motta, Enrico",
+          "venue": "The Semantic Web - ISWC 2015 "
         },
         {
           "doi": "10.1007/978-3-642-41242-4_30",
           "year": "2013",
-          "title": "Identifying Functions Of Citations With CiTalO"
+          "title": "Identifying Functions Of Citations With CiTalO",
+          "authors": "Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio",
+          "venue": "Advanced Information Systems Engineering "
         },
         {
           "doi": "10.1007/978-3-030-61244-3_10",
           "year": "2020",
-          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation"
+          "title": "What2Cite: Unveiling Topics And Citations Dependencies For Scientific Literature Exploration And Recommendation",
+          "authors": "Giosa, Davide; Di Caro, Luigi",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1145/2517978.2517983",
           "year": "2013",
-          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio"
+          "title": "A Preliminary Study On The Semantic Representation Of The Notes To Dante Alighieri's Convivio",
+          "authors": "Bartalesi, Valentina; Locuratolo, Elvira; Versienti, Loredana; Meghini, Carlo",
+          "venue": "Proceedings Of The 1St International Workshop On Collaborative Annotations In Shared Environment Metadata, Vocabularies And Techniques In The Digital Humanities - DH-CASE '13 "
         },
         {
           "doi": "10.1162/qss_a_00222",
           "year": "2022",
-          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities"
+          "title": "A Quantitative And Qualitative Open Citation Analysis Of Retracted Articles In The Humanities",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Quantitative Science Studies "
         },
         {
           "doi": "10.1007/978-3-030-59194-6_37",
           "year": "2020",
-          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies"
+          "title": "Construction And Leverage Scientific Knowledge Graphs By Means Of Semantic Technologies",
+          "authors": "Santamaria, Teresa; Tapia-Leon, Mariela; Chicaiza, Janneth",
+          "venue": "Systems And Information Sciences "
         },
         {
           "doi": "10.1145/2660517.2660537",
           "year": "2014",
-          "title": "Expanded Citations And Projections Of Concepts"
+          "title": "Expanded Citations And Projections Of Concepts",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Proceedings Of The 10Th International Conference On Semantic Systems "
         },
         {
           "doi": "10.1145/2637748.2638444",
           "year": "2014",
-          "title": "On Expanded Citations"
+          "title": "On Expanded Citations",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Proceedings Of The 14Th International Conference On Knowledge Technologies And Data-driven Business - i-KNOW '14 "
         },
         {
           "doi": "10.1186/s13326-017-0174-5",
           "year": "2018",
-          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System"
+          "title": "OpenBiodiv-O: Ontology Of The OpenBiodiv Knowledge Management System",
+          "authors": "Senderov, Viktor; Simov, Kiril; Franz, Nico; Stoev, Pavel; Catapano, Terry; Agosti, Donat; Sautter, Guido; Morris, Robert A.; Penev, Lyubomir",
+          "venue": "Journal Of Biomedical Semantics "
         },
         {
           "doi": "10.21203/rs.3.rs-4104397/v1",
           "year": "2024",
-          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis"
+          "title": "Exploring Doping Prevalence In Sport From Indirect Estimation Models: A Systematic Review And Meta-Bibliometric Analysis",
+          "authors": "Sagoe, Dominic; Cruyff, Maarten; Chegeni, Razieh; Veltmaat, Annalena; Kiss, Anna; So\u00f3s, S\u00e1ndor; De Hon, Olivier; Heijden, Peter Van Der; Petr\u00f3czi, Andrea",
+          "venue": ""
         },
         {
           "doi": "10.1007/978-3-030-45439-5_15",
           "year": "2020",
-          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation"
+          "title": "Semantic Modelling Of Citation Contexts For Context-Aware Citation Recommendation",
+          "authors": "Saier, Tarek; F\u00e4rber, Michael",
+          "venue": "Advances In Information Retrieval "
         },
         {
           "doi": "10.1016/j.procs.2018.09.015",
           "year": "2018",
-          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings"
+          "title": "SemSur: A Core Ontology For The Semantic Representation Of Research Findings",
+          "authors": "Fathalla, Said; Vahdati, Sahar; Auer, S\u00f6ren; Lange, Christoph",
+          "venue": "Procedia Computer Science "
         },
         {
           "doi": "10.4000/jtei.1480",
           "year": "2016",
-          "title": "Formal Ontologies, Linked Data, And TEI Semantics"
+          "title": "Formal Ontologies, Linked Data, And TEI Semantics",
+          "authors": "Ciotti, Fabio; Tomasi, Francesca",
+          "venue": "Journal Of The Text Encoding Initiative "
         },
         {
           "doi": "10.1108/lht-01-2016-0003",
           "year": "2016",
-          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository"
+          "title": "Extraction, Analysis And Publication Of Bibliographical References Within An Institutional Repository",
+          "authors": "Hatop, G\u00f6tz",
+          "venue": "Library Hi Tech "
         },
         {
           "doi": "10.1016/j.atech.2024.100484",
           "year": "2024",
-          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs"
+          "title": "A Unified Approach To Publish Semantic Annotations Of Agricultural Documents As Knowledge Graphs",
+          "authors": "Yacoubi Ayadi, Nadia; Bernard, Stephan; Bossy, Robert; Courtin, Marine; Happi Happi, Bill Gates; Larmande, Pierre; Michel, Franck; N\u00e9dellec, Claire; Roussey, Catherine; Faron, Catherine",
+          "venue": "Smart Agricultural Technology "
         },
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations",
+          "authors": "Carboni, Nicola; Luca,",
+          "venue": "Heritage "
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics",
+          "authors": "Bucur, Cristina-Iulia; Kuhn, Tobias; Ceolin, Davide; Van Ossenbruggen, Jacco",
+          "venue": "Proceedings Of The 11Th On Knowledge Capture Conference "
         },
         {
           "doi": "10.4018/978-1-5225-2255-3.ch439",
           "year": "2018",
-          "title": "Knowledge Acquisition On Dante Alighieri's Works"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works",
+          "authors": "Locuratolo, Elvira Immacolata; Lenzi, Valentina Bartalesi",
+          "venue": "Encyclopedia Of Information Science And Technology, Fourth Edition "
         },
         {
           "doi": "10.1007/s00799-020-00288-2",
           "year": "2020",
-          "title": "Citation Recommendation: Approaches And Datasets"
+          "title": "Citation Recommendation: Approaches And Datasets",
+          "authors": "F\u00e4rber, Michael; Jatowt, Adam",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "title": "The Publishing Workflow Ontology (PWO)"
+          "title": "The Publishing Workflow Ontology (PWO)",
+          "authors": "Gangemi, Aldo; Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/978-3-030-91669-5_24",
           "year": "2021",
-          "title": "Federating Scholarly Infrastructures With GraphQL"
+          "title": "Federating Scholarly Infrastructures With GraphQL",
+          "authors": "Haris, Muhammad; Farfar, Kheir Eddine; Stocker, Markus; Auer, Soren",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-319-49004-5_30",
           "year": "2016",
-          "title": "TechMiner: Extracting Technologies From Academic Publications"
+          "title": "TechMiner: Extracting Technologies From Academic Publications",
+          "authors": "Osborne, Francesco; De Ribaupierre, H\u00e9l\u00e8ne; Motta, Enrico",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1109/educon.2018.8363427",
           "year": "2018",
-          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources"
+          "title": "Using Text Mining And Linked Open Data To Assist The Mashup Of Educational Resources",
+          "authors": "Vallejo-Figueroa, Santa; Rodriguez-Artacho, Miguel; Castro-Gil, Manuel; Cristobal, Elio San",
+          "venue": "2018 IEEE Global Engineering Education Conference (EDUCON) "
         },
         {
           "doi": "10.1016/j.jmb.2022.167514",
           "year": "2022",
-          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data"
+          "title": "PubChem Protein, Gene, Pathway, And Taxonomy Data Collections: Bridging Biology And Chemistry Through Target-Centric Views Of PubChem Data",
+          "authors": "Kim, Sunghwan; Cheng, Tiejun; He, Siqian; Thiessen, Paul A.; Li, Qingliang; Gindulyte, Asta; Bolton, Evan E.",
+          "venue": "Journal Of Molecular Biology "
         },
         {
           "doi": "10.1145/2970044.2970049",
           "year": "2016",
-          "title": "In Collaboration With In Concert"
+          "title": "In Collaboration With In Concert",
+          "authors": "Nurmikko-Fuller, Terhi; Dix, Alan; M. Weigl, David; Page, Kevin R.",
+          "venue": "Proceedings Of The 3Rd International Workshop On Digital Libraries For Musicology "
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "title": "Genuine Semantic Publishing"
+          "title": "Genuine Semantic Publishing",
+          "authors": "Kuhn, Tobias; Dumontier, Michel",
+          "venue": "Data Science "
         },
         {
           "doi": "10.1007/s11192-021-04226-0",
           "year": "2022",
-          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition"
+          "title": "Critical Citations In Knowledge Construction And Citation Analysis: From Paradox To Definition",
+          "authors": "Bordignon, Frederique",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1145/3383583.3398520",
           "year": "2020",
-          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs"
+          "title": "Generate FAIR Literature Surveys With Scholarly Knowledge Graphs",
+          "authors": "Oelen, Allard; Jaradeh, Mohamad Yaser; Stocker, Markus; Auer, S\u00f6ren",
+          "venue": "Proceedings Of The ACM/IEEE Joint Conference On Digital Libraries In 2020 "
         },
         {
           "doi": "10.1007/978-3-319-46547-0_16",
           "year": "2016",
-          "title": "Conference Linked Data: The ScholarlyData Project"
+          "title": "Conference Linked Data: The ScholarlyData Project",
+          "authors": "Nuzzolese, Andrea Giovanni; Gentile, Anna Lisa; Presutti, Valentina; Gangemi, Aldo",
+          "venue": "The Semantic Web \u2013 ISWC 2016 "
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Challenges "
         },
         {
           "doi": "10.1007/978-3-031-40286-9_29",
           "year": "2023",
-          "title": "Modeling Chinese Ancient Book Catalog"
+          "title": "Modeling Chinese Ancient Book Catalog",
+          "authors": "Wang, Jun; Wang, Linxu; Wei, Tong",
+          "venue": "Knowledge Science, Engineering And Management "
         },
         {
           "doi": "10.1007/978-3-030-36599-8_26",
           "year": "2019",
-          "title": "A Semantic Representation Of The Citation Structure"
+          "title": "A Semantic Representation Of The Citation Structure",
+          "authors": "Skulimowski, Marcin",
+          "venue": "Metadata And Semantic Research "
         },
         {
           "doi": "10.1186/s13321-021-00515-1",
           "year": "2021",
-          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets"
+          "title": "IDSM ChemWebRDF: SPARQLing Small-Molecule Datasets",
+          "authors": "Galgonek, Jakub; Vondr\u00e1\u0161ek, Ji\u0159\u00ed",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.1007/978-3-319-25518-7_12",
           "year": "2015",
-          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data"
+          "title": "CEUR-WS-LOD: Conversion Of CEUR-WS Workshops To Linked Data",
+          "authors": "Kolchin, Maxim; Cherny, Eugene; Kozlov, Fedor; Shipilo, Alexander; Kovriguina, Liubov",
+          "venue": "Semantic Web Evaluation Challenges "
         },
         {
           "doi": "10.1002/asi.23721",
           "year": "2016",
-          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures"
+          "title": "Assessing And Tracing The Outcomes And Impact Of Research Infrastructures",
+          "authors": "Mayernik, Matthew S.; Hart, David L; Maull, Keith E.; Weber, Nicholas M.",
+          "venue": "IUBMB Life "
         },
         {
           "doi": "10.1002/eqe.4231",
           "year": "2024",
-          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering"
+          "title": "The Built Environment Data Platform For Experimental Test Data In Earthquake Engineering",
+          "authors": "Shahnazaryan, Davit; Pinho, Rui; Crowley, Helen; O'Reilly, Gerard J.",
+          "venue": "History And Theory "
         },
         {
           "doi": "10.1101/2021.02.12.430944",
           "year": "2021",
-          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases",
+          "authors": "Delmas, Maxime; Filangi, Olivier; Paulhe, Nils; Vinson, F.; Duperier, C.; Garrier, W.; Saunier, P.-E.; Pitarch, Y.; Jourdan, Fabien; Giacomoni, Franck; Frainay, Cl\u00e9ment",
+          "venue": ""
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "title": "The Document Components Ontology (DoCO)"
+          "title": "The Document Components Ontology (DoCO)",
+          "authors": "Constantin, Alexandru; Peroni, Silvio; Pettifer, Steve; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/978-3-030-01379-0_4",
           "year": "2018",
-          "title": "Extending ScholarlyData With Research Impact Indicators"
+          "title": "Extending ScholarlyData With Research Impact Indicators",
+          "authors": "Nuzzolese, Andrea Giovanni; Presutti, Valentina; Gangemi, Aldo; Ciancarini, Paolo",
+          "venue": "Semantics, Analytics, Visualization "
         },
         {
           "doi": "10.1007/s11192-016-2134-8",
           "year": "2016",
-          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams"
+          "title": "The Linguistic Patterns And Rhetorical Structure Of Citation Context: An Approach Using N-Grams",
+          "authors": "Bertin, Marc; Atanassova, Iana; Sugimoto, Cassidy; Lariviere, Vincent",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/icsc64641.2025.00021",
           "year": "2025",
-          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry"
+          "title": "SHACL-SKOS Based Knowledge Representation Of Material Safety Data Sheet (SDS) For The Pharmaceutical Industry",
+          "authors": "Lu, Brian; Pham, Dennis; Chang, Ti-Chiun; Lovette, Michael; Bui, Terri; Ma, Stephen",
+          "venue": "2025 19Th International Conference On Semantic Computing (ICSC) "
         },
         {
           "doi": "10.1109/percomw.2016.7457108",
           "year": "2016",
-          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform"
+          "title": "PLOMaR: An Ontology Framework For Context Modeling And Reasoning On Crowd-Sensing Platform",
+          "authors": "Jagadeesan, Yogesh; Hu, Peizhao; Rivero, Carlos R.",
+          "venue": "2016 IEEE International Conference On Pervasive Computing And Communication Workshops (PerCom Workshops) "
         },
         {
           "doi": "10.1093/bioinformatics/btab627",
           "year": "2021",
-          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases"
+          "title": "FORUM: Building A Knowledge Graph From Public Databases And Scientific Literature To Extract Associations Between Chemicals And Diseases",
+          "authors": "Delmas, Maxime; Filangi, Olivier; Paulhe, Nils; Vinson, Florence; Duperier, Christophe; Garrier, William; Saunier, Paul-Emeric; Pitarch, Yoann; Jourdan, Fabien; Giacomoni, Franck; Frainay, Cl\u00e9ment",
+          "venue": "Bioinformatics "
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles",
+          "authors": "Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio; Zingoni, Jacopo",
+          "venue": "Communications In Computer And Information Science "
         },
         {
           "doi": "10.1007/978-3-031-43849-3_11",
           "year": "2023",
-          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries"
+          "title": "On Retraction Cascade? Citation Intention Analysis As A Quality Control Mechanism In Digital Libraries",
+          "authors": "Balke, Wolf-Tilo; Usman, Muhammad",
+          "venue": "Linking Theory And Practice Of Digital Libraries "
         },
         {
           "doi": "10.1007/978-3-030-21348-0_7",
           "year": "2019",
-          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration"
+          "title": "Disclosing Citation Meanings For Augmented Research Retrieval And Exploration",
+          "authors": "Ferrod, Roger; Schifanella, Claudio; Di Caro, Luigi; Cataldi, Mario",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1002/asi.24982",
           "year": "2025",
-          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations"
+          "title": "Sustaining The \u201cFrozen Footprints\u201d Of Scholarly Communication Through Open Citations",
+          "authors": "Ta\u015fk\u0131n, Zehra",
+          "venue": "Journal Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "title": "MACJa: Metadata And Citations Jailbreaker"
+          "title": "MACJa: Metadata And Citations Jailbreaker",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Evaluation Challenges "
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain",
+          "authors": "Daquino, Marilena; Mambelli, Francesca; Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.1108/lht-06-2015-0063",
           "year": "2015",
-          "title": "Recommending Research Articles Using Citation Data"
+          "title": "Recommending Research Articles Using Citation Data",
+          "authors": "Vellino, Andre",
+          "venue": "Library Hi Tech "
         },
         {
           "doi": "10.1093/llc/fqy002",
           "year": "2018",
-          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study"
+          "title": "A Web Application For Exploring Primary Sources: The DanteSources Case Study",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo; Metilli, Daniele; Tavoni, Mirko; Andriani, Paola",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.3390/knowledge4010001",
           "year": "2024",
-          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture"
+          "title": "Agriculture Named Entity Recognition\u2014Towards FAIR, Reusable Scholarly Contributions In Agriculture",
+          "authors": "D\u2019Souza, Jennifer",
+          "venue": "Knowledge "
         },
         {
           "doi": "10.1007/s11192-018-2961-x",
           "year": "2018",
-          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content"
+          "title": "Identification Of Important Citations By Exploiting Research Articles\u2019 Metadata And Cue-Terms From Content",
+          "authors": "Qayyum, Faiza; Afzal, Muhammad",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/wits.2019.8723850",
           "year": "2019",
-          "title": "Ontologies For The Classification Of Cultural Heritage Data"
+          "title": "Ontologies For The Classification Of Cultural Heritage Data",
+          "authors": "Nafis, Fouad; Yahyaouy, Ali; Aghoutane, Badraddine",
+          "venue": "2019 International Conference On Wireless Technologies, Embedded And Intelligent Systems (WITS) "
         },
         {
           "doi": "10.1007/978-3-319-47602-5_18",
           "year": "2016",
-          "title": "Semantic Web Conference Ontology - A Refactoring Solution"
+          "title": "Semantic Web Conference Ontology - A Refactoring Solution",
+          "authors": "Nuzzolese, Andrea Giovanni; Gentile, Anna Lisa; Presutti, Valentina; Gangemi, Aldo",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1093/llc/fqac095",
           "year": "2023",
-          "title": "Building Linked Lexicography Applications With LexO-server"
+          "title": "Building Linked Lexicography Applications With LexO-server",
+          "authors": "Bellandi, Andrea",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.1186/s13321-023-00684-1",
           "year": "2023",
-          "title": "A Look Back At A Pilot Of The Citation Typing Ontology"
+          "title": "A Look Back At A Pilot Of The Citation Typing Ontology",
+          "authors": "Guha, Rajarshi; Jeliazkova, Nina; Martinez-Mayorga, Karina; Zdrazil, Barbara",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.4242/balisagevol8.huitfeldt01",
           "year": null,
-          "title": "Documents As Timed Abstract Objects"
+          "title": "Documents As Timed Abstract Objects",
+          "authors": "Huitfeldt, Claus; Vitali, Fabio; Peroni, Silvio",
+          "venue": "Balisage Series On Markup Technologies "
         },
         {
           "doi": "10.1093/llc/fqv044",
           "year": "2015",
-          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge"
+          "title": "Towards A Semantic Network Of Dante\u2019s Works And Their Contextual Knowledge",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo; Andriani, Paola; Tavoni, Mirko",
+          "venue": "Digital Scholarship In The Humanities "
         },
         {
           "doi": "10.1038/502295a",
           "year": "2013",
-          "title": "Publishing: Open Citations"
+          "title": "Publishing: Open Citations",
+          "authors": "Shotton, D M",
+          "venue": "Nature "
         },
         {
           "doi": "10.3233/ao-210246",
           "year": "2021",
-          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges"
+          "title": "Ontologies For Information Entities: State Of The Art And Open Challenges",
+          "authors": "Sanfilippo, Emilio M.",
+          "venue": "Applied Ontology "
         },
         {
           "doi": "10.5334/dsj-2016-006",
           "year": "2016",
-          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?"
+          "title": "Are Scientific Data Repositories Coping With Research Data Publishing?",
+          "authors": "",
+          "venue": "Data Science Journal "
         },
         {
           "doi": "10.1109/wisa.2016.41",
           "year": "2016",
-          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information"
+          "title": "Towards Interactive Gathering Of DUV-Based Dataset Usage Information",
+          "authors": "Xia, Xiutao; Xu, Zhuoming; Liu, Zhaoheng",
+          "venue": "2016 13Th Web Information Systems And Applications Conference (WISA) "
         },
         {
           "doi": "10.1002/pra2.984",
           "year": "2023",
-          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries"
+          "title": "HERU Ontology For Linking Chinese Classics Texts And Its Commentaries",
+          "authors": "Weng, Mengjuan; Hou, Xilong; Lei, Jueying; Wang, Xiaoguang",
+          "venue": "Proceedings Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.1007/s11192-021-04097-5",
           "year": "2021",
-          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case"
+          "title": "A Qualitative And Quantitative Analysis Of Open Citations To Retracted Articles: The Wakefield 1998 Et Al.'S Case",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1109/wisa.2016.42",
           "year": "2016",
-          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information"
+          "title": "Towards Systematic Analysis And Summary Of DUV-Based Dataset Usage Information",
+          "authors": "Liu, Zhaoheng; Xu, Zhuoming; Xia, Xiutao",
+          "venue": "2016 13Th Web Information Systems And Applications Conference (WISA) "
         },
         {
           "doi": "10.1002/pra2.754",
           "year": "2022",
-          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments"
+          "title": "Scientific Discourse On YouTube : Motivations For Citing Research In Comments",
+          "authors": "Striewski, S\u00f6ren; Zagovora, Olga; Peters, Isabella",
+          "venue": "Proceedings Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.35366/119446",
           "year": "2024",
-          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda"
+          "title": "Protocolo De Acceso Abierto Y Clasificaci\u00f3n De La Literatura Cient\u00edfica Sobre Espirometr\u00eda",
+          "authors": "Flores-Valadez, Mario Arturo; Mich\u00e1n-Aguirre, Layla; Mu\u00f1oz-Velasco, Israel; Romero-P\u00e9rez, Minerva",
+          "venue": "NCT Neumolog\u00eda Y Cirug\u00eda De T\u00f3rax "
         },
         {
           "doi": "10.1109/jcdl.2017.7991585",
           "year": "2017",
-          "title": "Towards Publishing Secure Capsule-Based Analysis"
+          "title": "Towards Publishing Secure Capsule-Based Analysis",
+          "authors": "Murdock, Jaimie; Jett, Jacob; Cole, Timothy; Ma, Yu; Downie, J. Stephen; Plale, Beth",
+          "venue": "2017 ACM/IEEE Joint Conference On Digital Libraries (JCDL) "
         },
         {
           "doi": "10.1108/el-03-2019-0081",
           "year": "2019",
-          "title": "Application Of Semantic Technologies In Bibliographic Databases"
+          "title": "Application Of Semantic Technologies In Bibliographic Databases",
+          "authors": "Georgieva-Trifonova, Tsvetanka; Zdravkov, Kaloyan; Valcheva, Donika",
+          "venue": "The Electronic Library "
         },
         {
           "doi": "10.3233/sw-210426",
           "year": "2022",
-          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD"
+          "title": "Observational/hydrographic Data Of The South Atlantic Ocean Published As LOD",
+          "authors": "Z\u00e1rate, Marcos; Braun, Germ\u00e1n; Lewis, Mirtha; Fillottrani, Pablo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s11192-021-03955-6",
           "year": "2021",
-          "title": "An NLP-based Citation Reason Analysis Using CCRO"
+          "title": "An NLP-based Citation Reason Analysis Using CCRO",
+          "authors": "Ihsan, Imran; Qadir, M. Abdul",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/s11192-024-05082-4",
           "year": "2024",
-          "title": "Linguistic Perspectives In Deciphering Citation Function Classification"
+          "title": "Linguistic Perspectives In Deciphering Citation Function Classification",
+          "authors": "Bertin, Marc; Atanassova, Iana",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/s11192-019-03217-6",
           "year": "2019",
-          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations"
+          "title": "Software Review: COCI, The OpenCitations Index Of Crossref Open DOI-to-DOI Citations",
+          "authors": "Heibi, Ivan; Peroni, Silvio; Shotton, D M",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1007/978-3-031-60635-9_11",
           "year": "2024",
-          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning"
+          "title": "MLSea: A Semantic Layer For Discoverable Machine Learning",
+          "authors": "Dasoulas, Ioannis; Yang, Duo; Dimou, Anastasia",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-642-41242-4_6",
           "year": "2013",
-          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework"
+          "title": "Characterising Citations In Scholarly Documents: The CiTalO Framework",
+          "authors": "Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio",
+          "venue": "Advanced Information Systems Engineering "
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping",
+          "authors": "Nguyen, Viet Bach; Sv\u00e1tek, Vojt\u011bch; Rabby, Gollam; Corcho, Oscar",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/s00799-016-0169-3",
           "year": "2016",
-          "title": "Scholarly Ontology: Modelling Scholarly Practices"
+          "title": "Scholarly Ontology: Modelling Scholarly Practices",
+          "authors": "Pertsas, Vayianos; Constantopoulos, Panos",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "International Journal On Semantic Web And Information Systems "
         },
         {
           "doi": "10.1007/978-3-031-78952-6_25",
           "year": "2025",
-          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs"
+          "title": "MLSeascape: Search Over Machine Learning Metadata Empowered By Knowledge Graphs",
+          "authors": "Dasoulas, Ioannis; Yang, Duo; Dimou, Anastasia",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-030-01379-0_11",
           "year": "2018",
-          "title": "Investigating Facets To Characterise Citations For Scholars"
+          "title": "Investigating Facets To Characterise Citations For Scholars",
+          "authors": "Di Iorio, Angelo; Limpens, Freddy; Peroni, Silvio; Rotondi, Agata; Tsatsaronis, Georgios; Achtsivassilis, Jorgos",
+          "venue": "Semantics, Analytics, Visualization "
         },
         {
           "doi": "10.1007/978-3-319-07443-6_39",
           "year": "2014",
-          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues"
+          "title": "Evaluating Citation Functions In CiTO: Cognitive Issues",
+          "authors": "Ciancarini, Paolo; Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio; Vitali, Fabio",
+          "venue": "The Semantic Web: Trends And Challenges "
         },
         {
           "doi": "10.3989/arbor.2021.799007",
           "year": "2021",
-          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica"
+          "title": "El Movimiento Open Citations Y Sus Implicaciones En La Transformaci\u00f3n De La Evaluaci\u00f3n Cient\u00edfica",
+          "authors": "Luis Ortega, Jos\u00e9",
+          "venue": "Arbor "
         },
         {
           "doi": "10.1101/2021.03.15.435418",
           "year": "2021",
-          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning",
+          "authors": "Nicholson, Josh; Mordaunt, M.; Lopez, P.; Uppala, Ashish; Rosati, D.; Rodrigues, N.P.; Grabitz, Peter; Rife, Sean",
+          "venue": ""
         },
         {
           "doi": "10.3233/sw-160222",
           "year": "2016",
-          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns"
+          "title": "Aemoo: Linked Data Exploration Based On Knowledge Patterns",
+          "authors": "Nuzzolese, Andrea Giovanni; Presutti, Valentina; Gangemi, Aldo; Peroni, Silvio; Ciancarini, Paolo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s00799-021-00306-x",
           "year": "2021",
-          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies"
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
-          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References"
+          "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References",
+          "authors": "Mucheroni, Marcos Luiz; Peroni, Silvio; Dos Santos, Erika Alves",
+          "venue": "International Journal On Digital Libraries "
         },
         {
           "doi": "10.1145/3318396.3318422",
           "year": "2019",
-          "title": "Extension Of The BiDO Ontology To Represent Scientific Production"
+          "title": "Extension Of The BiDO Ontology To Represent Scientific Production",
+          "authors": "Tapia-Leon, Mariela; Santana-Perez, Idafen; Poveda-Villal\u00f3n, Mar\u00eda; Espinoza-Arias, Paola; Chicaiza, Janneth; Corcho, Oscar",
+          "venue": "Proceedings Of The 2019 8Th International Conference On Educational And Information Technology "
         },
         {
           "doi": "10.1007/978-3-319-04777-5_5",
           "year": "2014",
-          "title": "The Semantic Publishing And Referencing Ontologies"
+          "title": "The Semantic Publishing And Referencing Ontologies",
+          "authors": "Peroni, Silvio",
+          "venue": "Law, Governance And Technology Series "
         },
         {
           "doi": "10.1007/s10796-016-9637-y",
           "year": "2016",
-          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery"
+          "title": "Ontology-based Data Mining Model Management For Self-Service Knowledge Discovery",
+          "authors": "Li, Yan; Thomas, Manoj; Osei-Bryson, Kweku-Muata",
+          "venue": "Information Systems Frontiers "
         },
         {
           "doi": "10.1108/jchmsd-06-2021-0110",
           "year": "2022",
-          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications"
+          "title": "A Review Of Ontologies For Augmented Reality Cultural Heritage Applications",
+          "authors": "Vlachos, Apostolos; Perifanou, Maria; Economides, Anastasios A.",
+          "venue": "Journal Of Cultural Heritage Management And Sustainable Development "
         },
         {
           "doi": "10.1145/2910896.2910903",
           "year": "2016",
-          "title": "Enhancing Scholarly Use Of Digital Libraries"
+          "title": "Enhancing Scholarly Use Of Digital Libraries",
+          "authors": "Jett, Jacob; Nurmikko-Fuller, Terhi; Cole, Timothy; Page, Kevin R.; Downie, J. Stephen",
+          "venue": "Proceedings Of The 16Th ACM/IEEE-CS On Joint Conference On Digital Libraries "
         },
         {
           "doi": "10.4018/978-1-5225-7659-4.ch030",
           "year": "2019",
-          "title": "Knowledge Acquisition On Dante Alighieri's Works"
+          "title": "Knowledge Acquisition On Dante Alighieri's Works",
+          "authors": "Locuratolo, Elvira Immacolata; Lenzi, Valentina Bartalesi",
+          "venue": "Advances In Library And Information Science "
         },
         {
           "doi": "10.1080/19386389.2016.1216969",
           "year": "2016",
-          "title": "Activity Analysis, Semantics And Metadata Building"
+          "title": "Activity Analysis, Semantics And Metadata Building",
+          "authors": "Cote, Christian",
+          "venue": "Asian Politics & Policy "
         },
         {
           "doi": "10.1016/j.knosys.2019.01.009",
           "year": "2019",
-          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature"
+          "title": "LiteRef: A Software System For Managing The Knowledge Of Research Literature",
+          "authors": "Goldenberg, Meir",
+          "venue": "Knowledge-Based Systems "
         },
         {
           "doi": "10.1145/3057148.3057149",
           "year": "2017",
-          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection"
+          "title": "Describing Data Processing Pipelines In Scientific Publications For Big Data Injection",
+          "authors": "Mesbah, Sepideh; Bozzon, Alessandro; Lofi, Christoph; Houben, Geert-Jan",
+          "venue": "Proceedings Of The 1St Workshop On Scholarly Web Mining - SWM '17 "
         },
         {
           "doi": "10.1186/s13321-020-00448-1",
           "year": "2020",
-          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics"
+          "title": "Adoption Of The Citation Typing Ontology By The Journal Of Cheminformatics",
+          "authors": "Willighagen, Egon",
+          "venue": "Journal Of Cheminformatics "
         },
         {
           "doi": "10.1145/3487553.3524624",
           "year": "2022",
-          "title": "Towards Building Live Open Scientific Knowledge Graphs"
+          "title": "Towards Building Live Open Scientific Knowledge Graphs",
+          "authors": "Le-Tuan, Anh; Franzreb, Carlos; Le Phuoc, Danh; Schimmler, Sonja; Hauswirth, Manfred",
+          "venue": "Companion Proceedings Of The Web Conference 2022 "
         },
         {
           "doi": "10.1007/978-3-319-03524-6_29",
           "year": "2013",
-          "title": "Semantic Annotation Of Scholarly Documents And Citations"
+          "title": "Semantic Annotation Of Scholarly Documents And Citations",
+          "authors": "Ciancarini, Paolo; Di Iorio, Angelo; Nuzzolese, Andrea Giovanni; Peroni, Silvio; Vitali, Fabio",
+          "venue": "AI*IA 2013: Advances In Artificial Intelligence "
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data",
+          "authors": "Peroni, Silvio; Dutton, Alexander; Gray, Tanya; Shotton, David",
+          "venue": "Journal Of Documentation "
         },
         {
           "doi": "10.1002/asi.23179",
           "year": "2014",
-          "title": "Measuring Academic Influence: Not All Citations Are Equal"
+          "title": "Measuring Academic Influence: Not All Citations Are Equal",
+          "authors": "Zhu, Xiaodan; Turney, Peter; Lemire, Daniel; Vellino, Andre",
+          "venue": "Journal Of The Association For Information Science And Technology "
         },
         {
           "doi": "10.3233/ds-170012",
           "year": "2017",
-          "title": "Automating Semantic Publishing"
+          "title": "Automating Semantic Publishing",
+          "authors": "Peroni, Silvio",
+          "venue": "Data Science "
         },
         {
           "doi": "10.1145/2361354.2361396",
           "year": "2012",
-          "title": "Faceted Documents"
+          "title": "Faceted Documents",
+          "authors": "Peroni, Silvio; Shotton, D M; Vitali, Fabio",
+          "venue": "Proceedings Of The 2012 ACM Symposium On Document Engineering - DocEng '12 "
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability",
+          "authors": "Barzaghi, Sebastian; Palmero Aprosio, Alessio; Paolucci, Francesco; Tomasi, Francesca; Tonelli, Sara; Vignocchi, Marialaura; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.1007/978-3-030-77385-4_27",
           "year": "2021",
-          "title": "Structured Semantic Modeling Of Scientific Citation Intents"
+          "title": "Structured Semantic Modeling Of Scientific Citation Intents",
+          "authors": "Ferrod, Roger; Di Caro, Luigi; Schifanella, Claudio",
+          "venue": "The Semantic Web "
         },
         {
           "doi": "10.1108/el-09-2012-0121",
           "year": "2014",
-          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy"
+          "title": "A Simple Scheme For Bibliography Acquisition Using DOI Content Negotiation Proxy",
+          "authors": "Ma, Kun; Yang, Bo",
+          "venue": "The Electronic Library "
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Computational Linguistics "
         },
         {
           "doi": "10.3233/sw-150198",
           "year": "2016",
-          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study"
+          "title": "Using An Ontology For Representing The Knowledge On Literary Texts: The Dante Alighieri Case Study",
+          "authors": "Bartalesi, Valentina; Meghini, Carlo",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1109/tlt.2021.3118902",
           "year": "2021",
-          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization"
+          "title": "Reconciling Instructors\u2019 And Students\u2019 Course Overlap Perspectives Via Linked Data Visualization",
+          "authors": "Zablith, Fouad; Azad, Bijan",
+          "venue": "IEEE Transactions On Learning Technologies "
         },
         {
           "doi": "10.1088/1742-6596/1015/3/032096",
           "year": "2018",
-          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia"
+          "title": "An Approach To Development Of Ontological Knowledge Base In The Field Of Scientific And Research Activity In Russia",
+          "authors": "Murtazina, Marina; Avdeenko, \u0422. V.",
+          "venue": "Journal Of Physics: Conference Series "
         },
         {
           "doi": "10.1016/j.jnca.2019.01.029",
           "year": "2019",
-          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications"
+          "title": "Academic Social Networks: Modeling, Analysis, Mining And Applications",
+          "authors": "Kong, Xiangjie; Shi, Yajie; Yu, Shuo; Liu, Jiaying; Xia, Feng",
+          "venue": "Journal Of Network And Computer Applications "
         },
         {
           "doi": "10.1109/access.2024.3396871",
           "year": "2024",
-          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD"
+          "title": "Ontological Foundation For Representing Metaphors As Part Of LOD",
+          "authors": "Panayiotou, Christiana",
+          "venue": "IEEE Access "
         },
         {
           "doi": "10.1371/journal.pone.0270872",
           "year": "2022",
-          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles"
+          "title": "A Protocol To Gather, Characterize And Analyze Incoming Citations Of Retracted Articles",
+          "authors": "Heibi, Ivan; Peroni, Silvio",
+          "venue": "Plos One "
         },
         {
           "doi": "10.1145/3366030.3366110",
           "year": "2019",
-          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)"
+          "title": "Building A Semantic Model For Linking And Visualizing Patent Citations (SeMViPaC)",
+          "authors": "Saad, Farag; Hackl-Sommer, Rene",
+          "venue": "Proceedings Of The 21St International Conference On Information Integration And Web-based Applications & Services "
         },
         {
           "doi": "10.1007/978-3-319-53637-8_1",
           "year": "2016",
-          "title": "Introduction"
+          "title": "Introduction",
+          "authors": "Gonz\u00e1lez-Beltr\u00e1n, Alejandra; Osborne, Francesco; Peroni, Silvio",
+          "venue": "Semantics, Analytics, Visualization. Enhancing Scholarly Data "
         },
         {
           "doi": "10.1007/978-3-030-54956-5_1",
           "year": "2020",
-          "title": "Requirements Analysis For An Open Research Knowledge Graph"
+          "title": "Requirements Analysis For An Open Research Knowledge Graph",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
+          "venue": "Digital Libraries For Open Knowledge "
         },
         {
           "doi": "10.3389/fdigh.2016.00003",
           "year": "2016",
-          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts"
+          "title": "Toward An Ontopedia For Historical Hebrew Manuscripts",
+          "authors": "Zhitomirsky-Geffet, Maayan; Prebor, Gila",
+          "venue": "Frontiers In Digital Humanities "
         },
         {
           "doi": "10.3233/sw-180332",
           "year": "2019",
-          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud"
+          "title": "RehabRobo-Query: Answering Natural Language Queries About Rehabilitation Robotics Ontology On The Cloud",
+          "authors": "Dogmus, Zeynep; Erdem, Esra; Patoglu, Volkan",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/s11192-020-03758-1",
           "year": "2020",
-          "title": "A Comprehensive Quality Assessment Framework For Scientific Events"
+          "title": "A Comprehensive Quality Assessment Framework For Scientific Events",
+          "authors": "Vahdati, Sahar; Fathalla, Said; Lange, Christoph; Behrend, Andreas; Say, Aysegul; Say, Zeynep; Auer, S\u00f6ren",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.3989/redc.2016.3.1299",
           "year": "2016",
-          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas"
+          "title": "Gesti\u00f3n De Fondos De Archivos Con Datos Enlazados Y Consultas Federadas",
+          "authors": "Hidalgo-Delgado, Yusniel; Senso, Jos\u00e9 A.; Leiva-Mederos, Amed; H\u00edpola, Pedro",
+          "venue": "Aids "
         },
         {
           "doi": "10.1007/s11192-020-03536-z",
           "year": "2020",
-          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review"
+          "title": "Self-correction Of Science: A Comparative Study Of Negative Citations And Post-Publication Peer Review",
+          "authors": "Bordignon, Frederique",
+          "venue": "Scientometrics "
         },
         {
           "doi": "10.1145/2740908.2742842",
           "year": "2015",
-          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data"
+          "title": "Extracting Knowledge From Text Using SHELDON, A Semantic Holistic framEwork For LinkeD ONtology Data",
+          "authors": "Recupero, Diego Reforgiato; Nuzzolese, Andrea Giovanni; Consoli, Sergio; Presutti, Valentina; Mongiov\u00ec, Misael; Peroni, Silvio",
+          "venue": "Proceedings Of The 24Th International Conference On World Wide Web "
         },
         {
           "doi": "10.1145/3342197.3344527",
           "year": "2019",
-          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems"
+          "title": "Exploratory Analysis Of The Research Literature On Evaluation Of In-Vehicle Systems",
+          "authors": "Lamm, Lukas; Wolff, Christian",
+          "venue": "Proceedings Of The 11Th International Conference On Automotive User Interfaces And Interactive Vehicular Applications "
         },
         {
           "doi": "10.1109/access.2019.2903450",
           "year": "2019",
-          "title": "CCRO: Citation\u2019s Context & Reasons Ontology"
+          "title": "CCRO: Citation\u2019s Context & Reasons Ontology",
+          "authors": "Ihsan, Imran; Qadir, Muhammad Abdul",
+          "venue": "E\u011fitim Ve Yeni Yakla\u015f\u0131mlar Dergisi "
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model",
+          "authors": "Gonano, Ciro Mattia; Tomasi, Francesca; Mambelli, Francesca; Vitali, Fabio; Peroni, Silvio",
+          "venue": "IEEE/ACM Joint Conference On Digital Libraries "
         },
         {
           "doi": "10.1162/qss_a_00146",
           "year": "2021",
-          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning"
+          "title": "Scite: A Smart Citation Index That Displays The Context Of Citations And Classifies Their Intent Using Deep Learning",
+          "authors": "Nicholson, Josh; Mordaunt, Milo; Lopez, Patrice; Uppala, Ashish; Rosati, D.; Rodrigues, Neves P.; Grabitz, Peter; Rife, Sean",
+          "venue": "Quantitative Science Studies "
         },
         {
           "doi": "10.1007/978-3-319-41938-1_5",
           "year": "2016",
-          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal"
+          "title": "Text Encoding Initiative Semantic Modeling. A Conceptual Workflow Proposal",
+          "authors": "Ciotti, Fabio; Daquino, Marilena; Tomasi, Francesca",
+          "venue": "Communications In Computer And Information Science "
         },
         {
           "doi": "10.1145/3412841.3442057",
           "year": "2021",
-          "title": "ArDO"
+          "title": "ArDO",
+          "authors": "Vsesviatska, Oleksandra; Tietz, Tabea; Hoppe, Fabian; Sprau, Mirjam; Meyer, Nils; Dess\u00ec, Danilo; Sack, Harald",
+          "venue": "Proceedings Of The 36Th Annual ACM Symposium On Applied Computing "
         }
       ]
     }
@@ -2361,142 +2911,198 @@
         {
           "doi": "10.3390/heritage2020078",
           "year": "2019",
-          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations"
+          "title": "An Ontological Approach To The Description Of Visual And Iconographical Representations",
+          "authors": "Carboni, Nicola; Luca,",
+          "venue": "Heritage "
         },
         {
           "doi": "10.1145/3460210.3493561",
           "year": "2021",
-          "title": "Expressing High-Level Scientific Claims With Formal Semantics"
+          "title": "Expressing High-Level Scientific Claims With Formal Semantics",
+          "authors": "Bucur, Cristina-Iulia; Kuhn, Tobias; Ceolin, Davide; Van Ossenbruggen, Jacco",
+          "venue": "Proceedings Of The 11Th On Knowledge Capture Conference "
         },
         {
           "doi": "10.3233/sw-160230",
           "year": "2017",
-          "title": "The Publishing Workflow Ontology (PWO)"
+          "title": "The Publishing Workflow Ontology (PWO)",
+          "authors": "Gangemi, Aldo; Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1145/2740908.2742019",
           "year": "2015",
-          "title": "Using Linked Data Traversal To Label Academic Communities"
+          "title": "Using Linked Data Traversal To Label Academic Communities",
+          "authors": "Tiddi, Ilaria; d'Aquin, Mathieu; Motta, Enrico",
+          "venue": "Proceedings Of The 24Th International Conference On World Wide Web "
         },
         {
           "doi": "10.1007/978-3-319-58694-6_14",
           "year": "2017",
-          "title": "An Ontological Perspective On Thematic Roles"
+          "title": "An Ontological Perspective On Thematic Roles",
+          "authors": "Goy, Annamaria; Magro, Diego; Rovera, Marco",
+          "venue": "Knowledge Engineering And Knowledge Management "
         },
         {
           "doi": "10.3233/ds-170010",
           "year": "2017",
-          "title": "Genuine Semantic Publishing"
+          "title": "Genuine Semantic Publishing",
+          "authors": "Kuhn, Tobias; Dumontier, Michel",
+          "venue": "Data Science "
         },
         {
           "doi": "10.1007/978-3-319-46565-4_22",
           "year": "2016",
-          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output"
+          "title": "ACM: Article Content Miner For Assessing The Quality Of Scientific Output",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Challenges "
         },
         {
           "doi": "10.1093/database/baz067",
           "year": "2019",
-          "title": "SOCCOMAS: A FAIR Web Content Management System That Uses Knowledge Graphs And That Is Based On Semantic Programming"
+          "title": "SOCCOMAS: A FAIR Web Content Management System That Uses Knowledge Graphs And That Is Based On Semantic Programming",
+          "authors": "Vogt, Lars; Baum, Roman; Bhatty, Philipp; K\u00f6hler, Christian; Meid, Sandra; Quast, Bj\u00f6rn; Grobe, Peter",
+          "venue": "Database "
         },
         {
           "doi": "10.4000/jtei.1365",
           "year": "2014",
-          "title": "TEI, Ontologies, Linked Open Data: Geolat And Beyond"
+          "title": "TEI, Ontologies, Linked Open Data: Geolat And Beyond",
+          "authors": "Ciotti, Fabio; Lana, Maurizio; Tomasi, Francesca",
+          "venue": "Journal Of The Text Encoding Initiative "
         },
         {
           "doi": "10.1016/j.procs.2014.10.012",
           "year": "2014",
-          "title": "Political Roles Ontology (PRoles): Enhancing Archival Authority Records Through Semantic Web Technologies"
+          "title": "Political Roles Ontology (PRoles): Enhancing Archival Authority Records Through Semantic Web Technologies",
+          "authors": "Daquino, Marilena; Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio",
+          "venue": "Procedia Computer Science "
         },
         {
           "doi": "10.2139/ssrn.3198992",
           "year": "2012",
-          "title": "FaBIO And CiTO: Ontologies For Describing Bibliographic Resources And Citations"
+          "title": "FaBIO And CiTO: Ontologies For Describing Bibliographic Resources And Citations",
+          "authors": "Peroni, Silvio; Shotton, David",
+          "venue": "SSRN Electronic Journal "
         },
         {
           "doi": "10.1016/j.websem.2012.08.001",
           "year": "2012",
-          "title": "FaBiO And CiTO: Ontologies For Describing Bibliographic Resources And Citations"
+          "title": "FaBiO And CiTO: Ontologies For Describing Bibliographic Resources And Citations",
+          "authors": "Peroni, Silvio; Shotton, D M",
+          "venue": "Journal Of Web Semantics "
         },
         {
           "doi": "10.3233/sw-150177",
           "year": "2016",
-          "title": "The Document Components Ontology (DoCO)"
+          "title": "The Document Components Ontology (DoCO)",
+          "authors": "Constantin, Alexandru; Peroni, Silvio; Pettifer, Steve; Shotton, David; Vitali, Fabio",
+          "venue": "Semantic Web "
         },
         {
           "doi": "10.1007/978-3-642-54347-0_13",
           "year": "2014",
-          "title": "Semantic Lenses As Exploration Method For Scholarly Articles"
+          "title": "Semantic Lenses As Exploration Method For Scholarly Articles",
+          "authors": "Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio; Zingoni, Jacopo",
+          "venue": "Communications In Computer And Information Science "
         },
         {
           "doi": "10.1007/978-3-319-25518-7_10",
           "year": "2015",
-          "title": "MACJa: Metadata And Citations Jailbreaker"
+          "title": "MACJa: Metadata And Citations Jailbreaker",
+          "authors": "Nuzzolese, Andrea Giovanni; Peroni, Silvio; Recupero, Diego Reforgiato",
+          "venue": "Semantic Web Evaluation Challenges "
         },
         {
           "doi": "10.1145/3051487",
           "year": "2017",
-          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain"
+          "title": "Enhancing Semantic Expressivity In The Cultural Heritage Domain",
+          "authors": "Daquino, Marilena; Mambelli, Francesca; Peroni, Silvio; Tomasi, Francesca; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.1080/10572317.2017.1353374",
           "year": "2017",
-          "title": "Towards A Semantic Documentation Of Heritage Objects Through Visual And Iconographical Representations"
+          "title": "Towards A Semantic Documentation Of Heritage Objects Through Visual And Iconographical Representations",
+          "authors": "Carboni, Nicola; De Luca, Livio",
+          "venue": "Chinese Physics C "
         },
         {
           "doi": "10.1007/978-3-031-72437-4_10",
           "year": "2024",
-          "title": "Improving Retrieval And Expression Of Iconographical And Iconological Semantic Statements: An Extension Of The ICON Ontology"
+          "title": "Improving Retrieval And Expression Of Iconographical And Iconological Semantic Statements: An Extension Of The ICON Ontology",
+          "authors": "Baroncini, Sofia; Sartini, Bruno",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1007/978-3-030-61244-3_6",
           "year": "2020",
-          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping"
+          "title": "Ontologies Supporting Research-Related Information Foraging Using Knowledge Graphs: Literature Survey And Holistic Model Mapping",
+          "authors": "Nguyen, Viet Bach; Sv\u00e1tek, Vojt\u011bch; Rabby, Gollam; Corcho, Oscar",
+          "venue": "Lecture Notes In Computer Science "
         },
         {
           "doi": "10.1145/2802612.2802633",
           "year": "2015",
-          "title": "Ontological Approaches To Information Description And Extraction In The Cultural Heritage Domain"
+          "title": "Ontological Approaches To Information Description And Extraction In The Cultural Heritage Domain",
+          "authors": "Daquino, Marilena; Tomasi, Francesca",
+          "venue": "Proceedings Of The Third AIUCD Annual Conference On Humanities And Their Methods In The Digital Ecosystem - AIUCD '14 "
         },
         {
           "doi": "10.4018/jswis.2013010102",
           "year": "2013",
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "International Journal On Semantic Web And Information Systems "
         },
         {
           "doi": "10.1162/qss_a_00292",
           "year": "2024",
-          "title": "OpenCitations Meta"
+          "title": "OpenCitations Meta",
+          "authors": "Massari, Arcangelo; Mariani, Fabio; Heibi, Ivan; Peroni, Silvio; Shotton, David",
+          "venue": "Quantitative Science Studies "
         },
         {
           "doi": "10.1109/icwr65219.2025.11006231",
           "year": "2025",
-          "title": "Advancing Cardiovascular Research: A Tailored Knowledge Graph Schema For Scholarly Data"
+          "title": "Advancing Cardiovascular Research: A Tailored Knowledge Graph Schema For Scholarly Data",
+          "authors": "Bitaraf, Ehsan; Jafarpour, Maryam; Moeini, Ali; Shool, Sina; Tara, Mahmood",
+          "venue": "2025 11Th International Conference On Web Research (ICWR) "
         },
         {
           "doi": "10.1108/jd-12-2013-0166",
           "year": "2015",
-          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data"
+          "title": "Setting Our Bibliographic References Free: Towards Open Citation Data",
+          "authors": "Peroni, Silvio; Dutton, Alexander; Gray, Tanya; Shotton, David",
+          "venue": "Journal Of Documentation "
         },
         {
           "doi": "10.1007/978-3-319-04777-5_2",
           "year": "2014",
-          "title": "The Digital Publishing Revolution"
+          "title": "The Digital Publishing Revolution",
+          "authors": "Peroni, Silvio",
+          "venue": "Law, Governance And Technology Series "
         },
         {
           "doi": "10.1145/3725534",
           "year": "2025",
-          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability"
+          "title": "The Semantic Digital Edition Of Aldo Moro\u2019s Writings: A Workflow Supporting Data Sharing And Replicability",
+          "authors": "Barzaghi, Sebastian; Palmero Aprosio, Alessio; Paolucci, Francesco; Tomasi, Francesca; Tonelli, Sara; Vignocchi, Marialaura; Vitali, Fabio",
+          "venue": "Journal On Computing And Cultural Heritage "
         },
         {
           "doi": "10.4018/978-1-4666-6042-7.ch041",
           "year": null,
-          "title": "Tools For The Automatic Generation Of Ontology Documentation"
+          "title": "Tools For The Automatic Generation Of Ontology Documentation",
+          "authors": "Peroni, Silvio; Shotton, David; Vitali, Fabio",
+          "venue": "Computational Linguistics "
         },
         {
           "doi": "10.1109/jcdl.2014.6970182",
           "year": "2014",
-          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model"
+          "title": "Zeri E LODE. Extracting The Zeri Photo Archive To Linked Open Data: Formalizing The Conceptual Model",
+          "authors": "Gonano, Ciro Mattia; Tomasi, Francesca; Mambelli, Francesca; Vitali, Fabio; Peroni, Silvio",
+          "venue": "IEEE/ACM Joint Conference On Digital Libraries "
         }
       ]
     }

@@ -8,8 +8,8 @@
   --text: #000000;
   --muted: #252b33;
   --accent-lov: #e99103;
-  --accent-github: #f1f1f1;
-  --accent-oax: #686868;
+  --accent-github: #686868;
+  --accent-oax: #2e36e9;
   --accent-oc: #8c56ff;
   --accent-warn: #f78166;
   --accent-link: #0076e4;
@@ -238,8 +238,8 @@ main {
 }
 
 .lov-tag    { background: rgba(255, 197, 88, 0.15); color: var(--accent-lov);    }
-.github-tag { background: rgba(0, 0, 0, 0.5); color: var(--accent-github); }
-.oax-tag    { background: rgba(168, 168, 168, 0.15); color: var(--accent-oax);    }
+.github-tag { background: rgba(168, 168, 168, 0.15); color: var(--accent-github); }
+.oax-tag    { background: #2e37e91c; color: var(--accent-oax);    }
 .oc-tag     { background: rgba(154, 117, 234, .15); color: var(--accent-oc);     }
 
 /* ── Stats ── */
