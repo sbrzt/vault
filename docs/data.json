@@ -283,7 +283,7 @@
         "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Cient\u00edficas)": 1,
         "Cybernetics and Information Technologies": 1,
         "Front Matter": 4,
-        "SPIRE - Sciences Po Institutional REpository": 2,
+        "SPIRE - Sciences Po Institutional REpository": 3,
         "Unknown": 7,
         "Future Internet": 1,
         "Vjesnik bibliotekara Hrvatske": 1,
@@ -311,7 +311,6 @@
         "IEEE Access": 1,
         "Institutional Repository of Leibniz Universit\u00e4t Hannover (Leibniz Universit\u00e4t Hannover)": 2,
         "ePrints Soton (University of Southampton)": 1,
-        "theses.fr (ABES)": 1,
         "Frontiers in Earth Science": 1,
         "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica": 1,
         "Research Ideas and Outcomes": 1,
@@ -1323,14 +1322,14 @@
           "title": "Nature.com Core Ontology"
         },
         {
-          "uri": "http://purl.org/SemSur/",
-          "vocab_uri": "http://purl.org/SemSur/",
-          "title": "The Semantic Survey Ontology (semsur)"
-        },
-        {
           "uri": "http://purl.org/cerif/frapo/",
           "vocab_uri": "http://purl.org/cerif/frapo/",
           "title": "Funding, Research Administration and Projects Ontology"
+        },
+        {
+          "uri": "http://purl.org/SemSur/",
+          "vocab_uri": "http://purl.org/SemSur/",
+          "title": "The Semantic Survey Ontology (semsur)"
         },
         {
           "uri": "http://purl.org/spar/datacite",
