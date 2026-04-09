@@ -14,7 +14,9 @@ from pathlib import Path
 from src.http import http_get, http_get_raw
 
 
-def _lov_info(ontology: dict) -> dict:
+def _lov_info(
+    ontology: dict
+    ) -> dict:
     result: dict = {
         "found": False,
         "inlinks": 0,

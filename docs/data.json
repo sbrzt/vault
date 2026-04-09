@@ -23,11 +23,6 @@
           "title": "Semanticscience Integrated Ontology"
         },
         {
-          "uri": "http://vivoweb.org/ontology/core",
-          "vocab_uri": "http://vivoweb.org/ontology/core",
-          "title": "VIVO Core Ontology"
-        },
-        {
           "uri": "http://w3id.org/roh",
           "vocab_uri": "http://w3id.org/roh",
           "title": "The ASIO ontology"
@@ -36,6 +31,11 @@
           "uri": "http://www.essepuntato.it/2013/03/cito-functions",
           "vocab_uri": "http://www.essepuntato.it/2013/03/cito-functions",
           "title": "Functions of Citations"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology"
         },
         {
           "uri": "https://w3id.org/icon/ontology/",
@@ -121,7 +121,7 @@
       ]
     },
     "github": {
-      "repos_count": 87,
+      "repos_count": 86,
       "repos": [
         "pandoc/lua-filters",
         "DerwenAI/pytextrank",
@@ -133,7 +133,6 @@
         "NCEAS/metacatui",
         "hydroshare/hydroshare",
         "eMetaboHUB/Forum-DiseasesChem",
-        "assemblee-virtuelle/pair",
         "Coleridge-Data-For-Impact/RCGraph",
         "PHAROS-photoarchives/Zeri-Foundation",
         "digicademy/svsal",
@@ -143,73 +142,73 @@
         "cboettig/2013",
         "culturesofknowledge/emplaces",
         "elixir-europe/MARS",
-        "openlink/structured-data-sniffer",
+        "ciromattia/annotaria",
         "tetherless-world/POEM",
         "MaastrichtU-IDS/semanticscience",
-        "lambdamusic/Ontospy",
-        "rahuldave/semflow",
+        "monarch-initiative/GENO-ontology",
         "irnerio-opendata/memo",
         "qfo/OrthologyOntology",
+        "lambdamusic/Ontospy",
         "TAMULib/Karma-models",
+        "rahuldave/semflow",
         "RDF-STaX/rdf-stax.github.io",
         "opencitations/oscar",
-        "mconlon17/vivo-pump",
-        "rahuldave/ontoads",
         "egonw/JSONFeed-extensions",
-        "SNAPminions/snapcode",
-        "isee4xai/iSeeOnto",
         "csarven/mayktso",
         "RiverBench/riverbench.github.io",
+        "mconlon17/vivo-pump",
+        "SNAPminions/snapcode",
+        "isawnyu/pleiades-rdf",
+        "RubenVerborgh/WebsiteToRDF",
         "cwrc/RDF-extraction",
+        "paregorios/gawd",
         "sterenz/data-science-10-11",
         "knowledgepixels/nanopub-ecosystem-test-infra",
-        "opencitations/metadata",
         "glycoinfo/GlyCovid",
-        "Pittsburgh-NEH-Institute/Institute-Materials-2017",
+        "mt-digital/rda-lod",
         "VirtualWatershed/vwp-ansible-install",
-        "paregorios/gawd",
-        "RubenVerborgh/WebsiteToRDF",
         "nipdep/idea-graph",
+        "OpenLinkSoftware/OSDS_extension",
         "joeykrug/essays",
-        "anasfkhan81/chamuca",
-        "gooofy/zamia-ai",
-        "lpalbou/AbstractLLM",
         "ProfTuan/KHMO",
         "USGCRP/gcis-sparql",
-        "CSCfi/fairdata-metax-v3",
         "tetherless-world/twweb",
+        "srophe/Linked-Data",
+        "anasfkhan81/chamuca",
+        "gooofy/zamia-ai",
         "con/citations-collector",
+        "lpalbou/AbstractLLM",
         "Knowledge-Graph-Hub/kg-registry",
-        "DataONEorg/d1_pyore",
+        "CSCfi/fairdata-metax-v3",
         "hubgit/cito",
+        "rpietro/nof1_arXiv",
         "phaidra/phaidra",
+        "dbpedia/DataId-Ontology",
+        "opencitations/heritrace",
+        "dakoop/vistrails-dataone",
+        "jcheminform/cito-editorial",
         "OriginTrail/desci-knowledge-mining",
         "opencitations/index",
-        "opencitations/heritrace",
-        "jcheminform/cito-editorial",
-        "climatesense-project/climafacts-kg",
-        "plazi/ontologies",
-        "dbpedia/DataId-Ontology",
-        "srophe/Linked-Data",
         "obophenotype/planaria-ontology",
+        "climatesense-project/climafacts-kg",
+        "OriginTrail/desci-drag",
+        "fractastical/morpholib",
+        "idiap/abroad-kg-store",
+        "RiverBench/schema",
+        "micheldumontier/hcls-shex",
         "opencitations/bcite",
         "isawnyu/pleiades_lpf",
-        "OriginTrail/desci-drag",
-        "enanomapper/ontologies",
+        "biotea/biotea.github.io",
+        "ontoneo-project/Ontoneo",
+        "isee4xai/iSeeOnto",
         "laurauntner/wikidata-to-cidoc-crm",
         "lpalbou/DigitalArticle",
         "LA3D/rlm",
-        "idiap/abroad-kg-store",
-        "ropensci-docs/EDIutils",
         "JonathanReeve/data-ethics-literature-review",
         "HeriotWattMEng2015/HCLS-scraper",
-        "opencitations/croci",
         "TheBrane/sodi-data-acquisition",
-        "biotea/biotea.github.io",
-        "ontoneo-project/Ontoneo",
-        "ScienceLiveHub/templates4sciencelive",
-        "RiverBench/schema",
-        "micheldumontier/hcls-shex"
+        "ali1k/ld-r",
+        "DrInventor/ontologies"
       ]
     },
     "openalex": {
@@ -1296,6 +1295,10 @@
           "venue": "Proceedings Of The 36Th Annual ACM Symposium On Applied Computing "
         }
       ]
+    },
+    "zenodo": {
+      "total_datasets": 0,
+      "datasets": []
     }
   },
   {
@@ -1322,14 +1325,14 @@
           "title": "Nature.com Core Ontology"
         },
         {
-          "uri": "http://purl.org/cerif/frapo/",
-          "vocab_uri": "http://purl.org/cerif/frapo/",
-          "title": "Funding, Research Administration and Projects Ontology"
-        },
-        {
           "uri": "http://purl.org/SemSur/",
           "vocab_uri": "http://purl.org/SemSur/",
           "title": "The Semantic Survey Ontology (semsur)"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -1337,14 +1340,14 @@
           "title": "The DataCite Ontology"
         },
         {
-          "uri": "http://vivoweb.org/ontology/core",
-          "vocab_uri": "http://vivoweb.org/ontology/core",
-          "title": "VIVO Core Ontology"
-        },
-        {
           "uri": "http://w3id.org/roh",
           "vocab_uri": "http://w3id.org/roh",
           "title": "The ASIO ontology"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology"
         },
         {
           "uri": "https://w3id.org/seo",
@@ -1460,7 +1463,7 @@
       ]
     },
     "github": {
-      "repos_count": 78,
+      "repos_count": 80,
       "repos": [
         "SPAROntologies/fabio",
         "essepuntato/opencitations",
@@ -1484,24 +1487,25 @@
         "publicarchi/elementum",
         "sntcristian/and-kge",
         "rahuldave/semflow",
-        "pensoft/OpenBiodiv",
         "opencitations/oscar",
-        "TAMULib/Karma-models",
-        "Docmaps-Project/docmaps",
-        "fair-workflows/openpredict",
+        "OIT-ADS-Web/duke_vivo_ontologies",
+        "pensoft/OpenBiodiv",
         "bodleian/datafinder",
         "sterenz/data-science-10-11",
         "rahuldave/ontoads",
-        "glycoinfo/GlyCovid",
         "oeg-upm/Devos",
+        "opencitations/metadata",
         "open-sci/2023-2024-atreides-code",
         "OpenCS-ontology/OpenCS",
         "germanbraun/oceangraph",
         "USGCRP/gcis-ontology",
+        "fair-workflows/openpredict",
+        "TAMULib/Karma-models",
         "anasfkhan81/chamuca",
         "gooofy/zamia-ai",
         "coar-repositories/coar-vocabularies-website",
         "SemanticSoftwareLab/TextMining-SemPub2016",
+        "418imateapot/new-raschietto",
         "tetherless-world/twweb",
         "HerculesCRUE/ROH",
         "OriginTrail/desci-knowledge-mining",
@@ -1510,7 +1514,6 @@
         "nipdep/idea-graph",
         "davidlamprecht/semopenalex-semanticweb",
         "cfoster/xmllondon-rdf",
-        "pentandra/lifepreserver",
         "OriginTrail/desci-drag",
         "mconlon17/vivo-org-chart",
         "lelax/new_Design_Data",
@@ -1534,12 +1537,14 @@
         "loopingdoge/wowtaria",
         "metaphacts/semopenalex",
         "HendrikBorgelt/Kat_Tagung_Metadata_extraction",
-        "umd-lib/plastron",
+        "arcangelo7/arcangelo7.github.io",
         "skg-if/data-model",
         "opencitations/api",
         "know-org-project/Nana-and-Jojo-s-Bizzare-LODventure",
         "the-elephant-man/project",
-        "Wimmics/voidmatic"
+        "Wimmics/voidmatic",
+        "sciety/api-prototype",
+        "opencitations/heritrace"
       ]
     },
     "openalex": {
@@ -2626,6 +2631,10 @@
           "venue": "Proceedings Of The 36Th Annual ACM Symposium On Applied Computing "
         }
       ]
+    },
+    "zenodo": {
+      "total_datasets": 0,
+      "datasets": []
     }
   },
   {
@@ -2725,7 +2734,7 @@
       ]
     },
     "github": {
-      "repos_count": 67,
+      "repos_count": 65,
       "repos": [
         "opencitations/oc_meta",
         "essepuntato/opencitations",
@@ -2739,12 +2748,12 @@
         "pensoft/OpenBiodiv",
         "Docmaps-Project/docmaps",
         "OriginTrail/desci-knowledge-mining",
-        "oeg-upm/AstreaRun",
         "italia/dati-semantic-assets",
         "feup-infolab/ontologies-database",
         "nvbach91/iga-hybrid",
         "opencitations/OpenCitationsCorpus",
         "arcangelo7/arcangelo7.github.io",
+        "oeg-upm/AstreaRun",
         "stlab-istc-cnr/conceptual-components",
         "CarlaMenegat/VarelaDigital",
         "NERC-CEH/digital-objects-ontology",
@@ -2752,26 +2761,25 @@
         "phuse-org/css-linkathon",
         "LinDA-tools/transformation",
         "biopragmatics/bioregistry",
-        "dharc-org/vespasiano-da-bisticci-letters-de",
-        "fgiovannetti/lift",
-        "skg-if/data-model",
-        "SDM-TIB/ckanext-kgcreation",
-        "ben-norton/GeoKOS",
-        "GillesVandewiele/COVID-KG",
-        "KGerring/wiki",
         "skg-if/ext-ra-skg",
+        "laurentfintoni/dharc-skosmos",
+        "OriginTrail/desci-drag",
+        "skg-if/data-model",
+        "fgiovannetti/lift",
+        "KGerring/wiki",
+        "ben-norton/GeoKOS",
         "opencitations/metadata",
         "SDM-TIB/LDM_Docker",
-        "lodum/SPEX",
+        "ChiaraParravicini/tirocinio_OC",
         "CWTSLeiden/Journal-Observatory-backend",
+        "odoma-ch/ssh-citation-index",
         "ISA-tools/nmrml2isa-galaxy",
         "skg-if/ext-srv",
         "API4KBs/kmdp-models",
         "essepuntato/fentry",
-        "SPAROntologies/sparontologies.github.io",
+        "opencitations/website",
         "data-science-hub/data",
         "judaicalink/judaicalink-generators",
-        "laurentfintoni/dharc-skosmos",
         "Klortho/eutils-org",
         "ISA-tools/mzml2isa-qt",
         "rohub/skg",
@@ -2780,20 +2788,19 @@
         "SPAROntologies/frapo",
         "biblhertz/referency",
         "SPAROntologies/scoro",
-        "opencitations/oc_ocdm",
+        "AnLiGentile/cLODg",
         "skg-if/shacl-extractor",
         "epireve/hdm",
-        "LinkingDataIO/RO2SHARE",
         "hsaggion/drinventor",
         "easchultes/FAIR-Molecules",
-        "opencitations/heritrace",
         "Wimmics/IndeGx",
         "opencitations/script",
         "nvbach91/iga-knerd",
+        "dharc-org/vespasiano-da-bisticci-letters-de",
+        "opencitations/heritrace",
         "issa-project/issa-pipeline",
         "sciety/api-prototype",
-        "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
-        "odoma-ch/ssh-citation-index"
+        "lodum/SPEX"
       ]
     },
     "openalex": {
@@ -3104,6 +3111,10 @@
           "venue": "IEEE/ACM Joint Conference On Digital Libraries "
         }
       ]
+    },
+    "zenodo": {
+      "total_datasets": 0,
+      "datasets": []
     }
   }
 ]

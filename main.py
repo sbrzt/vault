@@ -12,6 +12,7 @@ import src.http
 import src.lov
 import src.openalex
 import src.opencitations
+import src.zenodo
 
 
 def main() -> None:
@@ -34,6 +35,8 @@ def main() -> None:
     openalex_key = os.environ.get("OPENALEX_API_KEY", "")
     github_token = os.environ.get("GITHUB_TOKEN", "")
     opencitations_token = os.environ.get("OPENCITATIONS_TOKEN", "")
+    zenodo_token = os.environ.get("ZENODO_TOKEN", "")
+    
     generated_at = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC")
     results = []
 
@@ -48,6 +51,8 @@ def main() -> None:
         oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_key)
         print("  Fetching OpenCitations...")
         oc_data = src.opencitations.fetch_opencitations(ontology, api_key=opencitations_token)
+        print("  Fetching Zenodo...")
+        zenodo_data = src.zenodo.fetch_zenodo(ontology, api_key=zenodo_token)
     
         results.append({
             "label": ontology["label"],
@@ -57,6 +62,7 @@ def main() -> None:
             "github": github_data,
             "openalex": oax_data,
             "opencitations": oc_data,
+            "zenodo": zenodo_data,
         })
 
     json_file = output_dir / "data.json"

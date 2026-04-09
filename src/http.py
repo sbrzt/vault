@@ -17,7 +17,7 @@ from pathlib import Path
 def http_get(
     url: str, 
     headers: dict | None = None, 
-    retries: int = 3, 
+    retries: int = 1, 
     delay: float = 2.0
     ):
     req = urllib.request.Request(url, headers=headers or {})
@@ -39,6 +39,10 @@ def http_get(
                 time.sleep(wait)
             else:
                 print(f"  [HTTP] {e.code} for {url}")
+                try:
+                    print(f"  [HTTP] Body: {e.read().decode('utf-8')[:500]}")
+                except:
+                    pass
                 return None
         except Exception as e:
             print(f"  [HTTP] Error fetching {url}: {e}")
