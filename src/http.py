@@ -20,8 +20,10 @@ def http_get(
     retries: int = 1, 
     delay: float = 2.0
     ):
-    req = urllib.request.Request(url, headers=headers or {})
+    req = urllib.request.Request(url)
     req.add_header("User-Agent", USER_AGENT)
+    for key, value in (headers or {}).items():
+        req.add_header(key, value)
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:

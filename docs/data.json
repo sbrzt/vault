@@ -23,6 +23,11 @@
           "title": "Semanticscience Integrated Ontology"
         },
         {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology"
+        },
+        {
           "uri": "http://w3id.org/roh",
           "vocab_uri": "http://w3id.org/roh",
           "title": "The ASIO ontology"
@@ -31,11 +36,6 @@
           "uri": "http://www.essepuntato.it/2013/03/cito-functions",
           "vocab_uri": "http://www.essepuntato.it/2013/03/cito-functions",
           "title": "Functions of Citations"
-        },
-        {
-          "uri": "http://vivoweb.org/ontology/core",
-          "vocab_uri": "http://vivoweb.org/ontology/core",
-          "title": "VIVO Core Ontology"
         },
         {
           "uri": "https://w3id.org/icon/ontology/",
@@ -121,100 +121,105 @@
       ]
     },
     "github": {
-      "repos_count": 86,
+      "repos_count": 91,
       "repos": [
-        "pandoc/lua-filters",
+        "pandoc-scholar/pandoc-scholar",
         "DerwenAI/pytextrank",
         "essepuntato/opencitations",
+        "saezlab/pypath",
         "dokieli/dokieli",
         "opencitations/coci",
-        "DataONEorg/d1_python",
         "jcheminform/jcheminform-author-guidelines",
         "NCEAS/metacatui",
-        "hydroshare/hydroshare",
+        "DataONEorg/d1_python",
         "eMetaboHUB/Forum-DiseasesChem",
+        "assemblee-virtuelle/pair",
+        "samiz-dat/hyperreadings",
         "Coleridge-Data-For-Impact/RCGraph",
         "PHAROS-photoarchives/Zeri-Foundation",
         "digicademy/svsal",
+        "ScholarlyHTML/spec",
         "SPAROntologies/cito",
-        "larsgw/ctj",
-        "WISDelft/SmartPub",
-        "cboettig/2013",
         "culturesofknowledge/emplaces",
-        "elixir-europe/MARS",
-        "ciromattia/annotaria",
-        "tetherless-world/POEM",
-        "MaastrichtU-IDS/semanticscience",
-        "monarch-initiative/GENO-ontology",
-        "irnerio-opendata/memo",
-        "qfo/OrthologyOntology",
+        "larsgw/ctj",
+        "cboettig/2013",
         "lambdamusic/Ontospy",
-        "TAMULib/Karma-models",
         "rahuldave/semflow",
-        "RDF-STaX/rdf-stax.github.io",
-        "opencitations/oscar",
-        "egonw/JSONFeed-extensions",
-        "csarven/mayktso",
-        "RiverBench/riverbench.github.io",
+        "elixir-europe/MARS",
+        "irnerio-opendata/memo",
+        "hydroshare/hydroshare",
+        "qfo/OrthologyOntology",
+        "biohackathon-japan/bh24-ruby-coding-with-help-of-llms",
+        "TAMULib/Karma-models",
         "mconlon17/vivo-pump",
-        "SNAPminions/snapcode",
-        "isawnyu/pleiades-rdf",
-        "RubenVerborgh/WebsiteToRDF",
+        "obo-behavior/behavior-ontology",
+        "biohackathon-japan/bh24-genome-variation",
         "cwrc/RDF-extraction",
-        "paregorios/gawd",
         "sterenz/data-science-10-11",
         "knowledgepixels/nanopub-ecosystem-test-infra",
+        "rahuldave/ontoads",
+        "csarven/eswc-2018-lorc",
+        "isee4xai/iSeeOnto",
         "glycoinfo/GlyCovid",
-        "mt-digital/rda-lod",
         "VirtualWatershed/vwp-ansible-install",
-        "nipdep/idea-graph",
-        "OpenLinkSoftware/OSDS_extension",
-        "joeykrug/essays",
-        "ProfTuan/KHMO",
-        "USGCRP/gcis-sparql",
-        "tetherless-world/twweb",
-        "srophe/Linked-Data",
+        "opencitations/OpenCitationsCorpus",
+        "RiverBench/riverbench.github.io",
+        "biohackathon-japan/bh24-llm-sparql",
+        "opencitations/metadata",
+        "csarven/mayktso",
+        "paregorios/gawd",
         "anasfkhan81/chamuca",
-        "gooofy/zamia-ai",
-        "con/citations-collector",
+        "RubenVerborgh/WebsiteToRDF",
         "lpalbou/AbstractLLM",
-        "Knowledge-Graph-Hub/kg-registry",
+        "nipdep/idea-graph",
+        "ali1k/ld-r",
+        "nfdi4plants/ARC-Symposium",
         "CSCfi/fairdata-metax-v3",
-        "hubgit/cito",
-        "rpietro/nof1_arXiv",
-        "phaidra/phaidra",
-        "dbpedia/DataId-Ontology",
-        "opencitations/heritrace",
+        "OpenLinkSoftware/OSDS_extension",
         "dakoop/vistrails-dataone",
-        "jcheminform/cito-editorial",
+        "DataONEorg/d1_pyore",
+        "tetherless-world/twweb",
+        "Knowledge-Graph-Hub/kg-registry",
+        "con/citations-collector",
         "OriginTrail/desci-knowledge-mining",
-        "opencitations/index",
-        "obophenotype/planaria-ontology",
         "climatesense-project/climafacts-kg",
-        "OriginTrail/desci-drag",
+        "srophe/Linked-Data",
+        "egonw/biohackrxiv-cito-review-paper",
+        "phaidra/phaidra",
         "fractastical/morpholib",
-        "idiap/abroad-kg-store",
-        "RiverBench/schema",
-        "micheldumontier/hcls-shex",
+        "jcheminform/cito-editorial",
+        "fact-claims/fact.claims",
         "opencitations/bcite",
         "isawnyu/pleiades_lpf",
-        "biotea/biotea.github.io",
-        "ontoneo-project/Ontoneo",
-        "isee4xai/iSeeOnto",
+        "hubgit/cito",
+        "plazi/ontologies",
         "laurauntner/wikidata-to-cidoc-crm",
+        "dbpedia/DataId-Ontology",
         "lpalbou/DigitalArticle",
         "LA3D/rlm",
         "JonathanReeve/data-ethics-literature-review",
         "HeriotWattMEng2015/HCLS-scraper",
+        "opencitations/croci",
+        "obophenotype/planaria-ontology",
         "TheBrane/sodi-data-acquisition",
-        "ali1k/ld-r",
-        "DrInventor/ontologies"
+        "biohackathon-japan/bh24-hindsight-best-practices",
+        "enanomapper/ontologies",
+        "cedadev/cci-vocabularies",
+        "ScienceLiveHub/templates4sciencelive",
+        "hydroshare/hs_restclient",
+        "loopingdoge/wowtaria",
+        "lmboat/biohackrxiv_template",
+        "metaphacts/semopenalex",
+        "OriginTrail/desci-drag",
+        "biotea/biotea.github.io",
+        "MaillPierre/ResearchTeamProjectFinder",
+        "IBM/kif"
       ]
     },
     "openalex": {
-      "total_works": 90,
+      "total_works": 91,
       "by_year": {
-        "2026": 3,
+        "2026": 4,
         "2025": 9,
         "2024": 13,
         "2023": 20,
@@ -229,14 +234,21 @@
       "top_works": [
         {
           "title": "ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage",
-          "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi",
+          "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca Tomasi",
           "year": 2026,
           "doi": "10.60923/issn.2532-8816/21765",
           "source_name": "Umanistica Digitale"
         },
         {
+          "title": "Cobra Effect in Academic Production: Destructive Consequences of the Metric Pressure",
+          "authors": "Mehmet FIRAT",
+          "year": 2026,
+          "doi": "10.55277/researchhub.ytarfqkw.1",
+          "source_name": ""
+        },
+        {
           "title": "OntoTrack: a linked open data based solution to track mutual citation networks in research publications",
-          "authors": "Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
+          "authors": "Mark Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
           "year": 2026,
           "doi": "10.3389/fcomp.2026.1636097",
           "source_name": "Frontiers in Computer Science"
@@ -254,17 +266,11 @@
           "year": 2025,
           "doi": "10.1007/s11192-025-05418-8",
           "source_name": "Scientometrics"
-        },
-        {
-          "title": "CiteFusion: An Ensemble Framework for Citation Intent Classification Harnessing Dual-Model Binary Couples and SHAP Analyses",
-          "authors": "Lorenzo Paolini; Sahar Vahdati; Angelo Di Iorio; Robert Wardenga; Ivan Heibi; Silvio Peroni",
-          "year": 2025,
-          "doi": "10.5281/zenodo.11841798",
-          "source_name": "arXiv (Cornell University)"
         }
       ],
       "sources": {
         "Umanistica Digitale": 1,
+        "Unknown": 12,
         "Frontiers in Computer Science": 1,
         "Biodiversity Information Science and Standards": 2,
         "Scientometrics": 5,
@@ -281,9 +287,7 @@
         "Quantitative Science Studies": 3,
         "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Cient\u00edficas)": 1,
         "Cybernetics and Information Technologies": 1,
-        "Front Matter": 4,
         "SPIRE - Sciences Po Institutional REpository": 3,
-        "Unknown": 7,
         "Future Internet": 1,
         "Vjesnik bibliotekara Hrvatske": 1,
         "Preprints.org": 1,
@@ -994,17 +998,17 @@
           "venue": "Semantic Web "
         },
         {
-          "doi": "10.1007/s00799-021-00306-x",
-          "year": "2021",
-          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
-          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
-          "venue": "International Journal On Digital Libraries "
-        },
-        {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
           "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References",
           "authors": "Mucheroni, Marcos Luiz; Peroni, Silvio; Dos Santos, Erika Alves",
+          "venue": "International Journal On Digital Libraries "
+        },
+        {
+          "doi": "10.1007/s00799-021-00306-x",
+          "year": "2021",
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
           "venue": "International Journal On Digital Libraries "
         },
         {
@@ -1297,8 +1301,152 @@
       ]
     },
     "zenodo": {
-      "total_datasets": 0,
-      "datasets": []
+      "total_datasets": 10,
+      "by_year": {
+        "2023": 1,
+        "2025": 3,
+        "2021": 3,
+        "2017": 1,
+        "2026": 2
+      },
+      "by_access": {
+        "open": 10
+      },
+      "by_license": {
+        "other-open": 2,
+        "cc-by-4.0": 8
+      },
+      "keywords": {},
+      "communities": {},
+      "datasets": [
+        {
+          "id": 7853104,
+          "title": "WikiPathways April 2023 Release - RDF data",
+          "doi": "10.5281/zenodo.7853104",
+          "year": "2023",
+          "access_right": "open",
+          "license": "other-open",
+          "keywords": [
+            "RDF",
+            "semantic web",
+            "wikipathways"
+          ],
+          "communities": []
+        },
+        {
+          "id": 17495810,
+          "title": "Multi-Level Annotation Ontology 2.0",
+          "doi": "10.5281/zenodo.17495810",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 5632921,
+          "title": "WikiPathways Sept 2021 Release - RDF data",
+          "doi": "10.5281/zenodo.5632921",
+          "year": "2021",
+          "access_right": "open",
+          "license": "other-open",
+          "keywords": [
+            "wikipathways",
+            "biological pathway models",
+            "RDF",
+            "semantic web"
+          ],
+          "communities": []
+        },
+        {
+          "id": 845935,
+          "title": "Species co-occurrences from EuPMC articles related to pines",
+          "doi": "10.5281/zenodo.845935",
+          "year": "2017",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "conifers",
+            "datamining"
+          ],
+          "communities": []
+        },
+        {
+          "id": 18660313,
+          "title": "ERA Ontology",
+          "doi": "10.5281/zenodo.18660313",
+          "year": "2026",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "railways",
+            "railways infrastructure"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14879204,
+          "title": "Dataset: Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies",
+          "doi": "10.5281/zenodo.14879204",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 15658539,
+          "title": "Extended Explanation Ontology",
+          "doi": "10.5281/zenodo.15658539",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 18602483,
+          "title": "Kinetic Human Movement Ontology",
+          "doi": "10.5281/zenodo.18602483",
+          "year": "2026",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 7026640,
+          "title": "PheKnowLator Human Disease Knowledge Graphs - Build Data (Original)",
+          "doi": "10.5281/zenodo.7026640",
+          "year": "2021",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "PheKnowLator",
+            "Knowledge Graph",
+            "Linked Open Data",
+            "Open Biological and Biomedical Ontology Foundry",
+            "PheKnowLator Ecosystem Human Disease Knowledge Graph Benchmark"
+          ],
+          "communities": []
+        },
+        {
+          "id": 7026644,
+          "title": "PheKnowLator Human Disease Knowledge Graphs - Build Data (Processed)",
+          "doi": "10.5281/zenodo.7026644",
+          "year": "2021",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "PheKnowLator",
+            "Knowledge Graph",
+            "Linked Open Data",
+            "Open Biological and Biomedical Ontology Foundry",
+            "PheKnowLator Ecosystem Human Disease Knowledge Graph Benchmark"
+          ],
+          "communities": []
+        }
+      ]
     }
   },
   {
@@ -1325,14 +1473,14 @@
           "title": "Nature.com Core Ontology"
         },
         {
-          "uri": "http://purl.org/SemSur/",
-          "vocab_uri": "http://purl.org/SemSur/",
-          "title": "The Semantic Survey Ontology (semsur)"
-        },
-        {
           "uri": "http://purl.org/cerif/frapo/",
           "vocab_uri": "http://purl.org/cerif/frapo/",
           "title": "Funding, Research Administration and Projects Ontology"
+        },
+        {
+          "uri": "http://purl.org/SemSur/",
+          "vocab_uri": "http://purl.org/SemSur/",
+          "title": "The Semantic Survey Ontology (semsur)"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -1340,14 +1488,14 @@
           "title": "The DataCite Ontology"
         },
         {
-          "uri": "http://w3id.org/roh",
-          "vocab_uri": "http://w3id.org/roh",
-          "title": "The ASIO ontology"
-        },
-        {
           "uri": "http://vivoweb.org/ontology/core",
           "vocab_uri": "http://vivoweb.org/ontology/core",
           "title": "VIVO Core Ontology"
+        },
+        {
+          "uri": "http://w3id.org/roh",
+          "vocab_uri": "http://w3id.org/roh",
+          "title": "The ASIO ontology"
         },
         {
           "uri": "https://w3id.org/seo",
@@ -1463,7 +1611,7 @@
       ]
     },
     "github": {
-      "repos_count": 80,
+      "repos_count": 76,
       "repos": [
         "SPAROntologies/fabio",
         "essepuntato/opencitations",
@@ -1471,80 +1619,76 @@
         "alexdma/gutenberg-ld",
         "opencitations/OpenCitationsCorpus",
         "eMetaboHUB/Forum-DiseasesChem",
-        "gbv/jskos-tools",
         "genenetwork/genenetwork3",
         "umd-lib/archelon",
+        "dice-group/COVID19DS",
         "digicademy/svsal",
-        "issa-project/issa-pipeline",
         "chanzuckerberg/alhazen",
         "PHAROS-photoarchives/Zeri-Foundation",
-        "dice-group/COVID19DS",
-        "dbpedia/DataId-Ontology",
-        "enanomapper/ontologies",
-        "openlink/structured-data-sniffer",
+        "samiz-dat/hyperreadings",
         "SpocWiki/_Standards",
         "ciromattia/annotaria",
+        "opencitations/oscar",
         "publicarchi/elementum",
+        "OIT-ADS-Web/duke_vivo_ontologies",
         "sntcristian/and-kge",
         "rahuldave/semflow",
-        "opencitations/oscar",
-        "OIT-ADS-Web/duke_vivo_ontologies",
-        "pensoft/OpenBiodiv",
-        "bodleian/datafinder",
-        "sterenz/data-science-10-11",
-        "rahuldave/ontoads",
+        "calipho-sib/cellosaurus-api",
+        "issa-project/issa-pipeline",
         "oeg-upm/Devos",
-        "opencitations/metadata",
-        "open-sci/2023-2024-atreides-code",
+        "pensoft/OpenBiodiv",
         "OpenCS-ontology/OpenCS",
-        "germanbraun/oceangraph",
         "USGCRP/gcis-ontology",
+        "mconlon17/vivo-pump",
+        "germanbraun/oceangraph",
         "fair-workflows/openpredict",
-        "TAMULib/Karma-models",
-        "anasfkhan81/chamuca",
-        "gooofy/zamia-ai",
-        "coar-repositories/coar-vocabularies-website",
-        "SemanticSoftwareLab/TextMining-SemPub2016",
+        "sterenz/data-science-10-11",
+        "glycoinfo/GlyCovid",
         "418imateapot/new-raschietto",
+        "coar-repositories/coar-vocabularies-website",
         "tetherless-world/twweb",
+        "sebastiano-g/Private_clef",
+        "gbv/coli-conc.gbv.de",
         "HerculesCRUE/ROH",
-        "OriginTrail/desci-knowledge-mining",
-        "FAIR2Adapt/cca-crate-profile",
-        "con/citations-collector",
-        "nipdep/idea-graph",
-        "davidlamprecht/semopenalex-semanticweb",
-        "cfoster/xmllondon-rdf",
+        "SemanticSoftwareLab/TextMining-SemPub2016",
         "OriginTrail/desci-drag",
-        "mconlon17/vivo-org-chart",
-        "lelax/new_Design_Data",
-        "opencitations/oc_meta",
-        "opencitations/bcite",
-        "LA3D/rlm",
-        "CRISalid-esr/svp-harvester",
+        "anasfkhan81/chamuca",
+        "cfoster/xmllondon-rdf",
         "fair-workflows/FAIR-WFcollection",
-        "laurauntner/wikidata-to-cidoc-crm",
-        "ualbertalib/metadata",
-        "TheBrane/sodi-data-acquisition",
-        "opencitations/wcw",
-        "Apress/mastering-structured-data-on-semantic-web",
-        "amcgail/gpt-assistants",
-        "datalogism/SciLEx",
+        "Brown-University-Library/bdr_indexer",
+        "mconlon17/vivo-org-chart",
+        "OriginTrail/desci-knowledge-mining",
         "idn-au/isu-catalogue",
         "idn-au/kp-catalogue",
-        "tetherless-world/dco-vivo",
+        "ualbertalib/metadata",
+        "davidlamprecht/semopenalex-semanticweb",
+        "nipdep/idea-graph",
+        "Skydler/practica-web-semantica",
+        "Apress/mastering-structured-data-on-semantic-web",
+        "skg-if/data-model",
+        "TAMULib/Karma-models",
+        "lelax/new_Design_Data",
+        "prei007/litnet",
+        "sciety/api-prototype",
+        "arcangelo7/arcangelo7.github.io",
+        "umd-lib/plastron",
+        "CRISalid-esr/svp-harvester",
+        "laurauntner/wikidata-to-cidoc-crm",
+        "TheBrane/sodi-data-acquisition",
+        "prei007/CosimaWorkshop-R",
+        "laurentfintoni/dharc-skosmos",
+        "dice-group/Ingrid",
+        "Docmaps-Project/docmaps",
+        "amcgail/gpt-assistants",
+        "datalogism/SciLEx",
+        "geological-survey-of-queensland/geofeatures-ont",
         "ScienceLiveHub/templates4sciencelive",
-        "knaw-huc/ost-clarin-skg",
+        "gbv/aREF",
+        "ali1k/ld-r",
         "loopingdoge/wowtaria",
         "metaphacts/semopenalex",
         "HendrikBorgelt/Kat_Tagung_Metadata_extraction",
-        "arcangelo7/arcangelo7.github.io",
-        "skg-if/data-model",
-        "opencitations/api",
-        "know-org-project/Nana-and-Jojo-s-Bizzare-LODventure",
-        "the-elephant-man/project",
-        "Wimmics/voidmatic",
-        "sciety/api-prototype",
-        "opencitations/heritrace"
+        "htrc/HTRC-Public-Worksets-API"
       ]
     },
     "openalex": {
@@ -1564,7 +1708,7 @@
       "top_works": [
         {
           "title": "ATLAS: A Knowledge Graph to enhance the findability of International Scholarly Research on the Italian Digital Cultural Heritage",
-          "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca G. Tomasi",
+          "authors": "Sebastiano Giacomini; Chiara Martignano; Giorgia Rubin; Alessia Bardi; Marina Buzzoni; Marilena Daquino; Riccardo Del Gratta; Angelo Mario Del Grosso; Franz Fischer; Roberto Rosselli Del Turco; Francesca Tomasi",
           "year": 2026,
           "doi": "10.60923/issn.2532-8816/21765",
           "source_name": "Umanistica Digitale"
@@ -1578,7 +1722,7 @@
         },
         {
           "title": "OntoTrack: a linked open data based solution to track mutual citation networks in research publications",
-          "authors": "Marymegan Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
+          "authors": "Mark Daly; Muhammad Ahtisham Aslam; Ronja Froelian; Sonja Schimmler",
           "year": 2026,
           "doi": "10.3389/fcomp.2026.1636097",
           "source_name": "Frontiers in Computer Science"
@@ -2330,17 +2474,17 @@
           "venue": "Semantic Web "
         },
         {
-          "doi": "10.1007/s00799-021-00306-x",
-          "year": "2021",
-          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
-          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
-          "venue": "International Journal On Digital Libraries "
-        },
-        {
           "doi": "10.1007/s00799-023-00351-8",
           "year": "2023",
           "title": "Referencing Behaviours Across Disciplines: Publication Types And Common Metadata For Defining Bibliographic References",
           "authors": "Mucheroni, Marcos Luiz; Peroni, Silvio; Dos Santos, Erika Alves",
+          "venue": "International Journal On Digital Libraries "
+        },
+        {
+          "doi": "10.1007/s00799-021-00306-x",
+          "year": "2021",
+          "title": "Analysing The Requirements For An Open Research Knowledge Graph: Use Cases, Quality Requirements, And Construction Strategies",
+          "authors": "Brack, Arthur; Hoppe, Anett; Stocker, Markus; Auer, Soren; Ewerth, Ralph",
           "venue": "International Journal On Digital Libraries "
         },
         {
@@ -2633,8 +2777,251 @@
       ]
     },
     "zenodo": {
-      "total_datasets": 0,
-      "datasets": []
+      "total_datasets": 14,
+      "by_year": {
+        "2025": 6,
+        "2024": 3,
+        "2023": 2,
+        "2022": 2,
+        "2021": 1
+      },
+      "by_access": {
+        "open": 14
+      },
+      "by_license": {
+        "cc-by-4.0": 11,
+        "cc-zero": 3
+      },
+      "keywords": {},
+      "communities": {},
+      "datasets": [
+        {
+          "id": 15656024,
+          "title": "Right-wing violence after 1989 in German prose: generationality versus intersectionality",
+          "doi": "10.5281/zenodo.15656024",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "violence motivated by right-wing ideology",
+            "political change in 1989 in contemporary german literature",
+            "przemoc motywowana ideologi\u0105 prawicow\u0105",
+            "prze\u0142om polityczny 1989 r. w niemieckiej literaturze wsp\u00f3\u0142czesnej",
+            "humanistyka cyfrowa",
+            "rechte Gewalt",
+            "politische Wende 1989/1990 in deutscher Gegenwartsliteratur",
+            "digitale Geisteswissenschaften"
+          ],
+          "communities": []
+        },
+        {
+          "id": 15399468,
+          "title": "SemRepo.org",
+          "doi": "10.5281/zenodo.15399468",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "Open Science",
+            "GitHub",
+            "Knowledge Graph",
+            "RDF",
+            "Semantic Web",
+            "Linked Data"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14934067,
+          "title": "Strangeways, here we come - Vicende conservative di archivi e biblioteche nelle chiese di Roma",
+          "doi": "10.5281/zenodo.14934067",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 13881433,
+          "title": "Linked Papers With Code: The Latest in Machine Learning as an RDF Knowledge Graph",
+          "doi": "10.5281/zenodo.13881433",
+          "year": "2024",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 14049942,
+          "title": "Database of the Monita privata (secreta) editions/reprints/translations",
+          "doi": "10.5281/zenodo.14049942",
+          "year": "2024",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "Monita privata/secreta",
+            "Jesuit studies",
+            "bibliographic collection",
+            "research dataset",
+            "early modern era",
+            "Catholic Reformation",
+            "Jesuit political strategy",
+            "early modern censorship",
+            "anti-Jesuit polemics",
+            "Counter-Reformation literature",
+            "Jesuit historiography",
+            "religious satire",
+            "early modern intellectual networks",
+            "parodic and subversive literature"
+          ],
+          "communities": []
+        },
+        {
+          "id": 8287801,
+          "title": "Genetic networks datasets: ten books by Gustave Roud, \"En mer\" by Bernard Comment",
+          "doi": "10.5281/zenodo.8287801",
+          "year": "2023",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "genetic criticism",
+            "textual criticism",
+            "scholarly editing",
+            "authorial philology",
+            "digital philology"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14266117,
+          "title": "Cookbooks, Guidance, Best Practices for Metadata, Terminologies and Provenance - resource recommendations from NFDI consortia",
+          "doi": "10.5281/zenodo.14266117",
+          "year": "2024",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 7408391,
+          "title": "Algorithmic Fairness Datasets",
+          "doi": "10.5281/zenodo.7408391",
+          "year": "2022",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "fairness",
+            "machine learning"
+          ],
+          "communities": []
+        },
+        {
+          "id": 5592157,
+          "title": "National Edition of Aldo Moro's works (RDF Dataset)",
+          "doi": "10.5281/zenodo.5592157",
+          "year": "2021",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "digital edition",
+            "digital humanities",
+            "rdf",
+            "semantic web",
+            "turtle",
+            "national edition of aldo moro's works"
+          ],
+          "communities": []
+        },
+        {
+          "id": 10421598,
+          "title": "Anwendungsprofil zur RDF-Serialisierung der Entwurfsversion des OstData-Metadatenschemas",
+          "doi": "10.5281/zenodo.10421598",
+          "year": "2023",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "RDF",
+            "Application Profile"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14879204,
+          "title": "Dataset: Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies",
+          "doi": "10.5281/zenodo.14879204",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 14741864,
+          "title": "Configuration Files for ParaText: SHACL and Display Rules for Semantic Data Management Using HERITRACE",
+          "doi": "10.5281/zenodo.14741864",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [
+            "Semantic Data Management",
+            "Cultural Heritage",
+            "RDF",
+            "SHACL",
+            "Bibliographic Metadata"
+          ],
+          "communities": []
+        },
+        {
+          "id": 17214323,
+          "title": "The Great Vilnius Controversy: Database of Catholic\u2013Protestant Polemical Literature from Early Modern Vilnius, Lithuania (1574\u20131647)",
+          "doi": "10.5281/zenodo.17214323",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "Polemical literature",
+            "Reformation in Poland\u2013Lithuania",
+            "Early modern Vilnius",
+            "Early modern religious polemics",
+            "Jesuits in Poland\u2013Lithuania",
+            "Calvinists in Poland\u2013Lithuania",
+            "Religious controversies",
+            "Catholic\u2013Protestant polemics",
+            "Piotr Skarga",
+            "Andreas Volanus",
+            "Marcin \u015amiglecki",
+            "Andrzej Jurgiewicz",
+            "Andrzej Chrz\u0105stowski",
+            "Kasper Wilkowski",
+            "Manuel de Vega",
+            "Antonio Possevino",
+            "Fausto Sozzini",
+            "Marcin \u0141aszcz",
+            "Szymon Teofil Turnowski",
+            "Jan Ch\u0105dzy\u0144ski",
+            "Grzegorz z \u017barnowca",
+            "Stanis\u0142aw Grodzicki",
+            "Lithuanian religious history",
+            "Church history",
+            "Vilnius",
+            "The Great Vilnius Controversy"
+          ],
+          "communities": []
+        },
+        {
+          "id": 7450967,
+          "title": "The URW-KG: a Resource for Tackling the Under-Representation of non-Western Writers",
+          "doi": "10.5281/zenodo.7450967",
+          "year": "2022",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "Knowledge Graphs,",
+            "KG Embeddings"
+          ],
+          "communities": []
+        }
+      ]
     }
   },
   {
@@ -2734,7 +3121,7 @@
       ]
     },
     "github": {
-      "repos_count": 65,
+      "repos_count": 66,
       "repos": [
         "opencitations/oc_meta",
         "essepuntato/opencitations",
@@ -2746,65 +3133,66 @@
         "liuji1031/ontology_to_schema",
         "opencitations/oscar",
         "pensoft/OpenBiodiv",
-        "Docmaps-Project/docmaps",
-        "OriginTrail/desci-knowledge-mining",
         "italia/dati-semantic-assets",
+        "Docmaps-Project/docmaps",
+        "OriginTrail/desci-drag",
+        "Artemis-IA/scichat-semantic-platform",
         "feup-infolab/ontologies-database",
-        "nvbach91/iga-hybrid",
-        "opencitations/OpenCitationsCorpus",
-        "arcangelo7/arcangelo7.github.io",
         "oeg-upm/AstreaRun",
+        "opencitations/OpenCitationsCorpus",
+        "nvbach91/iga-hybrid",
+        "NERC-CEH/digital-objects-ontology",
         "stlab-istc-cnr/conceptual-components",
         "CarlaMenegat/VarelaDigital",
-        "NERC-CEH/digital-objects-ontology",
         "antarctica/nerc-arctic-office-projects-api",
-        "phuse-org/css-linkathon",
         "LinDA-tools/transformation",
-        "biopragmatics/bioregistry",
-        "skg-if/ext-ra-skg",
-        "laurentfintoni/dharc-skosmos",
-        "OriginTrail/desci-drag",
+        "kltng/dhq-wiki-site",
+        "phuse-org/css-linkathon",
+        "dharc-org/vespasiano-da-bisticci-letters-de",
         "skg-if/data-model",
         "fgiovannetti/lift",
-        "KGerring/wiki",
         "ben-norton/GeoKOS",
-        "opencitations/metadata",
-        "SDM-TIB/LDM_Docker",
-        "ChiaraParravicini/tirocinio_OC",
+        "LinkingDataIO/RO2SHARE",
+        "skg-if/ext-ra-skg",
+        "GillesVandewiele/COVID-KG",
         "CWTSLeiden/Journal-Observatory-backend",
+        "SDM-TIB/LDM_Docker",
         "odoma-ch/ssh-citation-index",
         "ISA-tools/nmrml2isa-galaxy",
+        "arcangelo7/arcangelo7.github.io",
+        "lodum/SPEX",
         "skg-if/ext-srv",
-        "API4KBs/kmdp-models",
-        "essepuntato/fentry",
-        "opencitations/website",
-        "data-science-hub/data",
+        "SPAROntologies/sparontologies.github.io",
         "judaicalink/judaicalink-generators",
-        "Klortho/eutils-org",
+        "data-science-hub/data",
+        "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
         "ISA-tools/mzml2isa-qt",
         "rohub/skg",
-        "essepuntato/undo",
-        "anuzzolese/cLODg2",
-        "SPAROntologies/frapo",
+        "Klortho/eutils-org",
         "biblhertz/referency",
+        "essepuntato/undo",
+        "SDM-TIB/ckanext-kgcreation",
+        "opencitations/oc_ocdm",
+        "anuzzolese/cLODg2",
+        "epireve/hdm",
         "SPAROntologies/scoro",
+        "essepuntato/fentry",
         "AnLiGentile/cLODg",
         "skg-if/shacl-extractor",
-        "epireve/hdm",
         "hsaggion/drinventor",
         "easchultes/FAIR-Molecules",
         "Wimmics/IndeGx",
-        "opencitations/script",
+        "biopragmatics/bioregistry",
         "nvbach91/iga-knerd",
-        "dharc-org/vespasiano-da-bisticci-letters-de",
         "opencitations/heritrace",
+        "ChiaraParravicini/tirocinio_OC",
         "issa-project/issa-pipeline",
         "sciety/api-prototype",
-        "lodum/SPEX"
+        "SPAROntologies/frapo"
       ]
     },
     "openalex": {
-      "total_works": 60,
+      "total_works": 61,
       "by_year": {
         "2026": 1,
         "2025": 2,
@@ -2814,7 +3202,7 @@
         "2021": 4,
         "2020": 3,
         "2019": 11,
-        "2018": 3,
+        "2018": 4,
         "2017": 5,
         "2016": 4,
         "2015": 3,
@@ -2866,14 +3254,14 @@
         "Scientometrics": 1,
         "Figshare": 5,
         "Frontiers in artificial intelligence and applications": 1,
-        "Lecture notes in computer science": 4,
+        "Lecture notes in computer science": 5,
         "The Review of Socionetwork Strategies": 1,
         "Acadlore Transactions on AI and Machine Learning": 1,
         "GigaScience": 1,
         "SPIRE - Sciences Po Institutional REpository": 2,
         "bonndoc (University of Bonn)": 1,
         "Journal of Cheminformatics": 1,
-        "Unknown": 7,
+        "Unknown": 9,
         "Qucosa (Saxon State and University Library Dresden)": 1,
         "Preprints.org": 1,
         "Duo Research Archive (University of Oslo)": 1,
@@ -2894,8 +3282,7 @@
         "GoeScholar  The Publication Server of the Georg-August-Universit\u00e4t G\u00f6ttingen (Georg-August-Universit\u00e4t G\u00f6ttingen)": 1,
         "VU Research Portal": 1,
         "Procedia Computer Science": 1,
-        "Journal of Biomedical Semantics": 2,
-        "Front Matter": 2
+        "Journal of Biomedical Semantics": 2
       }
     },
     "opencitations": {
@@ -3113,8 +3500,55 @@
       ]
     },
     "zenodo": {
-      "total_datasets": 0,
-      "datasets": []
+      "total_datasets": 2,
+      "by_year": {
+        "2021": 1,
+        "2025": 1
+      },
+      "by_access": {
+        "open": 2
+      },
+      "by_license": {
+        "cc-by-4.0": 1,
+        "cc-zero": 1
+      },
+      "keywords": {},
+      "communities": {},
+      "datasets": [
+        {
+          "id": 5592157,
+          "title": "National Edition of Aldo Moro's works (RDF Dataset)",
+          "doi": "10.5281/zenodo.5592157",
+          "year": "2021",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "digital edition",
+            "digital humanities",
+            "rdf",
+            "semantic web",
+            "turtle",
+            "national edition of aldo moro's works"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14741864,
+          "title": "Configuration Files for ParaText: SHACL and Display Rules for Semantic Data Management Using HERITRACE",
+          "doi": "10.5281/zenodo.14741864",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [
+            "Semantic Data Management",
+            "Cultural Heritage",
+            "RDF",
+            "SHACL",
+            "Bibliographic Metadata"
+          ],
+          "communities": []
+        }
+      ]
     }
   }
 ]

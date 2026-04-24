@@ -42,6 +42,10 @@
           <span class="metric-value">{{ onto.opencitations.total_citations }}</span>
           <span class="metric-label">Citations (OpenCitations)</span>
         </div>
+        <div class="metric">
+          <span class="metric-value">{{ onto.zenodo.total_datasets }}</span>
+          <span class="metric-label">Datasets (Zenodo)</span>
+        </div>
       </div>
     </div>
     {% endfor %}
@@ -118,7 +122,7 @@
           <span class="stat-label">papers mention {{ onto.label }} in titles, abstracts and/or texts</span>
         </div>
         <div class="card-detail">
-          <canvas id="chart-{{ onto.prefix }}" height="120"></canvas>
+          <canvas id="chart-oax-{{ onto.prefix }}" height="120"></canvas>
         </div>
       </div>
 
@@ -203,10 +207,45 @@
       </table>
     </div>
 
+    <div class="grid-2">
+
+      {# Zenodo card #}
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag zen-tag">Zenodo</span>
+          <h3>Presence in datasets usage</h3>
+        </div>
+        <div class="card-stat">
+          <span class="big-num">{{ onto.zenodo.total_datasets }}</span>
+          <span class="stat-label">datasets reuse {{ onto.label }} entities, properties and/or individuals</span>
+        </div>
+        <div class="card-detail">
+          <ul class="compact-list">
+            {% for dataset in onto.zenodo.datasets[:8] %}
+              <li><a href="https://doi.org/{{ dataset.doi }}" target="_blank">{{ dataset.title }}</a></li>
+            {% else %}
+              <li><em>None found</em></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag zen-tag">Zenodo</span>
+          <h3>Usage in open datasets</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-licenses-zen-{{ onto.prefix }}" height="100"></canvas>
+        </div>
+      </div>
+
+    </div>
+
     {# Chart script #}
     <script>
     (function() {
-      var ctx = document.getElementById('chart-{{ onto.prefix }}');
+      var ctx = document.getElementById('chart-oax-{{ onto.prefix }}');
       if (!ctx) return;
       new Chart(ctx, {
         type: 'bar',
@@ -215,8 +254,8 @@
           datasets: [{
             label: 'Papers per year',
             data: {{ onto.openalex.by_year | dictsort | map(attribute=1) | list | tojson }},
-            backgroundColor: '#2e37e94d',
-            borderColor: '#232bc5',
+            backgroundColor: '#15196b3f',
+            borderColor: '#15196b',
             borderWidth: 1,
             borderRadius: 3,
           }]
@@ -258,6 +297,28 @@
         }
       });
     })();
+
+    (function() {
+      var ctx = document.getElementById('chart-licenses-zen-{{ onto.prefix }}');
+      if (!ctx) return;
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: {{ onto.zenodo.by_license.keys() | list | sort | tojson }},
+          datasets: [{
+            label: 'Datasets',
+            data: {{ onto.zenodo.by_license | dictsort | map(attribute=1) | list | tojson }},
+            borderWidth: 1,
+            borderRadius: 3,
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'top' } },
+        }
+      });
+    })();
+
     </script>
 
   </section>

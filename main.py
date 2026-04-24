@@ -40,9 +40,12 @@ def main() -> None:
     generated_at = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC")
     results = []
 
-    print("\n── Fetching LOV (scanning all vocabularies) ──")
+    print("\n── Fetching LOV ──")
     lov_data = src.lov.fetch_lov_all(config["ontologies"])
- 
+    print("\n-- Fetching Zenodo --")
+    zenodo_data = src.zenodo.fetch_zenodo_all(config["ontologies"], api_key=zenodo_token)
+    
+
     for ontology in config["ontologies"]:
         print(f"\n── {ontology['label']} ──")
         print("  Fetching GitHub Code...")
@@ -51,9 +54,7 @@ def main() -> None:
         oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_key)
         print("  Fetching OpenCitations...")
         oc_data = src.opencitations.fetch_opencitations(ontology, api_key=opencitations_token)
-        print("  Fetching Zenodo...")
-        zenodo_data = src.zenodo.fetch_zenodo(ontology, api_key=zenodo_token)
-    
+        
         results.append({
             "label": ontology["label"],
             "uri": ontology["uri"],
@@ -62,7 +63,7 @@ def main() -> None:
             "github": github_data,
             "openalex": oax_data,
             "opencitations": oc_data,
-            "zenodo": zenodo_data,
+            "zenodo": zenodo_data[ontology["prefix"]],
         })
 
     json_file = output_dir / "data.json"

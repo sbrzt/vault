@@ -9,8 +9,9 @@
   --muted: #252b33;
   --accent-lov: #e99103;
   --accent-github: #686868;
-  --accent-oax: #2e36e9;
+  --accent-oax: #15196b;
   --accent-oc: #8c56ff;
+  --accent-zen: #2e37e9;
   --accent-warn: #f78166;
   --accent-link: #0076e4;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -239,8 +240,10 @@ main {
 
 .lov-tag    { background: rgba(255, 197, 88, 0.15); color: var(--accent-lov);    }
 .github-tag { background: rgba(168, 168, 168, 0.15); color: var(--accent-github); }
-.oax-tag    { background: #2e37e91c; color: var(--accent-oax);    }
+.oax-tag    { background: #15196b3f; color: var(--accent-oax);    }
 .oc-tag     { background: rgba(154, 117, 234, .15); color: var(--accent-oc);     }
+.zen-tag    { background: #2e37e927; color: var(--accent-zen);     }
+
 
 /* ── Stats ── */
 
