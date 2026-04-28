@@ -9,8 +9,9 @@ A tool that fetches usage data for ontologies across diverse sources, and genera
 - [ ] `fetch_lov`: test whether to use cache or not
 - [x] `fetch_openalex`: the intuition is correct (fulltext search is a strong signal), but it needs more work on how it deals with keywords
 - [x] `fetch_opencitations`: add OpenCitation as a source for citing papers
-- [ ] `fetch_opencitations`: add papers' descriptive metadata
-- [ ] `fetch_zenodo`: add Zenodo as a source for datasets
+- [x] `fetch_opencitations`: add papers' descriptive metadata
+- [x] `fetch_zenodo`: add Zenodo as a source for datasets
+- [ ] `fetch_zenodo`: make it faster
 - [ ] add uptake statistics at general level (including all ontologies taken into consideration)
 - [ ] `report.html.j2` and `style.css`: add better UX and information visualization
 - [x] add license
