@@ -121,99 +121,97 @@
       ]
     },
     "github": {
-      "repos_count": 91,
+      "repos_count": 89,
       "repos": [
         "pandoc-scholar/pandoc-scholar",
         "DerwenAI/pytextrank",
         "essepuntato/opencitations",
-        "saezlab/pypath",
         "dokieli/dokieli",
-        "opencitations/coci",
-        "jcheminform/jcheminform-author-guidelines",
-        "NCEAS/metacatui",
         "DataONEorg/d1_python",
+        "jcheminform/jcheminform-author-guidelines",
+        "hydroshare/hydroshare",
+        "NCEAS/metacatui",
         "eMetaboHUB/Forum-DiseasesChem",
-        "assemblee-virtuelle/pair",
-        "samiz-dat/hyperreadings",
+        "solid/vocab",
         "Coleridge-Data-For-Impact/RCGraph",
+        "samiz-dat/hyperreadings",
         "PHAROS-photoarchives/Zeri-Foundation",
         "digicademy/svsal",
-        "ScholarlyHTML/spec",
         "SPAROntologies/cito",
+        "WISDelft/SmartPub",
         "culturesofknowledge/emplaces",
         "larsgw/ctj",
         "cboettig/2013",
         "lambdamusic/Ontospy",
-        "rahuldave/semflow",
-        "elixir-europe/MARS",
         "irnerio-opendata/memo",
-        "hydroshare/hydroshare",
-        "qfo/OrthologyOntology",
-        "biohackathon-japan/bh24-ruby-coding-with-help-of-llms",
-        "TAMULib/Karma-models",
-        "mconlon17/vivo-pump",
+        "elixir-europe/intoxicom-workshop-report-template",
+        "RubenVerborgh/WebsiteToRDF",
         "obo-behavior/behavior-ontology",
-        "biohackathon-japan/bh24-genome-variation",
+        "egonw/JSONFeed-extensions",
+        "qfo/OrthologyOntology",
+        "biohackathon-japan/bh24-llm-sparql",
+        "opencitations/website",
+        "SNAPminions/snapcode",
+        "csarven/eswc-2018-lorc",
+        "isee4xai/iSeeOnto",
+        "isawnyu/pleiades-rdf",
+        "Pittsburgh-NEH-Institute/Institute-Materials-2017",
         "cwrc/RDF-extraction",
         "sterenz/data-science-10-11",
         "knowledgepixels/nanopub-ecosystem-test-infra",
-        "rahuldave/ontoads",
-        "csarven/eswc-2018-lorc",
-        "isee4xai/iSeeOnto",
-        "glycoinfo/GlyCovid",
-        "VirtualWatershed/vwp-ansible-install",
-        "opencitations/OpenCitationsCorpus",
-        "RiverBench/riverbench.github.io",
-        "biohackathon-japan/bh24-llm-sparql",
-        "opencitations/metadata",
+        "mt-digital/rda-lod",
         "csarven/mayktso",
         "paregorios/gawd",
-        "anasfkhan81/chamuca",
-        "RubenVerborgh/WebsiteToRDF",
-        "lpalbou/AbstractLLM",
-        "nipdep/idea-graph",
-        "ali1k/ld-r",
+        "joeykrug/essays",
+        "opencitations/heritrace",
         "nfdi4plants/ARC-Symposium",
-        "CSCfi/fairdata-metax-v3",
-        "OpenLinkSoftware/OSDS_extension",
-        "dakoop/vistrails-dataone",
-        "DataONEorg/d1_pyore",
-        "tetherless-world/twweb",
+        "ali1k/ld-r",
+        "anasfkhan81/chamuca",
+        "gooofy/zamia-ai",
         "Knowledge-Graph-Hub/kg-registry",
         "con/citations-collector",
-        "OriginTrail/desci-knowledge-mining",
-        "climatesense-project/climafacts-kg",
-        "srophe/Linked-Data",
+        "lpalbou/AbstractLLM",
+        "opencitations/oci",
+        "OpenLinkSoftware/OSDS_extension",
+        "USGCRP/gcis-sparql",
+        "tetherless-world/twweb",
+        "rpietro/nof1_arXiv",
         "egonw/biohackrxiv-cito-review-paper",
         "phaidra/phaidra",
-        "fractastical/morpholib",
         "jcheminform/cito-editorial",
         "fact-claims/fact.claims",
-        "opencitations/bcite",
-        "isawnyu/pleiades_lpf",
+        "opencitations/oscar",
+        "DataONEorg/d1_pyore",
+        "srophe/Linked-Data",
+        "OriginTrail/desci-knowledge-mining",
+        "climatesense-project/climafacts-kg",
+        "biohackathon-japan/bh24-hindsight-best-practices",
         "hubgit/cito",
         "plazi/ontologies",
-        "laurauntner/wikidata-to-cidoc-crm",
+        "fractastical/morpholib",
         "dbpedia/DataId-Ontology",
+        "ropensci-docs/EDIutils",
+        "opencitations/metadata",
+        "obophenotype/planaria-ontology",
+        "isawnyu/pleiades_lpf",
+        "enanomapper/ontologies",
+        "biotea/biotea.github.io",
+        "opencitations/doi_corrector",
+        "laurauntner/wikidata-to-cidoc-crm",
         "lpalbou/DigitalArticle",
         "LA3D/rlm",
         "JonathanReeve/data-ethics-literature-review",
         "HeriotWattMEng2015/HCLS-scraper",
-        "opencitations/croci",
-        "obophenotype/planaria-ontology",
         "TheBrane/sodi-data-acquisition",
-        "biohackathon-japan/bh24-hindsight-best-practices",
-        "enanomapper/ontologies",
-        "cedadev/cci-vocabularies",
-        "ScienceLiveHub/templates4sciencelive",
-        "hydroshare/hs_restclient",
-        "loopingdoge/wowtaria",
-        "lmboat/biohackrxiv_template",
-        "metaphacts/semopenalex",
+        "biohackathon-japan/BH25-sparql-examples",
+        "rahuldave/ontoads",
         "OriginTrail/desci-drag",
-        "biotea/biotea.github.io",
-        "MaillPierre/ResearchTeamProjectFinder",
-        "IBM/kif"
+        "Adafede/adafede.github.io",
+        "mkutmon/BH2023-P9-cell-type-specific-pathways",
+        "cedadev/cci-vocabularies",
+        "TAMULib/Karma-models",
+        "isawnyu/pleiades-static",
+        "RiverBench/schema"
       ]
     },
     "openalex": {
@@ -1303,22 +1301,69 @@
     "zenodo": {
       "total_datasets": 10,
       "by_year": {
-        "2023": 1,
         "2025": 3,
-        "2021": 3,
+        "2022": 2,
+        "2020": 1,
+        "2023": 1,
+        "2021": 1,
         "2017": 1,
-        "2026": 2
+        "2026": 1
       },
       "by_access": {
         "open": 10
       },
       "by_license": {
-        "other-open": 2,
-        "cc-by-4.0": 8
+        "cc-by-4.0": 6,
+        "cc-zero": 2,
+        "other-open": 2
       },
       "keywords": {},
       "communities": {},
       "datasets": [
+        {
+          "id": 17495810,
+          "title": "Multi-Level Annotation Ontology 2.0",
+          "doi": "10.5281/zenodo.17495810",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 7432050,
+          "title": "Wikidata Dump test",
+          "doi": "10.5281/zenodo.7432050",
+          "year": "2022",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 3693802,
+          "title": "Cycle-free Subclass Subsumption Relations of the LOD Cloud",
+          "doi": "10.5281/zenodo.3693802",
+          "year": "2020",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "LOD-a-lot",
+            "Linked Data",
+            "SUBMASSIVE"
+          ],
+          "communities": []
+        },
+        {
+          "id": 7432048,
+          "title": "Wikidata Dump test",
+          "doi": "10.5281/zenodo.7432048",
+          "year": "2022",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
         {
           "id": 7853104,
           "title": "WikiPathways April 2023 Release - RDF data",
@@ -1331,16 +1376,6 @@
             "semantic web",
             "wikipathways"
           ],
-          "communities": []
-        },
-        {
-          "id": 17495810,
-          "title": "Multi-Level Annotation Ontology 2.0",
-          "doi": "10.5281/zenodo.17495810",
-          "year": "2025",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [],
           "communities": []
         },
         {
@@ -1403,48 +1438,6 @@
           "license": "cc-by-4.0",
           "keywords": [],
           "communities": []
-        },
-        {
-          "id": 18602483,
-          "title": "Kinetic Human Movement Ontology",
-          "doi": "10.5281/zenodo.18602483",
-          "year": "2026",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [],
-          "communities": []
-        },
-        {
-          "id": 7026640,
-          "title": "PheKnowLator Human Disease Knowledge Graphs - Build Data (Original)",
-          "doi": "10.5281/zenodo.7026640",
-          "year": "2021",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "PheKnowLator",
-            "Knowledge Graph",
-            "Linked Open Data",
-            "Open Biological and Biomedical Ontology Foundry",
-            "PheKnowLator Ecosystem Human Disease Knowledge Graph Benchmark"
-          ],
-          "communities": []
-        },
-        {
-          "id": 7026644,
-          "title": "PheKnowLator Human Disease Knowledge Graphs - Build Data (Processed)",
-          "doi": "10.5281/zenodo.7026644",
-          "year": "2021",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "PheKnowLator",
-            "Knowledge Graph",
-            "Linked Open Data",
-            "Open Biological and Biomedical Ontology Foundry",
-            "PheKnowLator Ecosystem Human Disease Knowledge Graph Benchmark"
-          ],
-          "communities": []
         }
       ]
     }
@@ -1473,14 +1466,14 @@
           "title": "Nature.com Core Ontology"
         },
         {
-          "uri": "http://purl.org/cerif/frapo/",
-          "vocab_uri": "http://purl.org/cerif/frapo/",
-          "title": "Funding, Research Administration and Projects Ontology"
-        },
-        {
           "uri": "http://purl.org/SemSur/",
           "vocab_uri": "http://purl.org/SemSur/",
           "title": "The Semantic Survey Ontology (semsur)"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -1611,84 +1604,87 @@
       ]
     },
     "github": {
-      "repos_count": 76,
+      "repos_count": 79,
       "repos": [
         "SPAROntologies/fabio",
         "essepuntato/opencitations",
         "Wimmics/CovidOnTheWeb",
         "alexdma/gutenberg-ld",
-        "opencitations/OpenCitationsCorpus",
         "eMetaboHUB/Forum-DiseasesChem",
+        "opencitations/oscar",
         "genenetwork/genenetwork3",
         "umd-lib/archelon",
-        "dice-group/COVID19DS",
-        "digicademy/svsal",
         "chanzuckerberg/alhazen",
+        "digicademy/svsal",
+        "issa-project/issa-pipeline",
+        "dice-group/COVID19DS",
         "PHAROS-photoarchives/Zeri-Foundation",
         "samiz-dat/hyperreadings",
-        "SpocWiki/_Standards",
         "ciromattia/annotaria",
-        "opencitations/oscar",
-        "publicarchi/elementum",
-        "OIT-ADS-Web/duke_vivo_ontologies",
+        "SpocWiki/_Standards",
         "sntcristian/and-kge",
+        "OIT-ADS-Web/duke_vivo_ontologies",
+        "publicarchi/elementum",
         "rahuldave/semflow",
-        "calipho-sib/cellosaurus-api",
-        "issa-project/issa-pipeline",
+        "TAMULib/Karma-models",
+        "fair-workflows/openpredict",
         "oeg-upm/Devos",
-        "pensoft/OpenBiodiv",
+        "mconlon17/vivo-pump",
+        "calipho-sib/cellosaurus-api",
         "OpenCS-ontology/OpenCS",
         "USGCRP/gcis-ontology",
-        "mconlon17/vivo-pump",
-        "germanbraun/oceangraph",
-        "fair-workflows/openpredict",
         "sterenz/data-science-10-11",
+        "umd-lib/umd-fcrepo-solr",
         "glycoinfo/GlyCovid",
+        "germanbraun/oceangraph",
+        "pensoft/OpenBiodiv",
+        "opencitations/metadata",
+        "open-sci/2023-2024-atreides-code",
         "418imateapot/new-raschietto",
-        "coar-repositories/coar-vocabularies-website",
         "tetherless-world/twweb",
+        "anasfkhan81/chamuca",
         "sebastiano-g/Private_clef",
         "gbv/coli-conc.gbv.de",
         "HerculesCRUE/ROH",
         "SemanticSoftwareLab/TextMining-SemPub2016",
+        "gooofy/zamia-ai",
+        "coar-repositories/coar-vocabularies-website",
         "OriginTrail/desci-drag",
-        "anasfkhan81/chamuca",
         "cfoster/xmllondon-rdf",
         "fair-workflows/FAIR-WFcollection",
-        "Brown-University-Library/bdr_indexer",
         "mconlon17/vivo-org-chart",
-        "OriginTrail/desci-knowledge-mining",
+        "davidlamprecht/semopenalex-semanticweb",
+        "pentandra/lifepreserver",
+        "Skydler/practica-web-semantica",
         "idn-au/isu-catalogue",
         "idn-au/kp-catalogue",
-        "ualbertalib/metadata",
-        "davidlamprecht/semopenalex-semanticweb",
-        "nipdep/idea-graph",
-        "Skydler/practica-web-semantica",
+        "tetherless-world/dco-vivo",
+        "lelax/new_Design_Data",
+        "opencitations/oc_meta",
+        "LA3D/rlm",
         "Apress/mastering-structured-data-on-semantic-web",
         "skg-if/data-model",
-        "TAMULib/Karma-models",
-        "lelax/new_Design_Data",
-        "prei007/litnet",
-        "sciety/api-prototype",
-        "arcangelo7/arcangelo7.github.io",
-        "umd-lib/plastron",
-        "CRISalid-esr/svp-harvester",
         "laurauntner/wikidata-to-cidoc-crm",
+        "ualbertalib/metadata",
         "TheBrane/sodi-data-acquisition",
-        "prei007/CosimaWorkshop-R",
-        "laurentfintoni/dharc-skosmos",
-        "dice-group/Ingrid",
-        "Docmaps-Project/docmaps",
+        "Wimmics/voidmatic",
+        "sciety/api-prototype",
+        "prei007/litnet",
         "amcgail/gpt-assistants",
         "datalogism/SciLEx",
-        "geological-survey-of-queensland/geofeatures-ont",
         "ScienceLiveHub/templates4sciencelive",
-        "gbv/aREF",
-        "ali1k/ld-r",
+        "kanselarij-vlaanderen/publication-report-service",
+        "prei007/CosimaWorkshop-R",
+        "laurentfintoni/dharc-skosmos",
         "loopingdoge/wowtaria",
         "metaphacts/semopenalex",
         "HendrikBorgelt/Kat_Tagung_Metadata_extraction",
-        "htrc/HTRC-Public-Worksets-API"
+        "arcangelo7/arcangelo7.github.io",
+        "umd-lib/plastron",
+        "geological-survey-of-queensland/geofeatures-ont",
+        "know-org-project/Nana-and-Jojo-s-Bizzare-LODventure",
+        "ali1k/ld-r",
+        "rahuldave/ontoads"
       ]
     },
     "openalex": {
@@ -2777,24 +2773,69 @@
       ]
     },
     "zenodo": {
-      "total_datasets": 14,
+      "total_datasets": 15,
       "by_year": {
-        "2025": 6,
+        "2020": 2,
         "2024": 3,
-        "2023": 2,
-        "2022": 2,
-        "2021": 1
+        "2025": 6,
+        "2021": 1,
+        "2022": 1,
+        "2023": 2
       },
       "by_access": {
-        "open": 14
+        "open": 15
       },
       "by_license": {
         "cc-by-4.0": 11,
-        "cc-zero": 3
+        "cc-zero": 4
       },
       "keywords": {},
       "communities": {},
       "datasets": [
+        {
+          "id": 3693802,
+          "title": "Cycle-free Subclass Subsumption Relations of the LOD Cloud",
+          "doi": "10.5281/zenodo.3693802",
+          "year": "2020",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "LOD-a-lot",
+            "Linked Data",
+            "SUBMASSIVE"
+          ],
+          "communities": []
+        },
+        {
+          "id": 13881433,
+          "title": "Linked Papers With Code: The Latest in Machine Learning as an RDF Knowledge Graph",
+          "doi": "10.5281/zenodo.13881433",
+          "year": "2024",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 3701264,
+          "title": "Wikidata Dump Skills",
+          "doi": "10.5281/zenodo.3701264",
+          "year": "2020",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 14934067,
+          "title": "Strangeways, here we come - Vicende conservative di archivi e biblioteche nelle chiese di Roma",
+          "doi": "10.5281/zenodo.14934067",
+          "year": "2025",
+          "access_right": "open",
+          "license": "cc-zero",
+          "keywords": [],
+          "communities": []
+        },
         {
           "id": 15656024,
           "title": "Right-wing violence after 1989 in German prose: generationality versus intersectionality",
@@ -2832,23 +2873,69 @@
           "communities": []
         },
         {
-          "id": 14934067,
-          "title": "Strangeways, here we come - Vicende conservative di archivi e biblioteche nelle chiese di Roma",
-          "doi": "10.5281/zenodo.14934067",
-          "year": "2025",
+          "id": 5592157,
+          "title": "National Edition of Aldo Moro's works (RDF Dataset)",
+          "doi": "10.5281/zenodo.5592157",
+          "year": "2021",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "digital edition",
+            "digital humanities",
+            "rdf",
+            "semantic web",
+            "turtle",
+            "national edition of aldo moro's works"
+          ],
+          "communities": []
+        },
+        {
+          "id": 7408391,
+          "title": "Algorithmic Fairness Datasets",
+          "doi": "10.5281/zenodo.7408391",
+          "year": "2022",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "fairness",
+            "machine learning"
+          ],
+          "communities": []
+        },
+        {
+          "id": 14266117,
+          "title": "Cookbooks, Guidance, Best Practices for Metadata, Terminologies and Provenance - resource recommendations from NFDI consortia",
+          "doi": "10.5281/zenodo.14266117",
+          "year": "2024",
           "access_right": "open",
           "license": "cc-zero",
           "keywords": [],
           "communities": []
         },
         {
-          "id": 13881433,
-          "title": "Linked Papers With Code: The Latest in Machine Learning as an RDF Knowledge Graph",
-          "doi": "10.5281/zenodo.13881433",
-          "year": "2024",
+          "id": 14879204,
+          "title": "Dataset: Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies",
+          "doi": "10.5281/zenodo.14879204",
+          "year": "2025",
           "access_right": "open",
           "license": "cc-by-4.0",
           "keywords": [],
+          "communities": []
+        },
+        {
+          "id": 8287801,
+          "title": "Genetic networks datasets: ten books by Gustave Roud, \"En mer\" by Bernard Comment",
+          "doi": "10.5281/zenodo.8287801",
+          "year": "2023",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "genetic criticism",
+            "textual criticism",
+            "scholarly editing",
+            "authorial philology",
+            "digital philology"
+          ],
           "communities": []
         },
         {
@@ -2877,62 +2964,6 @@
           "communities": []
         },
         {
-          "id": 8287801,
-          "title": "Genetic networks datasets: ten books by Gustave Roud, \"En mer\" by Bernard Comment",
-          "doi": "10.5281/zenodo.8287801",
-          "year": "2023",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "genetic criticism",
-            "textual criticism",
-            "scholarly editing",
-            "authorial philology",
-            "digital philology"
-          ],
-          "communities": []
-        },
-        {
-          "id": 14266117,
-          "title": "Cookbooks, Guidance, Best Practices for Metadata, Terminologies and Provenance - resource recommendations from NFDI consortia",
-          "doi": "10.5281/zenodo.14266117",
-          "year": "2024",
-          "access_right": "open",
-          "license": "cc-zero",
-          "keywords": [],
-          "communities": []
-        },
-        {
-          "id": 7408391,
-          "title": "Algorithmic Fairness Datasets",
-          "doi": "10.5281/zenodo.7408391",
-          "year": "2022",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "fairness",
-            "machine learning"
-          ],
-          "communities": []
-        },
-        {
-          "id": 5592157,
-          "title": "National Edition of Aldo Moro's works (RDF Dataset)",
-          "doi": "10.5281/zenodo.5592157",
-          "year": "2021",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "digital edition",
-            "digital humanities",
-            "rdf",
-            "semantic web",
-            "turtle",
-            "national edition of aldo moro's works"
-          ],
-          "communities": []
-        },
-        {
           "id": 10421598,
           "title": "Anwendungsprofil zur RDF-Serialisierung der Entwurfsversion des OstData-Metadatenschemas",
           "doi": "10.5281/zenodo.10421598",
@@ -2943,16 +2974,6 @@
             "RDF",
             "Application Profile"
           ],
-          "communities": []
-        },
-        {
-          "id": 14879204,
-          "title": "Dataset: Bridging the Scientific Knowledge Gap and Reproducibility: A Survey of Provenance, Assertion and Evidence Ontologies",
-          "doi": "10.5281/zenodo.14879204",
-          "year": "2025",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [],
           "communities": []
         },
         {
@@ -3005,19 +3026,6 @@
             "Church history",
             "Vilnius",
             "The Great Vilnius Controversy"
-          ],
-          "communities": []
-        },
-        {
-          "id": 7450967,
-          "title": "The URW-KG: a Resource for Tackling the Under-Representation of non-Western Writers",
-          "doi": "10.5281/zenodo.7450967",
-          "year": "2022",
-          "access_right": "open",
-          "license": "cc-by-4.0",
-          "keywords": [
-            "Knowledge Graphs,",
-            "KG Embeddings"
           ],
           "communities": []
         }
@@ -3121,7 +3129,7 @@
       ]
     },
     "github": {
-      "repos_count": 66,
+      "repos_count": 64,
       "repos": [
         "opencitations/oc_meta",
         "essepuntato/opencitations",
@@ -3131,64 +3139,62 @@
         "sntcristian/and-kge",
         "publicarchi/elementum",
         "liuji1031/ontology_to_schema",
+        "ISA-tools/mzml2isa-qt",
         "opencitations/oscar",
         "pensoft/OpenBiodiv",
-        "italia/dati-semantic-assets",
         "Docmaps-Project/docmaps",
-        "OriginTrail/desci-drag",
-        "Artemis-IA/scichat-semantic-platform",
-        "feup-infolab/ontologies-database",
         "oeg-upm/AstreaRun",
-        "opencitations/OpenCitationsCorpus",
+        "italia/dati-semantic-assets",
+        "feup-infolab/ontologies-database",
+        "OriginTrail/desci-drag",
         "nvbach91/iga-hybrid",
-        "NERC-CEH/digital-objects-ontology",
-        "stlab-istc-cnr/conceptual-components",
+        "Artemis-IA/scichat-semantic-platform",
+        "arcangelo7/arcangelo7.github.io",
+        "cfoster/xmllondon-rdf",
         "CarlaMenegat/VarelaDigital",
-        "antarctica/nerc-arctic-office-projects-api",
-        "LinDA-tools/transformation",
         "kltng/dhq-wiki-site",
-        "phuse-org/css-linkathon",
+        "biopragmatics/bioregistry",
+        "skg-if/ext-ra-skg",
+        "laurentfintoni/dharc-skosmos",
+        "opencitations/oc_ocdm",
         "dharc-org/vespasiano-da-bisticci-letters-de",
         "skg-if/data-model",
         "fgiovannetti/lift",
-        "ben-norton/GeoKOS",
+        "opencitations/heritrace",
         "LinkingDataIO/RO2SHARE",
-        "skg-if/ext-ra-skg",
+        "SDM-TIB/ckanext-kgcreation",
+        "ben-norton/GeoKOS",
         "GillesVandewiele/COVID-KG",
+        "NERC-CEH/digital-objects-ontology",
+        "KGerring/wiki",
+        "ChiaraParravicini/tirocinio_OC",
         "CWTSLeiden/Journal-Observatory-backend",
         "SDM-TIB/LDM_Docker",
+        "opencitations/oc_api",
         "odoma-ch/ssh-citation-index",
-        "ISA-tools/nmrml2isa-galaxy",
-        "arcangelo7/arcangelo7.github.io",
+        "essepuntato/fentry",
         "lodum/SPEX",
         "skg-if/ext-srv",
-        "SPAROntologies/sparontologies.github.io",
         "judaicalink/judaicalink-generators",
+        "API4KBs/kmdp-models",
         "data-science-hub/data",
-        "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
-        "ISA-tools/mzml2isa-qt",
-        "rohub/skg",
-        "Klortho/eutils-org",
-        "biblhertz/referency",
+        "stlab-istc-cnr/conceptual-components",
         "essepuntato/undo",
-        "SDM-TIB/ckanext-kgcreation",
-        "opencitations/oc_ocdm",
         "anuzzolese/cLODg2",
-        "epireve/hdm",
+        "Klortho/eutils-org",
+        "SPAROntologies/frapo",
         "SPAROntologies/scoro",
-        "essepuntato/fentry",
-        "AnLiGentile/cLODg",
-        "skg-if/shacl-extractor",
+        "antarctica/nerc-arctic-office-projects-api",
+        "opencitations/metadata",
+        "epireve/hdm",
+        "LinDA-tools/transformation",
+        "opencitations/website",
         "hsaggion/drinventor",
         "easchultes/FAIR-Molecules",
         "Wimmics/IndeGx",
-        "biopragmatics/bioregistry",
         "nvbach91/iga-knerd",
-        "opencitations/heritrace",
-        "ChiaraParravicini/tirocinio_OC",
         "issa-project/issa-pipeline",
-        "sciety/api-prototype",
-        "SPAROntologies/frapo"
+        "sciety/api-prototype"
       ]
     },
     "openalex": {
@@ -3500,21 +3506,36 @@
       ]
     },
     "zenodo": {
-      "total_datasets": 2,
+      "total_datasets": 3,
       "by_year": {
+        "2020": 1,
         "2021": 1,
         "2025": 1
       },
       "by_access": {
-        "open": 2
+        "open": 3
       },
       "by_license": {
-        "cc-by-4.0": 1,
+        "cc-by-4.0": 2,
         "cc-zero": 1
       },
       "keywords": {},
       "communities": {},
       "datasets": [
+        {
+          "id": 3693802,
+          "title": "Cycle-free Subclass Subsumption Relations of the LOD Cloud",
+          "doi": "10.5281/zenodo.3693802",
+          "year": "2020",
+          "access_right": "open",
+          "license": "cc-by-4.0",
+          "keywords": [
+            "LOD-a-lot",
+            "Linked Data",
+            "SUBMASSIVE"
+          ],
+          "communities": []
+        },
         {
           "id": 5592157,
           "title": "National Edition of Aldo Moro's works (RDF Dataset)",

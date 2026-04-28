@@ -14,7 +14,7 @@ logging.getLogger("rdflib").setLevel(logging.ERROR)
 warnings.filterwarnings("ignore")
 
 RDF_EXTENSIONS = {"ttl", "owl", "rdf", "n3", "nt", "jsonld", "trig"}
-MAX_FILE_SIZE = 10 * 1024 * 1024
+MAX_FILE_SIZE = 10 * 2048 * 1024
 
 
 def fetch_zenodo_all(
