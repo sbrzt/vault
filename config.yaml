@@ -1,8 +1,8 @@
 # config.yaml
 
 output_dir: docs
-user_agent: "VAULT/1.0 (https://github.com/sbrzt/vault)"
-cache_dir: "cache"
+user_agent: VAULT/1.0 (https://github.com/sbrzt/vault)
+cache_file: data.json
 max_workers: 20
 formats:
   - mime_type: "text/turtle"

@@ -142,39 +142,6 @@ def _check_graph(
     return matched
 
 
-def _cache_path(url: str) -> Path:
-    url_hash = hashlib.sha1(url.encode()).hexdigest()
-    return CACHE_DIR / f"{url_hash}.json"
-
-
-def _load_cache(url: str) -> dict | None:
-    path = _cache_path(url)
-    if not path.exists():
-        return None
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return None
-
-
-def _save_cache(
-    url: str, 
-    last_modified: str, 
-    matched: list[str]
-    ) -> None:
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    path = _cache_path(url)
-    path.write_text(
-        json.dumps(
-            {
-                "last_modified": last_modified, 
-                "matched": matched
-            }
-        ),
-        encoding="utf-8",
-    )
-
-
 def _get_last_modified(url: str) -> str | None:
     req = urllib.request.Request(url, method="HEAD", headers={})
     req.add_header("User-Agent", USER_AGENT)
@@ -194,9 +161,6 @@ def _process_vocab(
     title = vocab["title"]
     download_url = vocab["download_url"]
     last_modified = _get_last_modified(download_url)
-    cached = _load_cache(download_url)
-    if cached and last_modified and cached.get("last_modified") == last_modified:
-        return namespace_uri, vocab_uri, title, cached["matched"]
     raw = http_get_raw(download_url)
     if raw is None:
         return namespace_uri, vocab_uri, title, []
@@ -211,7 +175,6 @@ def _process_vocab(
             print(f"  [LOV] DEBUG icon checking uri={uri} stripped={uri.rstrip('/#')} in_declared={uri.rstrip('/#') in declared}")
 
     matched = list(_check_graph(g, monitored_uris))
-    _save_cache(download_url, last_modified or "", matched)
     return namespace_uri, vocab_uri, title, matched
 
 
