@@ -10,7 +10,11 @@ TEMPLATES_DIR = Path(__file__).parent / "templates"
 STATIC_DIR = Path(__file__).parent / "static"
 
  
-def render_html(data: list[dict], generated_at: str, output_dir: Path) -> None:
+def render_html(
+    data: list[dict], 
+    generated_at: str, 
+    output_dir: Path) -> None:
+    
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
         autoescape=select_autoescape(["html"]),

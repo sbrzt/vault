@@ -18,31 +18,34 @@ formats:
 
 ontologies:
 
-  - label: "CiTO"
-    uri: "http://purl.org/spar/cito"
-    prefix: "cito"
+  - label: CiTO
+    full_name: Citation Typing Ontology
+    uri: http://purl.org/spar/cito
+    prefix: cito
     keywords:
-      - "http://purl.org/spar/cito/"
-      - "Citation Typing Ontology"
+      - http://purl.org/spar/cito/
+      - Citation Typing Ontology
     papers:
-      - "10.1016/j.websem.2012.08.001"
+      - 10.1016/j.websem.2012.08.001
 
-  - label: "FaBiO"
-    uri: "http://purl.org/spar/fabio"
-    prefix: "fabio"
+  - label: FaBiO
+    full_name: FRBR-aligned Bibliographic Ontology
+    uri: http://purl.org/spar/fabio
+    prefix: fabio
     keywords:
-      - "http://purl.org/spar/fabio/"
-      - "FRBR-aligned Bibliographic Ontology"
+      - http://purl.org/spar/fabio/
+      - FRBR-aligned Bibliographic Ontology
     papers:
-      - "10.1016/j.websem.2012.08.001"
+      - 10.1016/j.websem.2012.08.001
 
-  - label: "PRO"
-    uri: "http://purl.org/spar/pro"
-    prefix: "pro"
+  - label: PRO
+    full_name: Publishing Roles Ontology
+    uri: http://purl.org/spar/pro
+    prefix: pro
     keywords:
-      - "http://purl.org/spar/pro/"
-      - "Publishing Roles Ontology"
+      - http://purl.org/spar/pro/
+      - Publishing Roles Ontology
     papers:
-      - "10.1145/2362499.2362502"
+      - 10.1145/2362499.2362502
 
 

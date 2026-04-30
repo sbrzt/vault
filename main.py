@@ -43,9 +43,6 @@ def main() -> None:
     output_dir = Path(config.get("output_dir", "docs"))
     output_dir.mkdir(parents=True, exist_ok=True)
     cache_file = output_dir / config.get("cache_file", "")
-    #cache_dir = Path(config.get("cache_dir"))
-    #if not cache_dir.is_dir():
-    #   cache_dir.mkdir(parents=True, exist_ok=True)
 
     openalex_token = os.environ.get("OPENALEX_TOKEN", "")
     github_token = os.environ.get("GITHUB_TOKEN", "")
@@ -117,6 +114,7 @@ def main() -> None:
         
         results.append({
             "label": ontology["label"],
+            "full_name": ontology["full_name"],
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
             "lov": lov_data.get(prefix, {}),
@@ -125,15 +123,9 @@ def main() -> None:
             "opencitations": oc_data,
             "zenodo": zenodo_data.get(prefix, {}),
         })
-    
-    #if args.only != "render":
-    #    save_cache("results", results, output_dir)
-    #if args.only in (None, "render"):
-    #    results = load_cache(cache_file, None) or []
 
     print(f"\n── Generating report -> {output_dir} ──")
     render_html(results, generated_at, output_dir)
-    #json_file = output_dir / "data.json"
     cache_file.write_text(json.dumps(results, indent=2, default=str), encoding="utf-8")
     print("Done.")
 
