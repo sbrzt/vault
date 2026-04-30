@@ -1,5 +1,6 @@
 # main.py
 
+import src.dimensions.vocabularies.lov as lov
 from src.loader import load_config
 import argparse
 from pathlib import Path
@@ -8,12 +9,11 @@ import datetime
 from src.renderer import render_html
 import json
 from src.cache import save_cache, load_cache
-import src.github
 import src.http
-import src.lov
-import src.openalex
-import src.opencitations
-import src.zenodo
+#import src.github
+#import src.openalex
+#import src.opencitations
+#import src.zenodo
 
 
 def main() -> None:
@@ -36,18 +36,16 @@ def main() -> None:
 
     config = load_config(args.config)
     src.http.USER_AGENT = config["user_agent"]
-    src.lov.USER_AGENT = config["user_agent"]
-    src.lov.MAX_WORKERS = config["max_workers"]
-    src.lov.FORMATS = config["formats"]
+    lov.FORMATS = config["formats"]
 
     output_dir = Path(config.get("output_dir", "docs"))
     output_dir.mkdir(parents=True, exist_ok=True)
     cache_file = output_dir / config.get("cache_file", "")
 
-    openalex_token = os.environ.get("OPENALEX_TOKEN", "")
-    github_token = os.environ.get("GITHUB_TOKEN", "")
-    opencitations_token = os.environ.get("OPENCITATIONS_TOKEN", "")
-    zenodo_token = os.environ.get("ZENODO_TOKEN", "")
+    #openalex_token = os.environ.get("OPENALEX_TOKEN", "")
+    #github_token = os.environ.get("GITHUB_TOKEN", "")
+    #opencitations_token = os.environ.get("OPENCITATIONS_TOKEN", "")
+    #zenodo_token = os.environ.get("ZENODO_TOKEN", "")
     
     generated_at = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d %H:%M UTC")
     
@@ -57,38 +55,37 @@ def main() -> None:
         if args.use_cache:
             if cache_file.exists():
                 results = json.loads(cache_file.read_text(encoding="utf-8"))
-            print(f"\n── Generating report -> {output_dir} ──")
+            print("\nGenerating report...")
             render_html(results, generated_at, output_dir)
             print("Done.")
             return
-
+    '''
     if args.use_cache:
         if cache_file.exists():
             existing = {r["prefix"]: r for r in json.loads(cache_file.read_text(encoding="utf-8"))}
         else:
-            existing = {}
+            existing = {}'''
 
     if args.only in (None, "lov"):
         print("\n── Fetching LOV ──")
         if args.use_cache:
             lov_data = {p: existing[p]["lov"] for p in existing}
         else:
-            lov_data = src.lov.fetch_lov_all(config["ontologies"])
-            #save_cache("lov", lov_data, output_dir)
+            lov_data = lov.fetch_lov_all(config["ontologies"])
     
-    if args.only in (None, "zenodo"):
+    '''if args.only in (None, "zenodo"):
         print("\n-- Fetching Zenodo --")
         if args.use_cache:
             zenodo_data = {p: existing[p]["zenodo"] for p in existing}
         else:
             zenodo_data = src.zenodo.fetch_zenodo_all(config["ontologies"], api_key=zenodo_token)
-            #save_cache("zenodo", zenodo_data, output_dir)
+            #save_cache("zenodo", zenodo_data, output_dir)'''
         
     for ontology in config["ontologies"]:
-        print(f"\n-- {ontology['label']} --")
+        print(f"\n{ontology['label']}")
         prefix = ontology["prefix"]
 
-        if args.only in (None, "github"):
+        '''if args.only in (None, "github"):
             print("\n-- Fetching GitHub Code --")
             if args.use_cache:
                 github_data = existing.get(prefix, {}).get("github", {})
@@ -110,7 +107,7 @@ def main() -> None:
                 oc_data = existing.get(prefix, {}).get("opencitations", {})
             else:
                 oc_data = src.opencitations.fetch_opencitations(ontology, api_key=opencitations_token)
-                #save_cache("openalex", oc_data, output_dir)
+                #save_cache("openalex", oc_data, output_dir)'''
         
         results.append({
             "label": ontology["label"],
@@ -118,13 +115,13 @@ def main() -> None:
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
             "lov": lov_data.get(prefix, {}),
-            "github": github_data,
-            "openalex": oax_data,
-            "opencitations": oc_data,
-            "zenodo": zenodo_data.get(prefix, {}),
+            #"github": github_data,
+            #"openalex": oax_data,
+            #"opencitations": oc_data,
+            #"zenodo": zenodo_data.get(prefix, {}),
         })
 
-    print(f"\n── Generating report -> {output_dir} ──")
+    print(f"\nGenerating report...")
     render_html(results, generated_at, output_dir)
     cache_file.write_text(json.dumps(results, indent=2, default=str), encoding="utf-8")
     print("Done.")

@@ -3,7 +3,13 @@
 output_dir: docs
 user_agent: VAULT/1.0 (https://github.com/sbrzt/vault)
 cache_file: data.json
-max_workers: 20
+
+sources:
+  - id: lov
+    type: vocabularies
+    enabled: True
+
+
 formats:
   - mime_type: "text/turtle"
     format: "turtle"
@@ -17,7 +23,6 @@ formats:
     format: "nt"
 
 ontologies:
-
   - label: CiTO
     full_name: Citation Typing Ontology
     uri: http://purl.org/spar/cito

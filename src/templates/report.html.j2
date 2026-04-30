@@ -27,24 +27,8 @@
       <div class="uri">{{ onto.uri }}</div>
       <div class="metrics">
         <div class="metric">
-          <span class="metric-value">{{ onto.openalex.total_works }}</span>
-          <span class="metric-label">Papers (OpenAlex)</span>
-        </div>
-        <div class="metric">
           <span class="metric-value">{{ onto.lov.inlinks }}</span>
           <span class="metric-label">Vocabularies (LOV)</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">{{ onto.github.repos_count }}</span>
-          <span class="metric-label">Repos (GitHub)</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">{{ onto.opencitations.total_citations }}</span>
-          <span class="metric-label">Citations (OpenCitations)</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">{{ onto.zenodo.total_datasets }}</span>
-          <span class="metric-label">Datasets (Zenodo)</span>
         </div>
       </div>
     </div>
@@ -56,7 +40,7 @@
   <section class="onto-section" id="onto-{{ onto.prefix }}">
 
     <div class="section-header">
-      <h2>{{ onto.label }}</h2>
+      <h2>{{ onto.full_name }} ({{ onto.label }})</h2>
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
 
@@ -66,7 +50,7 @@
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Vocabulary reuse</h3>
+          <h3>Uptake in other vocabularies</h3>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.lov.inlinks }}</span>
@@ -85,241 +69,8 @@
           {% endif %}
         </div>
       </div>
-
-      {# GitHub card #}
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag github-tag">GitHub</span>
-          <h3>Code usage</h3>
-        </div>
-        <div class="card-stat">
-          <span class="big-num">{{ onto.github.repos_count }}</span>
-          <span class="stat-label">public repositories reference {{ onto.label }} namespace</span>
-        </div>
-        <div class="card-detail">
-          <ul class="compact-list">
-            {% for repo in onto.github.repos[:8] %}
-              <li><a href="https://github.com/{{ repo }}" target="_blank">{{ repo }}</a></li>
-            {% else %}
-              <li><em>None found</em></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
     
     </div>
-
-    <div class="grid-2">
-
-      {# OpenAlex card #}
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag oax-tag">OpenAlex</span>
-          <h3>Mentions in academic papers</h3>
-        </div>
-        <div class="card-stat">
-          <span class="big-num">{{ onto.openalex.total_works }}</span>
-          <span class="stat-label">papers mention {{ onto.label }} in titles, abstracts and/or texts</span>
-        </div>
-        <div class="card-detail">
-          <canvas id="chart-oax-{{ onto.prefix }}" height="120"></canvas>
-        </div>
-      </div>
-
-      {# OpenCitations card #}
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag oc-tag">OpenCitations</span>
-          <h3>Citations to main publications</h3>
-        </div>
-        <div class="card-stat">
-          <span class="big-num">{{ onto.opencitations.total_citations }}</span>
-          <span class="stat-label">papers cite {{onto.label}} main publication(s)</span>
-        </div>
-        <div class="card-detail">
-          <canvas id="chart-oc-{{ onto.prefix }}" height="120"></canvas>
-        </div>
-      </div>
-
-    </div>{# end grid-2 #}
-
-    {# OpenAlex table #}
-    <div class="card card-table full-width">
-      <div class="card-header">
-        <span class="source-tag oax-tag">OpenAlex</span>
-        <h3>Papers mentioning {{ onto.label }} in title, abstract and/or text</h3>
-      </div>
-      <table class="papers-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Authors</th>
-            <th>Year</th>
-            <th>Venue</th>
-            <th>DOI</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for w in onto.openalex.top_works %}
-          <tr>
-            <td>{{ w.title }}</td>
-            <td>{{ w.authors }}</td>
-            <td>{{ w.year or '—' }}</td>
-            <td>{{ w.source_name }}</td>
-            <td><a class="styled-link" href="https://doi.org/{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
-          </tr>
-          {% else %}
-          <tr><td colspan="3">No papers found</td></tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-
-    {# OpenCitations table #}
-    <div class="card card-table full-width">
-      <div class="card-header">
-        <span class="source-tag oc-tag">OpenCitations</span>
-        <h3>Papers citing the main publications about {{ onto.label }}</h3>
-      </div>
-      <table class="papers-table">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Authors</th>
-            <th>Year</th>
-            <th>Venue</th>
-            <th>DOI</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for w in onto.opencitations.citing_works[:8] %}
-          <tr>
-            <td>{{ w.title }}</td>
-            <td>{{ w.authors }}</td>
-            <td>{{ w.year }}</y }}</ttd>
-            <td>{{ w.venue }}</y }}</ttd>
-            <td><a class="styled-link" href="https://doi.org/{{ w.doi }}" target="_blank">{{ w.doi }}</a></td>
-          </tr>
-          {% else %}
-          <tr><td colspan="3">No papers found</td></tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-
-    <div class="grid-2">
-
-      {# Zenodo card #}
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag zen-tag">Zenodo</span>
-          <h3>Presence in datasets usage</h3>
-        </div>
-        <div class="card-stat">
-          <span class="big-num">{{ onto.zenodo.total_datasets }}</span>
-          <span class="stat-label">datasets reuse {{ onto.label }} entities, properties and/or individuals</span>
-        </div>
-        <div class="card-detail">
-          <ul class="compact-list">
-            {% for dataset in onto.zenodo.datasets[:8] %}
-              <li><a href="https://doi.org/{{ dataset.doi }}" target="_blank">{{ dataset.title }}</a></li>
-            {% else %}
-              <li><em>None found</em></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag zen-tag">Zenodo</span>
-          <h3>Usage in open datasets</h3>
-        </div>
-        <div class="card-detail">
-            <canvas id="chart-licenses-zen-{{ onto.prefix }}" height="100"></canvas>
-        </div>
-      </div>
-
-    </div>
-
-    {# Chart script #}
-    <script>
-    (function() {
-      var ctx = document.getElementById('chart-oax-{{ onto.prefix }}');
-      if (!ctx) return;
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: {{ onto.openalex.by_year.keys() | list | sort | tojson }},
-          datasets: [{
-            label: 'Papers per year',
-            data: {{ onto.openalex.by_year | dictsort | map(attribute=1) | list | tojson }},
-            backgroundColor: '#15196b3f',
-            borderColor: '#15196b',
-            borderWidth: 1,
-            borderRadius: 3,
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: {
-            y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
-            x: { grid: { display: false } }
-          }
-        }
-      });
-    })();
-
-    (function() {
-      var ctx = document.getElementById('chart-oc-{{ onto.prefix }}');
-      if (!ctx) return;
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: {{ onto.opencitations.by_year.keys() | list | sort | tojson }},
-          datasets: [{
-            label: 'Citations per year',
-            data: {{ onto.opencitations.by_year | dictsort | map(attribute=1) | list | tojson }},
-            backgroundColor: '#8561fa49',
-            borderColor: '#7554e4',
-            borderWidth: 1,
-            borderRadius: 3,
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: {
-            y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
-            x: { grid: { display: false } }
-          }
-        }
-      });
-    })();
-
-    (function() {
-      var ctx = document.getElementById('chart-licenses-zen-{{ onto.prefix }}');
-      if (!ctx) return;
-      new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: {{ onto.zenodo.by_license.keys() | list | sort | tojson }},
-          datasets: [{
-            label: 'Datasets',
-            data: {{ onto.zenodo.by_license | dictsort | map(attribute=1) | list | tojson }},
-            borderWidth: 1,
-            borderRadius: 3,
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { position: 'top' } },
-        }
-      });
-    })();
-
-    </script>
 
   </section>
   {% endfor %}

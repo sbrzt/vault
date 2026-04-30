@@ -9,4 +9,5 @@ dependencies = [
     "pyyaml>=6.0.3",
     "rdflib>=7.6.0",
     "reuse>=6.2.0",
+    "tqdm>=4.67.3",
 ]

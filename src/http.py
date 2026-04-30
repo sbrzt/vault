@@ -26,7 +26,7 @@ def http_get(
         req.add_header(key, value)
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=10) as resp:
                 raw = resp.read().decode("utf-8")
                 try:
                     return json.loads(raw)
@@ -68,7 +68,7 @@ def http_get_raw(
         try:
             with urllib.request.urlopen(
                 req,
-                timeout=60
+                timeout=10
             ) as resp:
                 return resp.read()
         except urllib.error.HTTPError as e:
