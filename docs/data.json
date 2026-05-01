@@ -11,37 +11,61 @@
         {
           "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
           "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ]
         },
         {
           "uri": "http://purl.org/spar/datacite",
           "vocab_uri": "http://purl.org/spar/datacite",
-          "title": "The DataCite Ontology"
+          "title": "The DataCite Ontology",
+          "keywords": [
+            "SPAR"
+          ]
         },
         {
           "uri": "http://semanticscience.org/ontology/sio.owl",
           "vocab_uri": "http://semanticscience.org/ontology/sio.owl",
-          "title": "Semanticscience Integrated Ontology"
+          "title": "Semanticscience Integrated Ontology",
+          "keywords": [
+            "Biology"
+          ]
         },
         {
           "uri": "http://vivoweb.org/ontology/core",
           "vocab_uri": "http://vivoweb.org/ontology/core",
-          "title": "VIVO Core Ontology"
+          "title": "VIVO Core Ontology",
+          "keywords": [
+            "Academy"
+          ]
         },
         {
           "uri": "http://w3id.org/roh",
           "vocab_uri": "http://w3id.org/roh",
-          "title": "The ASIO ontology"
+          "title": "The ASIO ontology",
+          "keywords": [
+            "Support",
+            "Academy"
+          ]
         },
         {
           "uri": "http://www.essepuntato.it/2013/03/cito-functions",
           "vocab_uri": "http://www.essepuntato.it/2013/03/cito-functions",
-          "title": "Functions of Citations"
+          "title": "Functions of Citations",
+          "keywords": [
+            "SPAR"
+          ]
         },
         {
           "uri": "https://w3id.org/icon/ontology/",
           "vocab_uri": "https://w3id.org/icon/ontology/",
-          "title": "ICON Ontology"
+          "title": "ICON Ontology",
+          "keywords": [
+            "Methods"
+          ]
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
@@ -119,7 +143,14 @@
           "issued": "2018-02-16T00:00:00.000Z",
           "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2018-02-16.n3"
         }
-      ]
+      ],
+      "keyword_frequencies": {
+        "SPAR": 2,
+        "Academy": 2,
+        "Government": 1,
+        "Multimedia": 1,
+        "Events": 1
+      }
     }
   },
   {
@@ -129,47 +160,84 @@
     "prefix": "fabio",
     "lov": {
       "found": true,
-      "inlinks": 8,
+      "inlinks": 9,
       "using_vocabs": [
         {
           "uri": "http://data.europa.eu/s66#",
           "vocab_uri": "http://data.europa.eu/s66#",
-          "title": "EURIO: EUropean Research Information Ontology"
+          "title": "EURIO: EUropean Research Information Ontology",
+          "keywords": [
+            "Metadata",
+            "Academy"
+          ]
         },
         {
           "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
           "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ]
+        },
+        {
+          "uri": "http://ns.nature.com/terms/",
+          "vocab_uri": "http://ns.nature.com/terms/",
+          "title": "Nature.com Core Ontology",
+          "keywords": [
+            "Press"
+          ]
         },
         {
           "uri": "http://purl.org/cerif/frapo/",
           "vocab_uri": "http://purl.org/cerif/frapo/",
-          "title": "Funding, Research Administration and Projects Ontology"
+          "title": "Funding, Research Administration and Projects Ontology",
+          "keywords": [
+            "Academy"
+          ]
         },
         {
           "uri": "http://purl.org/SemSur/",
           "vocab_uri": "http://purl.org/SemSur/",
-          "title": "The Semantic Survey Ontology (semsur)"
+          "title": "The Semantic Survey Ontology (semsur)",
+          "keywords": [
+            "Methods"
+          ]
         },
         {
           "uri": "http://purl.org/spar/datacite",
           "vocab_uri": "http://purl.org/spar/datacite",
-          "title": "The DataCite Ontology"
+          "title": "The DataCite Ontology",
+          "keywords": [
+            "SPAR"
+          ]
         },
         {
           "uri": "http://vivoweb.org/ontology/core",
           "vocab_uri": "http://vivoweb.org/ontology/core",
-          "title": "VIVO Core Ontology"
+          "title": "VIVO Core Ontology",
+          "keywords": [
+            "Academy"
+          ]
         },
         {
           "uri": "http://w3id.org/roh",
           "vocab_uri": "http://w3id.org/roh",
-          "title": "The ASIO ontology"
+          "title": "The ASIO ontology",
+          "keywords": [
+            "Support",
+            "Academy"
+          ]
         },
         {
           "uri": "https://w3id.org/seo",
           "vocab_uri": "https://w3id.org/seo",
-          "title": "The Scientific Events Ontology"
+          "title": "The Scientific Events Ontology",
+          "keywords": [
+            "Academy",
+            "Events"
+          ]
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
@@ -277,7 +345,14 @@
           "issued": "2019-02-19T00:00:00.000Z",
           "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2019-02-19.n3"
         }
-      ]
+      ],
+      "keyword_frequencies": {
+        "Academy": 5,
+        "Events": 2,
+        "Metadata": 1,
+        "Government": 1,
+        "Multimedia": 1
+      }
     }
   },
   {
@@ -292,27 +367,45 @@
         {
           "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
           "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
-          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ]
         },
         {
           "uri": "http://purl.org/cerif/frapo/",
           "vocab_uri": "http://purl.org/cerif/frapo/",
-          "title": "Funding, Research Administration and Projects Ontology"
+          "title": "Funding, Research Administration and Projects Ontology",
+          "keywords": [
+            "Academy"
+          ]
         },
         {
           "uri": "http://purl.org/spar/scoro/",
           "vocab_uri": "http://purl.org/spar/scoro/",
-          "title": "Scholarly Contributions and Roles Ontology"
+          "title": "Scholarly Contributions and Roles Ontology",
+          "keywords": [
+            "Academy"
+          ]
         },
         {
           "uri": "https://w3id.org/dba/ontology/",
           "vocab_uri": "https://w3id.org/dba/ontology/",
-          "title": "Description Banking Archives Ontology"
+          "title": "Description Banking Archives Ontology",
+          "keywords": [
+            "Catalogs"
+          ]
         },
         {
           "uri": "https://w3id.org/pko",
           "vocab_uri": "https://w3id.org/pko",
-          "title": "Procedural Knowledge Ontology (PKO)"
+          "title": "Procedural Knowledge Ontology (PKO)",
+          "keywords": [
+            "Methods",
+            "Events"
+          ]
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/pro",
@@ -375,7 +468,14 @@
           "issued": "2010-11-17T00:00:00.000Z",
           "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2010-11-17.n3"
         }
-      ]
+      ],
+      "keyword_frequencies": {
+        "Events": 2,
+        "Academy": 2,
+        "Government": 1,
+        "Multimedia": 1,
+        "Catalogs": 1
+      }
     }
   }
 ]

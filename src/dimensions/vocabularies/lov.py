@@ -11,6 +11,7 @@ import urllib.error
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDFS, OWL
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from collections import Counter
 from pathlib import Path
 from src.http import http_get, http_get_raw
 from tqdm import tqdm
@@ -27,6 +28,7 @@ def _lov_info(
         "url": None,
         "tags": [],
         "versions": [],
+        "keyword_counter": Counter(),
     }
 
     info_url = (
@@ -60,17 +62,20 @@ def _lov_all_download_urls() -> list[dict]:
         PREFIX dcterms: <http://purl.org/dc/terms/>
         PREFIX voaf: <http://purl.org/vocommons/voaf#>
         PREFIX vann: <http://purl.org/vocab/vann/>
-        SELECT ?vocab ?title ?distribution ?namespaceUri WHERE {
+        SELECT ?vocab ?title (GROUP_CONCAT(?keyword; separator="|") AS ?keywords) ?distribution ?namespaceUri WHERE {
             GRAPH <https://lov.linkeddata.es/dataset/lov> {
                 ?vocab a voaf:Vocabulary ;
                     dcterms:title ?title ;
                     dcat:distribution ?distribution .
+                OPTIONAL { ?vocab dcat:keyword ?keyword . }
                 ?distribution dcterms:issued ?issued .
                 OPTIONAL { ?vocab vann:preferredNamespaceUri ?namespaceUri . }
             }
         }
+        GROUP BY ?vocab ?title ?distribution ?namespaceUri ?issued
         ORDER BY ?vocab DESC(?issued)
     """
+
     sparql_url = (
         "https://lov.linkeddata.es/dataset/lov/sparql?"
         + urllib.parse.urlencode(
@@ -78,16 +83,23 @@ def _lov_all_download_urls() -> list[dict]:
             quote_via=urllib.parse.quote,
         )
     )
+
     data = http_get(sparql_url, headers={"Accept": "application/sparql-results+json"})
     if not data:
         return []
+
     results = []
     seen_vocabs: set[str] = set()
+
     for binding in data.get("results", {}).get("bindings", []):
         vocab = binding.get("vocab", {}).get("value", "")
         title = binding.get("title", {}).get("value", "")
         download_url = binding.get("distribution", {}).get("value", "")
         namespace_uri = binding.get("namespaceuri", {}).get("value", "") or vocab
+        
+        keywords = binding.get("keywords", {}).get("value", "")
+        keywords_list = [k.strip() for k in keywords.split("|") if k.strip()]
+
         if (namespace_uri
                 and title
                 and download_url 
@@ -98,6 +110,7 @@ def _lov_all_download_urls() -> list[dict]:
                 {
                     "vocab": vocab, 
                     "title": title,
+                    "keywords": keywords_list,
                     "download_url": download_url,
                     "namespace_uri": namespace_uri,
                 }
@@ -169,24 +182,25 @@ def _process_vocab(
     vocab_uri = vocab["vocab"]
     namespace_uri = vocab["namespace_uri"]
     title = vocab["title"]
+    keywords = vocab["keywords"]
     download_url = vocab["download_url"]
 
     raw = http_get_raw(download_url)
 
     if raw is None:
-        return namespace_uri, vocab_uri, title, []
+        return namespace_uri, vocab_uri, title, keywords, []
 
     found_any = any(uri.encode('utf-8') in raw for uri in monitored_uris)
     if not found_any:
-        return namespace_uri, vocab_uri, title, []
+        return namespace_uri, vocab_uri, title, keywords, []
 
     g = _parse_graph(raw, download_url)
     if g is None:
-        return namespace_uri, vocab_uri, title, []
+        return namespace_uri, vocab_uri, title, keywords, []
     
     matched = list(_check_graph(g, monitored_uris))
 
-    return namespace_uri, vocab_uri, title, matched
+    return namespace_uri, vocab_uri, title, keywords, matched
 
 
 def _lov_sparql_inlinks(
@@ -196,10 +210,11 @@ def _lov_sparql_inlinks(
     uri_to_prefix = {onto["uri"]: onto["prefix"] for onto in ontologies}
     values = " ".join(f"<{onto['uri']}>" for onto in ontologies)
     sparql_query = f"""
-        PREFIX voaf:<http://purl.org/vocommons/voaf#>
-        PREFIX owl:<http://www.w3.org/2002/07/owl#>
-        PREFIX dcterms:<http://purl.org/dc/terms/>
-        PREFIX vann:<http://purl.org/vocab/vann/>
+        PREFIX voaf: <http://purl.org/vocommons/voaf#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX dcterms: <http://purl.org/dc/terms/>
+        PREFIX vann: <http://purl.org/vocab/vann/>
+        
         SELECT ?vocab ?title ?namespaceUri ?target WHERE {{
             GRAPH <https://lov.linkeddata.es/dataset/lov> {{
                 VALUES ?target {{ {values} }}
@@ -247,9 +262,9 @@ def _lov_sparql_inlinks(
 
 def fetch_lov_all(
     ontologies: list[dict]
-    ) -> dict[str, dict]:
+    ) -> dict[str, str | dict]:
 
-    results: dict[str, dict] = {}
+    results: dict[str, str | dict] = {}
 
     for onto in ontologies:
         print(f"  [LOV] Fetching info for {onto['prefix']}…")
@@ -257,26 +272,29 @@ def fetch_lov_all(
 
     print("  [LOV] Querying LOV metadata for inlinks…")
     _lov_sparql_inlinks(ontologies, results)
+
     print("  [LOV] Fetching all vocabulary download URLs…")
     all_vocabs = _lov_all_download_urls()
+
     print(f"  [LOV] Found {len(all_vocabs)} vocabularies to scan.")
     monitored_uris = [onto["uri"] for onto in ontologies]
+
     uri_to_prefix = {onto["uri"]: onto["prefix"] for onto in ontologies}
+
     vocabs_to_scan = [
         v for v in all_vocabs if v["vocab"] not in monitored_uris
     ]
-    completed = 0
+
     total = len(vocabs_to_scan)
+
     with ProcessPoolExecutor(max_workers=os.cpu_count()) as executor:
         futures = {
             executor.submit(_process_vocab, vocab, monitored_uris): vocab
             for vocab in vocabs_to_scan
         }
         for future in tqdm(as_completed(futures)):
-            completed += 1
-            #print(f"  [LOV] Scanned {completed}/{total}", end="\r")
             try:
-                namespace_uri, vocab_uri, title, matched_uris = future.result()
+                namespace_uri, vocab_uri, title, keywords, matched_uris = future.result()
                 for uri in matched_uris:
                     prefix = uri_to_prefix.get(uri)
                     if prefix and not any(
@@ -286,10 +304,15 @@ def fetch_lov_all(
                             "uri": namespace_uri, 
                             "vocab_uri": vocab_uri,
                             "title": title,
+                            "keywords": keywords,
                         })
                         results[prefix]["inlinks"] += 1
+                        results[prefix]["keyword_counter"].update(keywords)
             except Exception as e:
                 vocab = futures[future]
                 print(f"\n  [LOV] Error processing {vocab['vocab']}: {e}")
-    print()
+                
+    for prefix in results:
+        results[prefix]["keyword_frequencies"] = dict(results[prefix].pop("keyword_counter").most_common(5))
+
     return results

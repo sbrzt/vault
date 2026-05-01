@@ -44,13 +44,15 @@
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
 
+    <h3>Vocabularies</h3>
+
     <div class="grid-2">
 
       {# LOV card #}
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Uptake in other vocabularies</h3>
+          <h4>Which vocabularies reuse {{ onto.label }}?</h4>
         </div>
         <div class="card-stat">
           <span class="big-num">{{ onto.lov.inlinks }}</span>
@@ -58,7 +60,7 @@
         </div>
         <div class="card-detail">
           <ul class="compact-list">
-            {% for vocab in onto.lov.using_vocabs[:10] %}
+            {% for vocab in onto.lov.using_vocabs %}
               <li><a href="{{ vocab.uri }}" target="_blank">{{ vocab.title or vocab.uri }}</a></li>
             {% else %}
               <li><em>None found</em></li>
@@ -69,8 +71,46 @@
           {% endif %}
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Domain categorization</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-keywords-lov-{{ onto.prefix }}" height="100"></canvas>
+        </div>
+      </div>
     
     </div>
+
+    <script>
+
+      (function() {
+        var ctx = document.getElementById('chart-keywords-lov-{{ onto.prefix }}');
+        if (!ctx) return;
+        var keywordData = {{ onto.lov.keyword_frequencies | tojson }};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(keywordData),
+            datasets: [{
+              label: 'Keyword frequencies',
+              data: Object.values(keywordData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { position: 'right' } 
+            },
+          }
+        });
+      })();
+
+    </script>
 
   </section>
   {% endfor %}

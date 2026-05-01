@@ -19,7 +19,7 @@
       <a href="#onto-pro">PRO</a>
     
   </nav>
-  <div class="header-meta">Generated: 2026-04-30 18:36 UTC</div>
+  <div class="header-meta">Generated: 2026-05-01 09:55 UTC</div>
 </header>
 <main>
 
@@ -42,7 +42,7 @@
       <div class="uri">http://purl.org/spar/fabio</div>
       <div class="metrics">
         <div class="metric">
-          <span class="metric-value">8</span>
+          <span class="metric-value">9</span>
           <span class="metric-label">Vocabularies (LOV)</span>
         </div>
       </div>
@@ -70,13 +70,15 @@
       <span class="uri-badge">http://purl.org/spar/cito</span>
     </div>
 
+    <h3>Vocabularies</h3>
+
     <div class="grid-2">
 
       
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Uptake in other vocabularies</h3>
+          <h4>Which vocabularies reuse CiTO?</h4>
         </div>
         <div class="card-stat">
           <span class="big-num">7</span>
@@ -105,8 +107,46 @@
           
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Domain categorization</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-keywords-lov-cito" height="100"></canvas>
+        </div>
+      </div>
     
     </div>
+
+    <script>
+
+      (function() {
+        var ctx = document.getElementById('chart-keywords-lov-cito');
+        if (!ctx) return;
+        var keywordData = {"Academy": 2, "Events": 1, "Government": 1, "Multimedia": 1, "SPAR": 2};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(keywordData),
+            datasets: [{
+              label: 'Keyword frequencies',
+              data: Object.values(keywordData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { position: 'right' } 
+            },
+          }
+        });
+      })();
+
+    </script>
 
   </section>
   
@@ -117,16 +157,18 @@
       <span class="uri-badge">http://purl.org/spar/fabio</span>
     </div>
 
+    <h3>Vocabularies</h3>
+
     <div class="grid-2">
 
       
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Uptake in other vocabularies</h3>
+          <h4>Which vocabularies reuse FaBiO?</h4>
         </div>
         <div class="card-stat">
-          <span class="big-num">8</span>
+          <span class="big-num">9</span>
           <span class="stat-label">vocabularies import, expand or specialize FaBiO</span>
         </div>
         <div class="card-detail">
@@ -135,6 +177,8 @@
               <li><a href="http://data.europa.eu/s66#" target="_blank">EURIO: EUropean Research Information Ontology</a></li>
             
               <li><a href="http://dati.beniculturali.it/cultural-ON/cultural-ON.owl" target="_blank">Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology</a></li>
+            
+              <li><a href="http://ns.nature.com/terms/" target="_blank">Nature.com Core Ontology</a></li>
             
               <li><a href="http://purl.org/cerif/frapo/" target="_blank">Funding, Research Administration and Projects Ontology</a></li>
             
@@ -154,8 +198,46 @@
           
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Domain categorization</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-keywords-lov-fabio" height="100"></canvas>
+        </div>
+      </div>
     
     </div>
+
+    <script>
+
+      (function() {
+        var ctx = document.getElementById('chart-keywords-lov-fabio');
+        if (!ctx) return;
+        var keywordData = {"Academy": 5, "Events": 2, "Government": 1, "Metadata": 1, "Multimedia": 1};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(keywordData),
+            datasets: [{
+              label: 'Keyword frequencies',
+              data: Object.values(keywordData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { position: 'right' } 
+            },
+          }
+        });
+      })();
+
+    </script>
 
   </section>
   
@@ -166,13 +248,15 @@
       <span class="uri-badge">http://purl.org/spar/pro</span>
     </div>
 
+    <h3>Vocabularies</h3>
+
     <div class="grid-2">
 
       
       <div class="card">
         <div class="card-header">
           <span class="source-tag lov-tag">LOV</span>
-          <h3>Uptake in other vocabularies</h3>
+          <h4>Which vocabularies reuse PRO?</h4>
         </div>
         <div class="card-stat">
           <span class="big-num">5</span>
@@ -197,8 +281,46 @@
           
         </div>
       </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Domain categorization</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-keywords-lov-pro" height="100"></canvas>
+        </div>
+      </div>
     
     </div>
+
+    <script>
+
+      (function() {
+        var ctx = document.getElementById('chart-keywords-lov-pro');
+        if (!ctx) return;
+        var keywordData = {"Academy": 2, "Catalogs": 1, "Events": 2, "Government": 1, "Multimedia": 1};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(keywordData),
+            datasets: [{
+              label: 'Keyword frequencies',
+              data: Object.values(keywordData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { position: 'right' } 
+            },
+          }
+        });
+      })();
+
+    </script>
 
   </section>
   
@@ -207,7 +329,7 @@
 
 <footer>
   <span>Sources: LOV · GitHub · OpenAlex</span>
-  <span>Generated automatically via GitHub Actions · 2026-04-30 18:36 UTC</span>
+  <span>Generated automatically via GitHub Actions · 2026-05-01 09:55 UTC</span>
 </footer>
 
 </body>
