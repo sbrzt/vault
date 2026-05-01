@@ -19,7 +19,7 @@
       <a href="#onto-pro">PRO</a>
     
   </nav>
-  <div class="header-meta">Generated: 2026-05-01 09:55 UTC</div>
+  <div class="header-meta">Generated: 2026-05-01 11:27 UTC</div>
 </header>
 <main>
 
@@ -120,6 +120,20 @@
     
     </div>
 
+    <div class="grid-2">
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Adoption timeline</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-timeline-lov-cito" height="100"></canvas>
+        </div>
+      </div>
+
+    </div>
+
     <script>
 
       (function() {
@@ -142,6 +156,38 @@
             plugins: { 
               legend: { position: 'right' } 
             },
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-timeline-lov-cito');
+        if (!ctx) return;
+        var timelineData = {"2013": 1, "2014": 2, "2016": 4, "2022": 6, "2025": 7};
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: Object.keys(timelineData),
+            datasets: [{
+              label: 'Cumulative adoptions',
+              data: Object.values(timelineData),
+              fill: true,
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { display: false } 
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
+            }
           }
         });
       })();
@@ -211,6 +257,20 @@
     
     </div>
 
+    <div class="grid-2">
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Adoption timeline</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-timeline-lov-fabio" height="100"></canvas>
+        </div>
+      </div>
+
+    </div>
+
     <script>
 
       (function() {
@@ -233,6 +293,38 @@
             plugins: { 
               legend: { position: 'right' } 
             },
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-timeline-lov-fabio');
+        if (!ctx) return;
+        var timelineData = {"2014": 2, "2015": 3, "2016": 4, "2018": 5, "2019": 6, "2022": 8, "2025": 9};
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: Object.keys(timelineData),
+            datasets: [{
+              label: 'Cumulative adoptions',
+              data: Object.values(timelineData),
+              fill: true,
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { display: false } 
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
+            }
           }
         });
       })();
@@ -294,6 +386,20 @@
     
     </div>
 
+    <div class="grid-2">
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Adoption timeline</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-timeline-lov-pro" height="100"></canvas>
+        </div>
+      </div>
+
+    </div>
+
     <script>
 
       (function() {
@@ -320,6 +426,38 @@
         });
       })();
 
+      (function() {
+        var ctx = document.getElementById('chart-timeline-lov-pro');
+        if (!ctx) return;
+        var timelineData = {"2014": 1, "2016": 2, "2017": 3, "2022": 4, "2025": 5};
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: Object.keys(timelineData),
+            datasets: [{
+              label: 'Cumulative adoptions',
+              data: Object.values(timelineData),
+              fill: true,
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { display: false } 
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
+            }
+          }
+        });
+      })();
+
     </script>
 
   </section>
@@ -329,7 +467,7 @@
 
 <footer>
   <span>Sources: LOV · GitHub · OpenAlex</span>
-  <span>Generated automatically via GitHub Actions · 2026-05-01 09:55 UTC</span>
+  <span>Generated automatically via GitHub Actions · 2026-05-01 11:27 UTC</span>
 </footer>
 
 </body>

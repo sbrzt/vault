@@ -84,6 +84,20 @@
     
     </div>
 
+    <div class="grid-2">
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Adoption timeline</h3>
+        </div>
+        <div class="card-detail">
+            <canvas id="chart-timeline-lov-{{ onto.prefix }}" height="100"></canvas>
+        </div>
+      </div>
+
+    </div>
+
     <script>
 
       (function() {
@@ -106,6 +120,38 @@
             plugins: { 
               legend: { position: 'right' } 
             },
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-timeline-lov-{{ onto.prefix }}');
+        if (!ctx) return;
+        var timelineData = {{ onto.lov.adoption_timeline | tojson }};
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: Object.keys(timelineData),
+            datasets: [{
+              label: 'Cumulative adoptions',
+              data: Object.values(timelineData),
+              fill: true,
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { 
+              legend: { display: false } 
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
+            }
           }
         });
       })();

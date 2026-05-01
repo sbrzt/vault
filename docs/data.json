@@ -16,7 +16,8 @@
             "Government",
             "Multimedia",
             "Events"
-          ]
+          ],
+          "issued": "2016"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -24,7 +25,8 @@
           "title": "The DataCite Ontology",
           "keywords": [
             "SPAR"
-          ]
+          ],
+          "issued": "2022"
         },
         {
           "uri": "http://semanticscience.org/ontology/sio.owl",
@@ -32,7 +34,8 @@
           "title": "Semanticscience Integrated Ontology",
           "keywords": [
             "Biology"
-          ]
+          ],
+          "issued": "2016"
         },
         {
           "uri": "http://vivoweb.org/ontology/core",
@@ -40,7 +43,8 @@
           "title": "VIVO Core Ontology",
           "keywords": [
             "Academy"
-          ]
+          ],
+          "issued": "2014"
         },
         {
           "uri": "http://w3id.org/roh",
@@ -49,7 +53,8 @@
           "keywords": [
             "Support",
             "Academy"
-          ]
+          ],
+          "issued": "2022"
         },
         {
           "uri": "http://www.essepuntato.it/2013/03/cito-functions",
@@ -57,7 +62,8 @@
           "title": "Functions of Citations",
           "keywords": [
             "SPAR"
-          ]
+          ],
+          "issued": "2013"
         },
         {
           "uri": "https://w3id.org/icon/ontology/",
@@ -65,7 +71,8 @@
           "title": "ICON Ontology",
           "keywords": [
             "Methods"
-          ]
+          ],
+          "issued": "2025"
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
@@ -150,6 +157,13 @@
         "Government": 1,
         "Multimedia": 1,
         "Events": 1
+      },
+      "adoption_timeline": {
+        "2013": 1,
+        "2014": 2,
+        "2016": 4,
+        "2022": 6,
+        "2025": 7
       }
     }
   },
@@ -169,7 +183,8 @@
           "keywords": [
             "Metadata",
             "Academy"
-          ]
+          ],
+          "issued": "2025"
         },
         {
           "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
@@ -179,7 +194,8 @@
             "Government",
             "Multimedia",
             "Events"
-          ]
+          ],
+          "issued": "2016"
         },
         {
           "uri": "http://ns.nature.com/terms/",
@@ -187,7 +203,8 @@
           "title": "Nature.com Core Ontology",
           "keywords": [
             "Press"
-          ]
+          ],
+          "issued": "2015"
         },
         {
           "uri": "http://purl.org/cerif/frapo/",
@@ -195,7 +212,8 @@
           "title": "Funding, Research Administration and Projects Ontology",
           "keywords": [
             "Academy"
-          ]
+          ],
+          "issued": "2014"
         },
         {
           "uri": "http://purl.org/SemSur/",
@@ -203,7 +221,8 @@
           "title": "The Semantic Survey Ontology (semsur)",
           "keywords": [
             "Methods"
-          ]
+          ],
+          "issued": "2018"
         },
         {
           "uri": "http://purl.org/spar/datacite",
@@ -211,7 +230,8 @@
           "title": "The DataCite Ontology",
           "keywords": [
             "SPAR"
-          ]
+          ],
+          "issued": "2022"
         },
         {
           "uri": "http://vivoweb.org/ontology/core",
@@ -219,7 +239,8 @@
           "title": "VIVO Core Ontology",
           "keywords": [
             "Academy"
-          ]
+          ],
+          "issued": "2014"
         },
         {
           "uri": "http://w3id.org/roh",
@@ -228,7 +249,8 @@
           "keywords": [
             "Support",
             "Academy"
-          ]
+          ],
+          "issued": "2022"
         },
         {
           "uri": "https://w3id.org/seo",
@@ -237,7 +259,8 @@
           "keywords": [
             "Academy",
             "Events"
-          ]
+          ],
+          "issued": "2019"
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
@@ -352,6 +375,15 @@
         "Metadata": 1,
         "Government": 1,
         "Multimedia": 1
+      },
+      "adoption_timeline": {
+        "2014": 2,
+        "2015": 3,
+        "2016": 4,
+        "2018": 5,
+        "2019": 6,
+        "2022": 8,
+        "2025": 9
       }
     }
   },
@@ -372,7 +404,8 @@
             "Government",
             "Multimedia",
             "Events"
-          ]
+          ],
+          "issued": "2016"
         },
         {
           "uri": "http://purl.org/cerif/frapo/",
@@ -380,7 +413,8 @@
           "title": "Funding, Research Administration and Projects Ontology",
           "keywords": [
             "Academy"
-          ]
+          ],
+          "issued": "2014"
         },
         {
           "uri": "http://purl.org/spar/scoro/",
@@ -388,7 +422,8 @@
           "title": "Scholarly Contributions and Roles Ontology",
           "keywords": [
             "Academy"
-          ]
+          ],
+          "issued": "2017"
         },
         {
           "uri": "https://w3id.org/dba/ontology/",
@@ -396,7 +431,8 @@
           "title": "Description Banking Archives Ontology",
           "keywords": [
             "Catalogs"
-          ]
+          ],
+          "issued": "2022"
         },
         {
           "uri": "https://w3id.org/pko",
@@ -405,7 +441,8 @@
           "keywords": [
             "Methods",
             "Events"
-          ]
+          ],
+          "issued": "2025"
         }
       ],
       "url": "https://lov.linkeddata.es/dataset/lov/vocabs/pro",
@@ -475,6 +512,13 @@
         "Government": 1,
         "Multimedia": 1,
         "Catalogs": 1
+      },
+      "adoption_timeline": {
+        "2014": 1,
+        "2016": 2,
+        "2017": 3,
+        "2022": 4,
+        "2025": 5
       }
     }
   }

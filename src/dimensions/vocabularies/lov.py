@@ -29,6 +29,7 @@ def _lov_info(
         "tags": [],
         "versions": [],
         "keyword_counter": Counter(),
+        "year_counter": Counter(),
     }
 
     info_url = (
@@ -62,7 +63,7 @@ def _lov_all_download_urls() -> list[dict]:
         PREFIX dcterms: <http://purl.org/dc/terms/>
         PREFIX voaf: <http://purl.org/vocommons/voaf#>
         PREFIX vann: <http://purl.org/vocab/vann/>
-        SELECT ?vocab ?title (GROUP_CONCAT(?keyword; separator="|") AS ?keywords) ?distribution ?namespaceUri WHERE {
+        SELECT ?vocab ?title (GROUP_CONCAT(?keyword; separator="|") AS ?keywords) ?distribution ?namespaceUri ?issued WHERE {
             GRAPH <https://lov.linkeddata.es/dataset/lov> {
                 ?vocab a voaf:Vocabulary ;
                     dcterms:title ?title ;
@@ -100,6 +101,9 @@ def _lov_all_download_urls() -> list[dict]:
         keywords = binding.get("keywords", {}).get("value", "")
         keywords_list = [k.strip() for k in keywords.split("|") if k.strip()]
 
+        issued = binding.get("issued", {}).get("value", "")
+        issued_year = issued[:4] if issued else ""
+
         if (namespace_uri
                 and title
                 and download_url 
@@ -113,6 +117,7 @@ def _lov_all_download_urls() -> list[dict]:
                     "keywords": keywords_list,
                     "download_url": download_url,
                     "namespace_uri": namespace_uri,
+                    "issued": issued_year,
                 }
             )
     return results
@@ -179,28 +184,29 @@ def _process_vocab(
     monitored_uris: list[str]
     ) -> tuple[str, str, str, list[str]]:
 
-    vocab_uri = vocab["vocab"]
-    namespace_uri = vocab["namespace_uri"]
-    title = vocab["title"]
-    keywords = vocab["keywords"]
-    download_url = vocab["download_url"]
+    vocab_uri = vocab.get("vocab", "")
+    namespace_uri = vocab.get("namespace_uri", "")
+    title = vocab.get("title", "")
+    keywords = vocab.get("keywords", "")
+    download_url = vocab.get("download_url", "")
+    issued = vocab.get("issued", "")
 
     raw = http_get_raw(download_url)
 
     if raw is None:
-        return namespace_uri, vocab_uri, title, keywords, []
+        return namespace_uri, vocab_uri, title, keywords, issued, []
 
     found_any = any(uri.encode('utf-8') in raw for uri in monitored_uris)
     if not found_any:
-        return namespace_uri, vocab_uri, title, keywords, []
+        return namespace_uri, vocab_uri, title, keywords, issued, []
 
     g = _parse_graph(raw, download_url)
     if g is None:
-        return namespace_uri, vocab_uri, title, keywords, []
+        return namespace_uri, vocab_uri, title, keywords, issued, []
     
     matched = list(_check_graph(g, monitored_uris))
 
-    return namespace_uri, vocab_uri, title, keywords, matched
+    return namespace_uri, vocab_uri, title, keywords, issued, matched
 
 
 def _lov_sparql_inlinks(
@@ -294,7 +300,7 @@ def fetch_lov_all(
         }
         for future in tqdm(as_completed(futures)):
             try:
-                namespace_uri, vocab_uri, title, keywords, matched_uris = future.result()
+                namespace_uri, vocab_uri, title, keywords, issued, matched_uris = future.result()
                 for uri in matched_uris:
                     prefix = uri_to_prefix.get(uri)
                     if prefix and not any(
@@ -305,14 +311,26 @@ def fetch_lov_all(
                             "vocab_uri": vocab_uri,
                             "title": title,
                             "keywords": keywords,
+                            "issued": issued,
                         })
                         results[prefix]["inlinks"] += 1
                         results[prefix]["keyword_counter"].update(keywords)
+                        if issued:
+                            results[prefix]["year_counter"].update([issued])
             except Exception as e:
                 vocab = futures[future]
                 print(f"\n  [LOV] Error processing {vocab['vocab']}: {e}")
-                
+
     for prefix in results:
+
         results[prefix]["keyword_frequencies"] = dict(results[prefix].pop("keyword_counter").most_common(5))
+        
+        year_counter = results[prefix].pop("year_counter")
+        timeline = {}
+        cumulative = 0
+        for year in sorted(year_counter.keys()):
+            cumulative += year_counter[year]
+            timeline[year] = cumulative
+        results[prefix]["adoption_timeline"] = timeline
 
     return results
