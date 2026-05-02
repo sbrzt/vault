@@ -160,6 +160,13 @@ main {
 
 /* ── Grid ── */
 
+.grid-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -215,7 +222,19 @@ main {
   margin-bottom: 16px;
 }
 
-.card-header h3 { font-size: .9rem; font-weight: 600; }
+.card-header h3 { 
+  font-size: .9rem; 
+  font-weight: 600; 
+}
+
+.card-chart-detail {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .styled-link { 
   color: var(--accent-link); 

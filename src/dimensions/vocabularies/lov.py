@@ -262,6 +262,7 @@ def _lov_sparql_inlinks(
                 "uri": namespace_uri, 
                 "vocab_uri": vocab_uri,
                 "title": title,
+                "dependency_type": "explicit",
             })
             results[prefix]["inlinks"] += 1
 
@@ -291,8 +292,6 @@ def fetch_lov_all(
         v for v in all_vocabs if v["vocab"] not in monitored_uris
     ]
 
-    total = len(vocabs_to_scan)
-
     with ProcessPoolExecutor(max_workers=os.cpu_count()) as executor:
         futures = {
             executor.submit(_process_vocab, vocab, monitored_uris): vocab
@@ -312,6 +311,7 @@ def fetch_lov_all(
                             "title": title,
                             "keywords": keywords,
                             "issued": issued,
+                            "dependency_type": "implicit",
                         })
                         results[prefix]["inlinks"] += 1
                         results[prefix]["keyword_counter"].update(keywords)
@@ -332,5 +332,17 @@ def fetch_lov_all(
             cumulative += year_counter[year]
             timeline[year] = cumulative
         results[prefix]["adoption_timeline"] = timeline
+
+        explicit_count = 0
+        implicit_count = 0
+        for vocab in results[prefix]["using_vocabs"]:
+            if vocab.get("dependency_type") == "explicit":
+                explicit_count += 1
+            elif vocab.get("dependency_type") == "implicit":
+                implicit_count += 1
+        results[prefix]["dependency_frequencies"] = {
+            "Explicit": explicit_count,
+            "Implicit": implicit_count
+        }
 
     return results

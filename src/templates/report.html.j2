@@ -46,7 +46,7 @@
 
     <h3>Vocabularies</h3>
 
-    <div class="grid-2">
+    <div class="grid-1">
 
       {# LOV card #}
       <div class="card">
@@ -71,16 +71,6 @@
           {% endif %}
         </div>
       </div>
-
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag lov-tag">LOV</span>
-          <h3>Domain categorization</h3>
-        </div>
-        <div class="card-detail">
-            <canvas id="chart-keywords-lov-{{ onto.prefix }}" height="100"></canvas>
-        </div>
-      </div>
     
     </div>
 
@@ -92,7 +82,21 @@
           <h3>Adoption timeline</h3>
         </div>
         <div class="card-detail">
-            <canvas id="chart-timeline-lov-{{ onto.prefix }}" height="100"></canvas>
+          <div class="card-chart-detail">
+            <canvas id="chart-timeline-lov-{{ onto.prefix }}"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="source-tag lov-tag">LOV</span>
+          <h3>Domain categorization</h3>
+        </div>
+        <div class="card-detail">
+          <div class="card-chart-detail">
+            <canvas id="chart-keywords-lov-{{ onto.prefix }}"></canvas>
+          </div>
         </div>
       </div>
 
@@ -117,6 +121,7 @@
           },
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: { 
               legend: { position: 'right' } 
             },
@@ -143,6 +148,7 @@
           },
           options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: { 
               legend: { display: false } 
             },
