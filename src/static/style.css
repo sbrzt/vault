@@ -197,6 +197,53 @@ main {
   header { flex-direction: column; gap: 12px; padding: 16px; }
 }
 
+/* -- Accordion -- */
+
+.section-accordion {
+  margin-bottom: 40px;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.section-accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  user-select: none;
+}
+
+.section-accordion-header h2 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.accordion-icon {
+  font-size: 1.5em;
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+.section-accordion-header.active .accordion-icon {
+  transform: rotate(-180deg);
+}
+
+.accordion-body {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.accordion-body.open {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* ── Cards ── */
 
 .card {
@@ -205,10 +252,6 @@ main {
   border-radius: 8px;
   padding: 20px;
   transition: border-color .15s;
-}
-
-.card-table {
-  margin-bottom: 1rem;
 }
 
 .card:hover { border-color: #444c56; }
@@ -225,6 +268,10 @@ main {
 .card-header h3 { 
   font-size: .9rem; 
   font-weight: 600; 
+}
+
+.card-detail {
+  overflow-x: auto;
 }
 
 .card-chart-detail {
@@ -314,11 +361,15 @@ main {
   font-size: .78rem;
 }
 
-/* ── Papers table ── */
+/* ── Card table ── */
 
-.papers-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.card-table-content { 
+  width: 100%; 
+  border-collapse: collapse; 
+  font-size: .82rem; 
+}
 
-.papers-table th {
+.card-table-content th {
   text-align: left;
   padding: 8px 12px;
   font-weight: 600;
@@ -329,14 +380,14 @@ main {
   border-bottom: 1px solid var(--border);
 }
 
-.papers-table td {
+.card-table-content td {
   padding: 10px 12px;
   border-bottom: 1px solid var(--bg3);
   vertical-align: top;
 }
 
-.papers-table tr:last-child td { border-bottom: none; }
-.papers-table tr:hover td { background: var(--bg3); }
+.card-table-content tr:last-child td { border-bottom: none; }
+.card-table-content tr:hover td { background: var(--bg3); }
 
 .title-cell { max-width: 400px; }
 

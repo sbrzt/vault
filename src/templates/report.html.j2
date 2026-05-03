@@ -28,7 +28,7 @@
       <div class="metrics">
         <div class="metric">
           <span class="metric-value">{{ onto.lov.inlinks }}</span>
-          <span class="metric-label">Vocabularies (LOV)</span>
+          <span class="metric-label">Vocabularies</span>
         </div>
       </div>
     </div>
@@ -44,65 +44,102 @@
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
 
-    <h3>Vocabularies</h3>
+    <div class="section-accordion">
 
-    <div class="grid-1">
+      <div class="section-accordion-header" onclick="toggleAccordion('vocab-section-{{ onto.prefix }}', this)">
+        <h3>Vocabularies</h3>
+        <span class="accordion-icon">▼</span>
+      </div>
 
-      {# LOV card #}
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag lov-tag">LOV</span>
-          <h4>Which vocabularies reuse {{ onto.label }}?</h4>
+      <div id="vocab-section-{{ onto.prefix }}" class="accordion-body">
+
+        <div class="grid-1">
+
+          {# LOV card #}
+
+          <div class="card card-table full-width">
+            <div class="card-header">
+              <span class="source-tag lov-tag">LOV</span>
+              <h4>Which vocabularies reuse {{ onto.label }}?</h4>
+            </div>
+            <div class="card-stat">
+              <span class="big-num">{{ onto.lov.inlinks }}</span>
+              <span class="stat-label">vocabularies import, expand or specialize {{ onto.label }}</span>
+            </div>
+              <table class="card-table-content">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>URI</th>
+                    <th>Year</th>
+                    <th>Keywords</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for vocab in onto.lov.using_vocabs %}
+                  <tr>
+                    <td>{{ vocab.title }}</td>
+                    <td><a href="{{ vocab.uri }}">{{ vocab.uri }}</a></td>
+                    <td>{{ vocab.issued or '—' }}</td>
+                    <td>{{ vocab.keywords }}</td>
+                  </tr>
+                  {% else %}
+                  <tr><td colspan="3">No vocabularies found</td></tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              {% if onto.lov.url %}
+                <a class="styled-link lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
+              {% endif %}
+          </div>
+        
         </div>
-        <div class="card-stat">
-          <span class="big-num">{{ onto.lov.inlinks }}</span>
-          <span class="stat-label">vocabularies import, expand or specialize {{ onto.label }}</span>
+
+        <div class="grid-2">
+
+          <div class="card">
+            <div class="card-header">
+              <span class="source-tag lov-tag">LOV</span>
+              <h3>Adoption timeline</h3>
+            </div>
+            <div class="card-detail">
+              <div class="card-chart-detail">
+                <canvas id="chart-timeline-lov-{{ onto.prefix }}"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <span class="source-tag lov-tag">LOV</span>
+              <h3>Domain categorization</h3>
+            </div>
+            <div class="card-detail">
+              <div class="card-chart-detail">
+                <canvas id="chart-keywords-lov-{{ onto.prefix }}"></canvas>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="card-detail">
-          <ul class="compact-list">
-            {% for vocab in onto.lov.using_vocabs %}
-              <li><a href="{{ vocab.uri }}" target="_blank">{{ vocab.title or vocab.uri }}</a></li>
-            {% else %}
-              <li><em>None found</em></li>
-            {% endfor %}
-          </ul>
-          {% if onto.lov.url %}
-            <a class="styled-link lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
-          {% endif %}
-        </div>
+      
       </div>
     
     </div>
 
-    <div class="grid-2">
-
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag lov-tag">LOV</span>
-          <h3>Adoption timeline</h3>
-        </div>
-        <div class="card-detail">
-          <div class="card-chart-detail">
-            <canvas id="chart-timeline-lov-{{ onto.prefix }}"></canvas>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <span class="source-tag lov-tag">LOV</span>
-          <h3>Domain categorization</h3>
-        </div>
-        <div class="card-detail">
-          <div class="card-chart-detail">
-            <canvas id="chart-keywords-lov-{{ onto.prefix }}"></canvas>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
     <script>
+
+      function toggleAccordion(contentId, headerElement) {
+        var content = document.getElementById(contentId);
+        content.classList.toggle('open');
+        headerElement.classList.toggle('active');
+        
+        if (content.classList.contains('open')) {
+          setTimeout(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 10); 
+        }
+      }
 
       (function() {
         var ctx = document.getElementById('chart-keywords-lov-{{ onto.prefix }}');
