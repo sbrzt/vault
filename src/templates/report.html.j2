@@ -47,8 +47,8 @@
     <div class="section-accordion">
 
       <div class="section-accordion-header" onclick="toggleAccordion('vocab-section-{{ onto.prefix }}', this)">
-        <h3>Vocabularies</h3>
-        <span class="accordion-icon">▼</span>
+        <h3>Which vocabularies reuse {{ onto.label }}?</h3>
+        <span class="accordion-icon">⮝</span>
       </div>
 
       <div id="vocab-section-{{ onto.prefix }}" class="accordion-body">
@@ -60,7 +60,7 @@
           <div class="card card-table full-width">
             <div class="card-header">
               <span class="source-tag lov-tag">LOV</span>
-              <h4>Which vocabularies reuse {{ onto.label }}?</h4>
+              <h4>How many vocabularies reuse {{ onto.label }}?</h4>
             </div>
             <div class="card-stat">
               <span class="big-num">{{ onto.lov.inlinks }}</span>
@@ -79,9 +79,13 @@
                   {% for vocab in onto.lov.using_vocabs %}
                   <tr>
                     <td>{{ vocab.title }}</td>
-                    <td><a href="{{ vocab.uri }}">{{ vocab.uri }}</a></td>
+                    <td><a href="{{ vocab.uri }}" target="_blank">{{ vocab.uri }}</a></td>
                     <td>{{ vocab.issued or '—' }}</td>
-                    <td>{{ vocab.keywords }}</td>
+                    <td>
+                      {% for keyword in vocab.keywords %}
+                        <span class="keyword-badge">{{ keyword }}</span>
+                      {% endfor %}
+                    </td>
                   </tr>
                   {% else %}
                   <tr><td colspan="3">No vocabularies found</td></tr>
@@ -100,7 +104,7 @@
           <div class="card">
             <div class="card-header">
               <span class="source-tag lov-tag">LOV</span>
-              <h3>Adoption timeline</h3>
+              <h4>How was {{ onto.label }} adopted in time?</h4>
             </div>
             <div class="card-detail">
               <div class="card-chart-detail">
@@ -112,7 +116,7 @@
           <div class="card">
             <div class="card-header">
               <span class="source-tag lov-tag">LOV</span>
-              <h3>Domain categorization</h3>
+              <h4>In which domains is {{ onto.label }} reused?</h4>
             </div>
             <div class="card-detail">
               <div class="card-chart-detail">
