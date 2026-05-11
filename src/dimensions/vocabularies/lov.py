@@ -267,7 +267,7 @@ def _lov_sparql_inlinks(
             results[prefix]["inlinks"] += 1
 
 
-def fetch_lov_all(
+def fetch_data(
     ontologies: list[dict]
     ) -> dict[str, str | dict]:
 
