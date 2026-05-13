@@ -4,6 +4,179 @@
     "full_name": "Citation Typing Ontology",
     "uri": "http://purl.org/spar/cito",
     "prefix": "cito",
+    "lov": {
+      "found": true,
+      "inlinks": 7,
+      "using_vocabs": [
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ],
+          "issued": "2016",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/spar/datacite",
+          "vocab_uri": "http://purl.org/spar/datacite",
+          "title": "The DataCite Ontology",
+          "keywords": [
+            "SPAR"
+          ],
+          "issued": "2022",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://semanticscience.org/ontology/sio.owl",
+          "vocab_uri": "http://semanticscience.org/ontology/sio.owl",
+          "title": "Semanticscience Integrated Ontology",
+          "keywords": [
+            "Biology"
+          ],
+          "issued": "2016",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology",
+          "keywords": [
+            "Academy"
+          ],
+          "issued": "2014",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://w3id.org/roh",
+          "vocab_uri": "http://w3id.org/roh",
+          "title": "The ASIO ontology",
+          "keywords": [
+            "Support",
+            "Academy"
+          ],
+          "issued": "2022",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://www.essepuntato.it/2013/03/cito-functions",
+          "vocab_uri": "http://www.essepuntato.it/2013/03/cito-functions",
+          "title": "Functions of Citations",
+          "keywords": [
+            "SPAR"
+          ],
+          "issued": "2013",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "https://w3id.org/icon/ontology/",
+          "vocab_uri": "https://w3id.org/icon/ontology/",
+          "title": "ICON Ontology",
+          "keywords": [
+            "Methods"
+          ],
+          "issued": "2025",
+          "dependency_type": "implicit"
+        }
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/cito",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v2.63",
+          "issued": "2014-05-21T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2014-05-22.n3"
+        },
+        {
+          "name": "v2.6.2",
+          "issued": "2013-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-07-03.n3"
+        },
+        {
+          "name": "v2.6.1",
+          "issued": "2013-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-06-27.n3"
+        },
+        {
+          "name": "v2.5.1",
+          "issued": "2013-05-06T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-07.n3"
+        },
+        {
+          "name": "v2.5",
+          "issued": "2013-04-30T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2013-05-01.n3"
+        },
+        {
+          "name": "v2.4.1",
+          "issued": "2012-09-27T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-09-28.n3"
+        },
+        {
+          "name": "v2.4",
+          "issued": "2012-08-28T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-08-29.n3"
+        },
+        {
+          "name": "v2.3",
+          "issued": "2012-07-12T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-13.n3"
+        },
+        {
+          "name": "v2.2",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2011-12-09T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-12-09.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2011-05-04T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2011-05-05.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2010-03-26T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2010-03-26.n3"
+        },
+        {
+          "name": "v2.6.4",
+          "issued": "2015-07-03T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2015-07-03.n3"
+        },
+        {
+          "name": "v2.8.1",
+          "issued": "2018-02-16T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/cito/versions/2018-02-16.n3"
+        }
+      ],
+      "keyword_frequencies": {
+        "SPAR": 2,
+        "Academy": 2,
+        "Government": 1,
+        "Multimedia": 1,
+        "Events": 1
+      },
+      "adoption_timeline": {
+        "2013": 1,
+        "2014": 2,
+        "2016": 4,
+        "2022": 6,
+        "2025": 7
+      },
+      "dependency_frequencies": {
+        "Explicit": 0,
+        "Implicit": 7
+      }
+    },
     "github": {
       "repos_count": 84,
       "repos": [
@@ -2628,6 +2801,233 @@
     "full_name": "FRBR-aligned Bibliographic Ontology",
     "uri": "http://purl.org/spar/fabio",
     "prefix": "fabio",
+    "lov": {
+      "found": true,
+      "inlinks": 9,
+      "using_vocabs": [
+        {
+          "uri": "http://data.europa.eu/s66#",
+          "vocab_uri": "http://data.europa.eu/s66#",
+          "title": "EURIO: EUropean Research Information Ontology",
+          "keywords": [
+            "Metadata",
+            "Academy"
+          ],
+          "issued": "2025",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ],
+          "issued": "2016",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://ns.nature.com/terms/",
+          "vocab_uri": "http://ns.nature.com/terms/",
+          "title": "Nature.com Core Ontology",
+          "keywords": [
+            "Press"
+          ],
+          "issued": "2015",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology",
+          "keywords": [
+            "Academy"
+          ],
+          "issued": "2014",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/SemSur/",
+          "vocab_uri": "http://purl.org/SemSur/",
+          "title": "The Semantic Survey Ontology (semsur)",
+          "keywords": [
+            "Methods"
+          ],
+          "issued": "2018",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/spar/datacite",
+          "vocab_uri": "http://purl.org/spar/datacite",
+          "title": "The DataCite Ontology",
+          "keywords": [
+            "SPAR"
+          ],
+          "issued": "2022",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://vivoweb.org/ontology/core",
+          "vocab_uri": "http://vivoweb.org/ontology/core",
+          "title": "VIVO Core Ontology",
+          "keywords": [
+            "Academy"
+          ],
+          "issued": "2014",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://w3id.org/roh",
+          "vocab_uri": "http://w3id.org/roh",
+          "title": "The ASIO ontology",
+          "keywords": [
+            "Support",
+            "Academy"
+          ],
+          "issued": "2022",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "https://w3id.org/seo",
+          "vocab_uri": "https://w3id.org/seo",
+          "title": "The Scientific Events Ontology",
+          "keywords": [
+            "Academy",
+            "Events"
+          ],
+          "issued": "2019",
+          "dependency_type": "implicit"
+        }
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v1.85",
+          "issued": "2014-03-25T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2014-03-25.n3"
+        },
+        {
+          "name": "v1.75",
+          "issued": "2013-06-23T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-06-24.n3"
+        },
+        {
+          "name": "v1.73",
+          "issued": "2013-03-15T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2013-03-15.n3"
+        },
+        {
+          "name": "v1.72",
+          "issued": "2012-12-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-12-20.n3"
+        },
+        {
+          "name": "v1.71",
+          "issued": "2012-09-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-09-27.n3"
+        },
+        {
+          "name": "v1.7",
+          "issued": "2012-08-19T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-08-20.n3"
+        },
+        {
+          "name": "v1.6",
+          "issued": "2012-07-24T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-25.n3"
+        },
+        {
+          "name": "v1.5",
+          "issued": "2012-07-22T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-23.n3"
+        },
+        {
+          "name": "v1.4",
+          "issued": "2012-07-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-14.n3"
+        },
+        {
+          "name": "v1.32",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v1.31",
+          "issued": "2012-06-07T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-06-08.n3"
+        },
+        {
+          "name": "v1.3",
+          "issued": "2012-05-13T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-05-14.n3"
+        },
+        {
+          "name": "v1.2",
+          "issued": "2012-02-20T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2012-02-20.n3"
+        },
+        {
+          "name": "v1.1",
+          "issued": "2011-06-26T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2011-06-27.n3"
+        },
+        {
+          "name": "v1.0",
+          "issued": "2010-09-14T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2010-09-15.n3"
+        },
+        {
+          "name": "v1.86",
+          "issued": "2015-01-22T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2015-01-22.n3"
+        },
+        {
+          "name": "v1.9.2",
+          "issued": "2016-04-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2016-04-19.n3"
+        },
+        {
+          "name": "v1.9.4",
+          "issued": "2017-05-29T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2017-05-29.n3"
+        },
+        {
+          "name": "v2.0",
+          "issued": "2018-05-02T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2018-05-02.n3"
+        },
+        {
+          "name": "v2.1",
+          "issued": "2019-02-19T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/fabio/versions/2019-02-19.n3"
+        }
+      ],
+      "keyword_frequencies": {
+        "Academy": 5,
+        "Events": 2,
+        "Metadata": 1,
+        "Government": 1,
+        "Multimedia": 1
+      },
+      "adoption_timeline": {
+        "2014": 2,
+        "2015": 3,
+        "2016": 4,
+        "2018": 5,
+        "2019": 6,
+        "2022": 8,
+        "2025": 9
+      },
+      "dependency_frequencies": {
+        "Explicit": 0,
+        "Implicit": 9
+      }
+    },
     "github": {
       "repos_count": 71,
       "repos": [
@@ -4849,20 +5249,160 @@
     "full_name": "Publishing Roles Ontology",
     "uri": "http://purl.org/spar/pro",
     "prefix": "pro",
+    "lov": {
+      "found": true,
+      "inlinks": 5,
+      "using_vocabs": [
+        {
+          "uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "vocab_uri": "http://dati.beniculturali.it/cultural-ON/cultural-ON.owl",
+          "title": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology",
+          "keywords": [
+            "Government",
+            "Multimedia",
+            "Events"
+          ],
+          "issued": "2016",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/cerif/frapo/",
+          "vocab_uri": "http://purl.org/cerif/frapo/",
+          "title": "Funding, Research Administration and Projects Ontology",
+          "keywords": [
+            "Academy"
+          ],
+          "issued": "2014",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "http://purl.org/spar/scoro/",
+          "vocab_uri": "http://purl.org/spar/scoro/",
+          "title": "Scholarly Contributions and Roles Ontology",
+          "keywords": [
+            "Academy"
+          ],
+          "issued": "2017",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "https://w3id.org/dba/ontology/",
+          "vocab_uri": "https://w3id.org/dba/ontology/",
+          "title": "Description Banking Archives Ontology",
+          "keywords": [
+            "Catalogs"
+          ],
+          "issued": "2022",
+          "dependency_type": "implicit"
+        },
+        {
+          "uri": "https://w3id.org/pko",
+          "vocab_uri": "https://w3id.org/pko",
+          "title": "Procedural Knowledge Ontology (PKO)",
+          "keywords": [
+            "Methods",
+            "Events"
+          ],
+          "issued": "2025",
+          "dependency_type": "implicit"
+        }
+      ],
+      "url": "https://lov.linkeddata.es/dataset/lov/vocabs/pro",
+      "tags": [
+        "SPAR"
+      ],
+      "versions": [
+        {
+          "name": "v1.5.3",
+          "issued": "2013-12-18T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2013-12-18.n3"
+        },
+        {
+          "name": "v1.5.1",
+          "issued": "2013-05-14T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2013-05-15.n3"
+        },
+        {
+          "name": "v1.5",
+          "issued": "2012-07-12T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-13.n3"
+        },
+        {
+          "name": "v1.42",
+          "issued": "2012-07-03T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-04.n3"
+        },
+        {
+          "name": "v1.41",
+          "issued": "2012-07-02T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-07-03.n3"
+        },
+        {
+          "name": "v1.4",
+          "issued": "2012-06-07T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-06-08.n3"
+        },
+        {
+          "name": "v1.3",
+          "issued": "2012-05-09T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-05-10.n3"
+        },
+        {
+          "name": "v1.21",
+          "issued": "2012-04-29T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2012-04-30.n3"
+        },
+        {
+          "name": "v1.2",
+          "issued": "2011-11-22T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2011-11-22.n3"
+        },
+        {
+          "name": "v1.1",
+          "issued": "2011-05-04T23:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2011-05-05.n3"
+        },
+        {
+          "name": "v1.0",
+          "issued": "2010-11-17T00:00:00.000Z",
+          "fileURL": "https://lov.linkeddata.es/dataset/lov/vocabs/pro/versions/2010-11-17.n3"
+        }
+      ],
+      "keyword_frequencies": {
+        "Events": 2,
+        "Academy": 2,
+        "Government": 1,
+        "Multimedia": 1,
+        "Catalogs": 1
+      },
+      "adoption_timeline": {
+        "2014": 1,
+        "2016": 2,
+        "2017": 3,
+        "2022": 4,
+        "2025": 5
+      },
+      "dependency_frequencies": {
+        "Explicit": 0,
+        "Implicit": 5
+      }
+    },
     "github": {
-      "repos_count": 61,
+      "repos_count": 37,
       "repos": [
         {
           "name": "opencitations/oc_meta",
           "url": "https://github.com/opencitations/oc_meta",
           "owner": {
-            "login": "opencitations",
             "id": 886535,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
             "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/opencitations",
             "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/opencitations/followers",
             "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
             "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
@@ -4871,14 +5411,11 @@
             "organizations_url": "https://api.github.com/users/opencitations/orgs",
             "repos_url": "https://api.github.com/users/opencitations/repos",
             "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/opencitations/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
           "description": "OpenCitations Meta Software is the software that manages OpenCitations Meta. OpenCitations Meta is the bibliographic database containing bibliographic metadata related to the documents involved in the citations stored in the OpenCitations indexes",
           "by_category": {
-            "programming": 1,
+            "programming": 6,
             "documentation": 0,
             "data": 0
           }
@@ -4887,13 +5424,15 @@
           "name": "dbpedia/ontology-tracker",
           "url": "https://github.com/dbpedia/ontology-tracker",
           "owner": {
-            "login": "dbpedia",
             "id": 2864602,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjI4NjQ2MDI=",
+            "login": "dbpedia",
             "avatar_url": "https://avatars.githubusercontent.com/u/2864602?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/dbpedia",
             "html_url": "https://github.com/dbpedia",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/dbpedia/followers",
             "following_url": "https://api.github.com/users/dbpedia/following{/other_user}",
             "gists_url": "https://api.github.com/users/dbpedia/gists{/gist_id}",
@@ -4902,29 +5441,28 @@
             "organizations_url": "https://api.github.com/users/dbpedia/orgs",
             "repos_url": "https://api.github.com/users/dbpedia/repos",
             "events_url": "https://api.github.com/users/dbpedia/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/dbpedia/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/dbpedia/received_events"
           },
           "description": "Here we keep track of modification requests in the DBpedia Ontology ",
           "by_category": {
             "programming": 0,
             "documentation": 0,
-            "data": 7
+            "data": 15
           }
         },
         {
           "name": "essepuntato/opencitations",
           "url": "https://github.com/essepuntato/opencitations",
           "owner": {
-            "login": "essepuntato",
             "id": 3869247,
             "node_id": "MDQ6VXNlcjM4NjkyNDc=",
+            "login": "essepuntato",
             "avatar_url": "https://avatars.githubusercontent.com/u/3869247?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/essepuntato",
             "html_url": "https://github.com/essepuntato",
+            "type": "User",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/essepuntato/followers",
             "following_url": "https://api.github.com/users/essepuntato/following{/other_user}",
             "gists_url": "https://api.github.com/users/essepuntato/gists{/gist_id}",
@@ -4933,153 +5471,58 @@
             "organizations_url": "https://api.github.com/users/essepuntato/orgs",
             "repos_url": "https://api.github.com/users/essepuntato/repos",
             "events_url": "https://api.github.com/users/essepuntato/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/essepuntato/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/essepuntato/received_events"
           },
           "description": "OpenCitations provides in RDF accurate citation information harvested from the scholarly literature.",
           "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "SPAROntologies/sparontologies.github.io",
-          "url": "https://github.com/SPAROntologies/sparontologies.github.io",
-          "owner": {
-            "login": "SPAROntologies",
-            "id": 34187113,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0MTg3MTEz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/34187113?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/SPAROntologies",
-            "html_url": "https://github.com/SPAROntologies",
-            "followers_url": "https://api.github.com/users/SPAROntologies/followers",
-            "following_url": "https://api.github.com/users/SPAROntologies/following{/other_user}",
-            "gists_url": "https://api.github.com/users/SPAROntologies/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/SPAROntologies/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/SPAROntologies/subscriptions",
-            "organizations_url": "https://api.github.com/users/SPAROntologies/orgs",
-            "repos_url": "https://api.github.com/users/SPAROntologies/repos",
-            "events_url": "https://api.github.com/users/SPAROntologies/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/SPAROntologies/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "The landing pages for SPAR Ontologies",
-          "by_category": {
-            "programming": 0,
+            "programming": 3,
             "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "perks-project/pk-ontology",
-          "url": "https://github.com/perks-project/pk-ontology",
-          "owner": {
-            "login": "perks-project",
-            "id": 169376282,
-            "node_id": "O_kgDOChh6Gg",
-            "avatar_url": "https://avatars.githubusercontent.com/u/169376282?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/perks-project",
-            "html_url": "https://github.com/perks-project",
-            "followers_url": "https://api.github.com/users/perks-project/followers",
-            "following_url": "https://api.github.com/users/perks-project/following{/other_user}",
-            "gists_url": "https://api.github.com/users/perks-project/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/perks-project/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/perks-project/subscriptions",
-            "organizations_url": "https://api.github.com/users/perks-project/orgs",
-            "repos_url": "https://api.github.com/users/perks-project/repos",
-            "events_url": "https://api.github.com/users/perks-project/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/perks-project/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Repository for the Procedural Knowledge Ontology (PKO) ",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "bio-xyz/BioAgents-v1",
-          "url": "https://github.com/bio-xyz/BioAgents-v1",
-          "owner": {
-            "login": "bio-xyz",
-            "id": 128795377,
-            "node_id": "O_kgDOB61C8Q",
-            "avatar_url": "https://avatars.githubusercontent.com/u/128795377?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/bio-xyz",
-            "html_url": "https://github.com/bio-xyz",
-            "followers_url": "https://api.github.com/users/bio-xyz/followers",
-            "following_url": "https://api.github.com/users/bio-xyz/following{/other_user}",
-            "gists_url": "https://api.github.com/users/bio-xyz/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/bio-xyz/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/bio-xyz/subscriptions",
-            "organizations_url": "https://api.github.com/users/bio-xyz/orgs",
-            "repos_url": "https://api.github.com/users/bio-xyz/repos",
-            "events_url": "https://api.github.com/users/bio-xyz/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/bio-xyz/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "An agentic framework for biological research and analysis.",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
             "data": 1
           }
         },
         {
-          "name": "Docmaps-Project/docmaps",
-          "url": "https://github.com/Docmaps-Project/docmaps",
+          "name": "essepuntato/rash",
+          "url": "https://github.com/essepuntato/rash",
           "owner": {
-            "login": "Docmaps-Project",
-            "id": 124623647,
-            "node_id": "O_kgDOB22bHw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/124623647?v=4",
+            "id": 3869247,
+            "node_id": "MDQ6VXNlcjM4NjkyNDc=",
+            "login": "essepuntato",
+            "avatar_url": "https://avatars.githubusercontent.com/u/3869247?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/Docmaps-Project",
-            "html_url": "https://github.com/Docmaps-Project",
-            "followers_url": "https://api.github.com/users/Docmaps-Project/followers",
-            "following_url": "https://api.github.com/users/Docmaps-Project/following{/other_user}",
-            "gists_url": "https://api.github.com/users/Docmaps-Project/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/Docmaps-Project/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/Docmaps-Project/subscriptions",
-            "organizations_url": "https://api.github.com/users/Docmaps-Project/orgs",
-            "repos_url": "https://api.github.com/users/Docmaps-Project/repos",
-            "events_url": "https://api.github.com/users/Docmaps-Project/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/Docmaps-Project/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "url": "https://api.github.com/users/essepuntato",
+            "html_url": "https://github.com/essepuntato",
+            "type": "User",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/essepuntato/followers",
+            "following_url": "https://api.github.com/users/essepuntato/following{/other_user}",
+            "gists_url": "https://api.github.com/users/essepuntato/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/essepuntato/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/essepuntato/subscriptions",
+            "organizations_url": "https://api.github.com/users/essepuntato/orgs",
+            "repos_url": "https://api.github.com/users/essepuntato/repos",
+            "events_url": "https://api.github.com/users/essepuntato/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/essepuntato/received_events"
           },
-          "description": "Extensible protocol for document history metadata exchange, to enable trustworthy, rapid, open science, by and for preprint science communities.",
+          "description": "Research Articles in Simplified HTML (RASH) Framework includes a markup language defined as a subset of HTML+RDF for writing scientific articles, and related tools to convert it into different formats, to extract data from it, etc.",
           "by_category": {
             "programming": 0,
-            "documentation": 0,
-            "data": 1
+            "documentation": 3,
+            "data": 0
           }
         },
         {
-          "name": "opencitations/oc_ocdm",
-          "url": "https://github.com/opencitations/oc_ocdm",
+          "name": "opencitations/metadata",
+          "url": "https://github.com/opencitations/metadata",
           "owner": {
-            "login": "opencitations",
             "id": 886535,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
             "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/opencitations",
             "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/opencitations/followers",
             "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
             "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
@@ -5088,728 +5531,12 @@
             "organizations_url": "https://api.github.com/users/opencitations/orgs",
             "repos_url": "https://api.github.com/users/opencitations/repos",
             "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/opencitations/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
-          "description": "Object mapping library for manipulating RDF graphs that are compliant with the OpenCitations datamodel.",
+          "description": "The OpenCitations metadata model: documents and other material.",
           "by_category": {
             "programming": 0,
             "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "albertmeronyo/ConceptDrift-data",
-          "url": "https://github.com/albertmeronyo/ConceptDrift-data",
-          "owner": {
-            "login": "albertmeronyo",
-            "id": 1446225,
-            "node_id": "MDQ6VXNlcjE0NDYyMjU=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/1446225?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/albertmeronyo",
-            "html_url": "https://github.com/albertmeronyo",
-            "followers_url": "https://api.github.com/users/albertmeronyo/followers",
-            "following_url": "https://api.github.com/users/albertmeronyo/following{/other_user}",
-            "gists_url": "https://api.github.com/users/albertmeronyo/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/albertmeronyo/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/albertmeronyo/subscriptions",
-            "organizations_url": "https://api.github.com/users/albertmeronyo/orgs",
-            "repos_url": "https://api.github.com/users/albertmeronyo/repos",
-            "events_url": "https://api.github.com/users/albertmeronyo/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/albertmeronyo/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Datasets for the concept drift experiments",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "essepuntato/rash",
-          "url": "https://github.com/essepuntato/rash",
-          "owner": {
-            "login": "essepuntato",
-            "id": 3869247,
-            "node_id": "MDQ6VXNlcjM4NjkyNDc=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3869247?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/essepuntato",
-            "html_url": "https://github.com/essepuntato",
-            "followers_url": "https://api.github.com/users/essepuntato/followers",
-            "following_url": "https://api.github.com/users/essepuntato/following{/other_user}",
-            "gists_url": "https://api.github.com/users/essepuntato/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/essepuntato/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/essepuntato/subscriptions",
-            "organizations_url": "https://api.github.com/users/essepuntato/orgs",
-            "repos_url": "https://api.github.com/users/essepuntato/repos",
-            "events_url": "https://api.github.com/users/essepuntato/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/essepuntato/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Research Articles in Simplified HTML (RASH) Framework includes a markup language defined as a subset of HTML+RDF for writing scientific articles, and related tools to convert it into different formats, to extract data from it, etc.",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "pensoft/OpenBiodiv",
-          "url": "https://github.com/pensoft/OpenBiodiv",
-          "owner": {
-            "login": "pensoft",
-            "id": 4516847,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ1MTY4NDc=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/4516847?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/pensoft",
-            "html_url": "https://github.com/pensoft",
-            "followers_url": "https://api.github.com/users/pensoft/followers",
-            "following_url": "https://api.github.com/users/pensoft/following{/other_user}",
-            "gists_url": "https://api.github.com/users/pensoft/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/pensoft/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/pensoft/subscriptions",
-            "organizations_url": "https://api.github.com/users/pensoft/orgs",
-            "repos_url": "https://api.github.com/users/pensoft/repos",
-            "events_url": "https://api.github.com/users/pensoft/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/pensoft/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Open Biodiversity Knowledge Management System",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "skg-if/data-model",
-          "url": "https://github.com/skg-if/data-model",
-          "owner": {
-            "login": "skg-if",
-            "id": 182204375,
-            "node_id": "O_kgDOCtw31w",
-            "avatar_url": "https://avatars.githubusercontent.com/u/182204375?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/skg-if",
-            "html_url": "https://github.com/skg-if",
-            "followers_url": "https://api.github.com/users/skg-if/followers",
-            "following_url": "https://api.github.com/users/skg-if/following{/other_user}",
-            "gists_url": "https://api.github.com/users/skg-if/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/skg-if/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/skg-if/subscriptions",
-            "organizations_url": "https://api.github.com/users/skg-if/orgs",
-            "repos_url": "https://api.github.com/users/skg-if/repos",
-            "events_url": "https://api.github.com/users/skg-if/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/skg-if/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "OriginTrail/desci-drag",
-          "url": "https://github.com/OriginTrail/desci-drag",
-          "owner": {
-            "login": "OriginTrail",
-            "id": 33917872,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjMzOTE3ODcy",
-            "avatar_url": "https://avatars.githubusercontent.com/u/33917872?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/OriginTrail",
-            "html_url": "https://github.com/OriginTrail",
-            "followers_url": "https://api.github.com/users/OriginTrail/followers",
-            "following_url": "https://api.github.com/users/OriginTrail/following{/other_user}",
-            "gists_url": "https://api.github.com/users/OriginTrail/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/OriginTrail/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/OriginTrail/subscriptions",
-            "organizations_url": "https://api.github.com/users/OriginTrail/orgs",
-            "repos_url": "https://api.github.com/users/OriginTrail/repos",
-            "events_url": "https://api.github.com/users/OriginTrail/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/OriginTrail/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "NERC-CEH/digital-objects-ontology",
-          "url": "https://github.com/NERC-CEH/digital-objects-ontology",
-          "owner": {
-            "login": "NERC-CEH",
-            "id": 5802506,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjU4MDI1MDY=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5802506?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/NERC-CEH",
-            "html_url": "https://github.com/NERC-CEH",
-            "followers_url": "https://api.github.com/users/NERC-CEH/followers",
-            "following_url": "https://api.github.com/users/NERC-CEH/following{/other_user}",
-            "gists_url": "https://api.github.com/users/NERC-CEH/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/NERC-CEH/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/NERC-CEH/subscriptions",
-            "organizations_url": "https://api.github.com/users/NERC-CEH/orgs",
-            "repos_url": "https://api.github.com/users/NERC-CEH/repos",
-            "events_url": "https://api.github.com/users/NERC-CEH/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/NERC-CEH/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "The DOO covers rich metadata for diverse research outputs: descriptions of the projects which allowed the creation of the outputs, the grants that funded the projects, the environmental monitoring facilities, programmes and networks that provided the data, the people and organisations who contributed to the projects and outputs, and their roles.",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "PHAROS-photoarchives/Zeri-Foundation",
-          "url": "https://github.com/PHAROS-photoarchives/Zeri-Foundation",
-          "owner": {
-            "login": "PHAROS-photoarchives",
-            "id": 25014474,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjI1MDE0NDc0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25014474?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/PHAROS-photoarchives",
-            "html_url": "https://github.com/PHAROS-photoarchives",
-            "followers_url": "https://api.github.com/users/PHAROS-photoarchives/followers",
-            "following_url": "https://api.github.com/users/PHAROS-photoarchives/following{/other_user}",
-            "gists_url": "https://api.github.com/users/PHAROS-photoarchives/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/PHAROS-photoarchives/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/PHAROS-photoarchives/subscriptions",
-            "organizations_url": "https://api.github.com/users/PHAROS-photoarchives/orgs",
-            "repos_url": "https://api.github.com/users/PHAROS-photoarchives/repos",
-            "events_url": "https://api.github.com/users/PHAROS-photoarchives/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/PHAROS-photoarchives/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "Artemis-IA/scichat-semantic-platform",
-          "url": "https://github.com/Artemis-IA/scichat-semantic-platform",
-          "owner": {
-            "login": "Artemis-IA",
-            "id": 132653903,
-            "node_id": "U_kgDOB-gjTw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/132653903?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/Artemis-IA",
-            "html_url": "https://github.com/Artemis-IA",
-            "followers_url": "https://api.github.com/users/Artemis-IA/followers",
-            "following_url": "https://api.github.com/users/Artemis-IA/following{/other_user}",
-            "gists_url": "https://api.github.com/users/Artemis-IA/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/Artemis-IA/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/Artemis-IA/subscriptions",
-            "organizations_url": "https://api.github.com/users/Artemis-IA/orgs",
-            "repos_url": "https://api.github.com/users/Artemis-IA/repos",
-            "events_url": "https://api.github.com/users/Artemis-IA/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/Artemis-IA/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "arcangelo7/arcangelo7.github.io",
-          "url": "https://github.com/arcangelo7/arcangelo7.github.io",
-          "owner": {
-            "login": "arcangelo7",
-            "id": 42008604,
-            "node_id": "MDQ6VXNlcjQyMDA4NjA0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/42008604?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/arcangelo7",
-            "html_url": "https://github.com/arcangelo7",
-            "followers_url": "https://api.github.com/users/arcangelo7/followers",
-            "following_url": "https://api.github.com/users/arcangelo7/following{/other_user}",
-            "gists_url": "https://api.github.com/users/arcangelo7/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/arcangelo7/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/arcangelo7/subscriptions",
-            "organizations_url": "https://api.github.com/users/arcangelo7/orgs",
-            "repos_url": "https://api.github.com/users/arcangelo7/repos",
-            "events_url": "https://api.github.com/users/arcangelo7/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/arcangelo7/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "ISA-tools/mzml2isa",
-          "url": "https://github.com/ISA-tools/mzml2isa",
-          "owner": {
-            "login": "ISA-tools",
-            "id": 517700,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjUxNzcwMA==",
-            "avatar_url": "https://avatars.githubusercontent.com/u/517700?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/ISA-tools",
-            "html_url": "https://github.com/ISA-tools",
-            "followers_url": "https://api.github.com/users/ISA-tools/followers",
-            "following_url": "https://api.github.com/users/ISA-tools/following{/other_user}",
-            "gists_url": "https://api.github.com/users/ISA-tools/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/ISA-tools/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/ISA-tools/subscriptions",
-            "organizations_url": "https://api.github.com/users/ISA-tools/orgs",
-            "repos_url": "https://api.github.com/users/ISA-tools/repos",
-            "events_url": "https://api.github.com/users/ISA-tools/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/ISA-tools/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Parser to get meta information from mzML file and parse relevant information to a ISA-Tab structure",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "liuji1031/ontology_to_schema",
-          "url": "https://github.com/liuji1031/ontology_to_schema",
-          "owner": {
-            "login": "liuji1031",
-            "id": 15899254,
-            "node_id": "MDQ6VXNlcjE1ODk5MjU0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/15899254?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/liuji1031",
-            "html_url": "https://github.com/liuji1031",
-            "followers_url": "https://api.github.com/users/liuji1031/followers",
-            "following_url": "https://api.github.com/users/liuji1031/following{/other_user}",
-            "gists_url": "https://api.github.com/users/liuji1031/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/liuji1031/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/liuji1031/subscriptions",
-            "organizations_url": "https://api.github.com/users/liuji1031/orgs",
-            "repos_url": "https://api.github.com/users/liuji1031/repos",
-            "events_url": "https://api.github.com/users/liuji1031/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/liuji1031/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "nvbach91/iga-hybrid",
-          "url": "https://github.com/nvbach91/iga-hybrid",
-          "owner": {
-            "login": "nvbach91",
-            "id": 20724910,
-            "node_id": "MDQ6VXNlcjIwNzI0OTEw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/20724910?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/nvbach91",
-            "html_url": "https://github.com/nvbach91",
-            "followers_url": "https://api.github.com/users/nvbach91/followers",
-            "following_url": "https://api.github.com/users/nvbach91/following{/other_user}",
-            "gists_url": "https://api.github.com/users/nvbach91/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/nvbach91/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/nvbach91/subscriptions",
-            "organizations_url": "https://api.github.com/users/nvbach91/orgs",
-            "repos_url": "https://api.github.com/users/nvbach91/repos",
-            "events_url": "https://api.github.com/users/nvbach91/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/nvbach91/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Repository for the internal grant project involving hybrid modeling of RDF knowledge bases",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "Rinnegatamante/TW-EasyRash",
-          "url": "https://github.com/Rinnegatamante/TW-EasyRash",
-          "owner": {
-            "login": "Rinnegatamante",
-            "id": 9152710,
-            "node_id": "MDQ6VXNlcjkxNTI3MTA=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/9152710?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/Rinnegatamante",
-            "html_url": "https://github.com/Rinnegatamante",
-            "followers_url": "https://api.github.com/users/Rinnegatamante/followers",
-            "following_url": "https://api.github.com/users/Rinnegatamante/following{/other_user}",
-            "gists_url": "https://api.github.com/users/Rinnegatamante/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/Rinnegatamante/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/Rinnegatamante/subscriptions",
-            "organizations_url": "https://api.github.com/users/Rinnegatamante/orgs",
-            "repos_url": "https://api.github.com/users/Rinnegatamante/repos",
-            "events_url": "https://api.github.com/users/Rinnegatamante/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/Rinnegatamante/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Progetto EasyRash per corso di Tecnologie Web A.s. 2015/2016",
-          "by_category": {
-            "programming": 0,
-            "documentation": 2,
-            "data": 0
-          }
-        },
-        {
-          "name": "zhufangda/Telecom-Paristech",
-          "url": "https://github.com/zhufangda/Telecom-Paristech",
-          "owner": {
-            "login": "zhufangda",
-            "id": 6208145,
-            "node_id": "MDQ6VXNlcjYyMDgxNDU=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/6208145?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/zhufangda",
-            "html_url": "https://github.com/zhufangda",
-            "followers_url": "https://api.github.com/users/zhufangda/followers",
-            "following_url": "https://api.github.com/users/zhufangda/following{/other_user}",
-            "gists_url": "https://api.github.com/users/zhufangda/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/zhufangda/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/zhufangda/subscriptions",
-            "organizations_url": "https://api.github.com/users/zhufangda/orgs",
-            "repos_url": "https://api.github.com/users/zhufangda/repos",
-            "events_url": "https://api.github.com/users/zhufangda/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/zhufangda/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 3,
-            "data": 0
-          }
-        },
-        {
-          "name": "feup-infolab/ontologies-database",
-          "url": "https://github.com/feup-infolab/ontologies-database",
-          "owner": {
-            "login": "feup-infolab",
-            "id": 25055929,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjI1MDU1OTI5",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25055929?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/feup-infolab",
-            "html_url": "https://github.com/feup-infolab",
-            "followers_url": "https://api.github.com/users/feup-infolab/followers",
-            "following_url": "https://api.github.com/users/feup-infolab/following{/other_user}",
-            "gists_url": "https://api.github.com/users/feup-infolab/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/feup-infolab/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/feup-infolab/subscriptions",
-            "organizations_url": "https://api.github.com/users/feup-infolab/orgs",
-            "repos_url": "https://api.github.com/users/feup-infolab/repos",
-            "events_url": "https://api.github.com/users/feup-infolab/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/feup-infolab/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "A simple ontology database in-memory object. Can refresh itself from a list in ontologies_list.txt",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 3
-          }
-        },
-        {
-          "name": "GillesVandewiele/COVID-KG",
-          "url": "https://github.com/GillesVandewiele/COVID-KG",
-          "owner": {
-            "login": "GillesVandewiele",
-            "id": 5750603,
-            "node_id": "MDQ6VXNlcjU3NTA2MDM=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5750603?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/GillesVandewiele",
-            "html_url": "https://github.com/GillesVandewiele",
-            "followers_url": "https://api.github.com/users/GillesVandewiele/followers",
-            "following_url": "https://api.github.com/users/GillesVandewiele/following{/other_user}",
-            "gists_url": "https://api.github.com/users/GillesVandewiele/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/GillesVandewiele/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/GillesVandewiele/subscriptions",
-            "organizations_url": "https://api.github.com/users/GillesVandewiele/orgs",
-            "repos_url": "https://api.github.com/users/GillesVandewiele/repos",
-            "events_url": "https://api.github.com/users/GillesVandewiele/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/GillesVandewiele/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Creating a Knowledge Graph of 44000 COVID-19 scholarly articles",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 2
-          }
-        },
-        {
-          "name": "antarctica/nerc-arctic-office-projects-api",
-          "url": "https://github.com/antarctica/nerc-arctic-office-projects-api",
-          "owner": {
-            "login": "antarctica",
-            "id": 3471666,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0NzE2NjY=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/3471666?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/antarctica",
-            "html_url": "https://github.com/antarctica",
-            "followers_url": "https://api.github.com/users/antarctica/followers",
-            "following_url": "https://api.github.com/users/antarctica/following{/other_user}",
-            "gists_url": "https://api.github.com/users/antarctica/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/antarctica/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/antarctica/subscriptions",
-            "organizations_url": "https://api.github.com/users/antarctica/orgs",
-            "repos_url": "https://api.github.com/users/antarctica/repos",
-            "events_url": "https://api.github.com/users/antarctica/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/antarctica/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "API for NERC Arctic Office projects database",
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "cfoster/xmllondon-rdf",
-          "url": "https://github.com/cfoster/xmllondon-rdf",
-          "owner": {
-            "login": "cfoster",
-            "id": 413721,
-            "node_id": "MDQ6VXNlcjQxMzcyMQ==",
-            "avatar_url": "https://avatars.githubusercontent.com/u/413721?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/cfoster",
-            "html_url": "https://github.com/cfoster",
-            "followers_url": "https://api.github.com/users/cfoster/followers",
-            "following_url": "https://api.github.com/users/cfoster/following{/other_user}",
-            "gists_url": "https://api.github.com/users/cfoster/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/cfoster/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/cfoster/subscriptions",
-            "organizations_url": "https://api.github.com/users/cfoster/orgs",
-            "repos_url": "https://api.github.com/users/cfoster/repos",
-            "events_url": "https://api.github.com/users/cfoster/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/cfoster/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Open Linked Data set for the XML London conference",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "CarlaMenegat/VarelaDigital",
-          "url": "https://github.com/CarlaMenegat/VarelaDigital",
-          "owner": {
-            "login": "CarlaMenegat",
-            "id": 146187896,
-            "node_id": "U_kgDOCLameA",
-            "avatar_url": "https://avatars.githubusercontent.com/u/146187896?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/CarlaMenegat",
-            "html_url": "https://github.com/CarlaMenegat",
-            "followers_url": "https://api.github.com/users/CarlaMenegat/followers",
-            "following_url": "https://api.github.com/users/CarlaMenegat/following{/other_user}",
-            "gists_url": "https://api.github.com/users/CarlaMenegat/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/CarlaMenegat/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/CarlaMenegat/subscriptions",
-            "organizations_url": "https://api.github.com/users/CarlaMenegat/orgs",
-            "repos_url": "https://api.github.com/users/CarlaMenegat/repos",
-            "events_url": "https://api.github.com/users/CarlaMenegat/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/CarlaMenegat/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Varela Digital is a digital edition and knowledge base of the Cole\u00e7\u00e3o Varela (vol. II of the Anais do Arquivo Hist\u00f3rico do Rio Grande do Sul), comprising nineteenth-century letters related to the Farroupilha Revolution. It integrates TEI encoding and Linked Open Data to support the exploration of historical correspondence networks.",
-          "by_category": {
-            "programming": 3,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "kltng/dhq-wiki-site",
-          "url": "https://github.com/kltng/dhq-wiki-site",
-          "owner": {
-            "login": "kltng",
-            "id": 15926391,
-            "node_id": "MDQ6VXNlcjE1OTI2Mzkx",
-            "avatar_url": "https://avatars.githubusercontent.com/u/15926391?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/kltng",
-            "html_url": "https://github.com/kltng",
-            "followers_url": "https://api.github.com/users/kltng/followers",
-            "following_url": "https://api.github.com/users/kltng/following{/other_user}",
-            "gists_url": "https://api.github.com/users/kltng/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/kltng/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/kltng/subscriptions",
-            "organizations_url": "https://api.github.com/users/kltng/orgs",
-            "repos_url": "https://api.github.com/users/kltng/repos",
-            "events_url": "https://api.github.com/users/kltng/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/kltng/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "DHQ Wiki \u2014 Quartz v4 static site",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "mtikat/LDExplorer",
-          "url": "https://github.com/mtikat/LDExplorer",
-          "owner": {
-            "login": "mtikat",
-            "id": 39092863,
-            "node_id": "MDQ6VXNlcjM5MDkyODYz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/39092863?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/mtikat",
-            "html_url": "https://github.com/mtikat",
-            "followers_url": "https://api.github.com/users/mtikat/followers",
-            "following_url": "https://api.github.com/users/mtikat/following{/other_user}",
-            "gists_url": "https://api.github.com/users/mtikat/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/mtikat/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/mtikat/subscriptions",
-            "organizations_url": "https://api.github.com/users/mtikat/orgs",
-            "repos_url": "https://api.github.com/users/mtikat/repos",
-            "events_url": "https://api.github.com/users/mtikat/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/mtikat/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 2
-          }
-        },
-        {
-          "name": "phuse-org/css-linkathon",
-          "url": "https://github.com/phuse-org/css-linkathon",
-          "owner": {
-            "login": "phuse-org",
-            "id": 5550620,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjU1NTA2MjA=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/5550620?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/phuse-org",
-            "html_url": "https://github.com/phuse-org",
-            "followers_url": "https://api.github.com/users/phuse-org/followers",
-            "following_url": "https://api.github.com/users/phuse-org/following{/other_user}",
-            "gists_url": "https://api.github.com/users/phuse-org/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/phuse-org/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/phuse-org/subscriptions",
-            "organizations_url": "https://api.github.com/users/phuse-org/orgs",
-            "repos_url": "https://api.github.com/users/phuse-org/repos",
-            "events_url": "https://api.github.com/users/phuse-org/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/phuse-org/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "net7/feed",
-          "url": "https://github.com/net7/feed",
-          "owner": {
-            "login": "net7",
-            "id": 66911,
-            "node_id": "MDQ6VXNlcjY2OTEx",
-            "avatar_url": "https://avatars.githubusercontent.com/u/66911?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/net7",
-            "html_url": "https://github.com/net7",
-            "followers_url": "https://api.github.com/users/net7/followers",
-            "following_url": "https://api.github.com/users/net7/following{/other_user}",
-            "gists_url": "https://api.github.com/users/net7/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/net7/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/net7/subscriptions",
-            "organizations_url": "https://api.github.com/users/net7/orgs",
-            "repos_url": "https://api.github.com/users/net7/repos",
-            "events_url": "https://api.github.com/users/net7/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/net7/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
             "data": 0
           }
         },
@@ -5817,13 +5544,15 @@
           "name": "SDM-TIB/LDM_Docker",
           "url": "https://github.com/SDM-TIB/LDM_Docker",
           "owner": {
-            "login": "SDM-TIB",
             "id": 35878673,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjM1ODc4Njcz",
+            "login": "SDM-TIB",
             "avatar_url": "https://avatars.githubusercontent.com/u/35878673?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/SDM-TIB",
             "html_url": "https://github.com/SDM-TIB",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/SDM-TIB/followers",
             "following_url": "https://api.github.com/users/SDM-TIB/following{/other_user}",
             "gists_url": "https://api.github.com/users/SDM-TIB/gists{/gist_id}",
@@ -5832,43 +5561,69 @@
             "organizations_url": "https://api.github.com/users/SDM-TIB/orgs",
             "repos_url": "https://api.github.com/users/SDM-TIB/repos",
             "events_url": "https://api.github.com/users/SDM-TIB/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/SDM-TIB/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/SDM-TIB/received_events"
           },
           "description": "A modular research data infrastructure that enables the FAIR-compliant management and exploration of Research Digital Objects",
           "by_category": {
             "programming": 1,
             "documentation": 1,
+            "data": 0
+          }
+        },
+        {
+          "name": "perks-project/pk-ontology",
+          "url": "https://github.com/perks-project/pk-ontology",
+          "owner": {
+            "id": 169376282,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE2OTM3NjI4Mg==",
+            "login": "perks-project",
+            "avatar_url": "https://avatars.githubusercontent.com/u/169376282?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/perks-project",
+            "html_url": "https://github.com/perks-project",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/perks-project/followers",
+            "following_url": "https://api.github.com/users/perks-project/following{/other_user}",
+            "gists_url": "https://api.github.com/users/perks-project/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/perks-project/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/perks-project/subscriptions",
+            "organizations_url": "https://api.github.com/users/perks-project/orgs",
+            "repos_url": "https://api.github.com/users/perks-project/repos",
+            "events_url": "https://api.github.com/users/perks-project/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/perks-project/received_events"
+          },
+          "description": "Repository for the Procedural Knowledge Ontology (PKO) ",
+          "by_category": {
+            "programming": 0,
+            "documentation": 5,
             "data": 5
           }
         },
         {
-          "name": "ZPID/kobpsy",
-          "url": "https://github.com/ZPID/kobpsy",
+          "name": "opencitations/oscar",
+          "url": "https://github.com/opencitations/oscar",
           "owner": {
-            "login": "ZPID",
-            "id": 12172627,
-            "node_id": "MDQ6VXNlcjEyMTcyNjI3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/12172627?v=4",
+            "id": 886535,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
+            "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/ZPID",
-            "html_url": "https://github.com/ZPID",
-            "followers_url": "https://api.github.com/users/ZPID/followers",
-            "following_url": "https://api.github.com/users/ZPID/following{/other_user}",
-            "gists_url": "https://api.github.com/users/ZPID/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/ZPID/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/ZPID/subscriptions",
-            "organizations_url": "https://api.github.com/users/ZPID/orgs",
-            "repos_url": "https://api.github.com/users/ZPID/repos",
-            "events_url": "https://api.github.com/users/ZPID/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/ZPID/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
+            "url": "https://api.github.com/users/opencitations",
+            "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/opencitations/followers",
+            "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opencitations/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opencitations/subscriptions",
+            "organizations_url": "https://api.github.com/users/opencitations/orgs",
+            "repos_url": "https://api.github.com/users/opencitations/repos",
+            "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
-          "description": "A Knowledge Base in Psychology and the Behavioral Sciences",
+          "description": "OSCAR, the OpenCitations RDF Search Application",
           "by_category": {
             "programming": 1,
             "documentation": 0,
@@ -5876,171 +5631,138 @@
           }
         },
         {
-          "name": "biopragmatics/bioregistry",
-          "url": "https://github.com/biopragmatics/bioregistry",
+          "name": "OriginTrail/desci-knowledge-mining",
+          "url": "https://github.com/OriginTrail/desci-knowledge-mining",
           "owner": {
-            "login": "biopragmatics",
-            "id": 58728729,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjU4NzI4NzI5",
-            "avatar_url": "https://avatars.githubusercontent.com/u/58728729?v=4",
+            "id": 33917872,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjMzOTE3ODcy",
+            "login": "OriginTrail",
+            "avatar_url": "https://avatars.githubusercontent.com/u/33917872?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/biopragmatics",
-            "html_url": "https://github.com/biopragmatics",
-            "followers_url": "https://api.github.com/users/biopragmatics/followers",
-            "following_url": "https://api.github.com/users/biopragmatics/following{/other_user}",
-            "gists_url": "https://api.github.com/users/biopragmatics/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/biopragmatics/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/biopragmatics/subscriptions",
-            "organizations_url": "https://api.github.com/users/biopragmatics/orgs",
-            "repos_url": "https://api.github.com/users/biopragmatics/repos",
-            "events_url": "https://api.github.com/users/biopragmatics/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/biopragmatics/received_events",
+            "url": "https://api.github.com/users/OriginTrail",
+            "html_url": "https://github.com/OriginTrail",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/OriginTrail/followers",
+            "following_url": "https://api.github.com/users/OriginTrail/following{/other_user}",
+            "gists_url": "https://api.github.com/users/OriginTrail/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/OriginTrail/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/OriginTrail/subscriptions",
+            "organizations_url": "https://api.github.com/users/OriginTrail/orgs",
+            "repos_url": "https://api.github.com/users/OriginTrail/repos",
+            "events_url": "https://api.github.com/users/OriginTrail/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/OriginTrail/received_events"
           },
-          "description": "\ud83d\udcee An integrative registry of biological databases, ontologies, and nomenclatures.",
+          "description": null,
           "by_category": {
-            "programming": 0,
+            "programming": 1,
             "documentation": 0,
-            "data": 2
+            "data": 0
           }
         },
         {
-          "name": "stlab-istc-cnr/conceptual-components",
-          "url": "https://github.com/stlab-istc-cnr/conceptual-components",
+          "name": "opencitations/oc_ocdm",
+          "url": "https://github.com/opencitations/oc_ocdm",
           "owner": {
-            "login": "stlab-istc-cnr",
-            "id": 52131491,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjUyMTMxNDkx",
-            "avatar_url": "https://avatars.githubusercontent.com/u/52131491?v=4",
+            "id": 886535,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
+            "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/stlab-istc-cnr",
-            "html_url": "https://github.com/stlab-istc-cnr",
-            "followers_url": "https://api.github.com/users/stlab-istc-cnr/followers",
-            "following_url": "https://api.github.com/users/stlab-istc-cnr/following{/other_user}",
-            "gists_url": "https://api.github.com/users/stlab-istc-cnr/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/stlab-istc-cnr/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/stlab-istc-cnr/subscriptions",
-            "organizations_url": "https://api.github.com/users/stlab-istc-cnr/orgs",
-            "repos_url": "https://api.github.com/users/stlab-istc-cnr/repos",
-            "events_url": "https://api.github.com/users/stlab-istc-cnr/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/stlab-istc-cnr/received_events",
+            "url": "https://api.github.com/users/opencitations",
+            "html_url": "https://github.com/opencitations",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/opencitations/followers",
+            "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opencitations/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opencitations/subscriptions",
+            "organizations_url": "https://api.github.com/users/opencitations/orgs",
+            "repos_url": "https://api.github.com/users/opencitations/repos",
+            "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
-          "description": "This repository contains code, experiment and evaluation results, and resources related to the extraction of conceptual components and observed ontology design patterns from corpora of ontologies.",
+          "description": "Object mapping library for manipulating RDF graphs that are compliant with the OpenCitations datamodel.",
           "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 2
+            "programming": 1,
+            "documentation": 2,
+            "data": 0
           }
         },
         {
-          "name": "oeg-upm/AstreaRun",
-          "url": "https://github.com/oeg-upm/AstreaRun",
+          "name": "PHAROS-photoarchives/Zeri-Foundation",
+          "url": "https://github.com/PHAROS-photoarchives/Zeri-Foundation",
           "owner": {
-            "login": "oeg-upm",
-            "id": 2278211,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjIyNzgyMTE=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/2278211?v=4",
+            "id": 25014474,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjI1MDE0NDc0",
+            "login": "PHAROS-photoarchives",
+            "avatar_url": "https://avatars.githubusercontent.com/u/25014474?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/oeg-upm",
-            "html_url": "https://github.com/oeg-upm",
-            "followers_url": "https://api.github.com/users/oeg-upm/followers",
-            "following_url": "https://api.github.com/users/oeg-upm/following{/other_user}",
-            "gists_url": "https://api.github.com/users/oeg-upm/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/oeg-upm/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/oeg-upm/subscriptions",
-            "organizations_url": "https://api.github.com/users/oeg-upm/orgs",
-            "repos_url": "https://api.github.com/users/oeg-upm/repos",
-            "events_url": "https://api.github.com/users/oeg-upm/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/oeg-upm/received_events",
+            "url": "https://api.github.com/users/PHAROS-photoarchives",
+            "html_url": "https://github.com/PHAROS-photoarchives",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/PHAROS-photoarchives/followers",
+            "following_url": "https://api.github.com/users/PHAROS-photoarchives/following{/other_user}",
+            "gists_url": "https://api.github.com/users/PHAROS-photoarchives/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/PHAROS-photoarchives/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/PHAROS-photoarchives/subscriptions",
+            "organizations_url": "https://api.github.com/users/PHAROS-photoarchives/orgs",
+            "repos_url": "https://api.github.com/users/PHAROS-photoarchives/repos",
+            "events_url": "https://api.github.com/users/PHAROS-photoarchives/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/PHAROS-photoarchives/received_events"
           },
           "description": null,
           "by_category": {
             "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "ColChain/ColChain-Java",
-          "url": "https://github.com/ColChain/ColChain-Java",
-          "owner": {
-            "login": "ColChain",
-            "id": 73061132,
-            "node_id": "MDQ6VXNlcjczMDYxMTMy",
-            "avatar_url": "https://avatars.githubusercontent.com/u/73061132?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/ColChain",
-            "html_url": "https://github.com/ColChain",
-            "followers_url": "https://api.github.com/users/ColChain/followers",
-            "following_url": "https://api.github.com/users/ColChain/following{/other_user}",
-            "gists_url": "https://api.github.com/users/ColChain/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/ColChain/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/ColChain/subscriptions",
-            "organizations_url": "https://api.github.com/users/ColChain/orgs",
-            "repos_url": "https://api.github.com/users/ColChain/repos",
-            "events_url": "https://api.github.com/users/ColChain/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/ColChain/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Java implementation of a ColChain node",
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
+            "documentation": 1,
             "data": 0
           }
         },
         {
-          "name": "italia/dati-semantic-assets",
-          "url": "https://github.com/italia/dati-semantic-assets",
+          "name": "SPAROntologies/sparontologies.github.io",
+          "url": "https://github.com/SPAROntologies/sparontologies.github.io",
           "owner": {
-            "login": "italia",
-            "id": 15377824,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1Mzc3ODI0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/15377824?v=4",
+            "id": 34187113,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0MTg3MTEz",
+            "login": "SPAROntologies",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34187113?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/italia",
-            "html_url": "https://github.com/italia",
-            "followers_url": "https://api.github.com/users/italia/followers",
-            "following_url": "https://api.github.com/users/italia/following{/other_user}",
-            "gists_url": "https://api.github.com/users/italia/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/italia/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/italia/subscriptions",
-            "organizations_url": "https://api.github.com/users/italia/orgs",
-            "repos_url": "https://api.github.com/users/italia/repos",
-            "events_url": "https://api.github.com/users/italia/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/italia/received_events",
+            "url": "https://api.github.com/users/SPAROntologies",
+            "html_url": "https://github.com/SPAROntologies",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/SPAROntologies/followers",
+            "following_url": "https://api.github.com/users/SPAROntologies/following{/other_user}",
+            "gists_url": "https://api.github.com/users/SPAROntologies/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/SPAROntologies/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/SPAROntologies/subscriptions",
+            "organizations_url": "https://api.github.com/users/SPAROntologies/orgs",
+            "repos_url": "https://api.github.com/users/SPAROntologies/repos",
+            "events_url": "https://api.github.com/users/SPAROntologies/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/SPAROntologies/received_events"
           },
-          "description": "Repository delle risorse semantiche nazionali italiane",
+          "description": "The landing pages for SPAR Ontologies",
           "by_category": {
             "programming": 0,
-            "documentation": 0,
-            "data": 2
+            "documentation": 2,
+            "data": 0
           }
         },
         {
           "name": "sntcristian/and-kge",
           "url": "https://github.com/sntcristian/and-kge",
           "owner": {
-            "login": "sntcristian",
             "id": 52455931,
             "node_id": "MDQ6VXNlcjUyNDU1OTMx",
+            "login": "sntcristian",
             "avatar_url": "https://avatars.githubusercontent.com/u/52455931?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/sntcristian",
             "html_url": "https://github.com/sntcristian",
+            "type": "User",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/sntcristian/followers",
             "following_url": "https://api.github.com/users/sntcristian/following{/other_user}",
             "gists_url": "https://api.github.com/users/sntcristian/gists{/gist_id}",
@@ -6049,60 +5771,88 @@
             "organizations_url": "https://api.github.com/users/sntcristian/orgs",
             "repos_url": "https://api.github.com/users/sntcristian/repos",
             "events_url": "https://api.github.com/users/sntcristian/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/sntcristian/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/sntcristian/received_events"
           },
           "description": "Author Disambiguation using Knowledge Graph Embeddings with Literals",
           "by_category": {
-            "programming": 2,
+            "programming": 1,
             "documentation": 0,
             "data": 0
           }
         },
         {
-          "name": "laurentfintoni/dharc-skosmos",
-          "url": "https://github.com/laurentfintoni/dharc-skosmos",
+          "name": "opencitations/website",
+          "url": "https://github.com/opencitations/website",
           "owner": {
-            "login": "laurentfintoni",
-            "id": 72798408,
-            "node_id": "MDQ6VXNlcjcyNzk4NDA4",
-            "avatar_url": "https://avatars.githubusercontent.com/u/72798408?v=4",
+            "id": 886535,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
+            "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/laurentfintoni",
-            "html_url": "https://github.com/laurentfintoni",
-            "followers_url": "https://api.github.com/users/laurentfintoni/followers",
-            "following_url": "https://api.github.com/users/laurentfintoni/following{/other_user}",
-            "gists_url": "https://api.github.com/users/laurentfintoni/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/laurentfintoni/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/laurentfintoni/subscriptions",
-            "organizations_url": "https://api.github.com/users/laurentfintoni/orgs",
-            "repos_url": "https://api.github.com/users/laurentfintoni/repos",
-            "events_url": "https://api.github.com/users/laurentfintoni/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/laurentfintoni/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
+            "url": "https://api.github.com/users/opencitations",
+            "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/opencitations/followers",
+            "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opencitations/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opencitations/subscriptions",
+            "organizations_url": "https://api.github.com/users/opencitations/orgs",
+            "repos_url": "https://api.github.com/users/opencitations/repos",
+            "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
-          "description": "A repository for vocabularies and ontologies created by the Digital Humanities Advanced Research Centre, based on SKOSMOS.",
+          "description": "The code and content of the official website of OpenCitations",
+          "by_category": {
+            "programming": 1,
+            "documentation": 0,
+            "data": 0
+          }
+        },
+        {
+          "name": "ML-Schema/core",
+          "url": "https://github.com/ML-Schema/core",
+          "owner": {
+            "id": 14872597,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE0ODcyNTk3",
+            "login": "ML-Schema",
+            "avatar_url": "https://avatars.githubusercontent.com/u/14872597?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ML-Schema",
+            "html_url": "https://github.com/ML-Schema",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/ML-Schema/followers",
+            "following_url": "https://api.github.com/users/ML-Schema/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ML-Schema/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ML-Schema/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ML-Schema/subscriptions",
+            "organizations_url": "https://api.github.com/users/ML-Schema/orgs",
+            "repos_url": "https://api.github.com/users/ML-Schema/repos",
+            "events_url": "https://api.github.com/users/ML-Schema/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ML-Schema/received_events"
+          },
+          "description": "\ud83d\udcda CORE ontology of ML-Schema and mapping to other machine learning vocabularies and ontologies (DMOP, Expos\u00e9, OntoDM, and MEX)",
           "by_category": {
             "programming": 0,
-            "documentation": 0,
-            "data": 1
+            "documentation": 1,
+            "data": 0
           }
         },
         {
           "name": "publicarchi/elementum",
           "url": "https://github.com/publicarchi/elementum",
           "owner": {
-            "login": "publicarchi",
             "id": 5022365,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjUwMjIzNjU=",
+            "login": "publicarchi",
             "avatar_url": "https://avatars.githubusercontent.com/u/5022365?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/publicarchi",
             "html_url": "https://github.com/publicarchi",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/publicarchi/followers",
             "following_url": "https://api.github.com/users/publicarchi/following{/other_user}",
             "gists_url": "https://api.github.com/users/publicarchi/gists{/gist_id}",
@@ -6111,10 +5861,7 @@
             "organizations_url": "https://api.github.com/users/publicarchi/orgs",
             "repos_url": "https://api.github.com/users/publicarchi/repos",
             "events_url": "https://api.github.com/users/publicarchi/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/publicarchi/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/publicarchi/received_events"
           },
           "description": "notes techniques diverses",
           "by_category": {
@@ -6124,30 +5871,29 @@
           }
         },
         {
-          "name": "dkw-aau/Lothbrok-Java",
-          "url": "https://github.com/dkw-aau/Lothbrok-Java",
+          "name": "ISA-tools/mzml2isa-qt",
+          "url": "https://github.com/ISA-tools/mzml2isa-qt",
           "owner": {
-            "login": "dkw-aau",
-            "id": 94473298,
-            "node_id": "O_kgDOBaGMUg",
-            "avatar_url": "https://avatars.githubusercontent.com/u/94473298?v=4",
+            "id": 517700,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjUxNzcwMA==",
+            "login": "ISA-tools",
+            "avatar_url": "https://avatars.githubusercontent.com/u/517700?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/dkw-aau",
-            "html_url": "https://github.com/dkw-aau",
-            "followers_url": "https://api.github.com/users/dkw-aau/followers",
-            "following_url": "https://api.github.com/users/dkw-aau/following{/other_user}",
-            "gists_url": "https://api.github.com/users/dkw-aau/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/dkw-aau/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/dkw-aau/subscriptions",
-            "organizations_url": "https://api.github.com/users/dkw-aau/orgs",
-            "repos_url": "https://api.github.com/users/dkw-aau/repos",
-            "events_url": "https://api.github.com/users/dkw-aau/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/dkw-aau/received_events",
+            "url": "https://api.github.com/users/ISA-tools",
+            "html_url": "https://github.com/ISA-tools",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/ISA-tools/followers",
+            "following_url": "https://api.github.com/users/ISA-tools/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ISA-tools/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ISA-tools/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ISA-tools/subscriptions",
+            "organizations_url": "https://api.github.com/users/ISA-tools/orgs",
+            "repos_url": "https://api.github.com/users/ISA-tools/repos",
+            "events_url": "https://api.github.com/users/ISA-tools/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ISA-tools/received_events"
           },
-          "description": "Repository for the Lothbrok implementation",
+          "description": null,
           "by_category": {
             "programming": 1,
             "documentation": 0,
@@ -6155,92 +5901,29 @@
           }
         },
         {
-          "name": "Sidharth1743/Eliza",
-          "url": "https://github.com/Sidharth1743/Eliza",
+          "name": "fgiovannetti/lift",
+          "url": "https://github.com/fgiovannetti/lift",
           "owner": {
-            "login": "Sidharth1743",
-            "id": 149400230,
-            "node_id": "U_kgDOCOeqpg",
-            "avatar_url": "https://avatars.githubusercontent.com/u/149400230?v=4",
+            "id": 30153280,
+            "node_id": "MDQ6VXNlcjMwMTUzMjgw",
+            "login": "fgiovannetti",
+            "avatar_url": "https://avatars.githubusercontent.com/u/30153280?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/Sidharth1743",
-            "html_url": "https://github.com/Sidharth1743",
-            "followers_url": "https://api.github.com/users/Sidharth1743/followers",
-            "following_url": "https://api.github.com/users/Sidharth1743/following{/other_user}",
-            "gists_url": "https://api.github.com/users/Sidharth1743/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/Sidharth1743/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/Sidharth1743/subscriptions",
-            "organizations_url": "https://api.github.com/users/Sidharth1743/orgs",
-            "repos_url": "https://api.github.com/users/Sidharth1743/repos",
-            "events_url": "https://api.github.com/users/Sidharth1743/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/Sidharth1743/received_events",
+            "url": "https://api.github.com/users/fgiovannetti",
+            "html_url": "https://github.com/fgiovannetti",
             "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/fgiovannetti/followers",
+            "following_url": "https://api.github.com/users/fgiovannetti/following{/other_user}",
+            "gists_url": "https://api.github.com/users/fgiovannetti/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/fgiovannetti/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/fgiovannetti/subscriptions",
+            "organizations_url": "https://api.github.com/users/fgiovannetti/orgs",
+            "repos_url": "https://api.github.com/users/fgiovannetti/repos",
+            "events_url": "https://api.github.com/users/fgiovannetti/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/fgiovannetti/received_events"
           },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "save-sd/save-sd.github.io",
-          "url": "https://github.com/save-sd/save-sd.github.io",
-          "owner": {
-            "login": "save-sd",
-            "id": 34397673,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0Mzk3Njcz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/34397673?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/save-sd",
-            "html_url": "https://github.com/save-sd",
-            "followers_url": "https://api.github.com/users/save-sd/followers",
-            "following_url": "https://api.github.com/users/save-sd/following{/other_user}",
-            "gists_url": "https://api.github.com/users/save-sd/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/save-sd/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/save-sd/subscriptions",
-            "organizations_url": "https://api.github.com/users/save-sd/orgs",
-            "repos_url": "https://api.github.com/users/save-sd/repos",
-            "events_url": "https://api.github.com/users/save-sd/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/save-sd/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Web site of the SAVE-SD workshop",
-          "by_category": {
-            "programming": 0,
-            "documentation": 4,
-            "data": 0
-          }
-        },
-        {
-          "name": "JanetteMujica/openCitationsProductionDeRequetesSPARQL",
-          "url": "https://github.com/JanetteMujica/openCitationsProductionDeRequetesSPARQL",
-          "owner": {
-            "login": "JanetteMujica",
-            "id": 112497575,
-            "node_id": "U_kgDOBrSTpw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/112497575?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/JanetteMujica",
-            "html_url": "https://github.com/JanetteMujica",
-            "followers_url": "https://api.github.com/users/JanetteMujica/followers",
-            "following_url": "https://api.github.com/users/JanetteMujica/following{/other_user}",
-            "gists_url": "https://api.github.com/users/JanetteMujica/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/JanetteMujica/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/JanetteMujica/subscriptions",
-            "organizations_url": "https://api.github.com/users/JanetteMujica/orgs",
-            "repos_url": "https://api.github.com/users/JanetteMujica/repos",
-            "events_url": "https://api.github.com/users/JanetteMujica/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/JanetteMujica/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Analyse du projet **Open Citations** utilisant les technologies du web s\u00e9mantique ou du Linked Open Data et production de requ\u00eates SPARQL",
+          "description": "LIFT is a Python-based tool for transforming your TEI XML edition into a knowledge graph.",
           "by_category": {
             "programming": 0,
             "documentation": 1,
@@ -6248,47 +5931,18 @@
           }
         },
         {
-          "name": "KGerring/wiki",
-          "url": "https://github.com/KGerring/wiki",
+          "name": "opencitations/heritrace",
+          "url": "https://github.com/opencitations/heritrace",
           "owner": {
-            "login": "KGerring",
-            "id": 10824347,
-            "node_id": "MDQ6VXNlcjEwODI0MzQ3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/10824347?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/KGerring",
-            "html_url": "https://github.com/KGerring",
-            "followers_url": "https://api.github.com/users/KGerring/followers",
-            "following_url": "https://api.github.com/users/KGerring/following{/other_user}",
-            "gists_url": "https://api.github.com/users/KGerring/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/KGerring/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/KGerring/subscriptions",
-            "organizations_url": "https://api.github.com/users/KGerring/orgs",
-            "repos_url": "https://api.github.com/users/KGerring/repos",
-            "events_url": "https://api.github.com/users/KGerring/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/KGerring/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "wiki page",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "opencitations/oc_api",
-          "url": "https://github.com/opencitations/oc_api",
-          "owner": {
-            "login": "opencitations",
             "id": 886535,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
             "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/opencitations",
             "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/opencitations/followers",
             "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
             "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
@@ -6297,10 +5951,37 @@
             "organizations_url": "https://api.github.com/users/opencitations/orgs",
             "repos_url": "https://api.github.com/users/opencitations/repos",
             "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/opencitations/received_events",
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
+          },
+          "description": "HERITRACE is an RDF data editor with integrated provenance and change tracking",
+          "by_category": {
+            "programming": 2,
+            "documentation": 0,
+            "data": 0
+          }
+        },
+        {
+          "name": "opencitations/oc_api",
+          "url": "https://github.com/opencitations/oc_api",
+          "owner": {
+            "id": 886535,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
+            "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/opencitations",
+            "html_url": "https://github.com/opencitations",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/opencitations/followers",
+            "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opencitations/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opencitations/subscriptions",
+            "organizations_url": "https://api.github.com/users/opencitations/orgs",
+            "repos_url": "https://api.github.com/users/opencitations/repos",
+            "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
           "description": "This repository contains the API service for OpenCitations, allowing users to interact with the OpenCitations datasets through RESTful endpoints.",
           "by_category": {
@@ -6313,13 +5994,15 @@
           "name": "SDM-TIB/SDM-Hackathon",
           "url": "https://github.com/SDM-TIB/SDM-Hackathon",
           "owner": {
-            "login": "SDM-TIB",
             "id": 35878673,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjM1ODc4Njcz",
+            "login": "SDM-TIB",
             "avatar_url": "https://avatars.githubusercontent.com/u/35878673?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/SDM-TIB",
             "html_url": "https://github.com/SDM-TIB",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/SDM-TIB/followers",
             "following_url": "https://api.github.com/users/SDM-TIB/following{/other_user}",
             "gists_url": "https://api.github.com/users/SDM-TIB/gists{/gist_id}",
@@ -6328,10 +6011,7 @@
             "organizations_url": "https://api.github.com/users/SDM-TIB/orgs",
             "repos_url": "https://api.github.com/users/SDM-TIB/repos",
             "events_url": "https://api.github.com/users/SDM-TIB/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/SDM-TIB/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/SDM-TIB/received_events"
           },
           "description": "Knowledge Management and Learning over Knowledge Graphs",
           "by_category": {
@@ -6341,357 +6021,18 @@
           }
         },
         {
-          "name": "dharc-org/vespasiano-da-bisticci-letters-de",
-          "url": "https://github.com/dharc-org/vespasiano-da-bisticci-letters-de",
+          "name": "opencitations/statistics",
+          "url": "https://github.com/opencitations/statistics",
           "owner": {
-            "login": "dharc-org",
-            "id": 53083439,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjUzMDgzNDM5",
-            "avatar_url": "https://avatars.githubusercontent.com/u/53083439?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/dharc-org",
-            "html_url": "https://github.com/dharc-org",
-            "followers_url": "https://api.github.com/users/dharc-org/followers",
-            "following_url": "https://api.github.com/users/dharc-org/following{/other_user}",
-            "gists_url": "https://api.github.com/users/dharc-org/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/dharc-org/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/dharc-org/subscriptions",
-            "organizations_url": "https://api.github.com/users/dharc-org/orgs",
-            "repos_url": "https://api.github.com/users/dharc-org/repos",
-            "events_url": "https://api.github.com/users/dharc-org/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/dharc-org/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "The knowledge site of Vespasiano da Bisticci's Letters.",
-          "by_category": {
-            "programming": 3,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "CLARIAH/vocabulary-recommender",
-          "url": "https://github.com/CLARIAH/vocabulary-recommender",
-          "owner": {
-            "login": "CLARIAH",
-            "id": 15210767,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1MjEwNzY3",
-            "avatar_url": "https://avatars.githubusercontent.com/u/15210767?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/CLARIAH",
-            "html_url": "https://github.com/CLARIAH",
-            "followers_url": "https://api.github.com/users/CLARIAH/followers",
-            "following_url": "https://api.github.com/users/CLARIAH/following{/other_user}",
-            "gists_url": "https://api.github.com/users/CLARIAH/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/CLARIAH/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/CLARIAH/subscriptions",
-            "organizations_url": "https://api.github.com/users/CLARIAH/orgs",
-            "repos_url": "https://api.github.com/users/CLARIAH/repos",
-            "events_url": "https://api.github.com/users/CLARIAH/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/CLARIAH/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "biblhertz/referency",
-          "url": "https://github.com/biblhertz/referency",
-          "owner": {
-            "login": "biblhertz",
-            "id": 48752212,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ4NzUyMjEy",
-            "avatar_url": "https://avatars.githubusercontent.com/u/48752212?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/biblhertz",
-            "html_url": "https://github.com/biblhertz",
-            "followers_url": "https://api.github.com/users/biblhertz/followers",
-            "following_url": "https://api.github.com/users/biblhertz/following{/other_user}",
-            "gists_url": "https://api.github.com/users/biblhertz/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/biblhertz/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/biblhertz/subscriptions",
-            "organizations_url": "https://api.github.com/users/biblhertz/orgs",
-            "repos_url": "https://api.github.com/users/biblhertz/repos",
-            "events_url": "https://api.github.com/users/biblhertz/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/biblhertz/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Reference harmonizer for transdisciplinary articles",
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "fgiovannetti/lift",
-          "url": "https://github.com/fgiovannetti/lift",
-          "owner": {
-            "login": "fgiovannetti",
-            "id": 30153280,
-            "node_id": "MDQ6VXNlcjMwMTUzMjgw",
-            "avatar_url": "https://avatars.githubusercontent.com/u/30153280?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/fgiovannetti",
-            "html_url": "https://github.com/fgiovannetti",
-            "followers_url": "https://api.github.com/users/fgiovannetti/followers",
-            "following_url": "https://api.github.com/users/fgiovannetti/following{/other_user}",
-            "gists_url": "https://api.github.com/users/fgiovannetti/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/fgiovannetti/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/fgiovannetti/subscriptions",
-            "organizations_url": "https://api.github.com/users/fgiovannetti/orgs",
-            "repos_url": "https://api.github.com/users/fgiovannetti/repos",
-            "events_url": "https://api.github.com/users/fgiovannetti/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/fgiovannetti/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "LIFT is a Python-based tool for transforming your TEI XML edition into a knowledge graph.",
-          "by_category": {
-            "programming": 8,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "SDM-TIB/ckanext-kgcreation",
-          "url": "https://github.com/SDM-TIB/ckanext-kgcreation",
-          "owner": {
-            "login": "SDM-TIB",
-            "id": 35878673,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM1ODc4Njcz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/35878673?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/SDM-TIB",
-            "html_url": "https://github.com/SDM-TIB",
-            "followers_url": "https://api.github.com/users/SDM-TIB/followers",
-            "following_url": "https://api.github.com/users/SDM-TIB/following{/other_user}",
-            "gists_url": "https://api.github.com/users/SDM-TIB/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/SDM-TIB/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/SDM-TIB/subscriptions",
-            "organizations_url": "https://api.github.com/users/SDM-TIB/orgs",
-            "repos_url": "https://api.github.com/users/SDM-TIB/repos",
-            "events_url": "https://api.github.com/users/SDM-TIB/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/SDM-TIB/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Create a knowledge graph for your CKAN instance",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "mhbeals/nisaba",
-          "url": "https://github.com/mhbeals/nisaba",
-          "owner": {
-            "login": "mhbeals",
-            "id": 7696923,
-            "node_id": "MDQ6VXNlcjc2OTY5MjM=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/7696923?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/mhbeals",
-            "html_url": "https://github.com/mhbeals",
-            "followers_url": "https://api.github.com/users/mhbeals/followers",
-            "following_url": "https://api.github.com/users/mhbeals/following{/other_user}",
-            "gists_url": "https://api.github.com/users/mhbeals/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/mhbeals/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/mhbeals/subscriptions",
-            "organizations_url": "https://api.github.com/users/mhbeals/orgs",
-            "repos_url": "https://api.github.com/users/mhbeals/repos",
-            "events_url": "https://api.github.com/users/mhbeals/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/mhbeals/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "A tool for multi-modal annotation",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 0
-          }
-        },
-        {
-          "name": "skg-if/ext-ra-skg",
-          "url": "https://github.com/skg-if/ext-ra-skg",
-          "owner": {
-            "login": "skg-if",
-            "id": 182204375,
-            "node_id": "O_kgDOCtw31w",
-            "avatar_url": "https://avatars.githubusercontent.com/u/182204375?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/skg-if",
-            "html_url": "https://github.com/skg-if",
-            "followers_url": "https://api.github.com/users/skg-if/followers",
-            "following_url": "https://api.github.com/users/skg-if/following{/other_user}",
-            "gists_url": "https://api.github.com/users/skg-if/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/skg-if/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/skg-if/subscriptions",
-            "organizations_url": "https://api.github.com/users/skg-if/orgs",
-            "repos_url": "https://api.github.com/users/skg-if/repos",
-            "events_url": "https://api.github.com/users/skg-if/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/skg-if/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "LinkingDataIO/RO2SHARE",
-          "url": "https://github.com/LinkingDataIO/RO2SHARE",
-          "owner": {
-            "login": "LinkingDataIO",
-            "id": 25188389,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjI1MTg4Mzg5",
-            "avatar_url": "https://avatars.githubusercontent.com/u/25188389?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/LinkingDataIO",
-            "html_url": "https://github.com/LinkingDataIO",
-            "followers_url": "https://api.github.com/users/LinkingDataIO/followers",
-            "following_url": "https://api.github.com/users/LinkingDataIO/following{/other_user}",
-            "gists_url": "https://api.github.com/users/LinkingDataIO/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/LinkingDataIO/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/LinkingDataIO/subscriptions",
-            "organizations_url": "https://api.github.com/users/LinkingDataIO/orgs",
-            "repos_url": "https://api.github.com/users/LinkingDataIO/repos",
-            "events_url": "https://api.github.com/users/LinkingDataIO/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/LinkingDataIO/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Research objects to SHARE",
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "SPAROntologies/pro",
-          "url": "https://github.com/SPAROntologies/pro",
-          "owner": {
-            "login": "SPAROntologies",
-            "id": 34187113,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0MTg3MTEz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/34187113?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/SPAROntologies",
-            "html_url": "https://github.com/SPAROntologies",
-            "followers_url": "https://api.github.com/users/SPAROntologies/followers",
-            "following_url": "https://api.github.com/users/SPAROntologies/following{/other_user}",
-            "gists_url": "https://api.github.com/users/SPAROntologies/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/SPAROntologies/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/SPAROntologies/subscriptions",
-            "organizations_url": "https://api.github.com/users/SPAROntologies/orgs",
-            "repos_url": "https://api.github.com/users/SPAROntologies/repos",
-            "events_url": "https://api.github.com/users/SPAROntologies/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/SPAROntologies/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "PRO, the Publishing Roles Ontology, is an ontology written in OWL 2 DL for the characterization of the roles of agents (people, corporate bodies and computational agents) in the publication process. It permits one to specify how an agent has a role relating to a contextual entity, and the period of time during which that role is held.",
-          "by_category": {
-            "programming": 0,
-            "documentation": 1,
-            "data": 1
-          }
-        },
-        {
-          "name": "ChiaraParravicini/tirocinio_OC",
-          "url": "https://github.com/ChiaraParravicini/tirocinio_OC",
-          "owner": {
-            "login": "ChiaraParravicini",
-            "id": 114939273,
-            "node_id": "U_kgDOBtnViQ",
-            "avatar_url": "https://avatars.githubusercontent.com/u/114939273?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/ChiaraParravicini",
-            "html_url": "https://github.com/ChiaraParravicini",
-            "followers_url": "https://api.github.com/users/ChiaraParravicini/followers",
-            "following_url": "https://api.github.com/users/ChiaraParravicini/following{/other_user}",
-            "gists_url": "https://api.github.com/users/ChiaraParravicini/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/ChiaraParravicini/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/ChiaraParravicini/subscriptions",
-            "organizations_url": "https://api.github.com/users/ChiaraParravicini/orgs",
-            "repos_url": "https://api.github.com/users/ChiaraParravicini/repos",
-            "events_url": "https://api.github.com/users/ChiaraParravicini/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/ChiaraParravicini/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": null,
-          "by_category": {
-            "programming": 1,
-            "documentation": 0,
-            "data": 0
-          }
-        },
-        {
-          "name": "italia/daf-semantics",
-          "url": "https://github.com/italia/daf-semantics",
-          "owner": {
-            "login": "italia",
-            "id": 15377824,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1Mzc3ODI0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/15377824?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/italia",
-            "html_url": "https://github.com/italia",
-            "followers_url": "https://api.github.com/users/italia/followers",
-            "following_url": "https://api.github.com/users/italia/following{/other_user}",
-            "gists_url": "https://api.github.com/users/italia/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/italia/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/italia/subscriptions",
-            "organizations_url": "https://api.github.com/users/italia/orgs",
-            "repos_url": "https://api.github.com/users/italia/repos",
-            "events_url": "https://api.github.com/users/italia/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/italia/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
-          },
-          "description": "Daf Semantics repository",
-          "by_category": {
-            "programming": 0,
-            "documentation": 0,
-            "data": 1
-          }
-        },
-        {
-          "name": "opencitations/heritrace",
-          "url": "https://github.com/opencitations/heritrace",
-          "owner": {
-            "login": "opencitations",
             "id": 886535,
             "node_id": "MDEyOk9yZ2FuaXphdGlvbjg4NjUzNQ==",
+            "login": "opencitations",
             "avatar_url": "https://avatars.githubusercontent.com/u/886535?v=4",
             "gravatar_id": "",
             "url": "https://api.github.com/users/opencitations",
             "html_url": "https://github.com/opencitations",
+            "type": "Organization",
+            "site_admin": false,
             "followers_url": "https://api.github.com/users/opencitations/followers",
             "following_url": "https://api.github.com/users/opencitations/following{/other_user}",
             "gists_url": "https://api.github.com/users/opencitations/gists{/gist_id}",
@@ -6700,12 +6041,9 @@
             "organizations_url": "https://api.github.com/users/opencitations/orgs",
             "repos_url": "https://api.github.com/users/opencitations/repos",
             "events_url": "https://api.github.com/users/opencitations/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/opencitations/received_events",
-            "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "received_events_url": "https://api.github.com/users/opencitations/received_events"
           },
-          "description": "HERITRACE is an RDF data editor with integrated provenance and change tracking",
+          "description": "Data about the statistics of the OCC (accesses, community uptake, etc.).",
           "by_category": {
             "programming": 1,
             "documentation": 0,
@@ -6713,28 +6051,447 @@
           }
         },
         {
-          "name": "data-science-hub/data",
-          "url": "https://github.com/data-science-hub/data",
+          "name": "bio-xyz/BioAgents-v1",
+          "url": "https://github.com/bio-xyz/BioAgents-v1",
           "owner": {
-            "login": "data-science-hub",
-            "id": 18588453,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4NTg4NDUz",
-            "avatar_url": "https://avatars.githubusercontent.com/u/18588453?v=4",
+            "id": 128795377,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyODc5NTM3Nw==",
+            "login": "bio-xyz",
+            "avatar_url": "https://avatars.githubusercontent.com/u/128795377?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/data-science-hub",
-            "html_url": "https://github.com/data-science-hub",
-            "followers_url": "https://api.github.com/users/data-science-hub/followers",
-            "following_url": "https://api.github.com/users/data-science-hub/following{/other_user}",
-            "gists_url": "https://api.github.com/users/data-science-hub/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/data-science-hub/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/data-science-hub/subscriptions",
-            "organizations_url": "https://api.github.com/users/data-science-hub/orgs",
-            "repos_url": "https://api.github.com/users/data-science-hub/repos",
-            "events_url": "https://api.github.com/users/data-science-hub/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/data-science-hub/received_events",
+            "url": "https://api.github.com/users/bio-xyz",
+            "html_url": "https://github.com/bio-xyz",
             "type": "Organization",
-            "user_view_type": "public",
-            "site_admin": false
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/bio-xyz/followers",
+            "following_url": "https://api.github.com/users/bio-xyz/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bio-xyz/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bio-xyz/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bio-xyz/subscriptions",
+            "organizations_url": "https://api.github.com/users/bio-xyz/orgs",
+            "repos_url": "https://api.github.com/users/bio-xyz/repos",
+            "events_url": "https://api.github.com/users/bio-xyz/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bio-xyz/received_events"
+          },
+          "description": "An agentic framework for biological research and analysis.",
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 3
+          }
+        },
+        {
+          "name": "pensoft/OpenBiodiv",
+          "url": "https://github.com/pensoft/OpenBiodiv",
+          "owner": {
+            "id": 4516847,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ1MTY4NDc=",
+            "login": "pensoft",
+            "avatar_url": "https://avatars.githubusercontent.com/u/4516847?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pensoft",
+            "html_url": "https://github.com/pensoft",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/pensoft/followers",
+            "following_url": "https://api.github.com/users/pensoft/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pensoft/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pensoft/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pensoft/subscriptions",
+            "organizations_url": "https://api.github.com/users/pensoft/orgs",
+            "repos_url": "https://api.github.com/users/pensoft/repos",
+            "events_url": "https://api.github.com/users/pensoft/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pensoft/received_events"
+          },
+          "description": "Open Biodiversity Knowledge Management System",
+          "by_category": {
+            "programming": 0,
+            "documentation": 1,
+            "data": 6
+          }
+        },
+        {
+          "name": "SPAROntologies/pro",
+          "url": "https://github.com/SPAROntologies/pro",
+          "owner": {
+            "id": 34187113,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0MTg3MTEz",
+            "login": "SPAROntologies",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34187113?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/SPAROntologies",
+            "html_url": "https://github.com/SPAROntologies",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/SPAROntologies/followers",
+            "following_url": "https://api.github.com/users/SPAROntologies/following{/other_user}",
+            "gists_url": "https://api.github.com/users/SPAROntologies/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/SPAROntologies/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/SPAROntologies/subscriptions",
+            "organizations_url": "https://api.github.com/users/SPAROntologies/orgs",
+            "repos_url": "https://api.github.com/users/SPAROntologies/repos",
+            "events_url": "https://api.github.com/users/SPAROntologies/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/SPAROntologies/received_events"
+          },
+          "description": "PRO, the Publishing Roles Ontology, is an ontology written in OWL 2 DL for the characterization of the roles of agents (people, corporate bodies and computational agents) in the publication process. It permits one to specify how an agent has a role relating to a contextual entity, and the period of time during which that role is held.",
+          "by_category": {
+            "programming": 0,
+            "documentation": 1,
+            "data": 0
+          }
+        },
+        {
+          "name": "TriplyDB/YALC",
+          "url": "https://github.com/TriplyDB/YALC",
+          "owner": {
+            "id": 52077849,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjUyMDc3ODQ5",
+            "login": "TriplyDB",
+            "avatar_url": "https://avatars.githubusercontent.com/u/52077849?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TriplyDB",
+            "html_url": "https://github.com/TriplyDB",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/TriplyDB/followers",
+            "following_url": "https://api.github.com/users/TriplyDB/following{/other_user}",
+            "gists_url": "https://api.github.com/users/TriplyDB/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/TriplyDB/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/TriplyDB/subscriptions",
+            "organizations_url": "https://api.github.com/users/TriplyDB/orgs",
+            "repos_url": "https://api.github.com/users/TriplyDB/repos",
+            "events_url": "https://api.github.com/users/TriplyDB/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/TriplyDB/received_events"
+          },
+          "description": "\ud83d\udd78 YALC: Yet Another LOD Cloud (registry of Linked Open Datasets).",
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 1
+          }
+        },
+        {
+          "name": "Rinnegatamante/TW-EasyRash",
+          "url": "https://github.com/Rinnegatamante/TW-EasyRash",
+          "owner": {
+            "id": 9152710,
+            "node_id": "MDQ6VXNlcjkxNTI3MTA=",
+            "login": "Rinnegatamante",
+            "avatar_url": "https://avatars.githubusercontent.com/u/9152710?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Rinnegatamante",
+            "html_url": "https://github.com/Rinnegatamante",
+            "type": "User",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/Rinnegatamante/followers",
+            "following_url": "https://api.github.com/users/Rinnegatamante/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Rinnegatamante/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Rinnegatamante/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Rinnegatamante/subscriptions",
+            "organizations_url": "https://api.github.com/users/Rinnegatamante/orgs",
+            "repos_url": "https://api.github.com/users/Rinnegatamante/repos",
+            "events_url": "https://api.github.com/users/Rinnegatamante/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Rinnegatamante/received_events"
+          },
+          "description": "Progetto EasyRash per corso di Tecnologie Web A.s. 2015/2016",
+          "by_category": {
+            "programming": 0,
+            "documentation": 2,
+            "data": 0
+          }
+        },
+        {
+          "name": "Porges/ways-to-play",
+          "url": "https://github.com/Porges/ways-to-play",
+          "owner": {
+            "id": 12575,
+            "node_id": "MDQ6VXNlcjEyNTc1",
+            "login": "Porges",
+            "avatar_url": "https://avatars.githubusercontent.com/u/12575?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Porges",
+            "html_url": "https://github.com/Porges",
+            "type": "User",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/Porges/followers",
+            "following_url": "https://api.github.com/users/Porges/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Porges/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Porges/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Porges/subscriptions",
+            "organizations_url": "https://api.github.com/users/Porges/orgs",
+            "repos_url": "https://api.github.com/users/Porges/repos",
+            "events_url": "https://api.github.com/users/Porges/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Porges/received_events"
+          },
+          "description": "\u201cA Site About Games\u201d",
+          "by_category": {
+            "programming": 1,
+            "documentation": 0,
+            "data": 0
+          }
+        },
+        {
+          "name": "Docmaps-Project/docmaps",
+          "url": "https://github.com/Docmaps-Project/docmaps",
+          "owner": {
+            "id": 124623647,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjEyNDYyMzY0Nw==",
+            "login": "Docmaps-Project",
+            "avatar_url": "https://avatars.githubusercontent.com/u/124623647?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Docmaps-Project",
+            "html_url": "https://github.com/Docmaps-Project",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/Docmaps-Project/followers",
+            "following_url": "https://api.github.com/users/Docmaps-Project/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Docmaps-Project/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Docmaps-Project/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Docmaps-Project/subscriptions",
+            "organizations_url": "https://api.github.com/users/Docmaps-Project/orgs",
+            "repos_url": "https://api.github.com/users/Docmaps-Project/repos",
+            "events_url": "https://api.github.com/users/Docmaps-Project/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Docmaps-Project/received_events"
+          },
+          "description": "Extensible protocol for document history metadata exchange, to enable trustworthy, rapid, open science, by and for preprint science communities.",
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 1
+          }
+        },
+        {
+          "name": "NERC-CEH/digital-objects-ontology",
+          "url": "https://github.com/NERC-CEH/digital-objects-ontology",
+          "owner": {
+            "id": 5802506,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjU4MDI1MDY=",
+            "login": "NERC-CEH",
+            "avatar_url": "https://avatars.githubusercontent.com/u/5802506?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/NERC-CEH",
+            "html_url": "https://github.com/NERC-CEH",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/NERC-CEH/followers",
+            "following_url": "https://api.github.com/users/NERC-CEH/following{/other_user}",
+            "gists_url": "https://api.github.com/users/NERC-CEH/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/NERC-CEH/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/NERC-CEH/subscriptions",
+            "organizations_url": "https://api.github.com/users/NERC-CEH/orgs",
+            "repos_url": "https://api.github.com/users/NERC-CEH/repos",
+            "events_url": "https://api.github.com/users/NERC-CEH/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/NERC-CEH/received_events"
+          },
+          "description": "The DOO covers rich metadata for diverse research outputs: descriptions of the projects which allowed the creation of the outputs, the grants that funded the projects, the environmental monitoring facilities, programmes and networks that provided the data, the people and organisations who contributed to the projects and outputs, and their roles.",
+          "by_category": {
+            "programming": 0,
+            "documentation": 1,
+            "data": 0
+          }
+        },
+        {
+          "name": "oeg-upm/AstreaRun",
+          "url": "https://github.com/oeg-upm/AstreaRun",
+          "owner": {
+            "id": 2278211,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjIyNzgyMTE=",
+            "login": "oeg-upm",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2278211?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/oeg-upm",
+            "html_url": "https://github.com/oeg-upm",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/oeg-upm/followers",
+            "following_url": "https://api.github.com/users/oeg-upm/following{/other_user}",
+            "gists_url": "https://api.github.com/users/oeg-upm/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/oeg-upm/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/oeg-upm/subscriptions",
+            "organizations_url": "https://api.github.com/users/oeg-upm/orgs",
+            "repos_url": "https://api.github.com/users/oeg-upm/repos",
+            "events_url": "https://api.github.com/users/oeg-upm/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/oeg-upm/received_events"
+          },
+          "description": null,
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 1
+          }
+        },
+        {
+          "name": "italia/dati-semantic-assets",
+          "url": "https://github.com/italia/dati-semantic-assets",
+          "owner": {
+            "id": 15377824,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE1Mzc3ODI0",
+            "login": "italia",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15377824?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/italia",
+            "html_url": "https://github.com/italia",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/italia/followers",
+            "following_url": "https://api.github.com/users/italia/following{/other_user}",
+            "gists_url": "https://api.github.com/users/italia/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/italia/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/italia/subscriptions",
+            "organizations_url": "https://api.github.com/users/italia/orgs",
+            "repos_url": "https://api.github.com/users/italia/repos",
+            "events_url": "https://api.github.com/users/italia/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/italia/received_events"
+          },
+          "description": "Repository delle risorse semantiche nazionali italiane",
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 5
+          }
+        },
+        {
+          "name": "save-sd/save-sd.github.io",
+          "url": "https://github.com/save-sd/save-sd.github.io",
+          "owner": {
+            "id": 34397673,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjM0Mzk3Njcz",
+            "login": "save-sd",
+            "avatar_url": "https://avatars.githubusercontent.com/u/34397673?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/save-sd",
+            "html_url": "https://github.com/save-sd",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/save-sd/followers",
+            "following_url": "https://api.github.com/users/save-sd/following{/other_user}",
+            "gists_url": "https://api.github.com/users/save-sd/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/save-sd/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/save-sd/subscriptions",
+            "organizations_url": "https://api.github.com/users/save-sd/orgs",
+            "repos_url": "https://api.github.com/users/save-sd/repos",
+            "events_url": "https://api.github.com/users/save-sd/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/save-sd/received_events"
+          },
+          "description": "Web site of the SAVE-SD workshop",
+          "by_category": {
+            "programming": 0,
+            "documentation": 4,
+            "data": 0
+          }
+        },
+        {
+          "name": "kltng/dhq-wiki-site",
+          "url": "https://github.com/kltng/dhq-wiki-site",
+          "owner": {
+            "id": 15926391,
+            "node_id": "MDQ6VXNlcjE1OTI2Mzkx",
+            "login": "kltng",
+            "avatar_url": "https://avatars.githubusercontent.com/u/15926391?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/kltng",
+            "html_url": "https://github.com/kltng",
+            "type": "User",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/kltng/followers",
+            "following_url": "https://api.github.com/users/kltng/following{/other_user}",
+            "gists_url": "https://api.github.com/users/kltng/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/kltng/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/kltng/subscriptions",
+            "organizations_url": "https://api.github.com/users/kltng/orgs",
+            "repos_url": "https://api.github.com/users/kltng/repos",
+            "events_url": "https://api.github.com/users/kltng/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/kltng/received_events"
+          },
+          "description": "DHQ Wiki \u2014 Quartz v4 static site",
+          "by_category": {
+            "programming": 0,
+            "documentation": 1,
+            "data": 0
+          }
+        },
+        {
+          "name": "oeg-upm/rmlc-statistic",
+          "url": "https://github.com/oeg-upm/rmlc-statistic",
+          "owner": {
+            "id": 2278211,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjIyNzgyMTE=",
+            "login": "oeg-upm",
+            "avatar_url": "https://avatars.githubusercontent.com/u/2278211?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/oeg-upm",
+            "html_url": "https://github.com/oeg-upm",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/oeg-upm/followers",
+            "following_url": "https://api.github.com/users/oeg-upm/following{/other_user}",
+            "gists_url": "https://api.github.com/users/oeg-upm/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/oeg-upm/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/oeg-upm/subscriptions",
+            "organizations_url": "https://api.github.com/users/oeg-upm/orgs",
+            "repos_url": "https://api.github.com/users/oeg-upm/repos",
+            "events_url": "https://api.github.com/users/oeg-upm/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/oeg-upm/received_events"
+          },
+          "description": "RMLC iterator",
+          "by_category": {
+            "programming": 0,
+            "documentation": 1,
+            "data": 0
+          }
+        },
+        {
+          "name": "albertmeronyo/ConceptDrift-data",
+          "url": "https://github.com/albertmeronyo/ConceptDrift-data",
+          "owner": {
+            "id": 1446225,
+            "node_id": "MDQ6VXNlcjE0NDYyMjU=",
+            "login": "albertmeronyo",
+            "avatar_url": "https://avatars.githubusercontent.com/u/1446225?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/albertmeronyo",
+            "html_url": "https://github.com/albertmeronyo",
+            "type": "User",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/albertmeronyo/followers",
+            "following_url": "https://api.github.com/users/albertmeronyo/following{/other_user}",
+            "gists_url": "https://api.github.com/users/albertmeronyo/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/albertmeronyo/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/albertmeronyo/subscriptions",
+            "organizations_url": "https://api.github.com/users/albertmeronyo/orgs",
+            "repos_url": "https://api.github.com/users/albertmeronyo/repos",
+            "events_url": "https://api.github.com/users/albertmeronyo/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/albertmeronyo/received_events"
+          },
+          "description": "Datasets for the concept drift experiments",
+          "by_category": {
+            "programming": 0,
+            "documentation": 0,
+            "data": 9
+          }
+        },
+        {
+          "name": "skg-if/data-model",
+          "url": "https://github.com/skg-if/data-model",
+          "owner": {
+            "id": 182204375,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE4MjIwNDM3NQ==",
+            "login": "skg-if",
+            "avatar_url": "https://avatars.githubusercontent.com/u/182204375?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/skg-if",
+            "html_url": "https://github.com/skg-if",
+            "type": "Organization",
+            "site_admin": false,
+            "followers_url": "https://api.github.com/users/skg-if/followers",
+            "following_url": "https://api.github.com/users/skg-if/following{/other_user}",
+            "gists_url": "https://api.github.com/users/skg-if/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/skg-if/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/skg-if/subscriptions",
+            "organizations_url": "https://api.github.com/users/skg-if/orgs",
+            "repos_url": "https://api.github.com/users/skg-if/repos",
+            "events_url": "https://api.github.com/users/skg-if/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/skg-if/received_events"
           },
           "description": null,
           "by_category": {
@@ -6745,13 +6502,13 @@
         }
       ],
       "total_by_category": {
-        "programming": 31,
-        "documentation": 25,
-        "data": 44
+        "programming": 21,
+        "documentation": 31,
+        "data": 48
       },
       "owner_frequencies": {
-        "Organization": 59,
-        "User": 41
+        "Organization": 77,
+        "User": 23
       }
     }
   }

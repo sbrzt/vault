@@ -66,12 +66,12 @@ def main() -> None:
         else:
             existing = {}'''
 
-    '''if args.only in (None, "lov"):
+    if args.only in (None, "lov"):
         print("\n── Fetching LOV ──")
         if args.use_cache:
             lov_data = {p: existing[p]["lov"] for p in existing}
         else:
-            lov_data = lov.fetch_data(config["ontologies"])'''
+            lov_data = lov.fetch_data(config["ontologies"])
     
     '''if args.only in (None, "zenodo"):
         print("\n-- Fetching Zenodo --")
@@ -113,7 +113,7 @@ def main() -> None:
             "full_name": ontology["full_name"],
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
-            #"lov": lov_data.get(prefix, {}),
+            "lov": lov_data.get(prefix, {}),
             "github": github_data,
             #"openalex": oax_data,
             #"opencitations": oc_data,
