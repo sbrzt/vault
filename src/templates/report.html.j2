@@ -80,7 +80,11 @@
                     <td>{{ vocab.title }}</td>
                     <td><a href="{{ vocab.uri }}">{{ vocab.uri }}</a></td>
                     <td>{{ vocab.issued or '—' }}</td>
-                    <td>{{ vocab.keywords }}</td>
+                    <td>
+                      {% for keyword in vocab.keywords %}
+                        <span class="keyword-badge">{{ vocab.keywords }}</span>
+                      {% endfor %}
+                    </td>
                   </tr>
                   {% else %}
                   <tr><td colspan="3">No vocabularies found</td></tr>
