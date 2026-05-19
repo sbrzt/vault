@@ -82,7 +82,7 @@
                     <td>{{ vocab.issued or '—' }}</td>
                     <td>
                       {% for keyword in vocab.keywords %}
-                        <span class="keyword-badge">{{ vocab.keywords }}</span>
+                        <span class="keyword-badge">{{ keyword }}</span>
                       {% endfor %}
                     </td>
                   </tr>
