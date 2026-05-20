@@ -3,5 +3,6 @@
 src/__pycache__
 src/dimensions/vocabularies/__pycache__
 src/dimensions/code/__pycache__
+src/dimensions/works/__pycache__
 tests/__pycache__
 cache

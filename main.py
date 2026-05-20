@@ -2,6 +2,7 @@
 
 import src.dimensions.vocabularies.lov as lov
 import src.dimensions.code.github as github
+import src.dimensions.works.openalex as oax
 from src.loader import load_config
 import argparse
 from pathlib import Path
@@ -11,7 +12,6 @@ from src.renderer import render_html
 import json
 from src.cache import save_cache, load_cache
 import src.http
-#import src.openalex
 #import src.opencitations
 #import src.zenodo
 
@@ -42,7 +42,7 @@ def main() -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     cache_file = output_dir / config.get("cache_file", "")
 
-    #openalex_token = os.environ.get("OPENALEX_TOKEN", "")
+    openalex_token = os.environ.get("OPENALEX_TOKEN", "")
     github_token = os.environ.get("GITHUB_TOKEN", "")
     #opencitations_token = os.environ.get("OPENCITATIONS_TOKEN", "")
     #zenodo_token = os.environ.get("ZENODO_TOKEN", "")
@@ -66,12 +66,12 @@ def main() -> None:
         else:
             existing = {}'''
 
-    if args.only in (None, "lov"):
+    '''if args.only in (None, "lov"):
         print("\n── Fetching LOV ──")
         if args.use_cache:
             lov_data = {p: existing[p]["lov"] for p in existing}
         else:
-            lov_data = lov.fetch_data(config["ontologies"])
+            lov_data = lov.fetch_data(config["ontologies"])'''
     
     '''if args.only in (None, "zenodo"):
         print("\n-- Fetching Zenodo --")
@@ -85,21 +85,21 @@ def main() -> None:
         print(f"\n{ontology['label']}")
         prefix = ontology["prefix"]
 
-        if args.only in (None, "github"):
+        '''if args.only in (None, "github"):
             print("\n-- Fetching GitHub Code --")
             if args.use_cache:
                 github_data = existing.get(prefix, {}).get("github", {})
             else:
-                github_data = github.fetch_github(ontology, github_token=github_token)
+                github_data = github.fetch_github(ontology, github_token=github_token)'''
         
-        '''print("\n-- Fetching OpenAlex --")
+        print("\n-- Fetching OpenAlex --")
         if args.only in (None, "openalex"):
             if args.use_cache:
                 oax_data = existing.get(prefix, {}).get("openalex", {})
             else:
-                oax_data = src.openalex.fetch_openalex(ontology, api_key=openalex_token)
-                #save_cache("openalex", oax_data, output_dir)
+                oax_data = oax.fetch_openalex(ontology, api_key=openalex_token)
         
+        '''
         print("  Fetching OpenCitations...")
         if args.only in (None, "opencitations"):
             if args.use_cache:
@@ -113,9 +113,9 @@ def main() -> None:
             "full_name": ontology["full_name"],
             "uri": ontology["uri"],
             "prefix": ontology["prefix"],
-            "lov": lov_data.get(prefix, {}),
-            "github": github_data,
-            #"openalex": oax_data,
+            #"lov": lov_data.get(prefix, {}),
+            #"github": github_data,
+            "openalex": oax_data,
             #"opencitations": oc_data,
             #"zenodo": zenodo_data.get(prefix, {}),
         })

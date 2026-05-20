@@ -107,7 +107,10 @@ main {
   word-break: break-all;
 }
 
-.metrics { display: flex; gap: 16px; }
+.metrics { 
+  display: flex; 
+  gap: 16px; 
+}
 
 .metric {
   display: flex;
@@ -323,7 +326,11 @@ main {
 
 /* ── Stats ── */
 
-.card-stat { margin-bottom: 16px; }
+.card-stat { 
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
 
 .big-num {
   display: block;
@@ -372,6 +379,35 @@ main {
 }
 
 /* ── Card table ── */
+
+.data-table-collapsible .hidden-row {
+  display: none !important;
+}
+
+.data-table-collapsible.expanded .hidden-row {
+  display: table-row !important;
+}
+
+.card-table-toggle-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(21, 25, 107, 0.03);
+  color: #15196b;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.15s ease;
+}
+
+.card-table-toggle-btn:hover {
+  background-color: rgba(21, 25, 107, 0.08);
+}
 
 .card-table-content { 
   width: 100%; 

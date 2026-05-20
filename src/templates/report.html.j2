@@ -27,12 +27,8 @@
       <div class="uri">{{ onto.uri }}</div>
       <div class="metrics">
         <div class="metric">
-          <span class="metric-value">{{ onto.lov.inlinks }}</span>
-          <span class="metric-label">Vocabularies</span>
-        </div>
-        <div class="metric">
-          <span class="metric-value">{{ onto.github.repos_count }}</span>
-          <span class="metric-label">Repositories</span>
+          <span class="metric-value">{{ onto.openalex.total_works }}</span>
+          <span class="metric-label">Works</span>
         </div>
       </div>
     </div>
@@ -49,154 +45,95 @@
     </div>
 
      <div class="section-accordion">
-      <div class="section-accordion-header" onclick="toggleAccordion('vocab-section-{{ onto.prefix }}', this)">
-        <h3>Vocabularies</h3>
+      <div class="section-accordion-header" onclick="toggleAccordion('work-section-{{ onto.prefix }}', this)">
+        <h3>Scholarly works</h3>
         <span class="accordion-icon">⮝</span>
       </div>
-      <div id="vocab-section-{{ onto.prefix }}" class="accordion-body">
+      <div id="work-section-{{ onto.prefix }}" class="accordion-body">
+        <div class="grid-3">
+          <div class="card-stat">
+            <span class="big-num">{{ onto.openalex.total_works }}</span>
+            <span class="stat-label">works mentioned {{ onto.label }} in their titles, abstracts or texts</span>
+          </div>
+          <div class="card-stat">
+            <span class="big-num">{{ onto.openalex.authors_count }}</span>
+            <span class="stat-label">scholars mentioned {{ onto.label }} in their works</span>
+          </div>
+          <div class="card-stat">
+            <span class="big-num">{{ onto.openalex.venues_count }}</span>
+            <span class="stat-label">venues published works mentioning {{ onto.label }}</span>
+          </div>
+        </div>
         <div class="grid-1">
-          {# LOV card #}
           <div class="card card-table full-width">
             <div class="card-header">
-              <span class="source-tag lov-tag">LOV</span>
-              <h4>Which vocabularies reuse {{ onto.label }}?</h4>
+              <span class="source-tag oax-tag">OpenAlex</span>
+              <h4>Which scholarly works mention {{ onto.label }}?</h4>
             </div>
-            <div class="card-stat">
-              <span class="big-num">{{ onto.lov.inlinks }}</span>
-              <span class="stat-label">vocabularies import, expand or specialize {{ onto.label }}</span>
-            </div>
-              <table class="card-table-content">
+            <div class="table-responsive-wrapper">
+              <table class="card-table-content data-table-collapsible" id="table-oax-{{ onto.prefix }}">
                 <thead>
                   <tr>
-                    <th>Name</th>
-                    <th>URI</th>
+                    <th>Title</th>
+                    <th>Authors</th>
                     <th>Year</th>
-                    <th>Keywords</th>
+                    <th>Venue</th>
+                    <th>DOI</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {% for vocab in onto.lov.using_vocabs %}
-                  <tr>
-                    <td>{{ vocab.title }}</td>
-                    <td><a href="{{ vocab.uri }}">{{ vocab.uri }}</a></td>
-                    <td>{{ vocab.issued or '—' }}</td>
+                  {% for work in onto.openalex.works %}
+                  <tr class="{{ 'hidden-row' if loop.index > 5 else '' }}">
+                    <td>{{ work.title }}</td>
+                    <td>{{ work.authors }}</td>
+                    <td>{{ work.year }}</td>
+                    <td>{{ work.source_name }}</td>
                     <td>
-                      {% for keyword in vocab.keywords %}
-                        <span class="keyword-badge">{{ keyword }}</span>
-                      {% endfor %}
+                      {% if work.doi %}
+                        <a href="{{ work.doi }}" target="_blank">{{ work.doi }}</a>
+                      {% else %}
+                        <span></span>
+                      {% endif %}
                     </td>
                   </tr>
                   {% else %}
-                  <tr><td colspan="3">No vocabularies found</td></tr>
+                  <tr><td colspan="5">No works found</td></tr>
                   {% endfor %}
                 </tbody>
               </table>
-              {% if onto.lov.url %}
-                <a class="styled-link lov-link" href="{{ onto.lov.url }}" target="_blank">View in LOV →</a>
-              {% endif %}
+            </div>
+            {% if onto.openalex.works | length > 5 %}
+              <button class="card-table-toggle-btn" data-target="table-oax-{{ onto.prefix }}" onclick="toggleCardTable(this)">
+                Show More (+{{ onto.openalex.works | length - 5 }} more)
+              </button>
+            {% endif %}
           </div>
         </div>
         <div class="grid-2">
           <div class="card">
             <div class="card-header">
-              <span class="source-tag lov-tag">LOV</span>
-              <h3>Adoption timeline</h3>
+              <span class="source-tag oax-tag">OpenAlex</span>
+              <h3>How many works have mentioned {{ onto.label }} in time?</h3>
             </div>
             <div class="card-detail">
               <div class="card-chart-detail">
-                <canvas id="chart-timeline-lov-{{ onto.prefix }}"></canvas>
+                <canvas id="chart-bar-oax-{{ onto.prefix }}"></canvas>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-header">
-              <span class="source-tag lov-tag">LOV</span>
-              <h3>Domain categorization</h3>
+              <span class="source-tag oax-tag">OpenAlex</span>
+              <h3>In which venues were published the works mentioning {{ onto.label }}?</h3>
             </div>
             <div class="card-detail">
               <div class="card-chart-detail">
-                <canvas id="chart-keywords-lov-{{ onto.prefix }}"></canvas>
+                <canvas id="chart-venue-oax-{{ onto.prefix }}"></canvas>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="section-accordion">
-      <div class="section-accordion-header" onclick="toggleAccordion('code-section-{{ onto.prefix }}', this)">
-        <h3>What is the uptake of {{ onto.label }} in the code dimension?</h3>
-        <span class="accordion-icon">⮝</span>
-      </div>
-      <div id="code-section-{{ onto.prefix }}" class="accordion-body">
-        <div class="grid-1">
-          <div class="card card-table full-width">
-            <div class="card-header">
-              <span class="source-tag github-tag">GitHub</span>
-              <h4>How many repositories reuse {{ onto.label }}?</h4>
-            </div>
-            <div class="card-stat">
-              <span class="big-num">{{ onto.github.repos_count }}</span>
-              <span class="stat-label">repositories contain files in which {{ onto.label }} is used</span>
-            </div>
-              <table class="card-table-content">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>Owner</th>
-                    <th>Description</th>
-                    <th>Category</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for repo in onto.github.repos %}
-                  <tr>
-                    <td>{{ repo.name }}</td>
-                    <td><a href="{{ repo.url }}" target="_blank">{{ repo.url }}</a></td>
-                    <td>{{ repo.owner.type }}</td>
-                    <td>{{ repo.description }}</td>
-                    <td>
-                      {% for category, count in repo.by_category.items() %}
-                        {% if count > 0 %}
-                          <span class="keyword-badge">{{ category }}</span>
-                        {% endif %}
-                      {% endfor %}
-                    </td>
-                  </tr>
-                  {% else %}
-                  <tr><td colspan="3">No repositories found</td></tr>
-                  {% endfor %}
-                </tbody>
-              </table>
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="source-tag github-tag">GitHub</span>
-              <h4>In which types of files was {{ onto.label }} used?</h4>
-            </div>
-            <div class="card-detail">
-              <div class="card-chart-detail">
-                <canvas id="chart-category-github-{{ onto.prefix }}"></canvas>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span class="source-tag github-tag">GitHub</span>
-              <h4>Which types of owners use {{ onto.label }} in their repositories?</h4>
-            </div>
-            <div class="card-detail">
-              <div class="card-chart-detail">
-                <canvas id="chart-owner-github-{{ onto.prefix }}"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
 
@@ -214,87 +151,45 @@
         }
       }
 
-      (function() {
-        var ctx = document.getElementById('chart-keywords-lov-{{ onto.prefix }}');
-        if (!ctx) return;
-        var keywordData = {{ onto.lov.keyword_frequencies | tojson }};
-        new Chart(ctx, {
-          type: 'doughnut',
-          data: {
-            labels: Object.keys(keywordData),
-            datasets: [{
-              label: 'Keyword frequencies',
-              data: Object.values(keywordData),
-              borderWidth: 1,
-              borderRadius: 3,
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { 
-              legend: { position: 'right' } 
-            },
-          }
-        });
-      })();
+      function toggleCardTable(button) {
+        const targetId = button.getAttribute('data-target');
+        const table = document.getElementById(targetId);
+        if (!table) return;
+
+        const isExpanded = table.classList.contains('expanded');
+        const totalRows = table.querySelectorAll('tbody tr').length;
+        const hiddenCount = totalRows - 3;
+
+        if (isExpanded) {
+            table.classList.remove('expanded');
+            button.textContent = `Show More (+${hiddenCount} more)`;
+            button.closest('.card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+            table.classList.add('expanded');
+            button.textContent = "Show Less";
+        }
+      }
 
       (function() {
-        var ctx = document.getElementById('chart-timeline-lov-{{ onto.prefix }}');
+        var ctx = document.getElementById('chart-bar-oax-{{ onto.prefix }}');
         if (!ctx) return;
-        var timelineData = {{ onto.lov.adoption_timeline | tojson }};
-        new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: Object.keys(timelineData),
-            datasets: [{
-              label: 'Cumulative adoptions',
-              data: Object.values(timelineData),
-              fill: true,
-              borderColor: 'rgb(75, 192, 192)',
-              backgroundColor: 'rgba(75, 192, 192, 0.2)',
-              tension: 0.3,
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { 
-              legend: { display: false } 
-            },
-            scales: {
-              y: {
-                beginAtZero: true,
-                ticks: { stepSize: 1 }
-              }
-            }
-          }
-        });
-      })();
-
-      (function() {
-        var ctx = document.getElementById('chart-category-github-{{ onto.prefix }}');
-        if (!ctx) return;
-        var categoryData = {{ onto.github.total_by_category | tojson }};
+        var oaxBarData = {{ onto.openalex.by_year | tojson }}
         new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: Object.keys(categoryData),
+            labels: Object.keys(oaxBarData),
             datasets: [{
-              label: 'Cumulative adoptions',
-              data: Object.values(categoryData),
-              backgroundColor: '#8561fa49',
-              borderColor: '#7554e4',
+              label: 'Works per year',
+              data: Object.values(oaxBarData),
+              backgroundColor: '#15196b3f',
+              borderColor: '#15196b',
               borderWidth: 1,
               borderRadius: 3,
             }]
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
-            plugins: { 
-              legend: { display: false } 
-            },
+            plugins: { legend: { display: false } },
             scales: {
               y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
               x: { grid: { display: false } }
@@ -304,26 +199,40 @@
       })();
 
       (function() {
-        var ctx = document.getElementById('chart-owner-github-{{ onto.prefix }}');
+        var ctx = document.getElementById('chart-venue-oax-{{ onto.prefix }}');
         if (!ctx) return;
-        var ownerData = {{ onto.github.owner_frequencies | tojson }};
+        var venueData = {{ onto.openalex.sources | tojson }};
+        var sortedVenueData = Object.entries(venueData).sort((a, b) => b[1] - a[1]);
+        var labels = [];
+        var data = [];
+        var otherCount = 0;
+        sortedVenueData.forEach(function(item, index) {
+            if (index < 5) {
+                labels.push(item[0]);
+                data.push(item[1]);
+            } else {
+                otherCount += item[1];
+            }
+        });
+        if (otherCount > 0) {
+            labels.push('Other venues');
+            data.push(otherCount);
+        }
         new Chart(ctx, {
           type: 'doughnut',
           data: {
-            labels: Object.keys(ownerData),
+            labels: labels,
             datasets: [{
-              label: 'Owner frequencies',
-              data: Object.values(ownerData),
-              borderWidth: 1,
-              borderRadius: 3,
+              data: data,
+              backgroundColor: ['#15196b', '#35495e', '#41b883', '#f39c12', '#d9534f', '#bdc3c7'],
+              borderWidth: 1
             }]
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
-            plugins: { 
-              legend: { position: 'right' } 
-            },
+            plugins: {
+              legend: { position: 'right', labels: { boxWidth: 12 } }
+            }
           }
         });
       })();
