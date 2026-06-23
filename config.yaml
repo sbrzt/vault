@@ -49,7 +49,6 @@ ontologies:
     prefix: pro
     keywords:
       - http://purl.org/spar/pro/
-      - Publishing Roles Ontology
     papers:
       - 10.1145/2362499.2362502
 

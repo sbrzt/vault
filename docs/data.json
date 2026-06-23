@@ -7,17 +7,17 @@
     "openalex": {
       "total_works": 92,
       "by_year": {
-        "2026": 7,
+        "2026": 8,
         "2025": 9,
-        "2024": 13,
+        "2024": 14,
         "2023": 20,
         "2022": 10,
-        "2021": 10,
+        "2021": 9,
         "2020": 7,
         "2019": 5,
         "2018": 3,
         "2017": 4,
-        "2016": 4
+        "2016": 3
       },
       "works": [
         {
@@ -26,6 +26,13 @@
           "year": 2026,
           "doi": "https://doi.org/10.60923/issn.2532-8816/21765",
           "source_name": "Umanistica Digitale"
+        },
+        {
+          "title": "Large Language Models for Literature-Based Analysis: Constructing Ontology-Grounded Citation Knowledge Graphs",
+          "authors": "Muhammad Saad Salman\u00b9; Imran Ihsan\u00b9",
+          "year": 2026,
+          "doi": "https://doi.org/10.21203/rs.3.rs-9583368/v1",
+          "source_name": "Research Square"
         },
         {
           "title": "Toward an Engineering of Science: Rebalancing Generation and Verification in the Age of AI",
@@ -187,6 +194,13 @@
           "year": 2024,
           "doi": "https://doi.org/10.59350/7qe60-evp05",
           "source_name": ""
+        },
+        {
+          "title": "A systems approach to managing the risk of healthcare acquired infection in an acute hospital setting supported by human factors ergonomics, data science, data governance and AI",
+          "authors": "Marie Ward; \u00dana Geary; Rob Brennan; Rebecca Vining; Lucy McKenna; Brian O\u2019Connell; Colm Bergin; Declan Byrne; Donncha Creagh; Mary Fogarty; Una Healy; Grainne McDonald; Malick Ebiele; Martin Crane; Minh-Khoi Pham; Malika Bendechache; Marija Bezbradica; Junli Liang; Brian Doyle; John Guilfoyle; Arwa Shuhaiber; Nick McDonald",
+          "year": 2024,
+          "doi": "https://doi.org/10.1080/00140139.2024.2396527",
+          "source_name": "Ergonomics"
         },
         {
           "title": "Scholia configurability",
@@ -385,6 +399,13 @@
           "source_name": "HAL (Le Centre pour la Communication Scientifique Directe)"
         },
         {
+          "title": "Modeling Data Complexity in Public History and Cultural Heritage",
+          "authors": "Gioele Barabucci; Francesca Tomasi; Fabio Vitali",
+          "year": 2022,
+          "doi": "https://doi.org/10.1515/9783110430295-041",
+          "source_name": ""
+        },
+        {
           "title": "A quantitative and qualitative open citation analysis of retracted articles in the humanities",
           "authors": "Ivan Heibi; Silvio Peroni",
           "year": 2022,
@@ -425,13 +446,6 @@
           "year": 2022,
           "doi": "https://doi.org/10.17918/00000944",
           "source_name": ""
-        },
-        {
-          "title": "Extending The OpenCitations Codebase For Creating Non-DOI Citation Indexes: The Ingestion Of The NIH Open Citation Collection",
-          "authors": "Arianna Moretti",
-          "year": 2022,
-          "doi": "https://doi.org/10.5281/zenodo.7307394",
-          "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
         },
         {
           "title": "Living Literature Reviews",
@@ -495,13 +509,6 @@
           "year": 2021,
           "doi": "https://doi.org/10.5283/epub.44952",
           "source_name": "University of Regensburg Publication Server (University of Regensburg)"
-        },
-        {
-          "title": "D3.5 Report on citation enabled SSH catalogues and SSH citation exploitation",
-          "authors": "Nicolas Larrousse; Edward J. Gray; Daan Broeder; Cesare Concordia; Jan Brase; Athina Papadopoulou",
-          "year": 2021,
-          "doi": "https://doi.org/10.5281/zenodo.5603306",
-          "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
         },
         {
           "title": "Development of an ontology for modelling medieval manuscripts: the case of Progetto IRNERIO",
@@ -656,20 +663,14 @@
           "year": 2016,
           "doi": "https://doi.org/10.3989/redc.2016.3.1299",
           "source_name": "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica"
-        },
-        {
-          "title": "Citation functions revisited: learning from the princes",
-          "authors": "Joakim Philipson",
-          "year": 2016,
-          "doi": "https://doi.org/10.3897/rio.2.e9651",
-          "source_name": "Research Ideas and Outcomes"
         }
       ],
       "sources": {
         "Umanistica Digitale": 1,
+        "Research Square": 1,
         "ArXiv.org": 2,
         "Heritage - Semantic Tools and Interoperability Survey": 1,
-        "": 12,
+        "": 13,
         "Frontiers in Computer Science": 1,
         "Biodiversity Information Science and Standards": 2,
         "Scientometrics": 5,
@@ -686,6 +687,7 @@
         "Quantitative Science Studies": 3,
         "LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Cient\u00edficas)": 1,
         "Cybernetics and Information Technologies": 1,
+        "Ergonomics": 1,
         "HAL (Le Centre pour la Communication Scientifique Directe)": 3,
         "Future Internet": 1,
         "Vjesnik bibliotekara Hrvatske": 1,
@@ -695,7 +697,7 @@
         "Duo Research Archive (University of Oslo)": 2,
         "Journal on Computing and Cultural Heritage": 1,
         "Data Science Journal": 1,
-        "Zenodo (CERN European Organization for Nuclear Research)": 7,
+        "Zenodo (CERN European Organization for Nuclear Research)": 5,
         "Journal of Cheminformatics": 3,
         "International Journal of Metadata Semantics and Ontologies": 1,
         "iSys - Brazilian Journal of Information Systems": 1,
@@ -714,12 +716,11 @@
         "PeerJ Computer Science": 1,
         "Frontiers in Earth Science": 1,
         "Open MIND": 1,
-        "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica": 1,
-        "Research Ideas and Outcomes": 1
+        "Revista espa\u00f1ola de Documentaci\u00f3n Cient\u00edfica": 1
       },
       "avg_works_per_year": 8.36,
-      "venues_count": 50,
-      "authors_count": 237
+      "venues_count": 51,
+      "authors_count": 254
     }
   },
   {
@@ -728,18 +729,18 @@
     "uri": "http://purl.org/spar/fabio",
     "prefix": "fabio",
     "openalex": {
-      "total_works": 88,
+      "total_works": 87,
       "by_year": {
-        "2026": 4,
+        "2026": 5,
         "2025": 5,
         "2024": 6,
         "2023": 15,
-        "2022": 12,
+        "2022": 13,
         "2021": 15,
         "2020": 10,
-        "2019": 8,
+        "2019": 7,
         "2018": 5,
-        "2017": 8
+        "2017": 6
       },
       "works": [
         {
@@ -762,6 +763,13 @@
           "year": 2026,
           "doi": "https://doi.org/10.5281/zenodo.18352502",
           "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
+        },
+        {
+          "title": "The \u201cGreat Vilnius Controversy\u201d in Data: Mapping Jesuit\u2013Protestant Polemics in Early Modern Vilnius (1574\u20131647)",
+          "authors": "Micha\u0142 E. Nowakowski; Cezary Rosi\u0144ski",
+          "year": 2026,
+          "doi": "https://doi.org/10.1163/22141332-12340029",
+          "source_name": "Journal of Jesuit Studies"
         },
         {
           "title": "OntoTrack: a linked open data based solution to track mutual citation networks in research publications",
@@ -979,6 +987,13 @@
           "year": 2022,
           "doi": "https://doi.org/10.1038/s41597-022-01298-2",
           "source_name": "Scientific Data"
+        },
+        {
+          "title": "Modeling Data Complexity in Public History and Cultural Heritage",
+          "authors": "Gioele Barabucci; Francesca Tomasi; Fabio Vitali",
+          "year": 2022,
+          "doi": "https://doi.org/10.1515/9783110430295-041",
+          "source_name": ""
         },
         {
           "title": "A quantitative and qualitative open citation analysis of retracted articles in the humanities",
@@ -1219,13 +1234,6 @@
           "source_name": "Data Science"
         },
         {
-          "title": "Software review: COCI, the OpenCitations Index of Crossref open DOI-to-DOI citations",
-          "authors": "Ivan Heibi; Silvio Peroni; David M. Shotton",
-          "year": 2019,
-          "doi": "https://doi.org/10.1007/s11192-019-03217-6",
-          "source_name": "Scientometrics"
-        },
-        {
           "title": "Deconstructing the Scholarly Paper. Ontologies for Semantic Publishing",
           "authors": "Marcin Roszkowski",
           "year": 2019,
@@ -1343,28 +1351,15 @@
           "year": 2017,
           "doi": "https://doi.org/10.3389/feart.2017.00036",
           "source_name": "Frontiers in Earth Science"
-        },
-        {
-          "title": "From MARC silos to Linked Data silos?",
-          "authors": "Osma Suominen; Nina Hyv\u00f6nen",
-          "year": 2017,
-          "doi": "https://doi.org/10.5282/o-bib/2017h2s1-13",
-          "source_name": "Ty\u00f6v\u00e4entutkimus Vuosikirja"
-        },
-        {
-          "title": "Challenges as enablers for high quality Linked Data: insights from the Semantic Publishing Challenge",
-          "authors": "Anastasia Dimou; Sahar Vahdati; Angelo Di Iorio; Christoph Lange; Ruben Verborgh; Erik Mannens",
-          "year": 2017,
-          "doi": "https://doi.org/10.7717/peerj-cs.105",
-          "source_name": "PeerJ Computer Science"
         }
       ],
       "sources": {
         "ArXiv.org": 2,
         "Umanistica Digitale": 1,
         "Zenodo (CERN European Organization for Nuclear Research)": 8,
+        "Journal of Jesuit Studies": 1,
         "Frontiers in Computer Science": 1,
-        "Scientometrics": 5,
+        "Scientometrics": 4,
         "arXiv (Cornell University)": 4,
         "Figshare": 5,
         "Revue Ouverte d Intelligence Artificielle": 1,
@@ -1378,7 +1373,7 @@
         "Lecture notes in computer science": 5,
         "Studies on the semantic web": 1,
         "HAL (Le Centre pour la Communication Scientifique Directe)": 5,
-        "": 6,
+        "": 7,
         "Journal of the Text Encoding Initiative": 1,
         "Scientific Data": 1,
         "IEEE Access": 2,
@@ -1406,14 +1401,13 @@
         "XIX ENCONTRO NACIONAL DE PESQUISA EM CI\u00caNCIA DA INFORMA\u00c7\u00c3O (XIX ENANCIB); XIX ENCONTRO NACIONAL DE PESQUISA EM CI\u00caNCIA DA INFORMA\u00c7\u00c3O (XIX ENANCIB)": 1,
         "Infoscience (Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne)": 1,
         "Library Resources and Technical Services": 1,
-        "PeerJ Computer Science": 2,
+        "PeerJ Computer Science": 1,
         "Journal of Data Mining & Digital Humanities": 1,
-        "Frontiers in Earth Science": 1,
-        "Ty\u00f6v\u00e4entutkimus Vuosikirja": 1
+        "Frontiers in Earth Science": 1
       },
-      "avg_works_per_year": 8.8,
+      "avg_works_per_year": 8.7,
       "venues_count": 50,
-      "authors_count": 234
+      "authors_count": 231
     }
   },
   {
@@ -1422,25 +1416,23 @@
     "uri": "http://purl.org/spar/pro",
     "prefix": "pro",
     "openalex": {
-      "total_works": 64,
+      "total_works": 50,
       "by_year": {
-        "2026": 2,
+        "2026": 1,
         "2025": 2,
         "2024": 2,
-        "2023": 5,
+        "2023": 4,
         "2022": 6,
         "2021": 4,
         "2020": 3,
-        "2019": 11,
-        "2018": 4,
-        "2017": 6,
-        "2016": 5,
+        "2019": 8,
+        "2018": 3,
+        "2017": 4,
+        "2016": 4,
         "2015": 3,
-        "2014": 3,
+        "2014": 2,
         "2013": 3,
-        "2012": 2,
-        "2003": 1,
-        "2011": 2
+        "2012": 1
       },
       "works": [
         {
@@ -1449,13 +1441,6 @@
           "year": 2026,
           "doi": "https://doi.org/10.5281/zenodo.18352502",
           "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
-        },
-        {
-          "title": "HERITRACE: a domain-agnostic framework for SHACL-driven RDF curation with provenance and change tracking",
-          "authors": "Arcangelo Massari; Silvio Peroni",
-          "year": 2026,
-          "doi": null,
-          "source_name": "ArXiv.org"
         },
         {
           "title": "CiteFusion: an ensemble framework for citation intent classification harnessing dual-model binary couples and SHAP analyses",
@@ -1514,13 +1499,6 @@
           "source_name": "Figshare"
         },
         {
-          "title": "Hierarchical Aggregate Assessment of Multi-Level Teams Using Competency Ontologies",
-          "authors": "Anatoly Gladun; J.V. Rogushina; Martin Lesage",
-          "year": 2023,
-          "doi": "https://doi.org/10.56578/ataiml020201",
-          "source_name": "Acadlore Transactions on AI and Machine Learning"
-        },
-        {
           "title": "Lessons learned to boost a bioinformatics knowledge base reusability, the Bgee experience",
           "authors": "Tarcisio Mendes de Farias; Julien Wollbrett; Marc Robinson\u2010Rechavi; Frederic Bastian",
           "year": 2022,
@@ -1533,6 +1511,13 @@
           "year": 2022,
           "doi": "https://doi.org/10.5281/zenodo.7296094",
           "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
+        },
+        {
+          "title": "Modeling Data Complexity in Public History and Cultural Heritage",
+          "authors": "Gioele Barabucci; Francesca Tomasi; Fabio Vitali",
+          "year": 2022,
+          "doi": "https://doi.org/10.1515/9783110430295-041",
+          "source_name": ""
         },
         {
           "title": "OpenCitations Meta RDF dataset of all bibliographic metadata and its provenance information",
@@ -1554,13 +1539,6 @@
           "year": 2022,
           "doi": "https://doi.org/10.6084/m9.figshare.21747536.v2",
           "source_name": "Figshare"
-        },
-        {
-          "title": "IMPORTANCE OF ONTOLOGICAL RESEARCH WITHIN THE PEDAGOGY OF EDUCATION",
-          "authors": "Ahmedova Shakhnoza",
-          "year": 2022,
-          "doi": "https://doi.org/10.5281/zenodo.7479272",
-          "source_name": "Zenodo (CERN European Organization for Nuclear Research)"
         },
         {
           "title": "Covid-on-the-Web : graphe de connaissances et services pour faire progresser la recherche sur la COVID-19",
@@ -1668,27 +1646,6 @@
           "source_name": "Institutional Repository of Leibniz Universit\u00e4t Hannover (Leibniz Universit\u00e4t Hannover)"
         },
         {
-          "title": "Deconstructing the Scholarly Paper. Ontologies for Semantic Publishing",
-          "authors": "Marcin Roszkowski",
-          "year": 2019,
-          "doi": "https://doi.org/10.36702/zin.495",
-          "source_name": "Zagadnienia Informacji Naukowej - Studia Informacyjne"
-        },
-        {
-          "title": "An Ontological Approach to the Description of Visual and Iconographical Representations",
-          "authors": "Nicola Carboni; Livio De Luca",
-          "year": 2019,
-          "doi": "https://doi.org/10.3390/heritage2020078",
-          "source_name": "Heritage"
-        },
-        {
-          "title": "Improving Open Science Using Linked Open Data: CONICET Digital Use Case",
-          "authors": "Marcos Z\u00e1rate; Carlos Buckle; Renato Mazzanti; Gustavo Samec",
-          "year": 2019,
-          "doi": "https://doi.org/10.24215/16666038.19.e05",
-          "source_name": "Journal of Computer Science and Technology"
-        },
-        {
           "title": "Modelling eristic and rhetorical argumentation on the social web",
           "authors": "Tom Blount",
           "year": 2018,
@@ -1708,13 +1665,6 @@
           "year": 2018,
           "doi": "https://doi.org/10.17605/osf.io/r6zjy",
           "source_name": "Phaidra (Universit\u00e4t Wien)"
-        },
-        {
-          "title": "Contextual Integrity and Tie Strength in Online Social Networks: Social Theory, User Study, Ontology, and Validation",
-          "authors": "Javed Ahmed",
-          "year": 2018,
-          "doi": "https://doi.org/10.6092/unibo/amsdottorato/8267",
-          "source_name": "AMS Dottorato Institutional Doctoral Theses Repository (University of Bologna)"
         },
         {
           "title": "Research Articles in Simplified HTML: a Web-first format for HTML-based scholarly articles",
@@ -1745,20 +1695,6 @@
           "source_name": "Lecture notes in computer science"
         },
         {
-          "title": "La preservazione del contenuto degli oggetti culturali: formalizzare la provenance",
-          "authors": "Francesca Tomasi",
-          "year": 2017,
-          "doi": "https://doi.org/10.6092/issn.2283-9364/7531",
-          "source_name": "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)"
-        },
-        {
-          "title": "Personal archives in linked open data: the conceptual model as an integration tool in GLAMs",
-          "authors": "Francesca Tomasi",
-          "year": 2017,
-          "doi": "https://doi.org/10.2426/aibstudi-11647",
-          "source_name": "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)"
-        },
-        {
           "title": "Utilisation des citations pour le r\u00e9sum\u00e9 automatique de la contribution d'articles scientifiques",
           "authors": "Bruno Malenfant",
           "year": 2016,
@@ -1785,13 +1721,6 @@
           "year": 2016,
           "doi": "https://doi.org/10.25968/opus-803",
           "source_name": "GoeScholar  The Publication Server of the Georg-August-Universit\u00e4t G\u00f6ttingen (Georg-August-Universit\u00e4t G\u00f6ttingen)"
-        },
-        {
-          "title": "Freedom for bibliographic references: OpenCitations arise.",
-          "authors": "Silvio Peroni; David M. Shotton; Fabio Vitali",
-          "year": 2016,
-          "doi": null,
-          "source_name": "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)"
         },
         {
           "title": "Klink-2: Integrating Multiple Web Sources to Generate Semantic Topic Networks",
@@ -1829,13 +1758,6 @@
           "source_name": "VU Research Portal"
         },
         {
-          "title": "Political Roles Ontology (PRoles): Enhancing Archival Authority Records through Semantic Web Technologies",
-          "authors": "Marilena Daquino; Silvio Peroni; Francesca Tomasi; Fabio Vitali",
-          "year": 2014,
-          "doi": "https://doi.org/10.1016/j.procs.2014.10.012",
-          "source_name": "Procedia Computer Science"
-        },
-        {
           "title": "Forschungsdaten",
           "authors": "Dominique Ritze; Kai Eckert; Magnus Pfeffer",
           "year": 2013,
@@ -1862,50 +1784,20 @@
           "year": 2012,
           "doi": "https://doi.org/10.1186/2041-1480-3-9",
           "source_name": "Journal of Biomedical Semantics"
-        },
-        {
-          "title": "Scholarly publishing and linked data",
-          "authors": "Silvio Peroni; David M. Shotton; Fabio Vitali",
-          "year": 2012,
-          "doi": "https://doi.org/10.1145/2362499.2362502",
-          "source_name": ""
-        },
-        {
-          "title": "New web site for the SPAR ontologies",
-          "authors": "David M. Shotton",
-          "year": 2011,
-          "doi": "https://doi.org/10.59350/kgemj-9cs62",
-          "source_name": ""
-        },
-        {
-          "title": "New web site for the SPAR ontologies",
-          "authors": "David M. Shotton",
-          "year": 2011,
-          "doi": "https://doi.org/10.59350/4kzft-edq61",
-          "source_name": ""
-        },
-        {
-          "title": "\u0397 \u03b5\u03be\u03bf\u03bc\u03bf\u03af\u03c9\u03c3\u03b7 \u03b5\u03c1\u03b3\u03b1\u03c3\u03b9\u03ce\u03bd \u03ad\u03bd\u03c4\u03b1\u03c3\u03b7\u03c2 \u03b3\u03bd\u03ce\u03c3\u03b7\u03c2 \u03c9\u03c2 \u03bc\u03ad\u03c3\u03bf\u03bd \u03b5\u03bd\u03b4\u03c5\u03bd\u03ac\u03bc\u03c9\u03c3\u03b7\u03c2 \u03ba\u03b1\u03b9 \u03b1\u03be\u03b9\u03bf\u03c0\u03bf\u03af\u03b7\u03c3\u03b7\u03c2 \u03c4\u03b7\u03c2 \u03b5\u03c0\u03b9\u03c7\u03b5\u03b9\u03c1\u03b7\u03c3\u03b9\u03b1\u03ba\u03ae\u03c2 \u03bc\u03bd\u03ae\u03bc\u03b7\u03c2",
-          "authors": "\u0391\u03b3\u03b7\u03c3\u03af\u03bb\u03b1\u03bf\u03c2 \u03a0\u03b1\u03c0\u03b1\u03bd\u03c4\u03c9\u03bd\u03af\u03bf\u03c5",
-          "year": 2003,
-          "doi": "https://doi.org/10.12681/eadd/16628",
-          "source_name": ""
         }
       ],
       "sources": {
-        "Zenodo (CERN European Organization for Nuclear Research)": 4,
-        "ArXiv.org": 1,
+        "Zenodo (CERN European Organization for Nuclear Research)": 3,
         "Scientometrics": 1,
         "Figshare": 5,
         "Frontiers in artificial intelligence and applications": 1,
         "Lecture notes in computer science": 5,
         "The Review of Socionetwork Strategies": 1,
-        "Acadlore Transactions on AI and Machine Learning": 1,
         "GigaScience": 1,
+        "": 6,
         "HAL (Le Centre pour la Communication Scientifique Directe)": 2,
         "bonndoc (University of Bonn)": 1,
         "Journal of Cheminformatics": 1,
-        "": 9,
         "Qucosa (Saxon State and University Library Dresden)": 1,
         "Preprints.org": 1,
         "Duo Research Archive (University of Oslo)": 1,
@@ -1915,23 +1807,18 @@
         "IEEE Access": 1,
         "Universit\u00e0 di Firenze - Italian Journal of Library and Information Science": 1,
         "Institutional Repository of Leibniz Universit\u00e4t Hannover (Leibniz Universit\u00e4t Hannover)": 1,
-        "Zagadnienia Informacji Naukowej - Studia Informacyjne": 1,
-        "Heritage": 1,
-        "Journal of Computer Science and Technology": 1,
         "ePrints Soton (University of Southampton)": 1,
         "Phaidra (Universit\u00e4t Wien)": 1,
-        "AMS Dottorato Institutional Doctoral Theses Repository (University of Bologna)": 1,
         "PeerJ Computer Science": 2,
-        "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)": 5,
         "Open MIND": 1,
         "GoeScholar  The Publication Server of the Georg-August-Universit\u00e4t G\u00f6ttingen (Georg-August-Universit\u00e4t G\u00f6ttingen)": 1,
+        "Archivio istituzionale della ricerca (Alma Mater Studiorum Universit\u00e0 di Bologna)": 2,
         "VU Research Portal": 1,
-        "Procedia Computer Science": 1,
         "Journal of Biomedical Semantics": 2
       },
-      "avg_works_per_year": 3.76,
-      "venues_count": 35,
-      "authors_count": 193
+      "avg_works_per_year": 3.33,
+      "venues_count": 28,
+      "authors_count": 179
     }
   }
 ]

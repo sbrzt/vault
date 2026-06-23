@@ -1,0 +1,95 @@
+<div class="section-accordion">
+    <div class="section-accordion-header" onclick="toggleAccordion('work-section-{{ onto.prefix }}', this)">
+        <h3>Mentions in scholarly works</h3>
+        <span class="accordion-icon">⮝</span>
+    </div>
+    <div id="work-section-{{ onto.prefix }}" class="accordion-body">
+        <div class="grid-3">
+            <div class="card-stat">
+                <span class="big-num">{{ onto.openalex.total_works }}</span>
+                <span class="stat-label">works mentioned {{ onto.label }} in their titles, abstracts or texts</span>
+            </div>
+            <div class="card-stat">
+                <span class="big-num">{{ onto.openalex.authors_count }}</span>
+                <span class="stat-label">scholars mentioned {{ onto.label }} in their works</span>
+            </div>
+            <div class="card-stat">
+                <span class="big-num">{{ onto.openalex.venues_count }}</span>
+                <span class="stat-label">venues published works mentioning {{ onto.label }}</span>
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag oax-tag">OpenAlex</span>
+                    <h3>How many works have mentioned {{ onto.label }} in time?</h3>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                        <canvas id="chart-bar-oax-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag oax-tag">OpenAlex</span>
+                    <h3>Which are the venues where most of the works mentioning {{ onto.label }} have been published?</h3>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                        <canvas id="chart-venue-oax-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-1">
+            <div class="card card-table full-width">
+                <div class="card-header">
+                    <span class="source-tag oax-tag">OpenAlex</span>
+                    <h4>Which scholarly works mention {{ onto.label }}?</h4>
+                </div>
+                <div class="table-responsive-wrapper">
+                    <table class="card-table-content data-table-collapsible" id="table-oax-{{ onto.prefix }}">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Authors</th>
+                                <th>Year</th>
+                                <th>Venue</th>
+                                <th>DOI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for work in onto.openalex.works %}
+                                <tr class="{{ 'hidden-row' if loop.index > 5 else '' }}">
+                                    <td>{{ work.title }}</td>
+                                    <td>{{ work.authors }}</td>
+                                    <td>{{ work.year }}</td>
+                                    <td>{{ work.source_name }}</td>
+                                    <td>
+                                        {% if work.doi %}
+                                            <a href="{{ work.doi }}" target="_blank">{{ work.doi }}</a>
+                                        {% else %}
+                                            <span>-</span>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="5">
+                                        No works found
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% if onto.openalex.works | length > 5 %}
+                    <button class="card-table-toggle-btn" data-target="table-oax-{{ onto.prefix }}" onclick="toggleCardTable(this)">
+                        Show More (+{{ onto.openalex.works | length - 5 }} more)
+                    </button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

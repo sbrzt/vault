@@ -35,7 +35,7 @@
     {% endfor %}
   </div>
 
-  {# ── Per-ontology sections ── #}
+  {# ── Dimensions sections ── #}
   {% for onto in data %}
   <section class="onto-section" id="onto-{{ onto.prefix }}">
 
@@ -44,97 +44,7 @@
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
 
-     <div class="section-accordion">
-      <div class="section-accordion-header" onclick="toggleAccordion('work-section-{{ onto.prefix }}', this)">
-        <h3>Scholarly works</h3>
-        <span class="accordion-icon">⮝</span>
-      </div>
-      <div id="work-section-{{ onto.prefix }}" class="accordion-body">
-        <div class="grid-3">
-          <div class="card-stat">
-            <span class="big-num">{{ onto.openalex.total_works }}</span>
-            <span class="stat-label">works mentioned {{ onto.label }} in their titles, abstracts or texts</span>
-          </div>
-          <div class="card-stat">
-            <span class="big-num">{{ onto.openalex.authors_count }}</span>
-            <span class="stat-label">scholars mentioned {{ onto.label }} in their works</span>
-          </div>
-          <div class="card-stat">
-            <span class="big-num">{{ onto.openalex.venues_count }}</span>
-            <span class="stat-label">venues published works mentioning {{ onto.label }}</span>
-          </div>
-        </div>
-        <div class="grid-1">
-          <div class="card card-table full-width">
-            <div class="card-header">
-              <span class="source-tag oax-tag">OpenAlex</span>
-              <h4>Which scholarly works mention {{ onto.label }}?</h4>
-            </div>
-            <div class="table-responsive-wrapper">
-              <table class="card-table-content data-table-collapsible" id="table-oax-{{ onto.prefix }}">
-                <thead>
-                  <tr>
-                    <th>Title</th>
-                    <th>Authors</th>
-                    <th>Year</th>
-                    <th>Venue</th>
-                    <th>DOI</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for work in onto.openalex.works %}
-                  <tr class="{{ 'hidden-row' if loop.index > 5 else '' }}">
-                    <td>{{ work.title }}</td>
-                    <td>{{ work.authors }}</td>
-                    <td>{{ work.year }}</td>
-                    <td>{{ work.source_name }}</td>
-                    <td>
-                      {% if work.doi %}
-                        <a href="{{ work.doi }}" target="_blank">{{ work.doi }}</a>
-                      {% else %}
-                        <span></span>
-                      {% endif %}
-                    </td>
-                  </tr>
-                  {% else %}
-                  <tr><td colspan="5">No works found</td></tr>
-                  {% endfor %}
-                </tbody>
-              </table>
-            </div>
-            {% if onto.openalex.works | length > 5 %}
-              <button class="card-table-toggle-btn" data-target="table-oax-{{ onto.prefix }}" onclick="toggleCardTable(this)">
-                Show More (+{{ onto.openalex.works | length - 5 }} more)
-              </button>
-            {% endif %}
-          </div>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <div class="card-header">
-              <span class="source-tag oax-tag">OpenAlex</span>
-              <h3>How many works have mentioned {{ onto.label }} in time?</h3>
-            </div>
-            <div class="card-detail">
-              <div class="card-chart-detail">
-                <canvas id="chart-bar-oax-{{ onto.prefix }}"></canvas>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <span class="source-tag oax-tag">OpenAlex</span>
-              <h3>In which venues were published the works mentioning {{ onto.label }}?</h3>
-            </div>
-            <div class="card-detail">
-              <div class="card-chart-detail">
-                <canvas id="chart-venue-oax-{{ onto.prefix }}"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include "works_section.html.j2" %}
 
 
     <script>
@@ -181,18 +91,35 @@
             datasets: [{
               label: 'Works per year',
               data: Object.values(oaxBarData),
-              backgroundColor: '#15196b3f',
-              borderColor: '#15196b',
+              backgroundColor: '#5c28ebaf',
+              hoverBackgroundColor: '#852ef6a9',
+              borderColor: '#852ef6a9',
               borderWidth: 1,
               borderRadius: 3,
             }]
           },
           options: {
             responsive: true,
-            plugins: { legend: { display: false } },
+            plugins: { 
+              legend: { 
+                display: false 
+              } 
+            },
             scales: {
-              y: { beginAtZero: true, ticks: { stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } },
-              x: { grid: { display: false } }
+              y: { 
+                beginAtZero: true, 
+                ticks: { 
+                  stepSize: 1 
+                }, 
+                grid: { 
+                  color: '#bebebe78' 
+                } 
+              },
+              x: {  
+                grid: { 
+                  color: '#bebebe78' 
+                } 
+              }
             }
           }
         });
@@ -202,37 +129,49 @@
         var ctx = document.getElementById('chart-venue-oax-{{ onto.prefix }}');
         if (!ctx) return;
         var venueData = {{ onto.openalex.sources | tojson }};
-        var sortedVenueData = Object.entries(venueData).sort((a, b) => b[1] - a[1]);
-        var labels = [];
-        var data = [];
-        var otherCount = 0;
-        sortedVenueData.forEach(function(item, index) {
-            if (index < 5) {
-                labels.push(item[0]);
-                data.push(item[1]);
-            } else {
-                otherCount += item[1];
-            }
-        });
-        if (otherCount > 0) {
-            labels.push('Other venues');
-            data.push(otherCount);
-        }
+        var topVenues = Object.entries(venueData)
+          .filter(item => item[0] && String(item[0]).trim() !== '' && String(item[0]) !== 'null') 
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 5);
+        
         new Chart(ctx, {
-          type: 'doughnut',
+          type: 'bar',
           data: {
-            labels: labels,
+            labels: topVenues.map(item => item[0].match(/.{1,40}(\s|$)/g) || [item[0]]),
             datasets: [{
-              data: data,
-              backgroundColor: ['#15196b', '#35495e', '#41b883', '#f39c12', '#d9534f', '#bdc3c7'],
-              borderWidth: 1
+              data: topVenues.map(item => item[1]),
+              backgroundColor: '#5c28ebaf',
+              hoverBackgroundColor: '#852ef6a9',
+              borderColor: '#852ef6a9',
+              borderWidth: 1,
+              borderRadius: 3,
             }]
           },
           options: {
             responsive: true,
-            plugins: {
-              legend: { position: 'right', labels: { boxWidth: 12 } }
-            }
+            indexAxis: 'y',
+            plugins: { 
+              legend: { 
+                display: false 
+              } 
+            },
+            scales: {
+              y: { 
+                beginAtZero: true, 
+                ticks: { 
+                  stepSize: 1,
+                  autoSkip: false
+                }, 
+                grid: { 
+                  color: '#bebebe78' 
+                } 
+              },
+              x: {  
+                grid: { 
+                  color: '#bebebe78' 
+                } 
+              }
+            },
           }
         });
       })();

@@ -24,3 +24,4 @@ def render_html(
     output_dir.mkdir(parents=True, exist_ok=True)
     (output_dir / "index.html").write_text(html, encoding="utf-8")
     shutil.copy(STATIC_DIR / "style.css", output_dir / "style.css")
+    #shutil.copy(STATIC_DIR / "script.js", output_dir / "script.js")

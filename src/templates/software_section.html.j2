@@ -1,0 +1,99 @@
+<div class="section-accordion">
+    <div class="section-accordion-header" onclick="toggleAccordion('code-section-{{ onto.prefix }}', this)">
+        <h3>Reuse in software</h3>
+        <span class="accordion-icon">⮝</span>
+    </div>
+    <div id="code-section-{{ onto.prefix }}" class="accordion-body">
+        <div class="grid-3">
+            <div class="card-stat">
+                <span class="big-num">{{ onto.github.repos_count }}</span>
+                <span class="stat-label">repositories contain files in which {{ onto.label }} is used</span>
+            </div>
+            <div class="card-stat">
+                <span class="big-num"></span>
+                <span class="stat-label"></span>
+            </div>
+            <div class="card-stat">
+                <span class="big-num"></span>
+                <span class="stat-label"></span>
+            </div>
+        </div>
+        <div class="grid-1">
+            <div class="card card-table full-width">
+                <div class="card-header">
+                    <span class="source-tag github-tag">GitHub</span>
+                    <h4>Which repositories reuse {{ onto.label }}?</h4>
+                </div>
+                <div class="table-responsive-wrapper">
+                    <table class="card-table-content data-table-collapsible" id="table-github-{{ onto.prefix }}">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                                <th>Owner</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for repo in onto.github.repos %}
+                                <tr class="{{ 'hidden-row' if loop.index > 5 else '' }}">
+                                    <td>{{ repo.name }}</td>
+                                    <td>
+                                        <a href="{{ repo.url }}" target="_blank">
+                                            {{ repo.url }}
+                                        </a>
+                                    </td>
+                                    <td>{{ repo.owner.type }}</td>
+                                    <td>{{ repo.description }}</td>
+                                    <td>
+                                        {% for category, count in repo.by_category.items() %}
+                                            {% if count > 0 %}
+                                                <span class="keyword-badge">{{ category }}</span>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="3">
+                                        No repositories found
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% if onto.github.repos | length > 5 %}
+                    <button class="card-table-toggle-btn" data-target="table-github-{{ onto.prefix }}" onclick="toggleCardTable(this)">
+                        Show More (+{{ onto.github.repos | length - 5 }} more)
+                    </button>
+                {% endif %}
+            </div>
+        </div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag github-tag">GitHub</span>
+                    <h4>In which types of files was {{ onto.label }} used?</h4>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                        <canvas id="chart-category-github-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag github-tag">GitHub</span>
+                    <h4>Which types of owners use {{ onto.label }} in their repositories?</h4>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                    <canvas id="chart-owner-github-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
