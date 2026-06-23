@@ -18,6 +18,30 @@
                 <span class="stat-label"></span>
             </div>
         </div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag github-tag">GitHub</span>
+                    <h4>In which types of files was {{ onto.label }} used?</h4>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                        <canvas id="chart-category-github-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <span class="source-tag github-tag">GitHub</span>
+                    <h4>Which types of owners use {{ onto.label }} in their repositories?</h4>
+                </div>
+                <div class="card-detail">
+                    <div class="card-chart-detail">
+                    <canvas id="chart-owner-github-{{ onto.prefix }}"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="grid-1">
             <div class="card card-table full-width">
                 <div class="card-header">
@@ -69,30 +93,6 @@
                         Show More (+{{ onto.github.repos | length - 5 }} more)
                     </button>
                 {% endif %}
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="card">
-                <div class="card-header">
-                    <span class="source-tag github-tag">GitHub</span>
-                    <h4>In which types of files was {{ onto.label }} used?</h4>
-                </div>
-                <div class="card-detail">
-                    <div class="card-chart-detail">
-                        <canvas id="chart-category-github-{{ onto.prefix }}"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <span class="source-tag github-tag">GitHub</span>
-                    <h4>Which types of owners use {{ onto.label }} in their repositories?</h4>
-                </div>
-                <div class="card-detail">
-                    <div class="card-chart-detail">
-                    <canvas id="chart-owner-github-{{ onto.prefix }}"></canvas>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
