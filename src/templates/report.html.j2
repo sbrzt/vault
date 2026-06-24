@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VAULT</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -20,20 +21,7 @@
 <main>
 
   {# ── Summary strip ── #}
-  <div class="summary-strip">
-    {% for onto in data %}
-    <div class="summary-card">
-      <h3>{{ onto.full_name }} ({{ onto.label }})</h3>
-      <div class="uri">{{ onto.uri }}</div>
-      <div class="metrics">
-        <div class="metric">
-          <span class="metric-value">{{ onto.openalex.total_works }}</span>
-          <span class="metric-label">Works</span>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+  {% include "summary_section.html.j2" %}
 
   {# ── Dimensions sections ── #}
   {% for onto in data %}
@@ -43,6 +31,10 @@
       <h2>{{ onto.full_name }} ({{ onto.label }})</h2>
       <span class="uri-badge">{{ onto.uri }}</span>
     </div>
+
+    {% include "vocabularies_section.html.j2" %}
+
+    {% include "software_section.html.j2" %}
 
     {% include "works_section.html.j2" %}
 
@@ -60,6 +52,145 @@
           }, 10); 
         }
       }
+
+      (function() {
+        var ctx = document.getElementById('chart-keywords-lov-{{ onto.prefix }}');
+        if (!ctx) return;
+        var keywordData = {{ onto.lov.keyword_frequencies | tojson }};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(keywordData),
+            datasets: [{
+              label: 'Keyword frequencies',
+              data: Object.values(keywordData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+              legend: { position: 'right' } 
+            },
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-timeline-lov-{{ onto.prefix }}');
+        if (!ctx) return;
+        var timelineData = {{ onto.lov.adoption_timeline | tojson }};
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: Object.keys(timelineData),
+            datasets: [{
+              label: 'Cumulative adoptions',
+              data: Object.values(timelineData),
+              fill: true,
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              tension: 0.3,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+              legend: { display: false } 
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                ticks: { stepSize: 1 }
+              }
+            }
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-category-github-{{ onto.prefix }}');
+        if (!ctx) return;
+        var categoryData = {{ onto.github.total_by_category | tojson }};
+        var sortedData = Object.entries(categoryData).sort((a, b) => b[1] - a[1]);
+        var labels = sortedData.map(item => item[0]);
+        var data = sortedData.map(item => item[1]);
+        new Chart(ctx, {
+          type: 'bar',
+          plugins: [ChartDataLabels],
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Number of files',
+              data: data,
+              backgroundColor: '#843EF4',
+              hoverBackgroundColor: '#984FF8',
+              borderRadius: 3,
+              borderWidth: 0
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            layout: {
+              padding: {
+                right: 30
+              }
+            },
+            responsive: true,
+            //maintainAspectRatio: false,
+            plugins: { 
+              legend: { 
+                display: false 
+              } ,
+              datalabels: {
+                anchor: 'end',
+                align: 'right',
+                color: '#444',
+              }
+            },
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+              }
+            }
+          }
+        });
+      })();
+
+      (function() {
+        var ctx = document.getElementById('chart-owner-github-{{ onto.prefix }}');
+        if (!ctx) return;
+        var ownerData = {{ onto.github.owner_frequencies | tojson }};
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: Object.keys(ownerData),
+            datasets: [{
+              label: 'Owner frequencies',
+              data: Object.values(ownerData),
+              borderWidth: 1,
+              borderRadius: 3,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+              legend: { 
+                position: 'right' 
+              } 
+            },
+          }
+        });
+      })();
 
       function toggleCardTable(button) {
         const targetId = button.getAttribute('data-target');

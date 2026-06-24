@@ -4,8 +4,9 @@
             <h3>{{ onto.full_name }} ({{ onto.label }})</h3>
             <div class="uri">{{ onto.uri }}</div>
             <div class="metrics">
-                {% include metric_lov.html.j2 %}
-                {% include metric_github.html.j2 %}
+                {% include "metric_lov.html.j2" %}
+                {% include "metric_github.html.j2" %}
+                {% include "metric_openalex.html.j2" %}
             </div>
         </div>
     {% endfor %}

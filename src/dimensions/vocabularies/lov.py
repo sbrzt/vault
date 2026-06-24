@@ -33,7 +33,7 @@ def _lov_info(
     }
 
     info_url = (
-        "https://lov.linkeddata.es/dataset/lov/api/v2/vocabulary/info"
+        "https://lov.linkeddata.es/dataset/api/v2/vocabulary/info"
         f"?vocab={ontology['prefix']}"
     )
 

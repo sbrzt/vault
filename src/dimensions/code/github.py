@@ -2,57 +2,33 @@
 
 import json
 import time
-import io
 import urllib.request
 import urllib.parse
+from collections import Counter
 from pathlib import Path
-from collections import Counter
-from tqdm import tqdm
 from src.http import http_get
-from collections import Counter
 
 
-# https://gist.github.com/aymen-mouelhi/82c93fbcd25f091f2c13faa5e0d61760
-FILE_CATEGORIES = {
-    "programming": {
-        "py",
-        "js",
-        "java",
-        "rs",
-        "go",
-        "pl",
-        "php",
-        "rb"
-    },
-    "documentation": {
-        "md",
-        "rst",
-        "txt",
-        "html",
-    },
-    "data": {
-        "rdf",
-        "owl",
-        "ttl",
-        "jsonld",
-        "n3",
-        "nt",
-        "sparql",
-        "rq",
-        "yml",
-        "yaml",
-        "toml",
-        "json",
-    }
+current_dir = Path(__file__).parent
+file_path = current_dir / "languages.json"
+
+with open(file_path, "r", encoding="utf-8") as f:
+    LANGUAGES_DATA = json.load(f)
+
+EXT_TO_CATEGORY = {
+    ext.lstrip(".").lower(): lang["type"]
+    for lang in LANGUAGES_DATA
+    for ext in lang.get("extensions", [])
 }
+
+AVAILABLE_CATEGORIES = set(EXT_TO_CATEGORY.values())
 
 
 def _categorize(filename: str) -> str | None:
-    ext = filename.rsplit(".", 1)[-1].lower() if "." in filename else ""
-    for category, extensions in FILE_CATEGORIES.items():
-        if ext in extensions:
-            return category
-    return None
+    if "." not in filename:
+        return None
+    ext = filename.rsplit(".", 1)[-1].lower()
+    return EXT_TO_CATEGORY.get(ext)
 
 
 def fetch_github(
@@ -63,7 +39,7 @@ def fetch_github(
     result: dict = {
         "repos_count": 0, 
         "repos": [],
-        "total_by_category": {cat: 0 for cat in FILE_CATEGORIES},
+        "total_by_category": {cat: 0 for cat in AVAILABLE_CATEGORIES},
         "owner_frequencies": Counter()
     }
 
@@ -71,13 +47,7 @@ def fetch_github(
         print("  [GitHub] No token provided, skipping.")
         return result
 
-    extensions = " OR ".join(
-        f"extension:{ext}"
-        for exts in FILE_CATEGORIES.values()
-        for ext in exts
-    )
-
-    query= f'"{ontology["uri"]}" {extensions}'
+    query= f'"{ontology["uri"]}"'
     url = "https://api.github.com/search/code?" + urllib.parse.urlencode({"q": query, "per_page": 100})
     headers = {
         "Authorization": f"Bearer {github_token}",
@@ -94,23 +64,29 @@ def fetch_github(
             filename = item.get("name", "")
             if not repo:
                 continue
+
             repo_name = repo.get("full_name", "")
             repo_url = repo.get("html_url", "")
             repo_owner = repo.get("owner")
             repo_description = repo.get("description", "")
             category = _categorize(filename)
+
             if repo_name not in repos:
                 repos[repo_name] = {
                     "name": repo_name,
                     "url": repo_url,
                     "owner": repo_owner,
                     "description": repo_description,
-                    "by_category": {cat: 0 for cat in FILE_CATEGORIES},
+                    "by_category": {cat: 0 for cat in AVAILABLE_CATEGORIES},
                 }
+
             if category:
                 repos[repo_name]["by_category"][category] += 1
                 result["total_by_category"][category] += 1
-            result["owner_frequencies"].update([repos[repo_name]["owner"]["type"]])
+
+            if "type" in repo_owner:
+                result["owner_frequencies"].update([repo_owner["type"]])
+
         result["repos"] = list(repos.values())
         result["repos_count"] = len(result["repos"])
     
