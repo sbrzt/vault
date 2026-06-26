@@ -140,7 +140,6 @@
               }
             },
             responsive: true,
-            //maintainAspectRatio: false,
             plugins: { 
               legend: { 
                 display: false 
@@ -166,28 +165,57 @@
       })();
 
       (function() {
-        var ctx = document.getElementById('chart-owner-github-{{ onto.prefix }}');
+        var ctx = document.getElementById('chart-toprepos-github-{{ onto.prefix }}');
         if (!ctx) return;
-        var ownerData = {{ onto.github.owner_frequencies | tojson }};
+        var reposData = {{ onto.github.repos | tojson }};
+        var topRepos = reposData
+          .sort((a, b) => b.total_files - a.total_files)
+          .slice(0, 5);
+        var labels = topRepos.map(repo => repo.name);
+        var data = topRepos.map(repo => repo.total_files);
+        
         new Chart(ctx, {
-          type: 'doughnut',
+          type: 'bar',
+          plugins: [ChartDataLabels],
           data: {
-            labels: Object.keys(ownerData),
+            labels: labels,
             datasets: [{
-              label: 'Owner frequencies',
-              data: Object.values(ownerData),
-              borderWidth: 1,
+              label: 'Number of files',
+              data: data,
+              backgroundColor: '#843EF4',
+              hoverBackgroundColor: '#984FF8',
               borderRadius: 3,
+              borderWidth: 0
             }]
           },
           options: {
+            indexAxis: 'y',
             responsive: true,
-            maintainAspectRatio: false,
+            layout: {
+              padding: {
+                right: 30
+              }
+            },
             plugins: { 
               legend: { 
-                position: 'right' 
-              } 
+                display: false
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'right',
+                color: '#444',
+              }
             },
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+              }
+            }
           }
         });
       })();
@@ -215,40 +243,44 @@
         var ctx = document.getElementById('chart-bar-oax-{{ onto.prefix }}');
         if (!ctx) return;
         var oaxBarData = {{ onto.openalex.by_year | tojson }}
+        var labels = Object.keys(oaxBarData);
+        var data = Object.values(oaxBarData);
         new Chart(ctx, {
           type: 'bar',
+          plugins: [ChartDataLabels],
           data: {
-            labels: Object.keys(oaxBarData),
+            labels: labels,
             datasets: [{
               label: 'Works per year',
-              data: Object.values(oaxBarData),
+              data: data,
               backgroundColor: '#5c28ebaf',
               hoverBackgroundColor: '#852ef6a9',
-              borderColor: '#852ef6a9',
-              borderWidth: 1,
+              borderWidth: 0,
               borderRadius: 3,
             }]
           },
           options: {
             responsive: true,
+            layout: {
+              padding: 30
+            },
             plugins: { 
               legend: { 
                 display: false 
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'end',
+                color: '#444',
               } 
             },
             scales: {
               y: { 
-                beginAtZero: true, 
-                ticks: { 
-                  stepSize: 1 
-                }, 
-                grid: { 
-                  color: '#bebebe78' 
-                } 
+                display: false
               },
               x: {  
                 grid: { 
-                  color: '#bebebe78' 
+                  display: false
                 } 
               }
             }
@@ -264,27 +296,37 @@
           .filter(item => item[0] && String(item[0]).trim() !== '' && String(item[0]) !== 'null') 
           .sort((a, b) => b[1] - a[1])
           .slice(0, 5);
-        
+        var labels = topVenues.map(item => item[0].match(/.{1,30}(\s|$)/g) || [item[0]]);
+        var data = topVenues.map(item => item[1]);
         new Chart(ctx, {
           type: 'bar',
+          plugins: [ChartDataLabels],
           data: {
-            labels: topVenues.map(item => item[0].match(/.{1,40}(\s|$)/g) || [item[0]]),
+            labels: labels,
             datasets: [{
-              data: topVenues.map(item => item[1]),
+              label: 'Number of works',
+              data: data,
               backgroundColor: '#5c28ebaf',
               hoverBackgroundColor: '#852ef6a9',
-              borderColor: '#852ef6a9',
-              borderWidth: 1,
+              borderWidth: 0,
               borderRadius: 3,
             }]
           },
           options: {
             responsive: true,
             indexAxis: 'y',
+            layout: {
+              padding: 15
+            },
             plugins: { 
               legend: { 
                 display: false 
-              } 
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'right',
+                color: '#444',
+              }
             },
             scales: {
               y: { 
@@ -294,13 +336,11 @@
                   autoSkip: false
                 }, 
                 grid: { 
-                  color: '#bebebe78' 
+                  display: false 
                 } 
               },
               x: {  
-                grid: { 
-                  color: '#bebebe78' 
-                } 
+                display: false
               }
             },
           }

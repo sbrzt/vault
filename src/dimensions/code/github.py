@@ -37,7 +37,8 @@ def fetch_github(
     ) -> dict:
 
     result: dict = {
-        "repos_count": 0, 
+        "repos_count": 0,
+        "files_count": 0,
         "repos": [],
         "total_by_category": {cat: 0 for cat in AVAILABLE_CATEGORIES},
         "owner_frequencies": Counter()
@@ -48,17 +49,29 @@ def fetch_github(
         return result
 
     query= f'"{ontology["uri"]}"'
-    url = "https://api.github.com/search/code?" + urllib.parse.urlencode({"q": query, "per_page": 100})
     headers = {
         "Authorization": f"Bearer {github_token}",
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
     }
+
+    page = 1
+    repos = {}
+
+    while True:
+        url = "https://api.github.com/search/code?" + urllib.parse.urlencode({
+            "q": query, 
+            "per_page": 100,
+            "page": page
+        })
     
-    data = http_get(url, headers=headers)
+        data = http_get(url, headers=headers)
+        if not data or "items" not in data or not data["items"]:
+            break
+
+        if page == 1:
+            result["files_count"] = data.get("total_count", 0)
     
-    if data and "items" in data:
-        repos: dict[str, dict] = {}
         for item in data["items"]:
             repo = item.get("repository", {})
             filename = item.get("name", "")
@@ -78,7 +91,10 @@ def fetch_github(
                     "owner": repo_owner,
                     "description": repo_description,
                     "by_category": {cat: 0 for cat in AVAILABLE_CATEGORIES},
+                    "total_files": 0
                 }
+            
+            repos[repo_name]["total_files"] += 1
 
             if category:
                 repos[repo_name]["by_category"][category] += 1
@@ -86,9 +102,16 @@ def fetch_github(
 
             if "type" in repo_owner:
                 result["owner_frequencies"].update([repo_owner["type"]])
+        
+        if len(data["items"]) < 100 or page >= 10:
+            break
+        page += 1
+        time.sleep(6)
 
-        result["repos"] = list(repos.values())
-        result["repos_count"] = len(result["repos"])
+    result["repos"] = list(repos.values())
+    result["repos_count"] = len(result["repos"])
     
-    time.sleep(6)
+    if page == 1:
+        time.sleep(6)
+
     return result

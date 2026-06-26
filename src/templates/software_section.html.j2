@@ -10,8 +10,8 @@
                 <span class="stat-label">repositories contain files in which {{ onto.label }} is used</span>
             </div>
             <div class="card-stat">
-                <span class="big-num"></span>
-                <span class="stat-label"></span>
+                <span class="big-num">{{ onto.github.files_count }}</span>
+                <span class="stat-label">files reuse {{ onto.label }} in all GitHub</span>
             </div>
             <div class="card-stat">
                 <span class="big-num"></span>
@@ -22,7 +22,7 @@
             <div class="card">
                 <div class="card-header">
                     <span class="source-tag github-tag">GitHub</span>
-                    <h4>In which types of files was {{ onto.label }} used?</h4>
+                    <h4>In which types of files was {{ onto.label }} reused?</h4>
                 </div>
                 <div class="card-detail">
                     <div class="card-chart-detail">
@@ -33,11 +33,11 @@
             <div class="card">
                 <div class="card-header">
                     <span class="source-tag github-tag">GitHub</span>
-                    <h4>Which types of owners use {{ onto.label }} in their repositories?</h4>
+                    <h4>Which are the repositories that reuse {{ onto.label }} the most?</h4>
                 </div>
                 <div class="card-detail">
                     <div class="card-chart-detail">
-                    <canvas id="chart-owner-github-{{ onto.prefix }}"></canvas>
+                    <canvas id="chart-toprepos-github-{{ onto.prefix }}"></canvas>
                     </div>
                 </div>
             </div>
