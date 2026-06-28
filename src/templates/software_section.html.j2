@@ -11,11 +11,11 @@
             </div>
             <div class="card-stat">
                 <span class="big-num">{{ onto.github.files_count }}</span>
-                <span class="stat-label">files reuse {{ onto.label }} in all GitHub</span>
+                <span class="stat-label">files contains forms of {{ onto.label }} reuse in all GitHub</span>
             </div>
             <div class="card-stat">
-                <span class="big-num"></span>
-                <span class="stat-label"></span>
+                <span class="big-num">{{ onto.github.owners_count }}</span>
+                <span class="stat-label">distinct developers or organizations are reusing {{ onto.label }}</span>
             </div>
         </div>
         <div class="grid-2">
@@ -90,7 +90,7 @@
                 </div>
                 {% if onto.github.repos | length > 5 %}
                     <button class="card-table-toggle-btn" data-target="table-github-{{ onto.prefix }}" onclick="toggleCardTable(this)">
-                        Show More (+{{ onto.github.repos | length - 5 }} more)
+                        Show more (+{{ onto.github.repos | length - 5 }} more)
                     </button>
                 {% endif %}
             </div>

@@ -57,23 +57,51 @@
         var ctx = document.getElementById('chart-keywords-lov-{{ onto.prefix }}');
         if (!ctx) return;
         var keywordData = {{ onto.lov.keyword_frequencies | tojson }};
+        var sortedData = Object.entries(keywordData).sort((a, b) => b[1] - a[1]);
+        var labels = sortedData.map(item => item[0]);
+        var data = sortedData.map(item => item[1]);
         new Chart(ctx, {
-          type: 'doughnut',
+          type: 'bar',
+          plugins: [ChartDataLabels],
           data: {
-            labels: Object.keys(keywordData),
+            labels: labels,
             datasets: [{
               label: 'Keyword frequencies',
-              data: Object.values(keywordData),
-              borderWidth: 1,
+              data: data,
+              backgroundColor: '#843EF4',
+              hoverBackgroundColor: '#984FF8',
               borderRadius: 3,
+              borderWidth: 0
             }]
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
-            plugins: { 
-              legend: { position: 'right' } 
+            indexAxis: 'y',
+            layout: {
+              padding: {
+                right: 30
+              }
             },
+            plugins: { 
+              legend: { 
+                display: false 
+              } ,
+              datalabels: {
+                anchor: 'end',
+                align: 'right',
+                color: '#444',
+              }
+            },
+            scales: {
+              x: {
+                display: false
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+              }
+            }
           }
         });
       })();
@@ -82,29 +110,40 @@
         var ctx = document.getElementById('chart-timeline-lov-{{ onto.prefix }}');
         if (!ctx) return;
         var timelineData = {{ onto.lov.adoption_timeline | tojson }};
+        var labels = Object.keys(timelineData);
+        var data = Object.values(timelineData);
         new Chart(ctx, {
           type: 'line',
+          plugins: [ChartDataLabels],
           data: {
-            labels: Object.keys(timelineData),
+            labels: labels,
             datasets: [{
               label: 'Cumulative adoptions',
-              data: Object.values(timelineData),
+              data: data,
               fill: true,
-              borderColor: 'rgb(75, 192, 192)',
-              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: '#843EF4',
+              backgroundColor: '#984ff81c',
               tension: 0.3,
             }]
           },
           options: {
             responsive: true,
-            maintainAspectRatio: false,
+            layout: {
+              padding: 30
+            },
             plugins: { 
-              legend: { display: false } 
+              legend: { 
+                display: false 
+              },
+              datalabels: {
+                anchor: 'end',
+                align: 'end',
+                color: '#444',
+              }
             },
             scales: {
               y: {
-                beginAtZero: true,
-                ticks: { stepSize: 1 }
+                display: false
               }
             }
           }
@@ -231,11 +270,11 @@
 
         if (isExpanded) {
             table.classList.remove('expanded');
-            button.textContent = `Show More (+${hiddenCount} more)`;
+            button.textContent = `Show more (+${hiddenCount} more)`;
             button.closest('.card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         } else {
             table.classList.add('expanded');
-            button.textContent = "Show Less";
+            button.textContent = "Show less";
         }
       }
 

@@ -110,6 +110,9 @@ def fetch_github(
 
     result["repos"] = list(repos.values())
     result["repos_count"] = len(result["repos"])
+
+    unique_owners = {repo["owner"].get("id") or repo["owner"].get("login") for repo in result["repos"] if repo.get("owner")}
+    result["owners_count"] = len(unique_owners)
     
     if page == 1:
         time.sleep(6)

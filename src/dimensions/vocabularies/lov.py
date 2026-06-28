@@ -8,6 +8,7 @@ import hashlib
 import urllib.request
 import urllib.parse
 import urllib.error
+from datetime import datetime
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDFS, OWL
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -42,7 +43,7 @@ def _lov_info(
     if data:
         result["found"] = True
         result["url"] = (
-            f"https://lov.linkeddata.es/dataset/lov/vocabs/{ontology['prefix']}"
+            f"https://lov.linkeddata.es/dataset/vocabs/{ontology['prefix']}"
         )
         result["tags"] = data.get("tags", [])
         result["versions"] = [
@@ -64,21 +65,19 @@ def _lov_all_download_urls() -> list[dict]:
         PREFIX voaf: <http://purl.org/vocommons/voaf#>
         PREFIX vann: <http://purl.org/vocab/vann/>
         SELECT ?vocab ?title (GROUP_CONCAT(?keyword; separator="|") AS ?keywords) ?distribution ?namespaceUri ?issued WHERE {
-            GRAPH <https://lov.linkeddata.es/dataset/lov> {
                 ?vocab a voaf:Vocabulary ;
                     dcterms:title ?title ;
                     dcat:distribution ?distribution .
                 OPTIONAL { ?vocab dcat:keyword ?keyword . }
                 ?distribution dcterms:issued ?issued .
                 OPTIONAL { ?vocab vann:preferredNamespaceUri ?namespaceUri . }
-            }
         }
         GROUP BY ?vocab ?title ?distribution ?namespaceUri ?issued
         ORDER BY ?vocab DESC(?issued)
     """
 
     sparql_url = (
-        "https://lov.linkeddata.es/dataset/lov/sparql?"
+        "https://lov.linkeddata.es/dataset/sparql?"
         + urllib.parse.urlencode(
             {"query": sparql_query, "format": "json"},
             quote_via=urllib.parse.quote,
@@ -222,7 +221,6 @@ def _lov_sparql_inlinks(
         PREFIX vann: <http://purl.org/vocab/vann/>
         
         SELECT ?vocab ?title ?namespaceUri ?target WHERE {{
-            GRAPH <https://lov.linkeddata.es/dataset/lov> {{
                 VALUES ?target {{ {values} }}
                 ?vocab dcterms:title ?title ;
                     vann:preferredNamespaceUri ?namespaceUri .
@@ -235,11 +233,11 @@ def _lov_sparql_inlinks(
                 {{ ?vocab voaf:reliesOn ?target . }}
                 UNION
                 {{ ?vocab owl:imports ?target . }}
-            }}
+            
         }}
     """
     sparql_url = (
-        "https://lov.linkeddata.es/dataset/lov/sparql?"
+        "https://lov.linkeddata.es/dataset/sparql?"
         + urllib.parse.urlencode(
             {"query": sparql_query, "format": "json"},
             quote_via=urllib.parse.quote,
@@ -262,7 +260,6 @@ def _lov_sparql_inlinks(
                 "uri": namespace_uri, 
                 "vocab_uri": vocab_uri,
                 "title": title,
-                "dependency_type": "explicit",
             })
             results[prefix]["inlinks"] += 1
 
@@ -311,7 +308,6 @@ def fetch_data(
                             "title": title,
                             "keywords": keywords,
                             "issued": issued,
-                            "dependency_type": "implicit",
                         })
                         results[prefix]["inlinks"] += 1
                         results[prefix]["keyword_counter"].update(keywords)
@@ -322,10 +318,11 @@ def fetch_data(
                 print(f"\n  [LOV] Error processing {vocab['vocab']}: {e}")
 
     for prefix in results:
-
         results[prefix]["keyword_frequencies"] = dict(results[prefix].pop("keyword_counter").most_common(5))
         
         year_counter = results[prefix].pop("year_counter")
+        years = sorted([int(y) for y in year_counter.keys() if y.isdigit()])
+
         timeline = {}
         cumulative = 0
         for year in sorted(year_counter.keys()):
@@ -333,16 +330,14 @@ def fetch_data(
             timeline[year] = cumulative
         results[prefix]["adoption_timeline"] = timeline
 
-        explicit_count = 0
-        implicit_count = 0
-        for vocab in results[prefix]["using_vocabs"]:
-            if vocab.get("dependency_type") == "explicit":
-                explicit_count += 1
-            elif vocab.get("dependency_type") == "implicit":
-                implicit_count += 1
-        results[prefix]["dependency_frequencies"] = {
-            "Explicit": explicit_count,
-            "Implicit": implicit_count
-        }
+        if years:
+            min_year = min(years)
+            max_year = max(years)
+            current_year = datetime.now().year
+            results[prefix]["lifespan_years"] = current_year - min_year + 1
+            results[prefix]["start_year"] = min_year
+
+        
+
 
     return results
